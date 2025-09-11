@@ -781,3 +781,6 @@ export const DATA: TechTree = {
     return [];
   }),
 };
+
+// Export the original tech_tree for the scheduler
+export const TECH_TREE_FOR_SCHEDULER = tech_tree;
