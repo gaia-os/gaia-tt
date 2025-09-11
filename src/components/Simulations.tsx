@@ -21,7 +21,7 @@ const Simulations: React.FC<SimulationsProps> = ({ techTree }) => {
   const [yearsToSimulate, setYearsToSimulate] = useState(20);
   const [isRunning, setIsRunning] = useState(false);
   const [simulationResults, setSimulationResults] = useState<any>(null);
-  const [minImpact, setMinImpact] = useState(0.1);
+  const [minImpact, setMinImpact] = useState(0);
   const [showAllTechs, setShowAllTechs] = useState(false);
 
   const scheduler = useMemo(() => new NuclearScheduler(techTree), [techTree]);
@@ -43,17 +43,30 @@ const Simulations: React.FC<SimulationsProps> = ({ techTree }) => {
   const heatmapData = useMemo(() => {
     if (!simulationResults) return [];
     
+    // First, filter technologies based on their first year impact
+    const firstYear = Math.min(...Object.values(simulationResults.impactData).flatMap(yearlyImpact => 
+      Object.keys(yearlyImpact as Record<number, number>).map(Number)
+    ));
+    
+    const eligibleTechs = Object.entries(simulationResults.impactData)
+      .filter(([tech, yearlyImpact]) => {
+        const firstYearImpact = (yearlyImpact as Record<number, number>)[firstYear] || 0;
+        return firstYearImpact >= minImpact;
+      })
+      .map(([tech]) => tech);
+    
+    // Then create data for all years for eligible technologies
     const data: HeatmapData[] = [];
     Object.entries(simulationResults.impactData).forEach(([tech, yearlyImpact]) => {
-      Object.entries(yearlyImpact as Record<number, number>).forEach(([year, impact]) => {
-        if (impact >= minImpact) {
+      if (eligibleTechs.includes(tech)) {
+        Object.entries(yearlyImpact as Record<number, number>).forEach(([year, impact]) => {
           data.push({
             technology: tech,
             year: parseInt(year),
             impact: impact
           });
-        }
-      });
+        });
+      }
     });
 
     // Sort by impact and limit to top technologies if not showing all
@@ -86,8 +99,10 @@ const Simulations: React.FC<SimulationsProps> = ({ techTree }) => {
             {/* Header */}
             <div className="font-semibold text-sm p-2">Technology</div>
             {years.map(year => (
-              <div key={year} className="font-semibold text-xs p-1 text-center transform -rotate-45 origin-bottom-left">
-                {year}
+              <div key={year} className="font-semibold text-xs p-1 text-center h-12 flex items-end justify-center">
+                <span className="transform -rotate-45 origin-bottom whitespace-nowrap">
+                  {year}
+                </span>
               </div>
             ))}
             
@@ -100,18 +115,19 @@ const Simulations: React.FC<SimulationsProps> = ({ techTree }) => {
                 {years.map(year => {
                   const dataPoint = heatmapData.find(d => d.technology === tech && d.year === year);
                   const intensity = dataPoint ? dataPoint.impact / maxImpact : 0;
-                  const color = intensity > 0 
+                  const hasData = dataPoint && dataPoint.impact > 0;
+                  const color = hasData 
                     ? `rgba(59, 130, 246, ${0.2 + intensity * 0.8})` 
-                    : 'transparent';
+                    : 'rgba(156, 163, 175, 0.3)'; // Light grey for no data
                   
                   return (
                     <div
                       key={`${tech}-${year}`}
                       className="h-8 border border-gray-200 flex items-center justify-center text-xs cursor-pointer hover:border-gray-400"
                       style={{ backgroundColor: color }}
-                      title={dataPoint ? `${tech} (${year}): ${dataPoint.impact.toFixed(2)} TWh` : ''}
+                      title={hasData ? `${tech} (${year}): ${dataPoint.impact.toFixed(2)} TWh` : `${tech} (${year}): No impact`}
                     >
-                      {dataPoint ? dataPoint.impact.toFixed(1) : ''}
+                      {hasData ? dataPoint.impact.toFixed(1) : '0.0'}
                     </div>
                   );
                 })}
@@ -202,7 +218,7 @@ const Simulations: React.FC<SimulationsProps> = ({ techTree }) => {
                   min="0"
                   step="0.1"
                   value={minImpact}
-                  onChange={(e) => setMinImpact(parseFloat(e.target.value) || 0.1)}
+                  onChange={(e) => setMinImpact(parseFloat(e.target.value) || 0)}
                   className="w-32"
                 />
               </div>
