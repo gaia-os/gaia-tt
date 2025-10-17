@@ -35,10 +35,10 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = [
-    #  { include = "techtree", from = "src" }
-    "src/techtree",
-]
+packages = ["src/techtree"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
 
 [tool.uv]
 # Let uv know we prefer using a managed Python 3.13 when possible.
@@ -47,6 +47,10 @@ python-preference = "managed"
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+[project.scripts]
+# Console script to run the Python NuclearScheduler from any environment
+nuclear-scheduler = "techtree.cli:main"
 
 [tool.hatch.envs.default.scripts]
 # Convenience commands (run with: hatch run sim:run)

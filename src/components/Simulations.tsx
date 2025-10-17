@@ -34,12 +34,31 @@ const Simulations: React.FC<SimulationsProps> = ({ techTree }) => {
   const runSimulation = async () => {
     setIsRunning(true);
     try {
-      // Add a small delay to show loading state
-      await new Promise((resolve) => setTimeout(resolve, 100));
-      const results = scheduler.runSimulation(yearsToSimulate);
+      // Call the Python backend via API route
+      const response = await fetch('/api/simulate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          graphData: {
+            nodes: techTree.nodes,
+            edges: techTree.edges,
+          },
+          yearsToSimulate,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Simulation failed');
+      }
+
+      const results = await response.json();
       setSimulationResults(results);
     } catch (error) {
       console.error('Simulation failed:', error);
+      alert(`Simulation error: ${error instanceof Error ? error.message : String(error)}`);
     } finally {
       setIsRunning(false);
     }
