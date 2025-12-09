@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "investment-tech-tree"
+version = "0.1.0"
+description = "Nuclear investment tech tree scheduler/simulator"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+authors = [
+    { name = "GAIA Team" },
+    { name = "Michael Walters", email = "michaelwalters3000@gmail.com" },
+    { name = "Rohil Rao" },
+    { name = "Thomas Kopinski" },
+]
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "plotly>=5.24",
+  "pymc>=5.13",
+]
+
+[project.optional-dependencies]
+# Extra groups that can be installed with: uv pip install .[viz] (or hatch -e ...)
+cli = [
+  "typer[all]>=0.12",
+  "rich>=13.9",
+]
+dev = [
+  "ruff>=0.6",
+  "black>=24.8",
+  "mypy>=1.12",
+  "pytest>=8.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    #  { include = "techtree", from = "src" }
+    "src/techtree",
+]
+
+[tool.uv]
+# Let uv know we prefer using a managed Python 3.13 when possible.
+managed = true
+python-preference = "managed"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.envs.default.scripts]
+# Convenience commands (run with: hatch run sim:run)
+# Assumes a graph.json exists at repo root as described in the scratch notes.
+"sim:run" = "python -c \"import json; from techtree.scheduler import NuclearScheduler; data=json.load(open('graph.json')); s=NuclearScheduler(data); i,st=s.run_simulation(50); print(json.dumps({'impactData':i,'statusData':st}, indent=2))\""
+"lint:ruff" = "ruff check ."
+"fmt:black" = "black ."
+"typecheck" = "mypy --ignore-missing-imports src"
+"test" = "pytest -q"
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.13"
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
