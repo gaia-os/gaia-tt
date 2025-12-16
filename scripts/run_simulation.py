@@ -6,7 +6,7 @@ import shutil
 from pathlib import Path
 
 from gtt.logger import log_to_file, logger
-from gtt.runner.runner import save_results, simulate_chain
+from gtt.sim.runner.sim.runner import save_results, simulate_chain
 
 SEED = 101010
 LOG_LEVEL = "INFO"  # Use string for our custom logger

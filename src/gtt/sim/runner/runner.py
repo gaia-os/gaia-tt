@@ -5,7 +5,7 @@ from typing import Dict, List, Any
 import numpy as np
 
 from gtt.logger import logger
-from gtt.runner.world_models import sample_milestone_duration, sample_reactor_twh_per_year
+from gtt.sim.runner.world_models import sample_milestone_duration, sample_reactor_twh_per_year
 
 
 def simulate_chain(

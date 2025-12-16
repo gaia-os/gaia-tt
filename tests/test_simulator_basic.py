@@ -1,4 +1,4 @@
-from gtt.runner.runner import simulate_chain
+from gtt.sim.runner.sim.runner import simulate_chain
 
 
 def basic_chain():
