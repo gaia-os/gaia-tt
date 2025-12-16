@@ -3,7 +3,7 @@ Call this before other scripts to use the gtt logger
 """
 import os
 
-from gtt.env import LOG_PATH
+from gtt.settings import LOG_PATH
 
 # From logging module
 CRITICAL = 50

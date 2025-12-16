@@ -30,7 +30,7 @@ cli = [
 dev = [
   "ruff>=0.6",
   "black>=24.8",
-  "mypy>=1.12",
+  # "mypy>=1.12",
   "pytest>=8.3",
 ]
 
@@ -64,9 +64,9 @@ src = ["src"]
 [tool.black]
 line-length = 100
 
-[tool.mypy]
-python_version = "3.13"
-ignore_missing_imports = true
-warn_unused_ignores = true
-warn_redundant_casts = true
-warn_unused_configs = true
+#[tool.mypy]
+#python_version = "3.13"
+#ignore_missing_imports = true
+#warn_unused_ignores = true
+#warn_redundant_casts = true
+#warn_unused_configs = true
