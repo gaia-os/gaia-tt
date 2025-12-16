@@ -1,4 +1,4 @@
-from techtree.runner.runner import simulate_chain
+from gtt.runner.runner import simulate_chain
 
 
 def basic_chain():

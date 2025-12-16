@@ -16,7 +16,7 @@ TESTS_OUT = os.path.join(PROJECT_ROOT, "tests", "tmp")
 
 # Log filename will be based on the current time
 _default_name = f"{time.strftime('%Y-%m-%d-%H%M%S')}.log"
-# Note the path may be modified in techtree.logger.py so this is not a reliably imported variable
+# Note the path may be modified in gtt.logger.py so this is not a reliably imported variable
 LOG_PATH = os.path.join(PROJECT_ROOT, "logs", _default_name)
 
 # Can help redirect operations depending on user/system context

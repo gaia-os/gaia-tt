@@ -7,8 +7,8 @@ import json
 import shutil
 from pathlib import Path
 
-from techtree.logger import log_to_file, logger
-from techtree.scheduler import NuclearScheduler
+from gtt.logger import log_to_file, logger
+from gtt.scheduler import NuclearScheduler
 
 LOG_LEVEL = "INFO"  # Use string for our custom logger
 

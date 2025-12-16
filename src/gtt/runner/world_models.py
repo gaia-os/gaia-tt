@@ -4,8 +4,8 @@ import math
 import numpy as np
 import pymc as pm
 
-from techtree.logger import logger
-from techtree.scheduler import AVG_PLANT_CAPACITY_MW, CAPACITY_FACTOR
+from gtt.logger import logger
+from gtt.scheduler import AVG_PLANT_CAPACITY_MW, CAPACITY_FACTOR
 
 
 def sample_milestone_duration(milestone: dict, draws: int = 100, seed: int | None = None) -> (

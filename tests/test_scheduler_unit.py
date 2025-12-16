@@ -5,7 +5,7 @@ from typing import Dict, Any, List
 
 import pytest
 
-from techtree.scheduler import NuclearScheduler, CURRENT_YEAR
+from gtt.scheduler import NuclearScheduler, CURRENT_YEAR
 
 
 def multi_target_graph() -> Dict[str, Any]:

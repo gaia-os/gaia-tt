@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import Dict, List, Any
 import numpy as np
 
-from techtree.logger import logger
-from techtree.runner.world_models import sample_milestone_duration, sample_reactor_twh_per_year
+from gtt.logger import logger
+from gtt.runner.world_models import sample_milestone_duration, sample_reactor_twh_per_year
 
 
 def simulate_chain(

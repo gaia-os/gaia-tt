@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from techtree.runner.runner import simulate_chain, save_results
+from gtt.runner.runner import simulate_chain, save_results
 
 
 def test_save_results_json(tmp_path: Path):

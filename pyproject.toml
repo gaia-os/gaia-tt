@@ -3,9 +3,9 @@ requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "investment-tech-tree"
+name = "gtt"
 version = "0.1.0"
-description = "Nuclear investment tech tree scheduler/simulator"
+description = "GAIA Tech Tree"
 readme = "README.md"
 requires-python = ">=3.13,<3.14"
 authors = [
@@ -36,8 +36,8 @@ dev = [
 
 [tool.hatch.build.targets.wheel]
 packages = [
-    #  { include = "techtree", from = "src" }
-    "src/techtree",
+    #  { include = "gtt", from = "src" }
+    "src/gtt",
 ]
 
 [tool.uv]
@@ -51,7 +51,7 @@ allow-direct-references = true
 [tool.hatch.envs.default.scripts]
 # Convenience commands (run with: hatch run sim:run)
 # Assumes a graph.json exists at repo root as described in the scratch notes.
-"sim:run" = "python -c \"import json; from techtree.scheduler import NuclearScheduler; data=json.load(open('graph.json')); s=NuclearScheduler(data); i,st=s.run_simulation(50); print(json.dumps({'impactData':i,'statusData':st}, indent=2))\""
+"sim:run" = "python -c \"import json; from gtt.scheduler import NuclearScheduler; data=json.load(open('graph.json')); s=NuclearScheduler(data); i,st=s.run_simulation(50); print(json.dumps({'impactData':i,'statusData':st}, indent=2))\""
 "lint:ruff" = "ruff check ."
 "fmt:black" = "black ."
 "typecheck" = "mypy --ignore-missing-imports src"

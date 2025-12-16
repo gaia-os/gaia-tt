@@ -1,9 +1,9 @@
 """
-Call this before other scripts to use the techtree logger
+Call this before other scripts to use the gtt logger
 """
 import os
 
-from techtree.env import LOG_PATH
+from gtt.env import LOG_PATH
 
 # From logging module
 CRITICAL = 50
@@ -25,10 +25,10 @@ def validate_log_path(log_path: str):
 
 
 def reset_logger(level=INFO):
-    """Re-initialize techtree logger with one of the above options"""
+    """Re-initialize gtt logger with one of the above options"""
     import logging
     # Create a custom logger
-    _logger = logging.getLogger("techtree")
+    _logger = logging.getLogger("gtt")
 
     # Remove any existing handlers
     _logger.handlers.clear()
@@ -50,10 +50,10 @@ def reset_logger(level=INFO):
 
 
 def get_logger():
-    """Initialize techtree logger with one of the above options"""
+    """Initialize gtt logger with one of the above options"""
     import logging
     # Create a custom logger
-    _logger = logging.getLogger("techtree")
+    _logger = logging.getLogger("gtt")
 
     # Check if the logger already has handlers attached
     if not _logger.hasHandlers():
@@ -72,7 +72,7 @@ def log_to_file(log_path: Optional[str] = None, level: int = INFO):
     """
     import logging
     # Create a custom logger
-    _logger = logging.getLogger("techtree")
+    _logger = logging.getLogger("gtt")
 
     # Add a FileHandler to the logger
     global _LOG_PATH

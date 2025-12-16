@@ -1,5 +1,5 @@
 import os
-from techtree.scheduler import NuclearScheduler
+from gtt.scheduler import NuclearScheduler
 
 
 def make_min_graph():
