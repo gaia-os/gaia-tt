@@ -6,7 +6,7 @@ import shutil
 from pathlib import Path
 
 from techtree.logger import log_to_file, logger
-from techtree.simulator import save_results, simulate_chain
+from techtree.runner.runner import save_results, simulate_chain
 
 SEED = 101010
 LOG_LEVEL = "INFO"  # Use string for our custom logger

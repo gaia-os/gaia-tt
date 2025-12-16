@@ -30,9 +30,6 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
 # vercel
 .vercel
 
@@ -67,11 +64,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-# Temporary things
-tmp/
-*.tmp
-tmp*
 
 #=============================
 # Python
@@ -264,3 +256,12 @@ __marimo__/
 .streamlit/secrets.toml
 
 #==========================
+# PROJECT
+#==========================
+# Tmp files and scratches
+tmp/
+*.tmp
+tmp*
+scratch*.md
+scratch*.txt
+scratch*.py
