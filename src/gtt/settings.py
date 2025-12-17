@@ -1,6 +1,3 @@
-"""Env vars"""
-# TODO -- Incorporate logic to read user-defined envs from outside the system
-
 import os
 import time
 from pathlib import Path
@@ -21,3 +18,19 @@ LOG_PATH = os.path.join(PROJECT_ROOT, "logs", _default_name)
 
 # Can help redirect operations depending on user/system context
 SYSTEM_USER = os.getenv("USER", "unknown")
+
+# --- Neo4j / neomodel configuration ---
+# Defaults are aligned with the suggested local Docker command in the README.
+NEO4J_SCHEME = os.getenv("NEO4J_SCHEME", "bolt")
+NEO4J_HOST = os.getenv("NEO4J_HOST", "localhost")
+NEO4J_PORT = int(os.getenv("NEO4J_PORT", "7687"))
+NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "test")
+
+# If NEO4J_URL is set, use it directly; otherwise build it from parts.
+_env_url = os.getenv("NEO4J_URL")
+if _env_url:
+    NEO4J_URL = _env_url
+else:
+    # neomodel expects form: bolt://user:password@host:port
+    NEO4J_URL = f"{NEO4J_SCHEME}://{NEO4J_USER}:{NEO4J_PASSWORD}@{NEO4J_HOST}:{NEO4J_PORT}"

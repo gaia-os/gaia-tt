@@ -276,3 +276,63 @@ The application will be available at your Vercel domain with the `/investment-te
 3. Make your changes
 4. Run linting and tests
 5. Submit a pull request
+
+---
+
+## Neo4j (local) with neomodel
+
+This project can connect to a local Neo4j instance via `neomodel` for graph-backed features.
+
+### Start Neo4j via Docker
+
+Run the container locally (data persisted under `./neo4j/data`):
+
+```bash
+docker run \
+  --name neo4j \
+  -d \
+  -p 7474:7474 -p 7687:7687 \
+  -e NEO4J_AUTH=neo4j/test \
+  -v $PWD/neo4j/data:/data \
+  -v $PWD/neo4j/logs:/logs \
+  -v $PWD/neo4j/conf:/conf \
+  --restart always \
+  neo4j:latest
+```
+
+- See [here](https://neo4j.com/docs/operations-manual/current/docker/mounting-volumes/#docker-volumes-mount-points) 
+- Note the mount directories need to exist before running
+  for other neo4j mount points, like `logs` and more.
+- Browser: http://localhost:7474 (user: `neo4j`, pass: `test`)
+- Bolt: bolt://localhost:7687
+
+### Python configuration (neomodel)
+
+The connection URL is configured via environment variables or sensible defaults. See `src/gtt/settings.py`.
+
+Environment variables supported (all optional for local default):
+
+- `NEO4J_SCHEME` (default: `bolt`)
+- `NEO4J_HOST` (default: `localhost`)
+- `NEO4J_PORT` (default: `7687`)
+- `NEO4J_USER` (default: `neo4j`)
+- `NEO4J_PASSWORD` (default: `test`)
+- `NEO4J_URL` (overrides all; format: `bolt://user:password@host:port`)
+
+On import, `src/gtt/db.py` sets `neomodel.config.DATABASE_URL` using the assembled URL.
+
+### Quick connectivity check
+
+With Python environment active (e.g., `uv run` or `hatch shell`), run:
+
+```bash
+hatch run db:check
+```
+
+Expected output:
+
+```
+Neo4j connection OK
+```
+
+If you see authentication or connection errors, verify Docker is running and the credentials/port match the container settings.
