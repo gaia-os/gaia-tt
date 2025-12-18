@@ -1,0 +1,17 @@
+services:
+  neo4j:
+    image: neo4j:2025.10.1-community-bullseye
+    volumes:
+#      - ./neo4j/logs:/logs
+#      - ./neo4j/config:/config
+      - neo4j-data:/data
+#      - ./neo4j/plugins:/plugins
+    environment:
+      - NEO4J_AUTH=neo4j/gaia-neo4j-dev
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    restart: always
+
+volumes:
+  neo4j-data:

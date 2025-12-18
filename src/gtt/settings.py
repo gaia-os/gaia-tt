@@ -25,7 +25,7 @@ NEO4J_SCHEME = os.getenv("NEO4J_SCHEME", "bolt")
 NEO4J_HOST = os.getenv("NEO4J_HOST", "localhost")
 NEO4J_PORT = int(os.getenv("NEO4J_PORT", "7687"))
 NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
-NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "test")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "gaia-neo4j-dev")
 
 # If NEO4J_URL is set, use it directly; otherwise build it from parts.
 _env_url = os.getenv("NEO4J_URL")
