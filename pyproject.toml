@@ -21,6 +21,7 @@ dependencies = [
   "pandas>=2.2",
   "plotly>=5.24",
   "pymc>=5.13",
+  "uvicorn>=0.38.0",
 ]
 
 [project.optional-dependencies]
@@ -59,6 +60,8 @@ allow-direct-references = true
 "typecheck" = "mypy --ignore-missing-imports src"
 "test" = "pytest -q"
 "db:check" = "python -c \"from gtt.db import ensure_connection; ensure_connection(); print('Neo4j connection OK')\""
+"db:labels" = "neomodel_install_labels src/gtt/graph/models.py"
+"api:run" = "uvicorn src.gtt.main:app --reload"
 
 [tool.ruff]
 line-length = 100

@@ -19,3 +19,9 @@ def ensure_connection() -> bool:
     """
     db.cypher_query("RETURN 1 AS ok")
     return True
+
+
+async def ensure_connection_async() -> bool:
+    """Asynchronous connection check for FastAPI startup."""
+    await db.adb.cypher_query("RETURN 1 AS ok")
+    return True
