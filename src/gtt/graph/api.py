@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
-from gtt.graph.models import TechNode, NodeSchema, EdgeSchema
+from gtt.graph.obj import TechNode, NodeSchema, EdgeSchema
 from neomodel import db
 
 router = APIRouter(tags=["graph"])
@@ -214,7 +214,7 @@ async def delete_node(node_id: str):
     node = await TechNode.nodes.get_or_none(node_id=node_id)
     if not node:
         raise HTTPException(status_code=404, detail="Node not found")
-    
+
     await node.delete()
 
 @router.delete("/edges/{edge_id}", status_code=204)
@@ -222,20 +222,20 @@ async def delete_edge(edge_id: str):
     # Expecting edge_id in format "source-target"
     parts = edge_id.split("-")
     if len(parts) < 2:
-        # Try to handle cases where IDs might contain hyphens? 
+        # Try to handle cases where IDs might contain hyphens?
         # But the frontend seems to use `${source}-${target}`
         raise HTTPException(status_code=400, detail="Invalid edge ID format. Expected 'source-target'")
-    
+
     source_id = parts[0]
     target_id = "-".join(parts[1:]) # Handle case where target_id might have hyphens
-    
+
     source = await TechNode.nodes.get_or_none(node_id=source_id)
     target = await TechNode.nodes.get_or_none(node_id=target_id)
-    
+
     if not source or not target:
         # Maybe source_id also had hyphens? This is tricky with simple hyphen separation.
         # Let's try to find if there's an edge between them.
-        # Better: iterate through possible split points? 
+        # Better: iterate through possible split points?
         # Or just use what the frontend sends.
         raise HTTPException(status_code=404, detail="Nodes not found")
 

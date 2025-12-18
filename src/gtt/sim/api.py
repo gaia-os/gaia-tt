@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List
 from gtt.sim.runner.runner import simulate_chain
-from gtt.graph.models import TechNode
+from gtt.graph.obj import TechNode
 
 router = APIRouter(prefix="/sim", tags=["sim"])
 
