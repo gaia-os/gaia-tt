@@ -6,7 +6,7 @@ Provides `ensure_connection()` helper to verify connectivity.
 """
 from neomodel import config, db
 
-from .settings import NEO4J_URL
+from gtt.settings import NEO4J_URL
 
 # Configure neomodel once on import.
 config.DATABASE_URL = NEO4J_URL

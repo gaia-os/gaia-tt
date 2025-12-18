@@ -35,6 +35,24 @@ You can inspect the database with
 $ neomodel_inspect_database --write-to data/diagnostics/neomodel_dump.py
 ```
 
+# Viewing
+
+You can generate a class diagram of your models using the `neomodel_generate_diagram` command:
+
+```bash
+neomodel_generate_diagram models/my_models.py --file-type arrows --write-to-dir img
+```
+
+You must specify a directory in which to lookup neomodel classes (nodes and rels). 
+Typing `.` will search in your whole directory.
+
+You have the option to generate the diagram in different file types using `--file-type: arrows, puml` (which uses the dot notation).
+
+Omitting the `--write-to-dir` option will default to the current directory.
+
+> Property types and the presence of indexes, constraints and required rules will be displayed on the nodes.
+> Relationship properties are not supported in the diagram generation.
+
 
 ## Special Notes
 
