@@ -1,0 +1,3 @@
+[submodule "grail"]
+	path = modules/grail
+	url = https://github.com/gaia-os/grail.git

@@ -10,18 +10,19 @@ readme = "README.md"
 requires-python = ">=3.13,<3.14"
 authors = [
     { name = "GAIA Team" },
-    { name = "Michael Walters", email = "michaelwalters3000@gmail.com" },
+    { name = "Michael Walters", email = "mw@gaia-lab.de" },
     { name = "Rohil Rao" },
     { name = "Thomas Kopinski" },
 ]
 dependencies = [
-  "fastapi>=0.125.0",
-  "neomodel>=6.0.0",
-  "numpy>=2.0",
-  "pandas>=2.2",
-  "plotly>=5.24",
-  "pymc>=5.13",
-  "uvicorn>=0.38.0",
+    "fastapi>=0.125.0",
+    "neomodel>=6.0.0",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "plotly>=5.24",
+    "pymc>=5.13",
+    "uvicorn>=0.38.0",
+    "grail",
 ]
 
 [project.optional-dependencies]
@@ -36,6 +37,12 @@ dev = [
   # "mypy>=1.12",
   "pytest>=8.3",
 ]
+
+[tool.uv.sources]
+# Git style
+#grail = { git =  "https://github.com/gaia-os/grail.git", branch = "dev" }
+# Relative submodule style
+grail = { path = "/modules/grail" }
 
 [tool.hatch.build.targets.wheel]
 packages = [
