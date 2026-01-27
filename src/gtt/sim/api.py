@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List
 from gtt.sim.runner.runner import simulate_chain
-from gtt.graph.obj import TechNode
+from gtt.graph.obj import TTNode
 
 router = APIRouter(prefix="/sim", tags=["sim"])
 
@@ -16,7 +16,7 @@ async def run_simulation(req: SimulationRequest):
     """Runs a Monte Carlo simulation for a specific chain of nodes."""
     chain = []
     for nid in req.node_ids:
-        node = await TechNode.nodes.get_or_none(node_id=nid)
+        node = await TTNode.nodes.get_or_none(node_id=nid)
         if not node:
             raise HTTPException(status_code=404, detail=f"Node {nid} not found")
         chain.append(node.to_dict())

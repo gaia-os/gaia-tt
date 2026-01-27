@@ -32,6 +32,17 @@ and sends the prepared package into the Runner.
 - This is where new models are built
 - It also **composes** such models from stored models in the library
 
+#### Guiding the building
+
+How much should we guide the AI in its automated model building?
+It would seem zero input would be...a missed opportunity.
+I feel like some constraints would be helpful, for instance.
+
+Consider also [Weakly Informative priors](https://bayesiancomputationbook.com/markdown/chp_01.html).
+
+From the same resource, it mentions [using the prior predictive distribution is a handy tool]
+(https://bayesiancomputationbook.com/markdown/chp_01.html) for assessing the sensibility of your model.
+
 #### Thinking
 
 The Builder has to do be capable of some careful thinking when it comes to constructing these statistical models.

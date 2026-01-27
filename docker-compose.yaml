@@ -15,3 +15,4 @@ services:
 
 volumes:
   neo4j-data:
+    name: neo4j-data

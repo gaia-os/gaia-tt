@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
-from gtt.graph.obj import TechNode, NodeSchema, EdgeSchema
+from gtt.graph.obj import TTNode, TTNodeType, TTEdgeType
 from neomodel import db
 
 router = APIRouter(tags=["graph"])
@@ -26,11 +26,11 @@ class NodeUpdate(BaseModel):
 @router.get("/tech-tree")
 async def get_tech_tree():
     """Returns the full graph in a format compatible with the React frontend."""
-    nodes = await TechNode.nodes.all()
+    nodes = await TTNode.nodes.all()
     
     # Efficiently fetch all edges using Cypher
     results, _ = await db.adb.cypher_query(
-        "MATCH (n:TechNode)-[:DEPENDS_ON]->(m:TechNode) RETURN n.node_id, m.node_id"
+        "MATCH (n:Node)-[:DEPENDS_ON]->(m:Node) RETURN n.node_id, m.node_id"
     )
     
     edges = [
@@ -44,7 +44,7 @@ async def get_tech_tree():
                 "id": n.node_id,
                 "data": {
                     "label": n.label,
-                    "nodeLabel": n.node_type,
+                    "nodeType": n.node_type,
                     "description": n.description,
                     "detailedDescription": n.detailed_description,
                     "category": n.category,
@@ -61,13 +61,13 @@ async def get_tech_tree():
         "edges": edges
     }
 
-@router.get("/nodes/{node_id}", response_model=NodeSchema)
+@router.get("/nodes/{node_id}", response_model=TTNodeType)
 async def get_node(node_id: str):
-    node = await TechNode.nodes.get_or_none(node_id=node_id)
+    node = await TTNode.nodes.get_or_none(node_id=node_id)
     if not node:
         raise HTTPException(status_code=404, detail="Node not found")
 
-    return NodeSchema(
+    return TTNodeType(
         id=node.node_id,
         label=node.label,
         type=node.node_type,
@@ -85,12 +85,12 @@ async def get_node(node_id: str):
 
 #====  POSTING  ====#
 
-@router.post("/nodes", response_model=NodeSchema, status_code=201)
-async def create_node(node_data: NodeSchema):
-    if await TechNode.nodes.get_or_none(node_id=node_data.id):
+@router.post("/nodes", response_model=TTNodeType, status_code=201)
+async def create_node(node_data: TTNodeType):
+    if await TTNode.nodes.get_or_none(node_id=node_data.id):
         raise HTTPException(status_code=409, detail="Node already exists")
     
-    node = await TechNode(
+    node = await TTNode(
         node_id=node_data.id,
         label=node_data.label,
         node_type=node_data.type,
@@ -106,7 +106,7 @@ async def create_node(node_data: NodeSchema):
         infact_status=node_data.infact_status
     ).save()
 
-    return NodeSchema(
+    return TTNodeType(
         id=node.node_id,
         label=node.label,
         type=node.node_type,
@@ -123,9 +123,9 @@ async def create_node(node_data: NodeSchema):
     )
 
 @router.post("/edges", status_code=201)
-async def create_edge(edge_data: EdgeSchema):
-    source = await TechNode.nodes.get_or_none(node_id=edge_data.source)
-    target = await TechNode.nodes.get_or_none(node_id=edge_data.target)
+async def create_edge(edge_data: TTEdgeType):
+    source = await TTNode.nodes.get_or_none(node_id=edge_data.source)
+    target = await TTNode.nodes.get_or_none(node_id=edge_data.target)
 
     if not source or not target:
         raise HTTPException(status_code=404, detail="Nodes not found")
@@ -135,8 +135,8 @@ async def create_edge(edge_data: EdgeSchema):
 #====  PUTTING  ====#
 
 @router.put("/nodes/{node_id}")
-async def replace_node(node_id: str, node_data: NodeSchema):
-    node = await TechNode.nodes.get_or_none(node_id=node_id)
+async def replace_node(node_id: str, node_data: TTNodeType):
+    node = await TTNode.nodes.get_or_none(node_id=node_id)
     if not node:
         raise HTTPException(status_code=404, detail="Node not found")
     
@@ -155,7 +155,7 @@ async def replace_node(node_id: str, node_data: NodeSchema):
     
     await node.save()
 
-    return NodeSchema(
+    return TTNodeType(
         id=node.node_id,
         label=node.label,
         type=node.node_type,
@@ -173,9 +173,9 @@ async def replace_node(node_id: str, node_data: NodeSchema):
 
 #====  PATCHING  ====#
 
-@router.patch("/nodes/{node_id}", response_model=NodeSchema)
+@router.patch("/nodes/{node_id}", response_model=TTNodeType)
 async def update_node(node_id: str, node_data: NodeUpdate):
-    node = await TechNode.nodes.get_or_none(node_id=node_id)
+    node = await TTNode.nodes.get_or_none(node_id=node_id)
     if not node:
         raise HTTPException(status_code=404, detail="Node not found")
 
@@ -189,7 +189,7 @@ async def update_node(node_id: str, node_data: NodeUpdate):
 
     await node.save()
 
-    return NodeSchema(
+    return TTNodeType(
         id=node.node_id,
         label=node.label,
         type=node.node_type,
@@ -211,7 +211,7 @@ async def update_node(node_id: str, node_data: NodeUpdate):
 
 @router.delete("/nodes/{node_id}", status_code=204)
 async def delete_node(node_id: str):
-    node = await TechNode.nodes.get_or_none(node_id=node_id)
+    node = await TTNode.nodes.get_or_none(node_id=node_id)
     if not node:
         raise HTTPException(status_code=404, detail="Node not found")
 
@@ -229,8 +229,8 @@ async def delete_edge(edge_id: str):
     source_id = parts[0]
     target_id = "-".join(parts[1:]) # Handle case where target_id might have hyphens
 
-    source = await TechNode.nodes.get_or_none(node_id=source_id)
-    target = await TechNode.nodes.get_or_none(node_id=target_id)
+    source = await TTNode.nodes.get_or_none(node_id=source_id)
+    target = await TTNode.nodes.get_or_none(node_id=target_id)
 
     if not source or not target:
         # Maybe source_id also had hyphens? This is tricky with simple hyphen separation.

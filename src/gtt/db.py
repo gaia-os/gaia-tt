@@ -4,12 +4,13 @@ Neo4j / neomodel initialization.
 Importing this module sets the neomodel DATABASE_URL from `gtt.settings`.
 Provides `ensure_connection()` helper to verify connectivity.
 """
-from neomodel import config, db
+from neomodel import db, get_config
 
 from gtt.settings import NEO4J_URL
 
 # Configure neomodel once on import.
-config.DATABASE_URL = NEO4J_URL
+config = get_config()
+config.database_url = NEO4J_URL
 
 
 def ensure_connection() -> bool:

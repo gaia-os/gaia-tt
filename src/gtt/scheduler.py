@@ -4,7 +4,7 @@ from datetime import datetime
 from functools import reduce
 from typing import Any, Dict, List
 
-from gtt.graph.obj import Edge
+from gtt.graph.obj import TTEdge
 
 # --- Model Configuration & Assumptions ---
 DISCOUNT_RATE = 0.05
@@ -76,8 +76,8 @@ class NuclearScheduler:
                 "trl_projected_5_10_years": trl_proj,
             }
 
-        # Normalize edges to Edge dataclass
-        edges_dc: list[Edge] = []
+        # Normalize edges to TTEdge dataclass
+        edges_dc: list[TTEdge] = []
         for e in edges:
             try:
                 source = e["source"]
@@ -88,8 +88,8 @@ class NuclearScheduler:
                 source = getattr(e, "source")
                 targets = getattr(e, "targets", None)
                 target = getattr(e, "target", None)
-            edges_dc.append(Edge(source=source, target=target, targets=targets))
-        self.edges: list[Edge] = edges_dc
+            edges_dc.append(TTEdge(source=source, target=target, targets=targets))
+        self.edges: list[TTEdge] = edges_dc
 
         self.dependencies = self._build_dependency_map()
         self.successors = self._build_successor_map()

@@ -56,6 +56,15 @@ Omitting the `--write-to-dir` option will default to the current directory.
 
 ## Special Notes
 
+### Style Guide
+
+Let's follow neo4j and Cypher's style guide with an exception on property keys:
+
+- Labels are capitalized and should be CamelCase (e.g., `Person`, `Movie`, `ImdbUser`).
+  - These are the python class names, which `neomodel` will translate to labels.
+- Relationship types are written with all capital letters and an underscore character as a separator (e.g., `DIRECTED`, `ACTED_IN`).
+- Neo4j/Cypher style for properties suggests `camelCase`, but we will opt for Pythonic `snake_case`.
+
 ### For Builder
 
 From the "Getting Started" section:
