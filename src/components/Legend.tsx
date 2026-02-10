@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 export const Legend = () => {
   return (
     <Card
-      className="absolute top-6 left-4"
+      className="absolute top-[160px] left-4"
       style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}
     >
       <CardHeader className="pb-2">

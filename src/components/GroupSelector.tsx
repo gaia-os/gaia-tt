@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { NODE_LABELS, GroupingMode, UiNode } from '@/lib/types';
-import { TopicKey, TOPICS } from '@/lib/topicConfig';
 import {
   Select,
   SelectContent,
@@ -30,8 +29,6 @@ interface GroupSelectorProps {
   selectedCategory: string;
   categories: string[];
   onCategoryChange: (category: string) => void;
-  topic: TopicKey;
-  onTopicChange: (value: TopicKey) => void;
 }
 
 export const GroupSelector: React.FC<GroupSelectorProps> = ({
@@ -51,8 +48,6 @@ export const GroupSelector: React.FC<GroupSelectorProps> = ({
   selectedCategory,
   categories,
   onCategoryChange,
-  topic,
-  onTopicChange,
 }) => {
   const groupingOptions: GroupingMode[] = ['None', ...NODE_LABELS];
 
@@ -99,28 +94,6 @@ export const GroupSelector: React.FC<GroupSelectorProps> = ({
           <div className={`p-3 bg-white border border-gray-200 rounded-lg shadow-sm bg-opacity-80 space-y-3 ${
             showOptions ? 'block' : 'hidden md:block'
           }`}>
-            {/* Knowledge Base Selector - NEW - At the top */}
-            <div className="flex items-center gap-2 pb-3 border-b border-gray-200">
-              <label
-                htmlFor="knowledge-base-select"
-                className="text-sm font-medium text-gray-700 whitespace-nowrap"
-              >
-                Knowledge Base:
-              </label>
-              <Select value={topic} onValueChange={(value) => onTopicChange(value as TopicKey)}>
-                <SelectTrigger className="w-48" id="knowledge-base-select">
-                  <SelectValue placeholder="Select knowledge base" />
-                </SelectTrigger>
-                <SelectContent>
-                  {Object.values(TOPICS).map((topicItem) => (
-                    <SelectItem key={topicItem.id} value={topicItem.id}>
-                      {topicItem.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-
             {/* Search Input */}
             <div className="flex items-center gap-2">
               <label

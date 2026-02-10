@@ -16,6 +16,7 @@ import React, { useCallback, useEffect, useState, useMemo } from 'react';
 import { Legend } from './Legend';
 import { LoadingSpinner } from './LoadingSpinner';
 import { GroupSelector } from './GroupSelector';
+import { KnowledgeBaseSelector } from './KnowledgeBaseSelector';
 import { CustomNode } from './CustomNode';
 import TabPanel from './TabPanel';
 import EditInterface from './EditInterface';
@@ -306,8 +307,6 @@ const TechTree: React.FC<TechTreeProps> = ({ topic, onTopicChange }) => {
           selectedCategory={selectedCategory}
           categories={uniqueCategories}
           onCategoryChange={setSelectedCategory}
-          topic={topic}
-          onTopicChange={onTopicChange}
         />
         {isLoadingData || isLoading ? (
           <div className="flex-grow flex items-center justify-center h-full">
@@ -348,6 +347,11 @@ const TechTree: React.FC<TechTreeProps> = ({ topic, onTopicChange }) => {
                 className="!left-4 !top-[180px] !bottom-auto md:!top-auto md:!bottom-4"
               />
             </ReactFlow>
+            
+            {/* Knowledge Base Selector - Positioned above Legend */}
+            <KnowledgeBaseSelector topic={topic} onTopicChange={onTopicChange} />
+            
+            {/* Legend */}
             <div className={`${showLegend ? 'block' : 'hidden'} md:block`}>
               <Legend />
             </div>
