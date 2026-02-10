@@ -15,7 +15,7 @@ interface TabPanelProps {
   techTree: TechTree | null;
   isPanelExpanded: boolean;
   onTogglePanel: () => void;
-  topic: TopicKey; // NEW: Accept topic prop
+  topic: TopicKey;
 }
 
 type TabType = 'details' | 'chat' | 'simulations';
@@ -44,7 +44,7 @@ const TabPanel = ({ selectedNode, techTree, isPanelExpanded, onTogglePanel, topi
         onClick={onTogglePanel}
         className={`fixed z-50 bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-all duration-300 ${
           isPanelExpanded 
-            ? 'top-4 right-4 md:top-4 md:right-[calc(50%-2.5rem)]' // Top-right on mobile, split point on desktop
+            ? 'top-4 right-4 md:top-4 md:right-[calc(50%-2.5rem)]'
             : 'top-4 right-4'
         }`}
         title={isPanelExpanded ? 'Collapse panel' : 'Expand panel'}
@@ -62,39 +62,38 @@ const TabPanel = ({ selectedNode, techTree, isPanelExpanded, onTogglePanel, topi
           isPanelExpanded ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
+        <Tabs
+          value={activeTab}
+          onValueChange={(value) => setActiveTab(value as TabType)}
+          className="flex flex-col h-full"
+        >
+          <TabsList className="grid w-full grid-cols-3">
+            <TabsTrigger value="chat" className="flex items-center space-x-2">
+              <MessageSquare size={16} />
+              <span>Chat</span>
+            </TabsTrigger>
+            <TabsTrigger value="details" className="flex items-center space-x-2">
+              <Info size={16} />
+              <span>Node Details</span>
+            </TabsTrigger>
+            <TabsTrigger value="simulations" className="flex items-center space-x-2">
+              <BarChart3 size={16} />
+              <span>Simulations</span>
+            </TabsTrigger>
+          </TabsList>
 
-      <Tabs
-        value={activeTab}
-        onValueChange={(value) => setActiveTab(value as TabType)}
-        className="flex flex-col h-full"
-      >
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="chat" className="flex items-center space-x-2">
-            <MessageSquare size={16} />
-            <span>Chat</span>
-          </TabsTrigger>
-          <TabsTrigger value="details" className="flex items-center space-x-2">
-            <Info size={16} />
-            <span>Node Details</span>
-          </TabsTrigger>
-          <TabsTrigger value="simulations" className="flex items-center space-x-2">
-            <BarChart3 size={16} />
-            <span>Simulations</span>
-          </TabsTrigger>
-        </TabsList>
+          <TabsContent value="chat" className="flex-1 overflow-y-auto mt-0">
+            <Chat topic={topic} />
+          </TabsContent>
 
-        <TabsContent value="chat" className="flex-1 overflow-y-auto mt-0">
-          <Chat topic={topic} /> {/* Pass topic */}
-        </TabsContent>
+          <TabsContent value="details" className="flex-1 overflow-y-auto mt-0">
+            <NodeDetails selectedNode={selectedNode} />
+          </TabsContent>
 
-        <TabsContent value="details" className="flex-1 overflow-y-auto mt-0">
-          <NodeDetails selectedNode={selectedNode} />
-        </TabsContent>
-
-        <TabsContent value="simulations" className="flex-1 overflow-y-auto mt-0">
-          <Simulations topic={topic} /> {/* Pass topic */}
-        </TabsContent>
-      </Tabs>
+          <TabsContent value="simulations" className="flex-1 overflow-y-auto mt-0">
+            <Simulations topic={topic} />
+          </TabsContent>
+        </Tabs>
       </div>
     </>
   );

@@ -38,9 +38,10 @@ if (typeof window !== 'undefined') {
 
 interface TechTreeProps {
   topic: TopicKey;
+  onTopicChange: (value: TopicKey) => void;
 }
 
-const TechTree: React.FC<TechTreeProps> = ({ topic }) => {
+const TechTree: React.FC<TechTreeProps> = ({ topic, onTopicChange }) => {
   const { techTree, isLoading: isLoadingData, error } = useTechTree(topic);
   const [isLoading, setIsLoading] = useState(true);
   const [nodes, setNodes] = useState<UiNode[]>([]);
@@ -305,6 +306,8 @@ const TechTree: React.FC<TechTreeProps> = ({ topic }) => {
           selectedCategory={selectedCategory}
           categories={uniqueCategories}
           onCategoryChange={setSelectedCategory}
+          topic={topic}
+          onTopicChange={onTopicChange}
         />
         {isLoadingData || isLoading ? (
           <div className="flex-grow flex items-center justify-center h-full">
