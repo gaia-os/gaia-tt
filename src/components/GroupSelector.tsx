@@ -26,6 +26,9 @@ interface GroupSelectorProps {
   showOptions: boolean;
   onToggleLegend: () => void;
   onToggleOptions: () => void;
+  selectedCategory: string;
+  categories: string[];
+  onCategoryChange: (category: string) => void;
 }
 
 export const GroupSelector: React.FC<GroupSelectorProps> = ({
@@ -42,6 +45,9 @@ export const GroupSelector: React.FC<GroupSelectorProps> = ({
   showOptions,
   onToggleLegend,
   onToggleOptions,
+  selectedCategory,
+  categories,
+  onCategoryChange,
 }) => {
   const groupingOptions: GroupingMode[] = ['None', ...NODE_LABELS];
 
@@ -115,6 +121,30 @@ export const GroupSelector: React.FC<GroupSelectorProps> = ({
                 )}
               </div>
             </div>
+
+            {/* Category Filter */}
+            {categories.length > 1 && (
+              <div className="flex items-center gap-2">
+                <label
+                  htmlFor="category-filter"
+                  className="text-sm font-medium text-gray-700 whitespace-nowrap"
+                >
+                  Category:
+                </label>
+                <Select value={selectedCategory} onValueChange={onCategoryChange}>
+                  <SelectTrigger className="w-48" id="category-filter">
+                    <SelectValue placeholder="All Categories" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {categories.map((category) => (
+                      <SelectItem key={category} value={category}>
+                        {category}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            )}
 
             {/* Group By Selector */}
             <div className="flex items-center gap-2">

@@ -1,12 +1,17 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
+import { TopicKey } from '@/lib/topicConfig';
 
 interface SimulationData {
   impactData: Record<string, Record<string, number>>;
   statusData: Record<string, Record<string, string>>;
 }
 
-const Simulations: React.FC = () => {
+interface SimulationsProps {
+  topic: TopicKey; // NEW: Accept topic prop
+}
+
+const Simulations: React.FC<SimulationsProps> = ({ topic }) => {
   const [selectedYears, setSelectedYears] = useState<string>('30');
   const [simulationData, setSimulationData] = useState<SimulationData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -21,14 +26,15 @@ const Simulations: React.FC = () => {
     return options;
   }, []);
 
-  // Fetch simulation data when years change
+  // Fetch simulation data when years or topic changes
   useEffect(() => {
     const fetchSimulation = async () => {
       setIsLoading(true);
       setError(null);
       
       try {
-        const response = await fetch(`/investment-tech-tree/api/simulation?years=${selectedYears}`);
+        // Include topic in API call
+        const response = await fetch(`/investment-tech-tree/api/simulation?years=${selectedYears}&topic=${topic}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch simulation data');
@@ -45,7 +51,7 @@ const Simulations: React.FC = () => {
     };
 
     fetchSimulation();
-  }, [selectedYears]);
+  }, [selectedYears, topic]); // Re-fetch when topic changes
 
   // Transform impact data for heatmap
   const heatmapData = useMemo(() => {

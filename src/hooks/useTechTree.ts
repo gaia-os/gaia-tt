@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { TechTree } from '@/lib/types';
+import { TopicKey } from '@/lib/topicConfig';
 
-export function useTechTree() {
+export function useTechTree(topic: TopicKey) {
   const [techTree, setTechTree] = useState<TechTree | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -12,7 +13,7 @@ export function useTechTree() {
     async function fetchTechTree() {
       try {
         setIsLoading(true);
-        const response = await fetch('/investment-tech-tree/api/tech-tree');
+        const response = await fetch(`/investment-tech-tree/api/tech-tree?topic=${topic}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch tech tree data');
@@ -30,7 +31,7 @@ export function useTechTree() {
     }
 
     fetchTechTree();
-  }, []);
+  }, [topic]); // Re-fetch when topic changes
 
   return { techTree, isLoading, error };
 }

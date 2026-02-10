@@ -14,10 +14,15 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Loader2 } from 'lucide-react';
 import { NODE_LABELS, NodeLabel } from '@/lib/types';
+import { TopicKey } from '@/lib/topicConfig';
 import { useTechTree } from '@/hooks/useTechTree';
 
-const EditTechTreePanel: React.FC = () => {
-  const { techTree } = useTechTree();
+interface EditTechTreePanelProps {
+  topic: TopicKey; // NEW: Accept topic prop
+}
+
+const EditTechTreePanel: React.FC<EditTechTreePanelProps> = ({ topic }) => {
+  const { techTree } = useTechTree(topic); // Use topic to fetch correct tree
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
@@ -95,7 +100,7 @@ const EditTechTreePanel: React.FC = () => {
     setMessage(null);
 
     try {
-      // First, create the node
+      // First, create the node - include topic in body
       const nodeResponse = await fetch('/investment-tech-tree/api/nodes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -109,6 +114,7 @@ const EditTechTreePanel: React.FC = () => {
           trl_projected_5_10_years: newNode.trl_projected_5_10_years,
           detailedDescription: newNode.detailedDescription,
           references: newNode.references.split('\n').filter(r => r.trim()),
+          topic: topic, // Include topic
         }),
       });
 
@@ -117,7 +123,7 @@ const EditTechTreePanel: React.FC = () => {
         throw new Error(error.error || 'Failed to add node');
       }
 
-      // Then, create edges
+      // Then, create edges - include topic in body
       if (newNode.edgeSource) {
         const edgeResponse = await fetch('/investment-tech-tree/api/edges', {
           method: 'POST',
@@ -125,6 +131,7 @@ const EditTechTreePanel: React.FC = () => {
           body: JSON.stringify({
             source: newNode.edgeSource,
             target: newNode.id,
+            topic: topic, // Include topic
           }),
         });
         if (!edgeResponse.ok) {
@@ -139,6 +146,7 @@ const EditTechTreePanel: React.FC = () => {
           body: JSON.stringify({
             source: newNode.id,
             target: newNode.edgeTarget,
+            topic: topic, // Include topic
           }),
         });
         if (!edgeResponse.ok) {
@@ -188,6 +196,7 @@ const EditTechTreePanel: React.FC = () => {
         body: JSON.stringify({
           ...editNode,
           references: editNode.references.split('\n').filter(r => r.trim()),
+          topic: topic, // Include topic
         }),
       });
 
@@ -223,7 +232,8 @@ const EditTechTreePanel: React.FC = () => {
     setMessage(null);
 
     try {
-      const response = await fetch(`/investment-tech-tree/api/nodes/${deleteNodeSelection}`, {
+      // Include topic in query params for DELETE
+      const response = await fetch(`/investment-tech-tree/api/nodes/${deleteNodeSelection}?topic=${topic}`, {
         method: 'DELETE',
       });
 
@@ -258,7 +268,10 @@ const EditTechTreePanel: React.FC = () => {
       const response = await fetch('/investment-tech-tree/api/edges', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newEdge),
+        body: JSON.stringify({
+          ...newEdge,
+          topic: topic, // Include topic
+        }),
       });
 
       if (!response.ok) {
@@ -293,7 +306,8 @@ const EditTechTreePanel: React.FC = () => {
     setMessage(null);
 
     try {
-      const response = await fetch(`/investment-tech-tree/api/edges/${deleteEdgeSelection}`, {
+      // Include topic in query params for DELETE
+      const response = await fetch(`/investment-tech-tree/api/edges/${deleteEdgeSelection}?topic=${topic}`, {
         method: 'DELETE',
       });
 
@@ -367,7 +381,7 @@ const EditTechTreePanel: React.FC = () => {
                 <Input
                   value={newNode.category}
                   onChange={(e) => setNewNode({ ...newNode, category: e.target.value })}
-                  placeholder="Optional"
+                  placeholder="e.g., fusion, fission, coal, natural_gas"
                 />
               </div>
               <div>

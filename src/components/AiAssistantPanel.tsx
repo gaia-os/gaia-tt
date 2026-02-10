@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Loader2, Send, Upload } from 'lucide-react';
 import { GoogleGenerativeAI, Part } from '@google/generative-ai';
 import { useTechTree } from '@/hooks/useTechTree';
+import { TopicKey, TOPICS } from '@/lib/topicConfig';
 import DOMPurify from 'dompurify';
 import { Badge } from '@/components/ui/badge';
 
@@ -15,6 +16,10 @@ interface ChatMessage {
   type: 'user' | 'assistant';
   content: string;
   timestamp: number;
+}
+
+interface AiAssistantPanelProps {
+  topic: TopicKey; // NEW: Accept topic prop
 }
 
 // Helper function to convert a File to a base64 string for Gemini API
@@ -32,8 +37,8 @@ const fileToGenerativePart = async (file: File): Promise<Part> => {
   };
 };
 
-const AiAssistantPanel: React.FC = () => {
-  const { techTree } = useTechTree();
+const AiAssistantPanel: React.FC<AiAssistantPanelProps> = ({ topic }) => {
+  const { techTree } = useTechTree(topic); // Use topic to fetch correct tree
   const [message, setMessage] = useState('');
   const [file, setFile] = useState<File | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -111,7 +116,11 @@ const AiAssistantPanel: React.FC = () => {
       - ID: ${node.id}
       - Category: ${node.data.category || 'N/A'}
       - TRL Current: ${node.data.trl_current || 'N/A'}
-      - Description: ${node.data.detailedDescription || node.data.description || 'No description available'}${referencesBlock}`;
+      - Description: ${
+        node.data.detailedDescription ||
+        node.data.description ||
+        'No description available'
+      }${referencesBlock}`;
         })
         .join('\n\n');
 
@@ -121,19 +130,19 @@ const AiAssistantPanel: React.FC = () => {
         })
         .join('\n');
 
-      const systemPrompt = `You are an expert technology analyst assisting in the curation of a specialized Investment Tech Tree for nuclear and fusion energy. Your primary role is to analyze user-provided text and documents to suggest relevant additions or modifications to the tech tree.
+      // Get topic-specific system prompt from config
+      const topicConfig = TOPICS[topic];
+      const systemPrompt = `${topicConfig.systemPrompt}
 
-IMPORTANT INSTRUCTIONS:
-- Your suggestions MUST be directly related to nuclear or fusion energy.
-- If a user's query or the content of an uploaded file is not relevant to this domain (e.g., it's about cooking or sports), you MUST state that the information is outside the scope of the tech tree and politely decline to make suggestions.
-- Base your analysis on the provided tech tree context and the content of any uploaded files.
+Here is the current Tech Tree context for ${topicConfig.label}:
 
-FORMATTING REQUIREMENTS - VERY IMPORTANT:
-- You MUST format your entire response as clean, well-structured HTML
-- Use proper HTML tags: <h2>, <h3>, <h4> for headings, <p> for paragraphs, <ul>/<ol> for lists, <strong> for emphasis
-- Add proper spacing between sections with margin classes
-- Structure your response with clear visual hierarchy
-- Use this HTML structure as a template:
+NODES:
+${nodesContext}
+
+EDGES (Dependencies):
+${edgesContext}
+
+PRESENT YOUR OUTPUT SUGGESTIONS IN THE FOLLOWING FORMAT:
 
 <h2 class="text-xl font-semibold mb-4 text-gray-900">Analysis Results</h2>
 <p class="mb-4 text-gray-700 leading-relaxed">Your introduction paragraph here...</p>
@@ -153,27 +162,28 @@ FORMATTING REQUIREMENTS - VERY IMPORTANT:
   <li><strong>Term:</strong> Definition and explanation...</li>
 </ul>
 
-Here is the current Tech Tree context:
-
-NODES:
-${nodesContext}
-
-EDGES (Dependencies):
-${edgesContext}
-
 Remember: Format everything as HTML with proper tags and spacing. No plain text or markdown formatting.`;
+
+      // Build the user's prompt parts, starting with the text message
+      const userParts: Part[] = [{ text: message }];
+
+      // If a file is provided, convert it to a generative part and add to the prompt
+      if (file) {
+        try {
+          console.log('Processing file...');
+          const filePart = await fileToGenerativePart(file);
+          userParts.push(filePart);
+          console.log('File processed successfully.');
+        } catch (error) {
+          console.error('Error processing file:', error);
+          throw new Error('Failed to read the file.');
+        }
+      }
 
       const conversationHistory = messages.map((msg) => ({
         role: msg.type === 'user' ? 'user' : 'model',
         parts: [{ text: msg.content }],
       }));
-
-      // Build the parts of the user's message, including the file if it exists
-      const userParts: Part[] = [{ text: message }];
-      if (file) {
-        const filePart = await fileToGenerativePart(file);
-        userParts.push(filePart);
-      }
 
       const contents = [
         {

@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI, Part, Content } from '@google/generative-ai';
 import { TechTree, ChatMessage } from './types';
+import { TOPICS, TopicKey } from './topicConfig';
 
 // Helper function to convert a File to a base64 string for Gemini API
 const fileToGenerativePart = async (file: File): Promise<Part> => {
@@ -27,10 +28,17 @@ export class GeminiChatClient {
     message: string,
     context: TechTree,
     chatHistory: ChatMessage[] = [],
+    topic: TopicKey, // NEW: Accept topic parameter
     file?: File,
   ): Promise<string> {
     if (!message?.trim() && !file) {
       throw new Error('Message or file is required');
+    }
+
+    // Get topic-specific configuration
+    const topicConfig = TOPICS[topic];
+    if (!topicConfig) {
+      throw new Error(`Invalid topic: ${topic}`);
     }
 
     const model = this.genAI.getGenerativeModel({
@@ -83,36 +91,16 @@ export class GeminiChatClient {
       })
       .join('\n');
 
-    const systemPrompt = `You are an expert technology analyst assisting in the curation of a specialized Investment Tech Tree for nuclear and fusion energy. Your primary role is to analyze user-provided text and documents to suggest relevant additions or modifications to the tech tree.
+    // Use topic-specific system prompt from config
+    const systemPrompt = `${topicConfig.systemPrompt}
 
-Here is the current Tech Tree context:
+Here is the current Tech Tree context for ${topicConfig.label}:
 
 NODES:
 ${nodesContext}
 
 EDGES (Dependencies):
 ${edgesContext}
-
-IMPORTANT INSTRUCTIONS:
-- If a file is uploaded, first check if it pertains to the nuclear or fusion energy domain. If not, state that the information is outside the scope and decline to make suggestions.
-- If the file is relevant, analyze it to identify:
-  a) Potential edits to existing nodes (e.g., new TRL level).
-  b) New nodes or edges that should be added.
-  c) Inconsistencies or missing information in the tech tree based on the document.
-- Answer any user questions concisely, based on the provided tech tree context and any uploaded file.
-- Structure your answer with clear HTML headlines (h2, h3, h4) using Tailwind CSS classes.
-- Format your response as well-structured HTML using Tailwind CSS classes.
-- Use appropriate HTML elements for better readability:
-  * Tables with Tailwind styling for data comparison.
-  * Bullet points (ul/li) or numbered lists (ol/li) where appropriate.
-  * Emphasis tags (strong, em) for important points.
-- Use these Tailwind classes for consistency:
-  * Headlines: "text-xl font-semibold mb-3 text-gray-900" for h2, "text-lg font-medium mb-2 text-gray-800" for h3
-  * Paragraphs: "mb-3 text-gray-700 leading-relaxed"
-  * Lists: "list-disc list-inside mb-3 text-gray-700" for ul, "list-decimal list-inside mb-3 text-gray-700" for ol
-  * Tables: "min-w-full divide-y divide-gray-200 mb-4" with "px-3 py-2 text-sm" for cells
-  * Strong text: "font-semibold text-gray-900"
-- Each node may include a list of references. Use these references to ground your explanations and, when relevant, include a short "Sources" section at the end with a numbered list linking to them. Use anchor tags for URLs. Do not fabricate citations. If you reference a specific claim, add an inline [n] that corresponds to the numbered source. Ensure the Sources section uses proper HTML structure with h3 and ol/li elements.
 
 PRESENT YOUR OUTPUT SUGGESTIONS IN THE FOLLOWING FORMAT:
 
@@ -172,4 +160,3 @@ Remember: Format everything as HTML with proper tags and spacing. No plain text 
     }
   }
 }
-

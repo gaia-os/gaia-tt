@@ -5,14 +5,19 @@ import { Send, Loader2, Trash2, Upload } from 'lucide-react';
 import DOMPurify from 'dompurify';
 import { ChatMessage, ChatHistory } from '@/lib/types';
 import { GeminiChatClient } from '@/lib/geminiClient';
+import { TopicKey } from '@/lib/topicConfig';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useTechTree } from '@/hooks/useTechTree';
 
-const Chat = () => {
-  const { techTree } = useTechTree();
+interface ChatProps {
+  topic: TopicKey; // NEW: Accept topic prop
+}
+
+const Chat: React.FC<ChatProps> = ({ topic }) => {
+  const { techTree } = useTechTree(topic); // Use topic to fetch correct tree
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [file, setFile] = useState<File | null>(null);
@@ -45,7 +50,9 @@ const Chat = () => {
   // Load chat history and rate limiting data from localStorage on mount
   useEffect(() => {
     try {
-      const savedHistory = localStorage.getItem('tech-tree-chat-history');
+      // Use topic-specific storage key
+      const storageKey = `tech-tree-chat-history-${topic}`;
+      const savedHistory = localStorage.getItem(storageKey);
       if (savedHistory) {
         const history: ChatHistory = JSON.parse(savedHistory);
         setMessages(history.messages);
@@ -53,7 +60,7 @@ const Chat = () => {
         // Restore scroll position after messages are loaded
         setTimeout(() => {
           const savedScrollPosition = localStorage.getItem(
-            'tech-tree-chat-scroll',
+            `tech-tree-chat-scroll-${topic}`,
           );
           if (savedScrollPosition && messagesContainerRef.current) {
             messagesContainerRef.current.scrollTop = parseInt(
@@ -64,7 +71,7 @@ const Chat = () => {
         }, 100);
       }
 
-      // Load rate limiting data
+      // Load rate limiting data (shared across topics)
       const savedRequestCount = localStorage.getItem('tech-tree-request-count');
       const savedLastRequestTime = localStorage.getItem(
         'tech-tree-last-request-time',
@@ -79,7 +86,7 @@ const Chat = () => {
     } catch (error) {
       console.error('Error loading chat history:', error);
     }
-  }, []);
+  }, [topic]); // Reload when topic changes
 
   // Save chat history to localStorage whenever messages change
   useEffect(() => {
@@ -89,12 +96,14 @@ const Chat = () => {
         lastUpdated: Date.now(),
       };
       try {
-        localStorage.setItem('tech-tree-chat-history', JSON.stringify(history));
+        // Use topic-specific storage key
+        const storageKey = `tech-tree-chat-history-${topic}`;
+        localStorage.setItem(storageKey, JSON.stringify(history));
       } catch (error) {
         console.error('Error saving chat history:', error);
       }
     }
-  }, [messages]);
+  }, [messages, topic]);
 
   // Save rate limiting data to localStorage
   useEffect(() => {
@@ -214,10 +223,12 @@ const Chat = () => {
     setRateLimitExceeded(false);
 
     try {
+      // Pass topic to sendMessage
       const response = await geminiClient.sendMessage(
         userMessage.content,
-        techTree || { nodes: [], edges: [] }, // Use fetched data
+        techTree || { nodes: [], edges: [] },
         messages,
+        topic, // NEW: Pass topic parameter
         file || undefined,
       );
 
@@ -249,14 +260,15 @@ const Chat = () => {
 
   const clearHistory = () => {
     setMessages([]);
-    localStorage.removeItem('tech-tree-chat-history');
-    localStorage.removeItem('tech-tree-chat-scroll');
+    const storageKey = `tech-tree-chat-history-${topic}`;
+    localStorage.removeItem(storageKey);
+    localStorage.removeItem(`tech-tree-chat-scroll-${topic}`);
   };
 
   const saveScrollPosition = () => {
     if (messagesContainerRef.current) {
       localStorage.setItem(
-        'tech-tree-chat-scroll',
+        `tech-tree-chat-scroll-${topic}`,
         messagesContainerRef.current.scrollTop.toString(),
       );
     }

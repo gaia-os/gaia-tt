@@ -1,15 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 import { runSimulation } from '@/lib/simulation';
+import { TOPICS, TopicKey } from '@/lib/topicConfig';
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
     const years = parseInt(searchParams.get('years') || '30');
+    const topic = searchParams.get('topic') as TopicKey;
 
-    console.log('🔍 Simulation requested for years:', years);
+    console.log('🔍 Simulation requested:', { years, topic });
 
-    // Validate years parameter - changed max from 100 to 30
+    // Validate topic parameter
+    if (!topic || !TOPICS[topic]) {
+      return NextResponse.json(
+        { error: 'Invalid or missing topic parameter' },
+        { status: 400 }
+      );
+    }
+
+    // Validate years parameter
     if (years < 5 || years > 30) {
       return NextResponse.json(
         { error: 'Years parameter must be between 5 and 30' },
@@ -17,8 +27,10 @@ export async function GET(request: NextRequest) {
       );
     }
 
+    const topicConfig = TOPICS[topic];
+
     const client = await clientPromise;
-    const db = client.db('tech_tree_db');
+    const db = client.db(topicConfig.dbName); // Dynamic database selection
 
     // Fetch nodes and edges from MongoDB
     const nodesCollection = db.collection('nodes');
@@ -38,6 +50,8 @@ export async function GET(request: NextRequest) {
     };
 
     console.log('📊 Tech tree loaded:', {
+      topic: topicConfig.label,
+      database: topicConfig.dbName,
       nodeCount: techTree.graph.nodes.length,
       edgeCount: techTree.graph.edges.length
     });

@@ -2,6 +2,7 @@
 
 import { getLayoutedElements } from '@/lib/elkjs';
 import { HighlightedElements, UiNode, GroupingMode } from '@/lib/types';
+import { TopicKey } from '@/lib/topicConfig';
 import {
   Background,
   BackgroundVariant,
@@ -11,7 +12,7 @@ import {
   ReactFlow,
   useReactFlow,
 } from '@xyflow/react';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState, useMemo } from 'react';
 import { Legend } from './Legend';
 import { LoadingSpinner } from './LoadingSpinner';
 import { GroupSelector } from './GroupSelector';
@@ -35,8 +36,12 @@ if (typeof window !== 'undefined') {
   };
 }
 
-const TechTree: React.FC = () => {
-  const { techTree, isLoading: isLoadingData, error } = useTechTree();
+interface TechTreeProps {
+  topic: TopicKey;
+}
+
+const TechTree: React.FC<TechTreeProps> = ({ topic }) => {
+  const { techTree, isLoading: isLoadingData, error } = useTechTree(topic);
   const [isLoading, setIsLoading] = useState(true);
   const [nodes, setNodes] = useState<UiNode[]>([]);
   const [edges, setEdges] = useState<Edge[]>([]);
@@ -54,7 +59,24 @@ const TechTree: React.FC = () => {
   const [isPanelExpanded, setIsPanelExpanded] = useState(true);
   const [showLegend, setShowLegend] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  
+  // Category filtering state
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  
   const { fitView } = useReactFlow();
+
+  // Extract unique categories from nodes
+  const uniqueCategories = useMemo(() => {
+    if (!techTree) return [];
+    const categories = new Set<string>();
+    categories.add('All');
+    techTree.nodes.forEach(node => {
+      if (node.data.category) {
+        categories.add(node.data.category);
+      }
+    });
+    return Array.from(categories).sort();
+  }, [techTree]);
 
   // Show error state
   if (error) {
@@ -123,12 +145,26 @@ const TechTree: React.FC = () => {
 
     const loadLayout = async () => {
       setIsLoading(true);
+      
+      // Apply category filter
+      let filteredTechTree = techTree;
+      if (selectedCategory !== 'All') {
+        filteredTechTree = {
+          nodes: techTree.nodes.filter(node => node.data.category === selectedCategory),
+          edges: techTree.edges.filter(edge => {
+            const sourceExists = techTree.nodes.some(n => n.id === edge.source && n.data.category === selectedCategory);
+            const targetExists = techTree.nodes.some(n => n.id === edge.target && n.data.category === selectedCategory);
+            return sourceExists && targetExists;
+          })
+        };
+      }
+      
       const { layoutedNodes, layoutedEdges } = await getLayoutedElements(
         groupingMode,
         showingRelatedNodes,
         showOnlyConnected,
         searchTerm,
-        techTree,
+        filteredTechTree,
       );
       setNodes(() => layoutedNodes);
       setEdges(() => layoutedEdges);
@@ -144,6 +180,7 @@ const TechTree: React.FC = () => {
     showOnlyConnected,
     searchTerm,
     techTree,
+    selectedCategory,
   ]);
 
   // Update node and edge styles based on highlighted elements
@@ -232,6 +269,7 @@ const TechTree: React.FC = () => {
     setShowOnlyConnected(false);
     setSearchInput('');
     setSearchTerm('');
+    setSelectedCategory('All');
     setHighlightedElements({ nodeIds: new Set(), edgeIds: new Set() });
   }, []);
 
@@ -244,8 +282,8 @@ const TechTree: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-gray-100 flex">
-      <div className={`relative transition-all duration-300 flex flex-col h-screen ${
+    <div className="w-full h-full bg-gray-100 flex">
+      <div className={`relative transition-all duration-300 flex flex-col h-full ${
         isPanelExpanded 
           ? 'w-full md:w-2/4'
           : 'w-full'
@@ -264,6 +302,9 @@ const TechTree: React.FC = () => {
           showOptions={showOptions}
           onToggleLegend={() => setShowLegend(!showLegend)}
           onToggleOptions={() => setShowOptions(!showOptions)}
+          selectedCategory={selectedCategory}
+          categories={uniqueCategories}
+          onCategoryChange={setSelectedCategory}
         />
         {isLoadingData || isLoading ? (
           <div className="flex-grow flex items-center justify-center h-full">
@@ -297,7 +338,6 @@ const TechTree: React.FC = () => {
               className="h-full w-full"
             >
               <Background bgColor="white" variant={BackgroundVariant.Dots} />
-              {/* Controls positioned at bottom on desktop, below legend buttons on mobile */}
               <Controls 
                 showInteractive={false} 
                 showZoom={true} 
@@ -305,7 +345,6 @@ const TechTree: React.FC = () => {
                 className="!left-4 !top-[180px] !bottom-auto md:!top-auto md:!bottom-4"
               />
             </ReactFlow>
-            {/* Legend - hidden on mobile by default, shown via button */}
             <div className={`${showLegend ? 'block' : 'hidden'} md:block`}>
               <Legend />
             </div>
@@ -322,13 +361,14 @@ const TechTree: React.FC = () => {
         }`}
       >
         {isEditing ? (
-          <EditInterface onExit={handleExitEditMode} />
+          <EditInterface onExit={handleExitEditMode} topic={topic} />
         ) : (
           <TabPanel 
             selectedNode={selectedNode} 
             techTree={techTree}
             isPanelExpanded={isPanelExpanded}
             onTogglePanel={() => setIsPanelExpanded(!isPanelExpanded)}
+            topic={topic}
           />
         )}
       </div>

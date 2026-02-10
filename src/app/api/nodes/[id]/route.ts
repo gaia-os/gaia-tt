@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
+import { TOPICS, TopicKey } from '@/lib/topicConfig';
 
 // PUT - Update an existing node
 export async function PUT(
@@ -10,8 +11,19 @@ export async function PUT(
     const { id: nodeId } = await params;
     const body = await request.json();
 
+    // Get and validate topic
+    const topic = body.topic as TopicKey;
+    if (!topic || !TOPICS[topic]) {
+      return NextResponse.json(
+        { error: 'Invalid or missing topic parameter' },
+        { status: 400 }
+      );
+    }
+
+    const topicConfig = TOPICS[topic];
+
     const client = await clientPromise;
-    const db = client.db('tech_tree_db');
+    const db = client.db(topicConfig.dbName); // Dynamic database selection
     const nodesCollection = db.collection('nodes');
 
     // Check if node exists
@@ -67,9 +79,20 @@ export async function DELETE(
 ) {
   try {
     const { id: nodeId } = await params;
+    
+    // Get topic from query parameters for DELETE
+    const topic = request.nextUrl.searchParams.get('topic') as TopicKey;
+    if (!topic || !TOPICS[topic]) {
+      return NextResponse.json(
+        { error: 'Invalid or missing topic parameter' },
+        { status: 400 }
+      );
+    }
+
+    const topicConfig = TOPICS[topic];
 
     const client = await clientPromise;
-    const db = client.db('tech_tree_db');
+    const db = client.db(topicConfig.dbName); // Dynamic database selection
     const nodesCollection = db.collection('nodes');
     const edgesCollection = db.collection('edges');
 

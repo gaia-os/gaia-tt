@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
+import { TOPICS, TopicKey } from '@/lib/topicConfig';
 
 // DELETE - Delete an edge
 export async function DELETE(
@@ -9,8 +10,19 @@ export async function DELETE(
   try {
     const edgeId = params.id;
 
+    // Get topic from query parameters
+    const topic = request.nextUrl.searchParams.get('topic') as TopicKey;
+    if (!topic || !TOPICS[topic]) {
+      return NextResponse.json(
+        { error: 'Invalid or missing topic parameter' },
+        { status: 400 }
+      );
+    }
+
+    const topicConfig = TOPICS[topic];
+
     const client = await clientPromise;
-    const db = client.db('tech_tree_db');
+    const db = client.db(topicConfig.dbName); // Dynamic database selection
     const edgesCollection = db.collection('edges');
 
     // Check if edge exists

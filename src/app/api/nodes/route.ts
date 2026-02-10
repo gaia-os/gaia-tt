@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
+import { TOPICS, TopicKey } from '@/lib/topicConfig';
 
 // POST - Create a new node
 export async function POST(request: NextRequest) {
@@ -14,8 +15,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Get and validate topic
+    const topic = body.topic as TopicKey;
+    if (!topic || !TOPICS[topic]) {
+      return NextResponse.json(
+        { error: 'Invalid or missing topic parameter' },
+        { status: 400 }
+      );
+    }
+
+    const topicConfig = TOPICS[topic];
+
     const client = await clientPromise;
-    const db = client.db('tech_tree_db');
+    const db = client.db(topicConfig.dbName); // Dynamic database selection
     const nodesCollection = db.collection('nodes');
 
     // Check if node with this ID already exists

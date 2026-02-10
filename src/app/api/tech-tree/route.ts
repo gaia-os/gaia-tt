@@ -1,9 +1,22 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 import { TechTree } from '@/lib/types';
+import { TOPICS, TopicKey } from '@/lib/topicConfig';
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
+    // Get topic from query parameters
+    const topic = request.nextUrl.searchParams.get('topic') as TopicKey;
+    
+    if (!topic || !TOPICS[topic]) {
+      return NextResponse.json(
+        { error: 'Invalid or missing topic parameter' },
+        { status: 400 }
+      );
+    }
+
+    const topicConfig = TOPICS[topic];
+
     // Check if we're in a build environment and MongoDB URI is not available
     if (!process.env.MONGODB_URI && process.env.NODE_ENV === 'production') {
       console.warn('MongoDB URI not available during build, returning empty tech tree');
@@ -14,7 +27,7 @@ export async function GET() {
     }
 
     const client = await clientPromise;
-    const db = client.db('tech_tree_db');
+    const db = client.db(topicConfig.dbName); // Dynamic database selection
 
     // Fetch nodes and edges from MongoDB
     const nodesCollection = db.collection('nodes');
