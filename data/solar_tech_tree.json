@@ -1,0 +1,511 @@
+{
+    "graph": {
+      "nodes": [
+        {
+          "id": "xbc_pv",
+          "label": "Back Contact (xBC/TBC/HBC)",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "BackContact",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.pv-magazine-australia.com/2025/06/25/bringing-back-contact-to-the-foreground/",
+            "https://www.infolink-group.com/energy-article/solar-topic-solar-back-contact-technology-industry-progress-outlook--xbc",
+            "https://www.pv-magazine.com/2025/02/14/back-contact-solar-module-manufacturing-capacity-may-reach-1-tw-by-2030-says-tech-expert/",
+            "https://communities.springernature.com/posts/27-09-efficiency-silicon-heterojunction-back-contact-solar-cell-and-going-beyond"
+          ]
+        },
+        {
+          "id": "perc_pv",
+          "label": "PERC (P-Type Silicon)",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "Legacy/Declining",
+          "trl_projected_5_10_years": "9 (Phase-out)",
+          "references": [
+            "https://solartechonline.com/blog/mono-perc-solar-panels-guide/",
+            "https://poweroutage.us/solar/solar-technology/perc-solar-cell",
+            "https://thegrewsolar.com/topcon-vs-perc-solar-panels-2025-comparison/",
+            "https://ieeexplore.ieee.org/document/8048349/",
+            "https://www.solarreviews.com/blog/are-perc-solar-cells-the-best-choice"
+          ]
+        },
+        {
+          "id": "topcon_pv",
+          "label": "TOPCon (N-Type Silicon)",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "PassivatedContact",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://thegrewsolar.com/topcon-vs-perc-solar-panels-2025-comparison/",
+            "https://www.pv-magazine.com/2025/11/27/jinkosolar-achieves-world-record-efficiency-of-27-79-for-topcon-solar-cell/",
+            "https://taiyangnews.info/technology/taiyangnews-high-efficiency-solar-technologies-2025-day-2-summary",
+            "https://www.pveurope.eu/solar-modules/itrpv-topcon-surpass-perc-coming-years"
+          ]
+        },
+        {
+          "id": "hjt_pv",
+          "label": "Heterojunction (HJT)",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "8-9",
+          "subtype": "HeterojunctionPremium",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.anernstore.com/blogs/diy-solar-guides/2025-topcon-hjt-tandem-guide",
+            "https://www.pv-magazine.com/2024/04/17/forging-a-path-for-hjt-at-scale/",
+            "https://taiyangnews.info/technology/taiyangnews-cell-production-equipment-processing-materials-conference-2025-summary"
+          ]
+        },
+        {
+          "id": "perovskite_sj",
+          "label": "Perovskite Single Junction",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "4-5",
+          "subtype": "ThinFilmPerovskite",
+          "trl_projected_5_10_years": "6-7",
+          "references": [
+            "https://ceramics.org/ceramic-tech-today/perovskite-solar-cells-progress-2025/",
+            "https://www.gcl-perovskite.com/en/xw/290.html",
+            "https://www.perovskite-info.com/gcl-secures-perovskite-module-certification-3x-iec-accelerated-aging-tests"
+          ]
+        },
+        {
+          "id": "perovskite_si_tandem",
+          "label": "Perovskite-Silicon Tandem",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "6-8",
+          "subtype": "TandemCell",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.longi.com/en/news/silicon-perovskite-tandem-solar-cells-new-world-efficiency/",
+            "https://www.pv-magazine.com/2025/04/18/longi-achieves-34-85-efficiency-for-two-terminal-tandem-perovskite-solar-cell/",
+            "https://www.hanwha.com/newsroom/news/press-releases/hanwha-qcells-achieves-key-tandem-solar-module-stability-milestone.do",
+            "https://undecidedmf.com/how-solar-changed-in-2025-and-whats-next/"
+          ]
+        },
+        {
+          "id": "opv_concept",
+          "label": "Organic PV (OPV)",
+          "type": "SolarConcept",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "5-9",
+          "subtype": "OrganicPolymer",
+          "trl_projected_5_10_years": "7-9",
+          "references": [
+            "https://www.anernstore.com/blogs/diy-solar-guides/2025-topcon-hjt-tandem-guide"
+          ]
+        },
+        {
+          "id": "molten_salt_csp",
+          "label": "Molten Salt Power Tower CSP",
+          "type": "SolarConcept",
+          "category": "Concentrated Solar (CSP)",
+          "trl_current": "9",
+          "subtype": "ThermalStorage",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.anernstore.com/blogs/diy-solar-guides/2025-topcon-hjt-tandem-guide"
+          ]
+        },
+        {
+          "id": "gen3_particle_csp",
+          "label": "Gen3 Particle Receiver CSP",
+          "type": "SolarConcept",
+          "category": "Concentrated Solar (CSP)",
+          "trl_current": "5-6",
+          "subtype": "SolidParticleReceiver",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://www.gti.energy/wp-content/uploads/2019/01/STEP-Project-Detailed-Description-Dec2018.pdf"
+          ]
+        },
+        {
+          "id": "milestone_pero_stability",
+          "label": "Milestone: Perovskite Stability >10,000 hrs at High Efficiency",
+          "type": "Milestone",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "5-6",
+          "subtype": "StabilityValidation",
+          "references": [
+            "https://www.nature.com/articles/ncomms15684",
+            "https://www.ossila.com/pages/perovskite-solar-cells-methods-increase-stability",
+            "https://www.nature.com/articles/s41467-018-07255-1"
+          ]
+        },
+        {
+          "id": "milestone_tandem_eff_35",
+          "label": "Milestone: Tandem Efficiency >35%",
+          "type": "Milestone",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "6",
+          "subtype": "EfficiencyRecord",
+          "references": [
+            "https://www.longi.com/en/news/silicon-perovskite-tandem-solar-cells-new-world-efficiency/"
+          ]
+        },
+        {
+          "id": "milestone_longi_tandem_record",
+          "label": "Milestone: LONGi 34.85% Tandem Efficiency (NREL Certified)",
+          "type": "Milestone",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "6",
+          "subtype": "EfficiencyRecord",
+          "references": [
+            "https://www.longi.com/en/news/silicon-perovskite-tandem-solar-cells-new-world-efficiency/",
+            "https://www.pv-magazine.com/2025/04/18/longi-achieves-34-85-efficiency-for-two-terminal-tandem-perovskite-solar-cell/",
+            "https://www.longi.com/en/news/nature-and-science-research-of-tandem-solar-cell/"
+          ]
+        },
+        {
+          "id": "milestone_g3p3_pilot",
+          "label": "Milestone: Sandia G3P3 Pilot Field Testing",
+          "type": "Milestone",
+          "category": "Concentrated Solar (CSP)",
+          "trl_current": "5-6",
+          "subtype": "PrototypeValidation",
+          "references": [
+            "https://www.gti.energy/wp-content/uploads/2019/01/STEP-Project-Detailed-Description-Dec2018.pdf"
+          ]
+        },
+        {
+          "id": "milestone_iec_perovskite",
+          "label": "Milestone: IEC 61215 Certification for Perovskite Modules",
+          "type": "Milestone",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "7",
+          "subtype": "CommercialCertification",
+          "references": [
+            "https://www.gcl-perovskite.com/en/xw/290.html",
+            "https://www.perovskite-info.com/gcl-secures-perovskite-module-certification-3x-iec-accelerated-aging-tests",
+            "https://www.hanwha.com/newsroom/news/press-releases/hanwha-qcells-achieves-key-tandem-solar-module-stability-milestone.do"
+          ]
+        },
+        {
+          "id": "milestone_topcon_market_dominance",
+          "label": "Milestone: TOPCon 68% Global Market Share",
+          "type": "Milestone",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "MarketPenetration",
+          "references": [
+            "https://www.vicoexport.com/en/63294/the-10-largest-solar-panel-manufacturers-in-2025/",
+            "https://www.pv-magazine.com/2025/04/15/global-solar-module-shipments-hit-703-gw-in-2024/",
+            "https://www.pveurope.eu/solar-modules/itrpv-topcon-surpass-perc-coming-years"
+          ]
+        },
+        {
+          "id": "bifacial_modules",
+          "label": "Bifacial Module Technology",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "ModuleDesign",
+          "references": [
+            "https://taiyangnews.info/technology/taiyangnews-cell-production-equipment-processing-materials-conference-2025-summary"
+          ]
+        },
+        {
+          "id": "low_temp_silver_paste",
+          "label": "Low-Temperature Silver Paste (<200°C)",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "MaterialsMetallization",
+          "references": [
+            "https://www.metal.com/en/newscontent/103545216",
+            "https://taiyangnews.info/technology/taiyangnews-cell-production-equipment-processing-materials-conference-2025-summary"
+          ]
+        },
+        {
+          "id": "copper_plating",
+          "label": "Copper Plating Metallization",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "7-8",
+          "subtype": "MaterialsMetallization",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://taiyangnews.info/technology/taiyangnews-cell-production-equipment-processing-materials-conference-2025-summary"
+          ]
+        },
+        {
+          "id": "leco_technology",
+          "label": "LECO (Laser Enhanced Contact Optimization)",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "8-9",
+          "subtype": "ManufacturingProcess",
+          "references": [
+            "https://taiyangnews.info/technology/taiyangnews-cell-production-equipment-processing-materials-conference-2025-summary"
+          ]
+        },
+        {
+          "id": "sco2_brayton",
+          "label": "Supercritical CO2 Brayton Cycle",
+          "type": "EnablingTechnology",
+          "category": "Concentrated Solar (CSP)",
+          "trl_current": "5-7",
+          "subtype": "PowerCycle",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://www.gti.energy/wp-content/uploads/2019/01/STEP-Project-Detailed-Description-Dec2018.pdf"
+          ]
+        },
+        {
+          "id": "ai_tracking_pv",
+          "label": "AI Tracking Algorithms for PV",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "SoftwareControl",
+          "references": [
+            "https://www.anernstore.com/blogs/diy-solar-guides/2025-topcon-hjt-tandem-guide"
+          ]
+        },
+        {
+          "id": "ai_heliostat_csp",
+          "label": "AI Heliostat Optimization for CSP",
+          "type": "EnablingTechnology",
+          "category": "Concentrated Solar (CSP)",
+          "trl_current": "7-9",
+          "subtype": "SoftwareControl",
+          "references": [
+            "https://www.anernstore.com/blogs/diy-solar-guides/2025-topcon-hjt-tandem-guide"
+          ]
+        },
+        {
+          "id": "grid_forming_inverter",
+          "label": "Grid-Forming Inverters (GFM)",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "PowerElectronics",
+          "references": [
+            "https://www.energy.gov/sites/default/files/2023-09/Specs%20for%20GFM%20IBRs%20Version%201.pdf",
+            "https://keentelengineering.com/ieee-2800-compliance-inverter-based-resources",
+            "https://www.zeroemissiongrid.com/insights-press-zeg-blog/ieee-2800-standard-how-it-impacts-ibr-interconnection-and-what-developers-must-know/"
+          ]
+        },
+        {
+          "id": "ieee_2800_standard",
+          "label": "IEEE 2800-2022 Interconnection Standard",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "StandardsRegulatory",
+          "references": [
+            "https://ieeexplore.ieee.org/document/10049127/",
+            "https://sagroups.ieee.org/2800/wp-content/uploads/sites/336/2022/06/IEEE-2800-2022-SEIA-ACP-May-31-2022-Joint-Webinar.pdf",
+            "https://keentelengineering.com/ieee-std-2800-2022-compliance-for-inverter-based-resources-a-practical-guide-for-generator-owners",
+            "https://keentelengineering.com/ieee-2800-2022-ibr-compliance-guide",
+            "https://ieeexplore.ieee.org/iel7/9762251/9762252/09762253.pdf"
+          ]
+        },
+        {
+          "id": "tco_electrodes",
+          "label": "Transparent Conductive Oxide (TCO) Electrodes",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "9",
+          "subtype": "MaterialsElectrode",
+          "references": [
+            "https://taiyangnews.info/technology/taiyangnews-cell-production-equipment-processing-materials-conference-2025-summary"
+          ]
+        },
+        {
+          "id": "encapsulation_technology",
+          "label": "Advanced Encapsulation for Perovskites",
+          "type": "EnablingTechnology",
+          "category": "Photovoltaics (PV)",
+          "trl_current": "6-7",
+          "subtype": "MaterialsPackaging",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://www.ossila.com/pages/perovskite-solar-cells-methods-increase-stability",
+            "https://www.nature.com/articles/s41467-018-07255-1"
+          ]
+        },
+        {
+          "id": "particle_heat_exchanger",
+          "label": "Particle-to-sCO2 Heat Exchanger",
+          "type": "EnablingTechnology",
+          "category": "Concentrated Solar (CSP)",
+          "trl_current": "5-6",
+          "subtype": "ThermalComponent",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://www.gti.energy/wp-content/uploads/2019/01/STEP-Project-Detailed-Description-Dec2018.pdf"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "evol_perc_topcon",
+          "source": "perc_pv",
+          "target": "topcon_pv"
+        },
+        {
+          "id": "evol_perc_hjt",
+          "source": "perc_pv",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "dep_topcon_leco",
+          "source": "leco_technology",
+          "target": "topcon_pv"
+        },
+        {
+          "id": "dep_topcon_bifacial",
+          "source": "bifacial_modules",
+          "target": "topcon_pv"
+        },
+        {
+          "id": "dep_hjt_bifacial",
+          "source": "bifacial_modules",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "dep_hjt_silver",
+          "source": "low_temp_silver_paste",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "dep_hjt_tco",
+          "source": "tco_electrodes",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "dep_hjt_copper_future",
+          "source": "copper_plating",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "comp_hjt_topcon_tandem",
+          "source": "hjt_pv",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "comp_topcon_tandem",
+          "source": "topcon_pv",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "dep_tandem_perosj",
+          "source": "perovskite_sj",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "dep_tandem_stability",
+          "source": "milestone_pero_stability",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "dep_tandem_encapsulation",
+          "source": "encapsulation_technology",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "dep_tandem_tco",
+          "source": "tco_electrodes",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "link_longi_record_tandem",
+          "source": "milestone_longi_tandem_record",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "link_iec_cert_tandem",
+          "source": "milestone_iec_perovskite",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "enable_tandem_35",
+          "source": "perovskite_si_tandem",
+          "target": "milestone_tandem_eff_35"
+        },
+        {
+          "id": "dep_xbc_topcon",
+          "source": "topcon_pv",
+          "target": "xbc_pv"
+        },
+        {
+          "id": "dep_xbc_hjt",
+          "source": "hjt_pv",
+          "target": "xbc_pv"
+        },
+        {
+          "id": "dep_gen3_g3p3",
+          "source": "milestone_g3p3_pilot",
+          "target": "gen3_particle_csp"
+        },
+        {
+          "id": "dep_gen3_sco2",
+          "source": "sco2_brayton",
+          "target": "gen3_particle_csp"
+        },
+        {
+          "id": "dep_gen3_heat_exchanger",
+          "source": "particle_heat_exchanger",
+          "target": "gen3_particle_csp"
+        },
+        {
+          "id": "link_sco2_heat_exchanger",
+          "source": "particle_heat_exchanger",
+          "target": "sco2_brayton"
+        },
+        {
+          "id": "enable_ai_tracking_topcon",
+          "source": "ai_tracking_pv",
+          "target": "topcon_pv"
+        },
+        {
+          "id": "enable_ai_tracking_hjt",
+          "source": "ai_tracking_pv",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "enable_ai_heliostat_molten",
+          "source": "ai_heliostat_csp",
+          "target": "molten_salt_csp"
+        },
+        {
+          "id": "enable_ai_heliostat_gen3",
+          "source": "ai_heliostat_csp",
+          "target": "gen3_particle_csp"
+        },
+        {
+          "id": "dep_gfm_ieee",
+          "source": "ieee_2800_standard",
+          "target": "grid_forming_inverter"
+        },
+        {
+          "id": "enable_gfm_topcon",
+          "source": "grid_forming_inverter",
+          "target": "topcon_pv"
+        },
+        {
+          "id": "enable_gfm_hjt",
+          "source": "grid_forming_inverter",
+          "target": "hjt_pv"
+        },
+        {
+          "id": "enable_gfm_tandem",
+          "source": "grid_forming_inverter",
+          "target": "perovskite_si_tandem"
+        },
+        {
+          "id": "evol_molten_gen3",
+          "source": "molten_salt_csp",
+          "target": "gen3_particle_csp"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,2144 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": "subcritical_pc",
+        "label": "Subcritical Pulverized Coal",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Conventional pulverized-coal steam plants operating below water's critical point (about 22 MPa, 550 °C), typically achieving net efficiencies around 33–37% and forming the bulk of the existing global coal fleet.",
+        "references": [
+          "https://www.gem.wiki/Coal_power_technologies",
+          "https://www.ctc-n.org/technologies/pulverised-coal-combustion-higher-efficiency"
+        ]
+      },
+      {
+        "id": "supercritical_pc",
+        "label": "Supercritical PC (540–580 °C)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Pulverized-coal plants operating above the critical pressure (typically around 22–25 MPa, 540–580 °C) with once-through boilers, delivering higher thermal efficiency than subcritical units and widely adopted as a mature HELE technology.",
+        "references": [
+          "https://www.ctc-n.org/technologies/pulverised-coal-combustion-higher-efficiency",
+          "https://www.bpastudies.org/index.php/bpastudies/article/view/170"
+        ]
+      },
+      {
+        "id": "usc_pc",
+        "label": "Ultra-Supercritical PC (600–620 °C)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "High-efficiency pulverized-coal plants with main steam temperatures around 600–620 °C and pressures above 25 MPa, using advanced martensitic and austenitic steels to reach net efficiencies near or above 45% LHV.",
+        "references": [
+          "https://www.ctc-n.org/technologies/pulverised-coal-combustion-higher-efficiency",
+          "https://doi.org/10.1515/revce-2020-0107",
+          "https://www.degruyter.com/document/doi/10.1515/revce-2020-0107/html"
+        ]
+      },
+      {
+        "id": "ausc_700c",
+        "label": "Advanced USC (700 °C class)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Next-generation pulverized-coal plants targeting around 700 °C main steam conditions to reach net efficiencies approaching 47–50%, enabled by nickel-based alloys such as Inconel 740H and Haynes 282 and demonstrated in component and loop tests.",
+        "references": [
+          "https://usea.org/sites/default/files/122013_Status%20of%20advanced%20ultra-supercritical%20pulverised%20coal%20technology_ccc229.pdf",
+          "https://doi.org/10.1016/B978-0-08-100552-1.00020-8",
+          "https://www.mdpi.com/2071-1050/13/2/801",
+          "https://www.sciencedirect.com/science/article/abs/pii/B9780081005521000208"
+        ]
+      },
+      {
+        "id": "ausc_760c",
+        "label": "Advanced USC (760 °C class)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Conceptual and pilot-scale steam cycles aiming at about 760 °C turbine inlet temperature using age-hardenable nickel alloys, with materials and component demonstrations (e.g., test loops) but no full-scale commercial plants yet.",
+        "references": [
+          "https://doi.org/10.1016/B978-0-08-100552-1.00020-8",
+          "https://www.sciencedirect.com/science/article/abs/pii/B9780081005521000208",
+          "https://dl.asminternational.org/am-epri/proceedings/AM-EPRI2013/84666/41/30305"
+        ]
+      },
+      {
+        "id": "igcc_air_blown",
+        "label": "IGCC Air-Blown Gasification",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Integrated Gasification Combined Cycle plants using air-blown entrained-flow gasifiers to convert coal into syngas for a combined-cycle power block, achieving higher efficiency and lower emissions than subcritical PC and deployed in several commercial projects.",
+        "references": [
+          "https://power.mhi.com/products/igcc",
+          "https://en.wikipedia.org/wiki/Integrated_gasification_combined_cycle",
+          "https://en.wikipedia.org/wiki/Igcc"
+        ]
+      },
+      {
+        "id": "igcc_oxygen_blown",
+        "label": "IGCC Oxygen-Blown Gasification",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "IGCC configurations using oxygen-blown gasifiers to produce higher-calorific-value syngas, facilitating higher efficiencies and enabling pre-combustion CO2 capture, demonstrated at commercial scale but with a relatively small global plant fleet.",
+        "references": [
+          "https://power.mhi.com/products/igcc",
+          "https://netl.doe.gov/research/coal/energy-systems/gasification/gasifipedia/igcc"
+        ]
+      },
+      {
+        "id": "sco2_indirect_fired",
+        "label": "Indirect-Fired sCO2 Brayton Cycle",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "High-efficiency power cycle using supercritical CO2 in a closed Brayton loop heated by an external coal-fired or other high-temperature source through compact heat exchangers, currently at 10 MWe pilot and design-study stage for coal integration.",
+        "references": [
+          "https://doi.org/10.1016/j.energy.2016.03.071",
+          "https://doi.org/10.3390/su13031591",
+          "https://netl.doe.gov/carbon-management/sco2/step10pilotplant",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0360544216301736",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC9407418/"
+        ]
+      },
+      {
+        "id": "ammonia_cofiring_20",
+        "label": "Coal–Ammonia Co-firing (20% heat input)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Retrofit of large pulverized-coal units to co-fire about 20% of heat input from ammonia, demonstrated at the 1 GW Hekinan Unit 4 plant to validate combustion behavior, emissions, and equipment impacts.",
+        "references": [
+          "https://ammoniaenergy.org/articles/jera-begins-ammonia-co-firing-demonstration-at-hekinan/",
+          "https://beyond-coal.jp/en/news/hekinan-demonstration-experiment/",
+          "https://www.jera.co.jp/en/news/information/20240401_1863",
+          "https://www.reuters.com/business/energy/jera-ends-ammonia-co-firing-trial-coal-power-station-with-positive-results-2024-06-26/"
+        ]
+      },
+      {
+        "id": "ammonia_cofiring_50",
+        "label": "Coal–Ammonia Co-firing (50%+ target)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Planned large-scale ammonia co-firing in existing coal units at more than 50% of heat input, under development through burner R&D and multi-year demonstration projects targeting late-2020s commercialization.",
+        "references": [
+          "https://ammoniaenergy.org/articles/jera-begins-ammonia-co-firing-demonstration-at-hekinan/",
+          "https://www.spglobal.com/energy/en/news-research/latest-news/energy-transition/053122-japans-jera-to-advance-20-ammonia-co-firing-at-hekinan-by-a-year-to-fy-2023-24"
+        ]
+      },
+      {
+        "id": "biomass_cofiring_direct",
+        "label": "Direct Coal–Biomass Co-firing",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Firing a limited fraction of solid biomass (typically up to 10–20% thermal share) together with pulverized coal in existing boilers to reduce net CO2 emissions, widely practiced in utility units worldwide.",
+        "references": [
+          "https://www.futurecoal.org/sustainable-coal/co-firing-biomass-with-coal/",
+          "https://www.ieabioenergy.com/wp-content/uploads/2013/10/ExCo55-P1a-Global-Operational-Status-of-Co-firing-Biomass-and-Waste-with-Coal.pdf"
+        ]
+      },
+      {
+        "id": "biomass_gasification_coupled",
+        "label": "Biomass Gasification–Coupled Co-firing",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Systems that gasify biomass in a separate gasifier and inject the resulting syngas into coal boilers or gas turbines, enabling higher biomass shares while using existing coal infrastructure.",
+        "references": [
+          "https://doi.org/10.1073/pnas.1812239116",
+          "https://www.pnas.org/doi/full/10.1073/pnas.1812239116"
+        ]
+      },
+      {
+        "id": "inconel_740h",
+        "label": "Inconel 740H Superalloy",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Nickel-base age-hardenable superalloy developed specifically for advanced boiler tubing and piping at about 700 °C, providing high creep strength and oxidation resistance and now qualified for ASME Section I and VIII use.",
+        "references": [
+          "https://dl.asminternational.org/alloy-digest/article/69/9/Ni-762/10032/SPECIAL-METALS-INCONEL-740HNickel-Base-Superalloy",
+          "https://www.netl.doe.gov/sites/default/files/event-proceedings/2014/crosscutting/Crosscutting_20140522_1600B_ORNL.pdf",
+          "https://www.netl.doe.gov/sites/default/files/2017-12/Presentantion_20160420_1600A_FWP-FEAA061_ORNL.pdf",
+          "https://www.specialmetals.com/documents/technical-bulletins/inconel/inconel-alloy-740h.pdf"
+        ]
+      },
+      {
+        "id": "haynes_282",
+        "label": "Haynes 282 Superalloy",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Gamma-prime strengthened nickel alloy designed for high-temperature components such as A-USC steam turbines and boilers, offering good weldability and creep strength and now covered by an ASME Code Case for pressure components.",
+        "references": [
+          "https://haynesintl.com/en/alloys/alloy-portfolio/high-temperature-alloys/haynes-282/",
+          "https://info.ornl.gov/sites/publications/Files/Pub140621.pdf",
+          "https://www.netl.doe.gov/sites/default/files/2017-12/Presentantion_20160420_1600A_FWP-FEAA061_ORNL.pdf",
+          "https://www.netl.doe.gov/sites/default/files/event-proceedings/2014/crosscutting/Crosscutting_20140522_1600B_ORNL.pdf"
+        ]
+      },
+      {
+        "id": "hr6w_alloy",
+        "label": "HR6W Heat-Resistant Alloy",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Ni–Fe-based heat-resistant alloy (e.g., HR6W) developed in Japan for 700 °C-class A-USC boiler tubing and headers, validated in test loops and field exposure but not yet widely deployed commercially.",
+        "references": [
+          "https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/tr/pdf/e524/e524027.pdf"
+        ]
+      },
+      {
+        "id": "alloy_617",
+        "label": "Inconel 617 Alloy",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Solid-solution strengthened nickel–chromium–cobalt–molybdenum alloy considered for high-temperature boiler and piping service in A-USC concepts, with extensive creep and corrosion testing but limited full-scale deployment at 700 °C.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/S1877705813006048"
+        ]
+      },
+      {
+        "id": "advanced_martensitic_steels",
+        "label": "Advanced 9–12% Cr Martensitic Steels",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Tempered martensitic steels such as Grade 91 and Grade 92 that provide high strength and acceptable creep resistance up to about 600 °C and are widely used in supercritical and USC boiler and piping components.",
+        "references": [
+          "https://doi.org/10.1515/revce-2020-0107",
+          "https://dl.asminternational.org/am-epri/proceedings/AM-EPRI2007/84642/1/33762",
+          "https://www.degruyter.com/document/doi/10.1515/revce-2020-0107/html"
+        ]
+      },
+      {
+        "id": "advanced_austenitic_steels",
+        "label": "Advanced Austenitic Steels (HR3C, Sanicro 25)",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "High-alloy austenitic stainless steels such as HR3C and Sanicro 25 used for superheater and reheater tubing in USC plants, extending steam temperature capability beyond martensitic steels while maintaining corrosion resistance.",
+        "references": [
+          "https://doi.org/10.1515/revce-2020-0107",
+          "https://doi.org/10.1002/ese3.83",
+          "https://ui.adsabs.harvard.edu/abs/2015Engin...1..211A/abstract",
+          "https://www.degruyter.com/document/doi/10.1515/revce-2020-0107/html"
+        ]
+      },
+      {
+        "id": "titanium_lsb_50_60",
+        "label": "50/60-inch Titanium Last-Stage Blades",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Very long low-pressure steam turbine last-stage blades made from titanium alloys, introduced to increase exhaust annulus area, reduce wetness losses, and improve efficiency for 1000 MW-class USC units.",
+        "references": [
+          "https://www.hitachihyoron.com/rev/pdf/2013/r2013_01_103.pdf",
+          "https://power.mhi.com/randd/technical-review/pdf/index_69e.pdf",
+          "https://www.power-eng.com/operations-maintenance/steam-turbines-hit-their-stride/"
+        ]
+      },
+      {
+        "id": "pche_recuperator",
+        "label": "Printed Circuit Heat Exchanger (PCHE)",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Compact, high-pressure, high-temperature heat exchangers fabricated by diffusion bonding of etched metal plates, widely adopted for sCO2 cycles and capable of operation around 700 °C in appropriate alloys.",
+        "references": [
+          "https://doi.org/10.1080/01457632.2022.2164683",
+          "https://www.tandfonline.com/doi/full/10.1080/01457632.2022.2164683",
+          "https://dc.engconfintl.org/cgi/viewcontent.cgi?article=1024&context=heatexchangerfall2005"
+        ]
+      },
+      {
+        "id": "high_temp_recuperator_700c",
+        "label": "High-Temperature Recuperator (700 °C class)",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Advanced recuperators designed for about 700 °C inlet temperatures in sCO2 or Brayton cycles, often based on PCHE or similar compact designs and still under optimization for long-term durability.",
+        "references": [
+          "https://doi.org/10.1080/01457632.2022.2164683",
+          "https://doi.org/10.1016/j.ijhydene.2022.10.007",
+          "https://www.sciencedirect.com/science/article/pii/S2214157X22002027",
+          "https://www.tandfonline.com/doi/full/10.1080/01457632.2022.2164683"
+        ]
+      },
+      {
+        "id": "boiler_digital_twin",
+        "label": "Boiler Digital Twin for Flexible Operation",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Hybrid physics- and data-driven digital replicas of large coal-fired boilers used for real-time monitoring, prediction, and optimization of flexible, low-load operation and start-up processes.",
+        "references": [
+          "https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/tr/pdf/e554/e554130.pdf",
+          "https://www.mdpi.com/2076-3417/13/8/4905",
+          "https://ieeexplore.ieee.org/document/9697871/",
+          "https://www.mdpi.com/2076-3417/13/8/4905/pdf?version=1681443821"
+        ]
+      },
+      {
+        "id": "ai_combustion_optimization",
+        "label": "AI-Based Combustion Optimization",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Application of machine learning models, often integrated with digital twins, to optimize burner settings, air–fuel ratios, and load-following strategies in coal boilers for higher efficiency and lower emissions.",
+        "references": [
+          "https://www.mdpi.com/2076-3417/13/8/4905",
+          "https://doi.org/10.1049/iet-rpg.2019.1162",
+          "https://www.mdpi.com/2076-3417/13/8/4905/pdf?version=1681443821",
+          "https://academic.oup.com/ce/article/3/3/227/5614342"
+        ]
+      },
+      {
+        "id": "plasma_burner_system",
+        "label": "Plasma-Assisted Combustion System",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Auxiliary plasma devices (e.g., arc or non-thermal plasma torches) that enhance ignition and flame stability for low-rank or wet coals, enabling reduced oil support and improved burnout in existing boilers.",
+        "references": [
+          "https://oaji.net/articles/2017/1992-1530776101.pdf",
+          "http://www.ispc-conference.org/ispcproc/ispc21/ID416.pdf",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0378382012002494"
+        ]
+      },
+      {
+        "id": "ammonia_burner_technology",
+        "label": "Ammonia Co-firing Burner Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Specialized burners and mixing systems, such as those developed by IHI, designed to introduce ammonia into existing coal flames while controlling NOx and N2O emissions and maintaining stable boiler operation.",
+        "references": [
+          "https://ammoniaenergy.org/articles/jera-begins-ammonia-co-firing-demonstration-at-hekinan/",
+          "https://blog.transitionzero.org/hubfs/Analysis/TransitionZero_Coal-de-sac_Report_final_Ammonia+chapter.pdf"
+        ]
+      },
+      {
+        "id": "isogo_usc_milestone",
+        "label": "Isogo New Units USC Milestone",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Commissioning of J-POWER's Isogo New No. 1 and No. 2 units in Yokohama, Japan, using 600 °C-class USC technology and demonstrating high-efficiency, low-emissions coal power near an urban center.",
+        "references": [
+          "https://www.jpower.co.jp/english/ir/pdf/2009-06.pdf",
+          "https://public.euracoal.eu/download/Public-Archive/Events/EP-Round-Table-on-Coal/20121113-INT/Mr%20SAKANASHI's%20presentation%20(WCA).pdf"
+        ]
+      },
+      {
+        "id": "jimah_east_milestone",
+        "label": "Jimah East USC Plant (2×1000 MW)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Completion of the 2×1000 MW Tuanku Muhriz (Jimah East) ultra-supercritical coal-fired power plant in Malaysia, using 600 °C-class steam conditions and state-of-the-art turbine and boiler technology.",
+        "references": [
+          "https://www.global.toshiba/ww/news/energy/2018/12/news-20181219-01.html",
+          "https://www.nsenergybusiness.com/projects/jimah-east-coal-fired-power-plant/",
+          "https://en.wikipedia.org/wiki/Jimah_Power_Plant"
+        ]
+      },
+      {
+        "id": "pingshan_milestone",
+        "label": "Pingshan Phase II High-Efficiency USC",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Operation of China Huainan's Pingshan Phase II 1000 MW double-reheat USC unit, reported as achieving around 49.4% net efficiency (LHV), representing one of the highest-efficiency coal plants worldwide.",
+        "references": [
+          "https://www.powermag.com/chinas-pingshan-phase-ii-sets-new-bar-as-worlds-most-efficient-coal-power-plant/"
+        ]
+      },
+      {
+        "id": "plant_barry_loop",
+        "label": "Plant Barry 760 °C A-USC Loop Test",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Installation and operation of a 760 °C A-USC materials test loop at Southern Company's Plant Barry to expose nickel-based alloys and welds to realistic steam and stress conditions for thousands of hours.",
+        "references": [
+          "https://www.osti.gov/biblio/1332274",
+          "https://dl.asminternational.org/am-epri/proceedings/AM-EPRI2013/84666/41/30305"
+        ]
+      },
+      {
+        "id": "mikawa_700c_loop",
+        "label": "Mikawa 700 °C A-USC Field Test",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Japanese A-USC program field test at the Mikawa plant, where test components in alloys such as HR6W and Alloy 617 were exposed to about 700 °C steam to validate performance for future A-USC boilers.",
+        "references": [
+          "https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/tr/pdf/e524/e524027.pdf"
+        ]
+      },
+      {
+        "id": "hekinan_20pct_ammonia",
+        "label": "Hekinan 20% Ammonia Co-firing Pilot",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "World's first large-scale demonstration of 20% (heat basis) ammonia co-firing in a 1 GW commercial coal unit (Hekinan Unit 4), including months-long operation and public reporting of emissions and performance.",
+        "references": [
+          "https://beyond-coal.jp/en/news/hekinan-demonstration-experiment/",
+          "https://www.jera.co.jp/en/news/information/20240401_1863",
+          "https://www.reuters.com/business/energy/jera-ends-ammonia-co-firing-trial-coal-power-station-with-positive-results-2024-06-26/"
+        ]
+      },
+      {
+        "id": "step_demo_phase1",
+        "label": "STEP Demo 10 MWe sCO2 Pilot (Phase 1)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Commissioning of the 10 MWe Supercritical Transformational Electric Power (STEP) sCO2 pilot plant in a simple recuperated configuration, validating sCO2 turbomachinery and heat exchangers for future integration with fossil and renewable heat sources.",
+        "references": [
+          "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/57/e3sconf_ati2020_02011.pdf",
+          "https://sco2symposium.com/proceedings2024/74-paper.pdf",
+          "https://duepublico2.uni-due.de/receive/duepublico_mods_00073979",
+          "https://www.e3s-conferences.org/10.1051/e3sconf/202566301018"
+        ]
+      },
+      {
+        "id": "nakoso_igcc_milestone",
+        "label": "Nakoso IGCC 250 MW Demonstration",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Demonstration and early commercial operation of the 250 MW Nakoso IGCC plant in Japan, showing about 42–43% net efficiency and validating air-blown IGCC technology.",
+        "references": [
+          "https://power.mhi.com/products/igcc"
+        ]
+      },
+      {
+        "id": "asme_inconel740h",
+        "label": "ASME Code Case for Inconel 740H",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Approval of Inconel 740H for use under ASME Boiler and Pressure Vessel Code, enabling its deployment in high-temperature pressure components for A-USC boilers and piping.",
+        "references": [
+          "https://www.netl.doe.gov/sites/default/files/2017-12/Presentantion_20160420_1600A_FWP-FEAA061_ORNL.pdf",
+          "https://www.specialmetals.com/documents/technical-bulletins/inconel/inconel-alloy-740h.pdf"
+        ]
+      },
+      {
+        "id": "asme_haynes282",
+        "label": "ASME Code Case for Haynes 282",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Issuance of an ASME Code Case covering Haynes 282 alloy for high-temperature boiler and pressure vessel components, supporting its use in A-USC turbines and steam-cycle hardware.",
+        "references": [
+          "https://info.ornl.gov/sites/publications/Files/Pub140621.pdf",
+          "https://www.netl.doe.gov/sites/default/files/2017-12/Presentantion_20160420_1600A_FWP-FEAA061_ORNL.pdf",
+          "https://www.netl.doe.gov/sites/default/files/event-proceedings/2014/crosscutting/Crosscutting_20140522_1600B_ORNL.pdf"
+        ]
+      },
+      {
+        "id": "h_class_ccgt",
+        "label": "H-Class Combined Cycle Gas Turbines",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Advanced large-frame H-class combined cycle gas turbine plants use high turbine inlet temperatures, advanced materials, and optimized bottoming cycles to reach net combined cycle efficiencies above 63% and up to about 64% under ISO conditions, while offering fast starts and high ramp rates for flexible operation. GE’s 9HA.02 platform is designed to exceed 64% net combined cycle efficiency in 1×1 configuration and has been validated at 64.0% net efficiency (826 MW) at GE’s Greenville test stand, and modern H-class fleets are in commercial service in multiple countries. These units typically employ air‑cooled turbine sections, dry low NOx premixed combustion, and flexible operating concepts (deep turndown, fast start <30 minutes) to support grids with high variable renewable penetration.",
+        "references": [
+          "https://www.ge.com/news/press-releases/ha-technology-now-available-industry-first-64-percent-efficiency",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2018/51043/V009T23A001/273212",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2019/58608/V009T22A001/1066646",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/3-2-1-2.pdf"
+        ]
+      },
+      {
+        "id": "j_class_ccgt",
+        "label": "J-Class Combined Cycle Gas Turbines",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "J‑class combined cycle gas turbines from Mitsubishi Power raise turbine inlet temperatures to about 1600 °C using advanced single-crystal alloys, coatings, and cooling, achieving more than 64% combined cycle efficiency in commercial plants. The M501J and air‑cooled M501JAC variants provide around 450 MW simple cycle output and roughly 660–630 MW in 1×1 combined cycle blocks, with documented fleet operating hours in the millions and applications in projects such as the Intermountain Power Project repowering. These units are marketed as hydrogen‑ready, have rapid start times (~30 minutes) and high ramp rates, and are deployed in multiple grids as baseload and flexible assets.",
+        "references": [
+          "https://power.mhi.com/products/gasturbines/lineup/m501j",
+          "https://www.semanticscholar.org/paper/High-efficiency-Gas-Turbine-Development-applying-1600%C2%B0C-Sato/414114283e2af73a47a89aa2620d4451c91fca37",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2018/51043/V009T22A002/273210",
+          "https://gasturbineworld.com/mitsubishi-power-hydrogen-gas-turbine-technology/",
+          "https://www.energetica-india.net/news/j-power-usa-achieves-commercial-operation-of-its-jackson-generation-project"
+        ]
+      },
+      {
+        "id": "aeroderivative_lm6000",
+        "label": "Aeroderivative Gas Turbines (LM6000 Series)",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "The LM6000 aeroderivative gas turbine family, derived from the CF6 aircraft engine, provides roughly 40–55 MW of output per unit with simple‑cycle efficiencies around 39–42% LHV and optional combined‑cycle efficiencies exceeding 50%. These units can start and reach full power in about five minutes with nominal ramp rates near 50 MW/min, making them well suited for peaking, load‑following, and renewable balancing applications. With over a thousand units shipped and tens of millions of operating hours, LM6000 turbines feature dual‑fuel capability, dry low NOx combustion, and modular maintenance concepts widely adopted in utility, industrial, and oil and gas sectors.",
+        "references": [
+          "https://www.gevernova.com/gas-power/products/gas-turbines/lm6000",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/1-3-2.pdf",
+          "https://www.power-eng.com/gas/turbines/aeroderivative-gas-turbine-sales-bolstered-by-the-need-to-support-renewables-on-the-grid/",
+          "https://www.modernpowersystems.com/features/featuremaking-the-case-for-aeroderivatives-7816665/",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/3-2-1-2.pdf"
+        ]
+      },
+      {
+        "id": "scgt_peaking",
+        "label": "Simple Cycle Gas Turbines for Peaking",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Utility‑scale simple‑cycle gas turbines are used as peaking and fast‑ramping plants, trading lower efficiency for rapid response and lower capital cost. Modern F‑ and H‑class frames such as GE’s 7HA.02 can deliver around 300–370 MW per unit with simple‑cycle efficiencies in the low‑40% range, ramping tens of MW per minute and starting in under ten minutes to support variable renewable integration. These plants commonly operate as open‑cycle peakers, grid‑support resources, and spinning reserve providers in many power systems worldwide.",
+        "references": [
+          "https://gasturbineworld.com/simple-cycle-350-mw-7ha-02-peaking-plant/",
+          "https://energyeducation.ca/encyclopedia/Simple_cycle_gas_plant",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/1-3-2.pdf",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2019/58608/V009T22A001/1066646",
+          "https://www.aemo.com.au/-/media/files/electricity/nem/security_and_reliability/reports/2017/20170310-ge-ffr-advisory-report.pdf"
+        ]
+      },
+      {
+        "id": "h2_cofiring_30pct",
+        "label": "Hydrogen–Natural Gas Co‑firing (up to ~30–50% H2 by volume)",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "8",
+        "description": "Hydrogen–natural gas co‑firing in existing heavy‑duty and aeroderivative gas turbines is being demonstrated and deployed at scales from a few MW to several hundred MW, typically up to about 20–30% hydrogen by volume in commercial projects, with combustor designs tested up to around 50% H2 in controlled settings. Demonstrations on Mitsubishi Power M501G and SGT‑class turbines, as well as LM6000 units, show that modified dry low NOx combustors and fuel systems can maintain NOx compliance and stable operation with H2 blends, delivering modest but real CO2 emission reductions versus pure natural gas. Co‑firing capability is now offered by multiple OEMs as an upgrade path, but full fleets at high H2 volumes remain at pilot or early‑adoption stage.",
+        "references": [
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2023/86991/V006T08A007/1168060",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2023/86991/V006T08A001/1168086",
+          "https://www.eia.gov/todayinenergy/detail.php?id=63084",
+          "https://www.sciencedirect.com/science/article/pii/S0959652624001719",
+          "https://www.energy.gov/sites/default/files/2022-12/h2iqhour-09152022.pdf"
+        ]
+      },
+      {
+        "id": "h2_ready_100pct",
+        "label": "100% Hydrogen‑Ready Gas Turbine Plant Architectures",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "6",
+        "description": "Hydrogen‑ready gas turbine plants are designed from the outset to operate initially on natural gas or low‑percentage H2 blends and to be converted later to high‑hydrogen or 100% H2 operation through defined upgrade packages. Industry definitions such as those from EUTurbines and VGB distinguish levels of H2‑readiness based on provisions in core components, balance‑of‑plant, and safety systems, with most current projects classed as capable of future upgrade rather than immediately operable on 100% H2. While projects such as HYFLEXPOWER have demonstrated 0–100% H2 operation on modified SGT‑400 units at pilot scale, fully commercial large‑frame 100% H2 plants remain at the advanced development or demonstration stage rather than widespread deployment.",
+        "references": [
+          "https://www.vgbe.energy/en/?jet_download=c27e206dba054173d43e4201a2bec5a5d0a839b6",
+          "https://asmedigitalcollection.asme.org/GT/proceedings-abstract/GT2024/87936/V002T03A013/1203791",
+          "https://www.hyflexpower.eu/2023/10/24/first-successful-demonstration-with-100-green-h2/",
+          "https://www.energy.gov/sites/default/files/2022-12/h2iqhour-09152022.pdf"
+        ]
+      },
+      {
+        "id": "fast_start_ccgt",
+        "label": "Fast‑Start Combined Cycle Gas Turbines (<30 minutes to Full Load)",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Fast‑start combined cycle plants integrate advanced gas turbines, once‑through or Benson‑type HRSGs, optimized steam systems, and purge‑credit/start‑up procedures to reach full combined‑cycle load in about 30 minutes or less, compared with earlier plants needing an hour or more. Vendors report HA‑class blocks achieving hot‑start times in the 20–30 minute range with coordinated ramping of gas and steam turbines while managing thermal stresses, enabling these plants to provide peaking, load‑following, and ancillary services alongside baseload operation. Such fast‑start CCGTs are already in commercial service and are central to balancing high shares of renewable generation in several markets.",
+        "references": [
+          "https://www.power-eng.com/gas/combined-cycle/gas-turbine-combined-cycle-fast-start-the-physics-behind-the-con/",
+          "https://etn.global/wp-content/uploads/2018/09/Startup_time_reduction_for_Combined_Cycle_Power_Plants.pdf",
+          "https://www.modernpowersystems.com/analysis/fast-work-for-the-benson-once-through-hrsg/",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2019/58608/V009T22A001/1066646",
+          "https://www.power-eng.com/gas/combined-cycle/fast-starting-combined-cycles-must-beat-the-drum/"
+        ]
+      },
+      {
+        "id": "indirect_brayton",
+        "label": "Indirect‑Fired Brayton Cycles for Gas Turbine Plants",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "4",
+        "description": "Indirect‑fired Brayton cycles use an intermediate heat exchanger or heater so that the working fluid (such as air, helium, or supercritical CO2) is heated without direct contact with combustion products, allowing separation of combustion and turbine circuitry. Such cycles can improve materials life, enable alternative working fluids, and simplify integration with other high‑temperature processes but introduce additional pressure losses and component complexity. Studies and patents for indirect‑ or externally‑fired gas turbine cycles indicate attractive theoretical efficiencies and niche applications, but large‑scale natural‑gas‑fired indirect Brayton power plants remain largely at conceptual, laboratory, or small pilot scale rather than commercial deployment.",
+        "references": [
+          "https://www.osti.gov/servlets/purl/850545",
+          "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/brayton-cycle",
+          "https://www.mdpi.com/2071-1050/11/2/554",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/1-1.pdf",
+          "https://patents.google.com/patent/US20100050639A1/en"
+        ]
+      },
+      {
+        "id": "single_crystal_superalloy",
+        "label": "Single‑Crystal Nickel‑Based Superalloys for Turbine Blades",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Single‑crystal nickel‑based superalloys eliminate grain boundaries in turbine blades, greatly improving creep resistance, fatigue life, and corrosion performance at high temperatures compared with equiaxed or directionally solidified alloys. These materials, introduced in aircraft engines in the late 20th century and later adopted in land‑based heavy‑duty turbines, enable metal temperatures approaching or exceeding 1000–1100 °C with intensive internal cooling and coatings, supporting very high turbine inlet temperatures in H‑ and J‑class gas turbines. Their production involves carefully controlled directional solidification and alloy chemistry (often including elements such as Re, W, Ta), and they are a cornerstone of modern high‑efficiency gas turbine hot‑section design.",
+        "references": [
+          "https://www.americanscientist.org/article/each-blade-a-single-crystal",
+          "https://www.sciencedirect.com/science/article/pii/S127096389900108X",
+          "https://www.tms.org/superalloys/10.7449/1980/Superalloys_1980_205_214.pdf",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/4-1.pdf",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11396716/"
+        ]
+      },
+      {
+        "id": "thermal_barrier_coating",
+        "label": "Advanced Thermal Barrier Coatings (TBCs)",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Thermal barrier coatings are ceramic layers, typically 7–8 wt% yttria‑stabilized zirconia deposited over metallic bond coats on turbine blades and vanes, that insulate superalloy substrates from hot‑gas temperatures. These coatings can reduce metal temperatures by roughly 100–200 °C for a given gas temperature, enabling higher firing temperatures and improved efficiency while maintaining component life. TBC systems are widely used in both aero‑engines and industrial gas turbines, with ongoing research into compositions, architectures, and lifing models to manage oxidation, sintering, spallation, and thermal cycling in advanced H/J‑class applications.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Thermal_barrier_coating",
+          "https://www.science.org/doi/10.1126/science.1068609",
+          "https://www.sciencedirect.com/science/article/pii/S0257897206004919",
+          "https://etn.global/wp-content/uploads/2018/03/A-practical-guide-for-TBCs-in-gas-turbines.pdf",
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/4-4-2.pdf"
+        ]
+      },
+      {
+        "id": "ceramic_matrix_composite",
+        "label": "Ceramic Matrix Composites (CMC) for Gas Turbine Hot Sections",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "6",
+        "description": "Silicon‑carbide‑based ceramic matrix composites (CMC), such as SiC/SiC, offer higher temperature capability, lower density, and improved oxidation resistance than metallic superalloys, enabling operation of certain hot‑section components at metal temperatures beyond 1200–1300 °C with reduced or no active cooling. CMCs have reached commercial use in aero‑engine shrouds and some vanes and are being developed for industrial gas turbine blades and other hot‑gas‑path parts, with promising tests of CMC vanes and blades in rigs and demonstrator engines. However, large‑scale deployment of CMC rotating blades in heavy‑duty power turbines is still at the demonstration and qualification stage, with challenges including cost, manufacturability, impact resistance, and attachment design.",
+        "references": [
+          "https://www.mdpi.com/2079-6412/13/2/357",
+          "https://www.osti.gov/biblio/1632565",
+          "https://ntrs.nasa.gov/api/citations/20130010774/downloads/20130010774.pdf",
+          "https://www.compositesworld.com/articles/the-next-generation-of-ceramic-matrix-composites",
+          "https://asmedigitalcollection.asme.org/gasturbinespower/article-abstract/147/12/121016/1221049"
+        ]
+      },
+      {
+        "id": "dln_combustion",
+        "label": "Dry Low NOx Lean‑Premixed Combustion Systems",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Dry low NOx (DLN) combustion systems use staged, lean‑premixed flames to keep flame temperatures low enough to limit thermal NOx formation while avoiding the need for water or steam injection. Systems such as GE’s DLN 2.6/2.6e and similar technologies from other OEMs routinely achieve emissions on the order of 9–25 ppm NOx (15% O2) over wide load ranges in F‑ and H‑class turbines, with advanced variants enabling turndown to ~15–20% load while maintaining emissions limits. These combustors rely on sophisticated fuel staging, swirlers, mixing passages, and controls, and are the dominant technology for emissions control in modern large gas turbines burning natural gas and, increasingly, hydrogen blends.",
+        "references": [
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/3-2-1-2.pdf",
+          "https://www.gevernova.com/gas-power/services/gas-turbines/upgrades/dry-low-nox-dln-2-6-combustion-f-class",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2024/87950/V03BT04A031/1203958",
+          "https://www.energy.gov/sites/default/files/2022-12/h2iqhour-09152022.pdf",
+          "https://www.ge.com/news/press-releases/ge-milestones-first-dry-low-nox-26-technology-upgrade-asia-and-first-service"
+        ]
+      },
+      {
+        "id": "multifuel_h2_nozzle",
+        "label": "Multi‑Fuel and Hydrogen‑Capable Premix Fuel Nozzles",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "7",
+        "description": "Hydrogen‑capable premix fuel nozzles and multi‑fuel injectors are designed to safely mix hydrogen or hydrogen‑rich blends with air while mitigating flashback and combustion dynamics, leveraging high‑velocity jets, tailored swirl, and staged injection to accommodate hydrogen’s much higher flame speed and diffusivity. OEMs such as Mitsubishi Power, Siemens Energy, and others have developed multi‑nozzle and sequential‑combustion hardware that has been demonstrated in rigs and field tests up to 100% H2 on smaller industrial machines and to around 50% H2 on larger frames. These designs are key enablers for retrofitting existing DLN combustors and realizing H2‑ready and 100% H2 gas turbine concepts.",
+        "references": [
+          "https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/tr/pdf/e594/e594040.pdf",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2024/87950/V03BT04A034/1203981",
+          "https://www.nature.com/articles/s41598-023-46217-6",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2023/86960/V03BT04A038/1167971",
+          "https://gasturbineworld.com/mitsubishi-power-hydrogen-gas-turbine-technology/"
+        ]
+      },
+      {
+        "id": "ai_autotune",
+        "label": "AI‑Based Autonomous Combustion Tuning and Controls",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "8",
+        "description": "AI‑based autotuning and advanced digital controls create data‑driven models of gas turbine combustion and performance, enabling continuous adjustment of fuel splits, firing temperature, and other parameters to optimize efficiency, emissions, and operability. Commercial solutions such as GE’s Autonomous Tuning, Siemens GT Auto Tuner, and third‑party digital optimization systems have been deployed on dozens of gas turbines, demonstrating reductions in NOx and CO emissions, improved fuel efficiency, and expanded operability under varying ambient conditions and fuel qualities. These systems use combinations of physics‑based models, machine learning, and edge/cloud analytics and are increasingly important as turbines are asked to cycle more to balance renewables.",
+        "references": [
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2019/58608/V009T22A003/1066626",
+          "https://www.powermag.com/new-ge-digital-software-designed-to-optimize-gas-turbine-performance/",
+          "https://www.siemens-energy.com/global/en/home/products-services/service/gt-autotuner.html",
+          "https://www.digitalengineering247.com/article/head-predicting-power-plant-maintenance-with-an-industrial-digital-twin",
+          "https://www.mdpi.com/1996-1073/10/9/1363"
+        ]
+      },
+      {
+        "id": "digital_twin_hrsg",
+        "label": "Digital Twins for Heat Recovery Steam Generators (HRSGs)",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "8",
+        "description": "Digital twins of heat recovery steam generators couple detailed thermo‑hydraulic and structural models with plant data to monitor HRSG behavior, predict tube metal temperatures, assess corrosion and fouling risk, and optimize start‑up and cycling strategies. Vendors and utilities have developed HRSG twins using platforms such as Siemens Energy’s Omniverse‑based simulation environments and broader plant digital twins, enabling condition‑based maintenance and reducing forced outages in cycling CCGTs. While methodologies are still evolving, multiple industrial deployments demonstrate practical value in planning inspections and managing fast‑start, frequent‑start operation of multi‑pressure HRSGs.",
+        "references": [
+          "https://www.turbomachinerymag.com/view/digital-twins-in-the-real-world",
+          "https://www.digitalengineering247.com/article/head-predicting-power-plant-maintenance-with-an-industrial-digital-twin",
+          "https://www.techtransfer.com/resources/wiki/heat-recovery-steam-generator/",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2022/86043/V010T23A001/1148943"
+        ]
+      },
+      {
+        "id": "edge_computing_grid",
+        "label": "Edge Computing for Gas Turbine Grid Services",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "8",
+        "description": "Edge computing architectures deploy processing and analytics close to gas turbines and substation equipment, using local controllers and industrial PCs to process high‑frequency data and execute control actions in real time without wide‑area communication delays. In power systems with high renewable penetration, such setups underpin fast frequency response, primary frequency control, and protection schemes by enabling sub‑second detection and response to disturbances. Demonstrations and commercial solutions integrate edge controllers with plant DCS and turbine controls, supporting grid codes that require fast active power and frequency response capabilities from gas‑fired units.",
+        "references": [
+          "https://www.trugemtech.com/edge-computing-in-energy/",
+          "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/enc2.12103",
+          "https://www.aemo.com.au/-/media/files/electricity/nem/security_and_reliability/reports/2017/20170310-ge-ffr-advisory-report.pdf",
+          "https://envirotecmagazine.com/2023/10/18/turning-turbines-smart-with-edge-computing/",
+          "https://arxiv.org/pdf/1905.01747.pdf"
+        ]
+      },
+      {
+        "id": "h2_mixing_skid",
+        "label": "Hydrogen–Natural Gas Mixing and Conditioning Skids",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "7",
+        "description": "Hydrogen–natural gas mixing skids blend hydrogen into natural gas streams upstream of gas turbine fuel systems, using static mixers, flow and composition instrumentation, and control valves to deliver a homogeneous mixture at the required pressure and temperature. Properly engineered systems account for hydrogen’s lower heating value and higher diffusivity, providing composition control, purging sequences, and over‑pressure protection, and often incorporate double block‑and‑bleed isolation and venting to safe locations. While blending skids are commercially available for pipeline and industrial use, higher‑percentage blends for large power plants and dynamic operation with fast‑changing H2 fractions are still being demonstrated and standardized.",
+        "references": [
+          "https://gasturbineworld.com/hydrogen-mixing-skids/",
+          "https://entrustsol.com/wp-content/uploads/2023/02/Hydrogen_as_Gas_Turbine_Fuel_Feasibility_and_Considerations_JN_R5.pdf",
+          "https://www.vgbe.energy/en/?jet_download=c27e206dba054173d43e4201a2bec5a5d0a839b6"
+        ]
+      },
+      {
+        "id": "h2_embrittlement_mitigation",
+        "label": "Hydrogen Embrittlement Mitigation for Turbine Fuel Systems",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "7",
+        "description": "Hydrogen embrittlement mitigation in gas turbine fuel systems involves selecting steels and nickel‑based alloys with suitable microstructures, applying coatings and surface treatments, and designing components to avoid high local stresses and crack initiation. Field experience and laboratory studies show that high‑strength steels and some nickel alloys can suffer delayed cracking and loss of ductility in high‑pressure H2, prompting the use of austenitic stainless steels, nickel‑rich alloys, and careful qualification testing for valves, fittings, and tubing in H2‑rich service. Guidance from material standards, failure analyses, and energy transition studies informs the design of hydrogen‑ready fuel trains, valves, and associated piping for future high‑H2 gas turbine operation.",
+        "references": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11117190/",
+          "https://content.ampp.org/ampp/proceedings/CONF_MAR2023/2023/1/60270",
+          "https://as-schneider.blog/2022/01/19/hydrogen-valves-and-typical-application-challenges/",
+          "https://www.mdpi.com/1996-1944/17/17/4265"
+        ]
+      },
+      {
+        "id": "milestone_9ha_64pct",
+        "label": "GE 9HA.02 64% Combined Cycle Efficiency Milestone",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "In 2017 GE announced that its 9HA.02 gas turbine had achieved 64.0% net combined cycle efficiency in a 1×1 configuration with 826 MW output at its Greenville, South Carolina test facility, marking an industry‑leading efficiency level for large gas turbine combined cycle plants at that time. This achievement leveraged new DLN 2.6e combustion hardware and additive manufacturing for combustor components, alongside refined cooling and sealing designs, and built on the earlier 62.22% world‑record efficiency of the first 9HA.01 at EDF’s Bouchain plant. The milestone established a benchmark for subsequent high‑efficiency plant designs across the industry.",
+        "references": [
+          "https://www.ge.com/news/press-releases/ha-technology-now-available-industry-first-64-percent-efficiency",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/9ha",
+          "https://www.powermag.com/market-challenged-ge-continues-to-improve-gas-turbine-efficiency/"
+        ]
+      },
+      {
+        "id": "milestone_bouchain_62pct",
+        "label": "EDF Bouchain 62.22% World‑Record CCGT Efficiency",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "The EDF Bouchain combined cycle power plant in France, built around a GE 9HA.01 gas turbine, achieved a Guinness‑certified net efficiency of 62.22% and entered commercial operation in 2016, at that time the world’s most efficient CCGT. The 605 MW plant, arranged in a single‑shaft 1×1 configuration, demonstrated the viability of large air‑cooled H‑class turbines with advanced materials and DLN combustion in commercial service. Bouchain served as an early reference for subsequent HA‑based plants and highlighted the incremental fuel savings and CO2 reductions achieved by pushing CCGT efficiencies above 60%.",
+        "references": [
+          "https://www.powermag.com/ge-debuts-giant-9ha-02-gas-turbines-at-1-4-gw-plant-in-malaysia/",
+          "https://www.powermag.com/market-challenged-ge-continues-to-improve-gas-turbine-efficiency/",
+          "https://www.guinnessworldrecords.com/world-records/most-efficient-combined-cycle-power-plant",
+          "https://www.araner.com/blog/combined-cycle-power-plants"
+        ]
+      },
+      {
+        "id": "milestone_100h2_utility",
+        "label": "100% Hydrogen Combustion Demonstrations in Gas Turbines",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "7",
+        "description": "Between 2022 and 2025 several projects achieved full‑scale or pilot‑scale demonstrations of 100% hydrogen combustion in industrial gas turbines, notably the HYFLEXPOWER project in France where a Siemens Energy SGT‑400 CHP plant operated with 0–100% H2 in an integrated power‑to‑hydrogen‑to‑power setup. Ansaldo Energia has reported sequential combustion GT36 tests on 100% H2, and OEMs including GE and Mitsubishi Power have validated 100% H2‑capable combustor designs in test rigs and smaller units. These demonstrations confirm technical feasibility of zero‑CO2 hydrogen firing but remain limited in duration and number, with large‑frame commercial 100% H2 plants still in development.",
+        "references": [
+          "https://asmedigitalcollection.asme.org/GT/proceedings-abstract/GT2024/87936/V002T03A013/1203791",
+          "https://www.hyflexpower.eu/2023/10/24/first-successful-demonstration-with-100-green-h2/",
+          "https://gasturbineworld.com/siemens-hyflexpower/",
+          "https://gasturbineworld.com/sequential-combustion-technology-tested-100-percent-hydrogen/",
+          "https://www.gevernova.com/news/press-releases/ge-vernova-validates-100-hydrogen-fueled-dln-combustor-technology-aiming-6"
+        ]
+      },
+      {
+        "id": "milestone_j_series_1600c",
+        "label": "Mitsubishi J‑Series 1600 °C Turbine Inlet Temperature Milestone",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "9",
+        "description": "Mitsubishi Heavy Industries’ J‑series gas turbine development, completed around 2011, achieved a turbine inlet temperature of about 1600 °C in commercial‑scale gas turbines, enabled by national R&D programs on 1700 °C‑class turbine components. Verification at the Takasago ‘T‑Point’ combined cycle plant demonstrated over 60% combined cycle efficiency and established the basis for later M501J and M501JAC commercial units. The J‑series milestone marked a significant step in pushing firing temperatures and efficiencies higher while managing mechanical integrity and cooling requirements in large frame turbines.",
+        "references": [
+          "https://www.semanticscholar.org/paper/High-efficiency-Gas-Turbine-Development-applying-1600%C2%B0C-Sato/414114283e2af73a47a89aa2620d4451c91fca37",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2018/51043/V009T22A002/273210",
+          "https://power.mhi.com/jp/randd/technical-review/pdf/index_33e.pdf",
+          "https://power.mhi.com/products/gasturbines/lineup/m501j",
+          "https://www.turbomachinerymag.com/view/mitsubishi-power-to-deliver-m501-jac-for-steam-electricity-cogeneration-project"
+        ]
+      },
+      {
+        "id": "milestone_h2ready_orders",
+        "label": "Early Commercial Orders and Commissioning of H2‑Ready CCGT Plants",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "8",
+        "description": "From around 2020 onward, several utilities and developers placed orders for and began commissioning hydrogen‑ready combined cycle gas turbine plants designed to run initially on natural gas and later on hydrogen blends or 100% H2, including EnBW’s Stuttgart‑Münster CHP plant with two Siemens SGT‑800 turbines and the Intermountain Power Project (IPP) in Utah using Mitsubishi M501JAC units. The Stuttgart‑Münster plant, commissioned in 2025, provides about 124 MW electricity and 370 MW heat and is intended to switch to high‑percentage hydrogen operation in the mid‑2030s, while IPP is planned to start at 30% H2 co‑firing and transition towards 100% H2 over time. These projects signal market acceptance of H2‑ready concepts but still depend on future hydrogen supply, infrastructure, and upgrade execution.",
+        "references": [
+          "https://www.enbw.com/press/enbw-hydrogen-ready-gas-turbine-stuttgart.html",
+          "https://www.enerdata.net/publications/daily-energy-news/enbw-commissions-hydrogen-ready-gas-turbine-power-plant-germany.html",
+          "https://www.h2-view.com/story/enbw-commissions-hydrogen-ready-power-plant-in-stuttgart/2124495.article/",
+          "https://gasturbineworld.com/mitsubishi-power-hydrogen-gas-turbine-technology/",
+          "https://www.ipautah.com/wp-content/uploads/2020/05/IPP-Renewed-Project-Fact-Sheet.pdf"
+        ]
+      },
+      {
+        "id": "large_bore_4stroke",
+        "label": "Large-Bore Medium-Speed 4-Stroke Dual-Fuel/HFO Engines for Stationary Power",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node represents large-bore, medium-speed four-stroke reciprocating engines (typically 400–500 mm bore) deployed as stationary generator sets for utility and industrial power plants, capable of operating on heavy fuel oil (HFO), light fuel oil (LFO), or marine diesel oil (MDO) and often in dual-fuel configurations with natural gas. These engines, such as the Wärtsilä 50DF and MAN 48/60CR families in genset configuration, achieve electrical efficiencies approaching 48–50% in liquid-fuel mode at unit ratings in the 15–20 MW class and are commercially deployed worldwide for grid support, peaking, and baseload in multi-engine plants.",
+        "references": [
+          "https://www.wartsila.com/energy/engine-power-plant-solutions/engine-power-plant-products/wartsila-50df-dual-fuel-engine",
+          "https://www.wartsila.com/media/news/24-09-2004-first-wartsila-50df-power-plant-in-turkey",
+          "https://engine.od.ua/ufiles/MAN_48_60CR.pdf",
+          "https://www.man-es.com/docs/default-source/document-sync/four--stroke-marine-systems-eng.pdf",
+          "https://www.power-eng.com/gas/the-evolution-of-reciprocating-engines/",
+          "https://www.epa.gov/sites/default/files/2015-07/documents/catalog_of_chp_technologies_section_2._technology_characterization_-_reciprocating_internal_combustion_engines.pdf"
+        ]
+      },
+      {
+        "id": "modular_power_blocks",
+        "label": "Containerized Modular Engine Power Blocks",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node covers pre-fabricated, containerized reciprocating engine 'power block' solutions integrating medium-speed oil or dual-fuel engines, auxiliaries, and balance-of-plant into modular units for fast-track deployment. These blocks can be rapidly transported, installed, and scaled in 5–20 MW increments for remote grids, mines, and fast-track utility projects, reducing on-site construction time compared with stick-built power plants.",
+        "references": [
+          "https://im-mining.com/2019/06/13/wartsila-provides-engine-technology-applications-modular-block/",
+          "https://www.wartsila.com/insights/article/towards-higher-efficiencies-with-wartsila-modular-block",
+          "https://www.power-eng.com/gas/the-evolution-of-reciprocating-engines/",
+          "https://www.powermag.com/quick-starts-high-efficiency-grid-balance-engines-on-an-up-cycle/"
+        ]
+      },
+      {
+        "id": "multi_engine_plants",
+        "label": "Multi-Engine Oil-Fired Power Plants (Flexible Stationary RICE)",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node represents stationary power plants composed of multiple medium-speed oil or dual-fuel reciprocating engines (typically 5–20 MW per unit) configured in parallel to provide high overall plant capacity, fast start, and efficient part-load operation by cycling engines on and off. Examples include multi-engine plants in the 100–500 MW range where reciprocating engines are used for peaking, grid-balancing, and renewable integration, allowing high efficiency across a wide load range.",
+        "references": [
+          "https://www.cire.pl/pliki/2/2018/13___niewinski.pdf",
+          "https://www.powermag.com/benefits-of-reciprocating-engines-in-power-generation/",
+          "https://www.power-eng.com/gas/the-evolution-of-reciprocating-engines/",
+          "https://www.eia.gov/todayinenergy/detail.php?id=37972"
+        ]
+      },
+      {
+        "id": "oil_gas_turbine_peaking",
+        "label": "Oil-Fired Simple-Cycle Gas Turbines for Peaking",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node captures simple-cycle industrial gas turbines configured for peaking or reserve service that can burn distillate oil (diesel) or, in some cases, treated heavy fuel oil when gas is unavailable. Such turbines provide fast-start capability and high specific power but lower thermal efficiency than combined-cycle plants, and are deployed for grid support and capacity markets where fuel-flexible liquid-fired operation is needed.",
+        "references": [
+          "https://www.eia.gov/todayinenergy/detail.php?id=43955",
+          "https://www.power-eng.com/gas/turbines/reciprocating-engine-generator-technology/",
+          "https://www.power-eng.com/gas/siemens-to-supply-gas-turbines-for-oil-fired-power-plant-in-saudi-arabia/",
+          "https://imanagerpublications.com/article/21082"
+        ]
+      },
+      {
+        "id": "orc_waste_heat",
+        "label": "Organic Rankine Cycle (ORC) Waste-Heat Recovery on Oil Engines",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "7",
+        "description": "This node describes bottoming Organic Rankine Cycle units that recover low- to medium-temperature waste heat from exhaust gas and cooling circuits of oil- or HFO-fired reciprocating engines and convert it to additional electrical power. ORC systems have been demonstrated and deployed on diesel and gas engine gensets, typically improving overall plant efficiency by several percentage points but are not yet universal in oil engine power plants.",
+        "references": [
+          "https://www.mdpi.com/1996-1073/12/7/1397",
+          "https://www.sae.org/publications/technical-papers/content/2023-01-0944/",
+          "https://www.sciencedirect.com/science/article/pii/S2352484721004467",
+          "https://www.frontiersin.org/articles/10.3389/fmech.2021.676566/full",
+          "https://www.mdpi.com/2077-1312/12/3/521"
+        ]
+      },
+      {
+        "id": "oil_solar_battery_hybrid",
+        "label": "Oil-Solar-Battery Hybrid Microgrids (Diesel/HFO + PV + Storage)",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "This node represents islanded or weak-grid microgrids that combine diesel or HFO generator sets with photovoltaic (PV) arrays and battery energy storage, coordinated via energy management systems to reduce fuel consumption and improve reliability. Such hybrid systems are widely studied and increasingly deployed in mining sites, islands, and remote communities, with demonstrated reductions in oil fuel use and CO2 emissions compared with diesel-only generation.",
+        "references": [
+          "https://www.mdpi.com/2227-9717/10/11/2164",
+          "https://www.mdpi.com/1996-1073/14/21/7358",
+          "https://www.matec-conferences.org/articles/matecconf/pdf/2018/30/matecconf_e3pe2018_01006.pdf",
+          "http://eudl.eu/doi/10.4108/eai.13-7-2018.162692",
+          "https://www.mdpi.com/2071-1050/15/18/13499"
+        ]
+      },
+      {
+        "id": "dual_fuel_systems",
+        "label": "Dual-Fuel Oil/Gas Medium-Speed Engines for Power Plants",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node covers medium-speed reciprocating engines designed for dual-fuel operation, primarily using natural gas with pilot oil injection but capable of switching to liquid fuels such as HFO, LFO, or MDO while maintaining high efficiency. In stationary power plants these engines provide fuel flexibility, allowing operators to hedge gas availability or price risk by using oil fuels while exploiting gas mode for lower emissions where gas infrastructure exists.",
+        "references": [
+          "https://www.wartsila.com/energy/engine-power-plant-solutions/engine-power-plant-products/wartsila-50df-dual-fuel-engine",
+          "https://www.wartsila.com/media/news/30-08-2016-wartsila-to-supply-100-mw-power-plant-to-argentina",
+          "https://www.jfe-steel.co.jp/en/research/report/019/pdf/019-17.pdf",
+          "https://www.epa.gov/sites/default/files/2015-07/documents/catalog_of_chp_technologies_section_2._technology_characterization_-_reciprocating_internal_combustion_engines.pdf"
+        ]
+      },
+      {
+        "id": "common_rail_injection",
+        "label": "High-Pressure Common-Rail Injection for Large-Bore Oil Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node represents electronically controlled common-rail fuel injection systems for large-bore medium-speed diesel and dual-fuel engines, capable of delivering liquid fuels such as HFO/MDO at pressures up to roughly 1,600–2,000 bar. Common-rail systems decouple pressure generation from injection timing, enabling flexible control of injection rate, timing, and multiple injections per cycle, which improves combustion efficiency, noise, and emissions control in stationary and marine oil-fueled engines.",
+        "references": [
+          "https://engine.od.ua/ufiles/MAN_48_60CR.pdf",
+          "https://www.man-es.com/docs/default-source/document-sync/four--stroke-marine-systems-eng.pdf",
+          "https://dieselnet.com/tech/diesel_fi_common-rail.php",
+          "https://www.mtu-solutions.com/eu/en/stories/technology/research-development/how-does-common-rail-injection-work.html",
+          "https://asmedigitalcollection.asme.org/ICEF/proceedings/ICEF2006/42606/97/318083"
+        ]
+      },
+      {
+        "id": "electronic_fuel_injection",
+        "label": "Electronic Fuel Injection and Engine Management",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node covers electronic fuel injection control and integrated engine management systems that actuate fuel metering, injection timing, and other parameters based on sensor feedback in large stationary and marine oil engines. By replacing purely mechanical control, electronic systems enable more precise load control, emissions optimization, and compatibility with multiple liquid fuels while supporting strategies such as pilot injection and rate shaping.",
+        "references": [
+          "https://www.perkins.com/en_GB/network-resources/useful-information/common-rail.html",
+          "https://dieselnet.com/tech/diesel_fi_common-rail.php",
+          "https://www.jstage.jst.go.jp/article/jime/45/Special/45_974/_pdf/-char/ja",
+          "https://ogst.ifpenergiesnouvelles.fr/articles/ogst/pdf/2007/04/ogst06098.pdf",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0263224121012203"
+        ]
+      },
+      {
+        "id": "two_stage_turbocharging",
+        "label": "Two-Stage Turbocharging for Medium-Speed Diesel/HFO Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "This node describes regulated two-stage (high- and low-pressure) turbocharging systems applied to four-stroke medium-speed diesel or HFO engines to increase boost pressure, improve specific power, and enhance efficiency across varying loads and ambient conditions. Two-stage systems, including commercial solutions like ABB/Accelleron Power2, can raise charge-air pressure and support advanced combustion strategies such as Miller timing, and have been demonstrated on large stationary and marine engines but are not yet ubiquitous in all oil-fired power plants.",
+        "references": [
+          "https://www.yanmar.com/global/about/technology/technical_review/2020/0326_4.html",
+          "https://accelleron.com/content/dam/accelleronind/documents/Technology_Power2-800-M_Factsheet.pdf",
+          "https://journals.sagepub.com/doi/10.1177/09544070231171970",
+          "https://www.mdpi.com/1996-1073/12/22/4223",
+          "https://www.hindawi.com/journals/ijrm/2014/209084/"
+        ]
+      },
+      {
+        "id": "extreme_miller_cycle",
+        "label": "Miller/Atkinson-Type Valve Timing on Turbocharged Oil Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "7",
+        "description": "This node covers the application of Miller-cycle or Atkinson-type valve timing (e.g., early or late intake valve closing) in conjunction with high boost from turbocharging on medium-speed diesel/HFO engines. These strategies reduce effective compression temperature, improve knock or NOx control, and enable higher geometric compression ratios and efficiency when combined with advanced boosting, but are more common in research and selected commercial engines than universally adopted in oil power plants.",
+        "references": [
+          "https://dieselnet.com/tech/engine_miller-cycle.php",
+          "http://www.diva-portal.org/smash/get/diva2:1196111/FULLTEXT01.pdf",
+          "https://staff.tiiame.uz/storage/users/293/books/O2cf5UF288ttKCsAnHoKEarWYSaf2y9B431zGMZx.pdf",
+          "https://core.ac.uk/download/pdf/288361707.pdf",
+          "https://www.mdpi.com/1996-1073/10/5/685"
+        ]
+      },
+      {
+        "id": "ai_predictive_maintenance",
+        "label": "AI-Driven Predictive Maintenance for Diesel/HFO Genset Fleets",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "7",
+        "description": "This node represents predictive maintenance frameworks that use machine learning and AI on operational data from diesel and HFO generator fleets to detect anomalies, forecast failures, and optimize maintenance scheduling. While industrial deployments exist in fleet management and marine sectors, the technology is still evolving in terms of standardized models, integration with engine control, and validation at scale in stationary oil power plants.",
+        "references": [
+          "https://ieeexplore.ieee.org/document/11135347/",
+          "https://www.mdpi.com/1424-8220/24/5/1551",
+          "https://link.springer.com/article/10.1007/s42979-023-02508-3",
+          "https://www.techscience.com/csse/v35n2/40062",
+          "https://arxiv.org/html/2509.24443v1"
+        ]
+      },
+      {
+        "id": "cylinder_pressure_monitoring",
+        "label": "Real-Time Cylinder Pressure Monitoring for Large Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "This node covers in-cylinder pressure sensors and associated electronics used on large-bore diesel and HFO engines to measure combustion pressure traces in real time for closed-loop control, tuning, and condition monitoring. Such systems support optimization of injection timing, balancing between cylinders, and detection of abnormal combustion, and are commercially available from specialized sensor vendors for stationary and marine oil-fueled engines.",
+        "references": [
+          "https://jsss.copernicus.org/articles/8/75/2019/",
+          "https://www.kistler.com/CA/en/new-cylinder-pressure-sensors-for-monitoring-and-combustion-optimization-of-large-engines/C00000825/",
+          "https://www.avat.de/en/solutions/energy-generation/control-components/cylinder-pressure",
+          "https://www.rivieramm.com/news-content-hub/news-content-hub/why-accurate-engine-pressure-measurement-holds-the-key-to-optimum-velocity-56969",
+          "https://asmedigitalcollection.asme.org/dynamicsystems/article/133/3/031005/456389"
+        ]
+      },
+      {
+        "id": "digital_twin_engines",
+        "label": "Digital Twins for Large Oil-Fired Reciprocating Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "6",
+        "description": "This node refers to virtual replicas (digital twins) of large diesel/HFO or dual-fuel engine systems used to simulate performance, predict degradation, and support predictive maintenance or operational optimization. While digital-twin concepts are demonstrated in marine and industrial engines and in generic predictive maintenance literature, full lifecycle, real-time coupled twins for entire stationary oil power plants remain at pilot and early deployment stages.",
+        "references": [
+          "https://iopscience.iop.org/article/10.1088/1742-6596/2648/1/012075",
+          "https://ieeexplore.ieee.org/document/10609035/",
+          "https://www.sae.org/articles/predictive-maintenance-a-ground-vehicle-using-digital-twin-technology-2024-01-2867",
+          "https://arxiv.org/html/2509.24443v1",
+          "https://bcdieselgenerators.com/digital-twins-predictive-maintenance-engines/"
+        ]
+      },
+      {
+        "id": "whr_boilers",
+        "label": "Waste Heat Recovery Boilers on Diesel/HFO Gen-Sets",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node represents exhaust gas and jacket-water heat recovery boilers installed on diesel and HFO generator sets to produce steam or hot water, either for process use or to drive bottoming cycles such as ORC or steam Rankine. Such waste-heat recovery systems are mature in marine and stationary applications and can improve total fuel utilization and overall plant efficiency.",
+        "references": [
+          "https://www.mdpi.com/1996-1073/12/7/1397",
+          "https://ieeexplore.ieee.org/document/10698738/",
+          "https://www.e3s-conferences.org/articles/e3sconf/pdf/2019/38/e3sconf_te-re-rd18_01001.pdf",
+          "https://www.heinenhopman.com/20210624-sustainability-waste-heat-recovery/",
+          "https://cheemaboilers.com/waste-heat-recovery-boiler/"
+        ]
+      },
+      {
+        "id": "scr_nox_control",
+        "label": "Selective Catalytic Reduction (SCR) for NOx Control on Oil Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This node covers urea- or ammonia-based Selective Catalytic Reduction systems applied to exhaust from diesel, HFO, or dual-fuel engines in power plants or marine installations, reducing NOx emissions typically by 70–95%. SCR is widely deployed to meet Tier and Euro emission limits and can be tuned to minimize fuel consumption penalties when combined with engine-out NOx optimization.",
+        "references": [
+          "https://dieselnet.com/tech/cat_scr_diesel.php",
+          "https://en.wikipedia.org/wiki/Selective_catalytic_reduction",
+          "https://www.aecc.eu/wp-content/uploads/2020/08/AECC-summary-on-SCR-Nov-07.pdf",
+          "https://www.sciencedirect.com/science/article/pii/S0959652624020596"
+        ]
+      },
+      {
+        "id": "milestone_20mw_single_unit",
+        "label": "Commercialization of ~18–20 MW Class Medium-Speed Engine Gensets",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "This milestone denotes the commercialization of single reciprocating engine generator sets approaching 18–20 MW electrical output, such as the 18V Wärtsilä 50DF and comparable large medium-speed units. These engines, operating in gas and liquid-fuel modes including HFO, have been installed in multi-engine power plants delivering hundreds of megawatts, demonstrating maturity at this unit size.",
+        "references": [
+          "https://www.wartsila.com/energy/engine-power-plant-solutions/engine-power-plant-products/wartsila-50df-dual-fuel-engine",
+          "https://www.lngindustry.com/liquid-natural-gas/30042015/wartsila-inaugurates-jordan-power-plant-667/",
+          "https://www.power-eng.com/gas/the-evolution-of-reciprocating-engines/",
+          "https://www.epa.gov/sites/default/files/2015-07/documents/catalog_of_chp_technologies_section_2._technology_characterization_-_reciprocating_internal_combustion_engines.pdf"
+        ]
+      },
+      {
+        "id": "milestone_48pct_efficiency",
+        "label": "Large-Bore Liquid-Fuel Engines Approaching ~48–50% Electrical Efficiency",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "This milestone captures the achievement of electrical efficiencies in the high-forty percent range for large-bore medium-speed engines operating on liquid fuels like LFO/HFO, with some dual-fuel designs reaching around 48% in oil mode and roughly 49–50% in gas mode. While vendor data indicate such performance for specific modern models, independent verification and fleet-wide averages are somewhat lower, so these figures represent leading-edge rather than typical efficiency.",
+        "references": [
+          "https://www.wartsila.com/energy/engine-power-plant-solutions/engine-power-plant-products/wartsila-50df-dual-fuel-engine",
+          "https://www.wartsila.com/docs/default-source/product-files/engines/df-engine/product-guide-o-e-w50df.pdf",
+          "https://www.man-es.com/docs/default-source/document-sync/four--stroke-marine-systems-eng.pdf",
+          "https://www.power-eng.com/gas/the-evolution-of-reciprocating-engines/",
+          "https://www.sciencedirect.com/science/article/pii/S0360128520300861"
+        ]
+      },
+      {
+        "id": "milestone_biofuel_dropin",
+        "label": "Demonstrations of Bio-Oil and Renewable Diesel Blends in Diesel Engines",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "6",
+        "description": "This milestone refers to experimental and limited commercial demonstrations where fast-pyrolysis bio-oils, upgraded bio-oils, or renewable diesel (HVO/HEFA) are blended with conventional diesel or HFO and used in compression-ignition engines. Studies show that moderate blend ratios and upgraded renewable diesel fuels can be used in existing engines with acceptable performance and emissions, but fully universal 100% bio-oil drop-in operation for large HFO engines is not yet generally validated.",
+        "references": [
+          "https://www.ieabioenergy.com/wp-content/uploads/2019/09/Task-39-Drop-in-Biofuels-Full-Report-January-2019.pdf",
+          "https://publications.vtt.fi/pdf/technology/2013/T87.pdf",
+          "https://www.sciencedirect.com/science/article/pii/S0278612525001815",
+          "https://pubs.acs.org/doi/10.1021/acsomega.3c05007",
+          "https://www.sciencedirect.com/science/article/pii/S1364032124010116"
+        ]
+      },
+      {
+        "id": "milestone_remote_microgrid",
+        "label": "Remote Diesel/HFO–Renewable Hybrid Microgrid Deployments",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "This milestone captures real-world deployment of remote and island hybrid microgrids where diesel or HFO generators are combined with renewable resources (typically PV and wind) and battery storage to supply continuous power, especially for mining operations and island communities. Case studies report significant diesel fuel savings and high renewable penetration levels compared with oil-only systems.",
+        "references": [
+          "https://www.mdpi.com/2227-9717/10/11/2164",
+          "https://ietresearch.onlinelibrary.wiley.com/doi/pdfdirect/10.1049/rpg2.12038",
+          "https://www.mdpi.com/1996-1073/14/21/7358",
+          "https://ieeexplore.ieee.org/document/10087464/",
+          "https://www.nidec-conversion.com/document/smart-microgrid-mining-village-case-study/"
+        ]
+      },
+      {
+        "id": "double_reheat_pc",
+        "label": "Double-Reheat USC Power Plants",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Advanced supercritical coal-fired power plants with two reheat stages, improving steam cycle efficiency by 1–2 percentage points over single-reheat designs by optimizing temperature and pressure profiles, with 60+ units built worldwide.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S0360544220307015",
+          "https://www.osti.gov/etdeweb/servlets/purl/21369447"
+        ]
+      },
+      {
+        "id": "sco2_oxyfuel_direct_fired",
+        "label": "sCO2 Oxy-Fuel Direct-Fired Cycle",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Supercritical CO2 power cycle with direct oxy-combustion of coal in oxygen/CO2 mixture inside the turbomachinery loop, enabling inherent CO2 capture but requiring significant development of materials, combustion dynamics, and control systems.",
+        "references": [
+          "https://sco2symposium.com/papers2016/OxyFuel/104paper.pdf"
+        ]
+      },
+      {
+        "id": "chemical_looping_combustion",
+        "label": "Chemical Looping Combustion (CLC)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Advanced CO2 capture technology using metal-oxide oxygen carriers in dual circulating fluidized beds to combust coal without direct air contact, with CO2 capture efficiencies reaching 93% in pilot tests and progressing toward TRL 5–6.",
+        "references": [
+          "https://linkinghub.elsevier.com/retrieve/pii/S1750583617302190",
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.4c03173",
+          "https://www.sciencedirect.com/science/article/pii/S0016236124000449"
+        ]
+      },
+      {
+        "id": "pressurized_fluidized_bed_combustion",
+        "label": "Advanced Pressurized Fluidized Bed Combustion (PFBC)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Pressurized fluidized bed combustion of coal in sorbent-rich environment for integrated sulfur capture and SO2/NOx control, with potential >40% net HHV efficiency; pilot tested but requires scale-up and integration of advanced steam cycles.",
+        "references": [
+          "https://www.power-eng.com/coal/pfbc-success-sets-stage-for-second-generation/"
+        ]
+      },
+      {
+        "id": "flameless_pressurized_oxyfuel",
+        "label": "Flameless Pressurized Oxy-Combustion (FPO)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "4",
+        "description": "Novel pressurized oxy-combustion system operating at elevated pressure with flameless combustion characteristics to improve efficiency and enable CO2 capture, with a 25 MWth pilot in early design stage targeting TRL 6–7.",
+        "references": [
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2021/84997/V006T03A016/1120151",
+          "https://www.osti.gov/servlets/purl/1130968/"
+        ]
+      },
+      {
+        "id": "igfc_sofc",
+        "label": "Integrated Gasification Fuel Cell (IGFC with SOFC)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "4",
+        "description": "Integration of coal gasification with solid oxide fuel cells (SOFC) to achieve high electrical efficiency (>53% HHV projected) and inherent CO2 separation, with concept design and pilot studies demonstrating feasibility but requiring long-term reliability validation.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Integrated_gasification_fuel_cell_cycle",
+          "https://core.ac.uk/download/pdf/71304836.pdf",
+          "https://d-nb.info/1244082996/34",
+          "https://mediatum.ub.tum.de/doc/1254688/0619738055265.pdf"
+        ]
+      },
+      {
+        "id": "coal_ammonia_cofiring_50",
+        "label": "Coal–Ammonia Co-firing (50%+ target)",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "4",
+        "description": "Planned large-scale ammonia co-firing in existing coal units at more than 50% of heat input, under development through burner R&D and multi-year demonstration projects targeting late-2020s commercialization.",
+        "references": [
+          "https://ammoniaenergy.org/articles/jera-begins-ammonia-co-firing-demonstration-at-hekinan/",
+          "https://www.spglobal.com/commodity-insights/en/market-insights/latest-news/energy-transition/053122-japans-jera-to-advance-20-ammonia-co-firing-at-hekinan-by-late-2020s",
+          "https://blog.transitionzero.org/hubfs/Analysis/TransitionZero_Coal-de-sac_Report_final_Ammonia+chapter.pdf"
+        ]
+      },
+      {
+        "id": "coal_hydrogen_production",
+        "label": "Coal-Based Hydrogen Production with Thermochemical Cycling",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "3",
+        "description": "Conceptual systems coupling coal gasification with thermochemical water-splitting cycles or chemical looping water splitting to produce hydrogen with inherent CO2 capture, currently in research phase with laboratory-scale demonstrations.",
+        "references": [
+          "https://link.springer.com/10.1007/978-1-4614-7588-0_55",
+          "https://linkinghub.elsevier.com/retrieve/pii/S2213138821004689",
+          "https://www.mdpi.com/2071-1050/14/12/7506",
+          "https://pubs.rsc.org/en/content/articlepdf/2022/ra/d2ra05319e"
+        ]
+      },
+      {
+        "id": "metal_oxide_oxygen_carrier",
+        "label": "Iron/Copper-Based Oxygen Carriers for CLC",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Specialized metal-oxide particles (typically iron ore, ilmenite, or copper-based formulations) that shuttle oxygen between air and fuel reactors in chemical looping combustion systems, enabling CO2 capture without direct oxidant contact.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.4c03173",
+          "https://linkinghub.elsevier.com/retrieve/pii/S1750583617302190",
+          "https://linkinghub.elsevier.com/retrieve/pii/S030626191500793X",
+          "https://aaqr.org/articles/aaqr-12-08-ir-0215.pdf"
+        ]
+      },
+      {
+        "id": "clc_1mw_pilot",
+        "label": "1 MWth Chemical Looping Combustion Pilot (Darmstadt)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Demonstration of a 1 MWth CLC pilot plant in Darmstadt, Germany using ilmenite oxygen carrier with hard coal, achieving over 96% carbon conversion and >97% CO2 purity in multi-hour continuous operations.",
+        "references": [
+          "https://linkinghub.elsevier.com/retrieve/pii/S1750583617302190",
+          "https://asmedigitalcollection.asme.org/energyresources/article/doi/10.1115/1.4032357/373072/ChemicalLooping-Combustion-of-Hard-Coal-Autothermal-Operation-of-a-1-MWth-Pilot-Plant",
+          "https://linkinghub.elsevier.com/retrieve/pii/S030626191500793X"
+        ]
+      },
+      {
+        "id": "clc_clou_50kw_pilot",
+        "label": "50 kWth CLOU Coal Pilot (Copper-Based Carrier)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Pilot demonstration of Chemical Looping with Oxygen Uncoupling (CLOU) at 50 kWth using copper-based oxygen carrier and bituminous coal, achieving 93% CO2 capture efficiency and progressing technology toward TRL 5.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.4c03173"
+        ]
+      },
+      {
+        "id": "sco2_cycle",
+        "label": "Supercritical CO₂ Power Cycles as Gas Turbine Bottoming",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "4",
+        "description": "Supercritical CO₂ (sCO₂) Brayton cycles use CO₂ near or above its critical point (31 °C, 7.4 MPa) as the working fluid, offering higher cycle efficiency and dramatically reduced turbomachinery size (10:1 scale reduction vs. steam cycles) for the same power output. sCO₂ cycles can be deployed as bottoming cycles on gas turbine exhaust or as standalone systems on high-temperature heat sources. Advantages include compact turbines and recuperators, potential for dry cooling with minimal water, and higher theoretical cycle efficiencies (>50% at large scale). Current status: NETL-led STEP 10 MWe pilot demonstration in Phase 1 (simple cycle testing), with Phase 2 targeting recompression Brayton configuration at 715 °C TIT; multiple rig and component tests underway by Sandia, universities, and private developers.",
+        "references": [
+          "https://www.gti.energy/wp-content/uploads/2019/01/STEP-Project-Detailed-Description-Dec2018.pdf",
+          "https://asmedigitalcollection.asme.org/energyresources/article/144/3/032101/1109762/Challenges-for-Developing-and-Marketing-a-Br",
+          "https://www.sciencedirect.com/science/article/pii/S0142727X25001328",
+          "https://sco2symposium.com/proceedings2022/121-paper.pdf"
+        ]
+      },
+      {
+        "id": "oxy_combustion",
+        "label": "Oxy-Fuel Combustion Gas Turbine Cycles",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "4",
+        "description": "Oxy-combustion turbines burn fuel using pure oxygen (from air separation units) moderated by recycled CO₂ and/or H₂O rather than air, enabling high flame temperatures, reduced flue gas volume (~75% reduction), and a CO₂-rich exhaust stream ready for capture or sequestration. The most developed concept is the semi-closed oxy-combustion combined cycle (SCOC-CC) where the turbine compressor inlet draws recycled CO₂-rich exhaust instead of ambient air, fundamentally altering thermodynamic properties and component design. Predicted thermal efficiencies range from ~49–55% net depending on cycle variant (NET Power cycle, other designs). Status: Conceptual and rig-scale demonstrations; no large commercial plants yet; technical challenges include ASU integration, CO₂ property effects on turbomachinery, and materials selection for high-CO₂ and high-pressure environments.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Oxy-fuel_combustion_process",
+          "https://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.6b03114"
+        ]
+      },
+      {
+        "id": "rde_pgc",
+        "label": "Rotating Detonation Engines (RDE) with Pressure Gain Combustion",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "3",
+        "description": "Rotating detonation engines employ continuous detonation waves traveling circumferentially in an annular combustor filled with fresh fuel–oxidizer mixture, achieving net pressure gain across the combustor (pressure ratios up to ~2.2) versus isobaric deflagration. Detonative combustion is theoretically ~25% more efficient than deflagration due to supersonic flame propagation and pressure rise. RDE advantages include compact construction, no moving parts, high operating frequency (kHz range), and potential for 2–4 percentage point efficiency gains in combined cycle configurations targeting 65–70% net efficiency. Status: University and government labs (NETL, AIAA) conduct rig-scale sub-MW testing; challenges include flow non-uniformity at turbine inlet, material/dynamic stress management, and ignition/stability. Venus Aerospace conducted first RDE flight test in 2025; integration with utility-scale gas turbines remains at research stage.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Rotating_detonation_engine",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2023/86960/V03BT04A014/1167931",
+          "https://www.osti.gov/biblio/1888021",
+          "https://journal.gpps.global/pdf-77603-47509?filename=Pressuregaincombustion.pdf"
+        ]
+      },
+      {
+        "id": "wrc_pgc",
+        "label": "Wave Rotor Combustors (WRC) for Pressure Gain Combustion",
+        "type": "ReactorConcept",
+        "category": "NaturalGas",
+        "trl_current": "3",
+        "description": "Wave rotor combustors integrate compressor, combustor, and turbine functions into a single rotating component with curved passages where fuel and oxidizer undergo continuous constant-volume combustion at high pressure and temperature. Combustion waves couple with shock waves, delivering net pressure rise and higher specific work than conventional Brayton cycles. WRCs combine thermodynamic benefits of oxy-fuel and pressure-gain cycles with mechanical compactness. Theoretical efficiency improvements of 5–10% in combined cycle configurations are predicted by studies. Status: Conceptual designs and 1D/3D CFD modeling at NASA and university labs; experimental validation of combustion and ignition in ambient-pressure test rigs completed; scalability to utility-size turbines not yet demonstrated; challenges include steady ignition, rapid combustion synchronization, and blade aeromechanical design.",
+        "references": [
+          "https://scholarworks.indianapolis.iu.edu/server/api/core/bitstreams/4bfa5f86-f042-44be-b05d-b769e9c81011/content",
+          "https://onlinelibrary.wiley.com/doi/10.1155/2018/8672760",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1359431123014369",
+          "https://www.sciencedirect.com/science/article/pii/S2214157X25007488",
+          "https://www.osti.gov/servlets/purl/1571231"
+        ]
+      },
+      {
+        "id": "additive_manufacturing_blades",
+        "label": "Additive Manufacturing (3D-Printed) Turbine Blades with Advanced Cooling",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "5",
+        "description": "Metal additive manufacturing (AM), including electron beam melting (EBM), selective laser melting (SLM), and laser-wire deposition, enables production of turbine blades with complex internal cooling channels impossible with traditional casting and machining. Oak Ridge National Laboratory and Solar Turbines successfully 3D-printed and tested ~300 blades in Inconel 738 via EBM, validating AM as a viable manufacturing route. Design for Additive Manufacturing (DfAM) methodologies are emerging to optimize part performance. Advantages include rapid prototyping, reduced material waste, on-demand spare parts, and potential for 10–20% efficiency gains through superior cooling designs enabling higher turbine inlet temperatures. Challenges remain in cost reduction, scalability to large volumes, surface finish requirements, and certification pathways for power generation applications.",
+        "references": [
+          "https://met3dp.com/turbine-blade20250515/",
+          "https://www.addere.com/applications/turbine-blades/",
+          "https://docs.nrel.gov/docs/fy23osti/85673.pdf"
+        ]
+      },
+      {
+        "id": "liquid_cooling_blades",
+        "label": "Liquid Cooling Systems for Turbine Blades",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "4",
+        "description": "Advanced liquid cooling for turbine blades employs cryogenic or cooled working fluids (kerosene, water-based fluids, or specialized refrigerants) circulated through internal passages to remove heat from hot-section components. Liquid cooling offers superior thermal performance compared to air cooling due to higher heat capacity and heat transfer coefficients, potentially enabling blade metal temperatures near 1300–1400 °C while reducing or eliminating air-bleed parasitic losses. Research combines liquid internal cooling with film cooling and transpiration concepts. Challenges include sealing rotating components, managing fluid thermodynamic properties in high-temperature/high-pressure environments, corrosion and fouling, weight and reliability of cooling loops, and certification complexity. Status: Experimental blade designs and rig testing underway at multiple institutions; no commercial deployment in large utility turbines yet.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1359431123000340",
+          "https://www.softinway.com/cooling-methods-in-turbine-blades/",
+          "https://shareit.joinjet.org/ojs/index.php/shareit/article/view/52",
+          "https://netl.doe.gov/sites/default/files/rdfactsheet/R-D170_3.pdf",
+          "https://energy.sustainability-directory.com/question/why-is-turbine-cooling-crucial-for-performance/"
+        ]
+      },
+      {
+        "id": "advanced_thermal_mgmt",
+        "label": "Advanced Aerothermal Turbine Blade Management",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "5",
+        "description": "Advanced aerothermal management of turbine blades employs optimized tip shaping, squealer designs, shaped leading edges, and transonic flow acceleration to reduce tip leakage losses and over-tip-leakage (OTL) heat loads by 20%+ in specific regions. Research couples aerodynamic analysis with heat transfer prediction to design blades where flow acceleration and shock structures mitigate high heat load zones. Techniques include shaped tip geometries that transition blade tips from subsonic to transonic/supersonic flow regimes, reducing stagnation-point heating. These concepts are validated experimentally in transonic cascades and full-scale test rigs. Status: Pre-commercial research and design optimization; some OEM blade designs incorporate these principles, but full-fleet deployment awaits further cost and manufacturing validation.",
+        "references": [
+          "https://journal.gpps.global/Turbine-blade-tip-aero-thermal-management-Some-recent-advances-and-research-outlook,78722,0,2.html",
+          "https://asmedigitalcollection.asme.org/gasturbinespower/article/147/3/031002/1203563/Large-Eddy-Simulation-Study-of-Flow-and-Com",
+          "https://energy.sustainability-directory.com/question/why-is-turbine-cooling-crucial-for-performance/",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1359431125025335",
+          "https://www.netl.doe.gov/sites/default/files/rdfactsheet/R-D170_3.pdf"
+        ]
+      },
+      {
+        "id": "micro_gas_turbine",
+        "label": "Micro/Small-Scale Gas Turbines for Distributed Generation (<5 MW)",
+        "type": "EnablingTechnology",
+        "category": "NaturalGas",
+        "trl_current": "6",
+        "description": "Micro and small-scale gas turbines (1–5 MW output) are compact, modular units designed for distributed generation in remote areas, industrial cogeneration, island grids, and combined heat and power (CHP) applications. These turbines typically feature single-shaft or simple two-spool designs, operate at high rotational speeds (30,000–100,000 rpm), and employ advanced electronics for frequency conversion. Modern micro-gas turbine combustors achieve >99% combustion efficiency with very low NOx emissions. Fuel flexibility supports natural gas, biogas, syngas, and hydrogen blends. Status: Multiple commercial products available (Capstone, Turbec, Ingersoll Rand, etc.) with thousands deployed worldwide; technology is mature for natural gas; hydrogen-ready variants in development.",
+        "references": [
+          "https://www.mdpi.com/1996-1073/15/3/900",
+          "https://ieeexplore.ieee.org/document/10544576/",
+          "https://www.ewadirect.com/proceedings/ace/article/view/4281",
+          "https://www.mdpi.com/2411-9660/8/4/66",
+          "https://www.e3s-conferences.org/articles/e3sconf/pdf/2017/02/e3sconf_ef2017_01024.pdf"
+        ]
+      },
+      {
+        "id": "milestone_step_sco2_pilot",
+        "label": "NETL STEP 10 MWe Supercritical CO₂ Pilot Demonstration",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "5",
+        "description": "The U.S. Department of Energy's STEP (Supercritical Transformational Electric Power) project, led by NETL and including partners such as GE, Siemens, and research institutions, aims to build and operate a 10 MWe sCO₂ Brayton cycle pilot plant. Phase 1 focuses on simple cycle testing at ~500 °C and 250 bar to validate turbomachinery and control strategies; Phase 2 targets a recompression closed Brayton cycle at 715 °C TIT capable of >50% thermodynamic efficiency. This milestone represents the first utility-scale sCO₂ power cycle demonstration and will validate component design, sealing technologies, and dynamic response—critical steps toward commercial sCO₂ bottoming cycles on gas turbines.",
+        "references": [
+          "https://www.gti.energy/wp-content/uploads/2019/01/STEP-Project-Detailed-Description-Dec2018.pdf",
+          "https://www.powermag.com/breakthrough-for-sco2-power-cycle-as-step-demo-completes-phase-1-of-10-mw-project/",
+          "https://sco2symposium.com/proceedings2022/121-paper.pdf",
+          "https://www.osti.gov/servlets/purl/1615819/"
+        ]
+      },
+      {
+        "id": "milestone_rde_venus",
+        "label": "First Flight Test of Rotating Detonation Engine (Venus Aerospace RDE)",
+        "type": "Milestone",
+        "category": "NaturalGas",
+        "trl_current": "4",
+        "description": "In May 2025, Venus Aerospace successfully conducted the first flight test of a rotating detonation engine (RDE), marking a major milestone in pressure-gain combustion development. The RDE-powered hypersonic flight vehicle demonstrated sustained detonation combustion at flight conditions, validating RDE concept maturity for propulsion. While this test was for aerospace propulsion rather than utility power generation, it advances RDE technology toward potential integration with stationary gas turbines for power plants. The test demonstrates that RDE operation is stable and repeatable at relevant conditions, supporting future evaluation of RDE-GT hybrid systems targeting 65–70% net combined cycle efficiency.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Rotating_detonation_engine",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2023/86960/V03BT04A014/1167931",
+          "https://journal.gpps.global/pdf-77603-47509?filename=Pressuregaincombustion.pdf",
+          "https://www.osti.gov/biblio/1888021"
+        ]
+      },
+      {
+        "id": "low_temperature_combustion",
+        "label": "Low Temperature Combustion (LTC) for Diesel/HFO Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "4",
+        "description": "Advanced combustion strategies (HCCI, RCCI, PCCI) that achieve lower combustion temperatures to reduce NOx and PM emissions simultaneously. Demonstrated in research engines but not yet commercial for large-bore stationary power plants. Requires high injection pressures (>250 MPa) and multi-stage turbocharging. Limited to low-medium load conditions in current research with control strategies still under development for transient operation.",
+        "references": [
+          "https://dieselnet.com/tech/engine_ltc.php",
+          "https://journals.sagepub.com/doi/10.1177/14680874241283508",
+          "https://www.mdpi.com/1996-1073/17/12/2960",
+          "https://journals.sagepub.com/doi/10.1177/0954407014548737",
+          "https://ogst.ifpenergiesnouvelles.fr/articles/ogst/pdf/2007/04/ogst06093.pdf"
+        ]
+      },
+      {
+        "id": "ammonia_dual_fuel",
+        "label": "Ammonia Dual-Fuel Medium-Speed Engines",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "4",
+        "description": "Dual-fuel engines using ammonia as primary fuel with diesel/HFO pilot ignition for stationary power generation. Addresses carbon emissions but faces challenges with combustion stability and NOx/ammonia slip. 90% ammonia energy substitution demonstrated in research engines, reducing CO2 emissions by 93.7% but increasing NOx and ammonia slip. Requires high compression ratios (35:1) for ammonia-only operation.",
+        "references": [
+          "https://www.sae.org/publications/technical-papers/content/2024-01-2368/",
+          "https://www.nature.com/articles/s41598-025-04997-z",
+          "https://www.mdpi.com/1996-1073/17/12/2960",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0016236122039382",
+          "https://www.sciencedirect.com/science/article/pii/S0016236123010116"
+        ]
+      },
+      {
+        "id": "opposed_piston_engine",
+        "label": "Opposed-Piston Two-Stroke Diesel Engines for Power Generation",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "5",
+        "description": "Two-stroke opposed-piston architecture eliminates cylinder head, reduces heat losses, and achieves higher efficiency. Demonstrated for automotive but scaling to stationary power generation still in development. Achieves 55% brake thermal efficiency in research with 30% fuel consumption reduction compared to conventional diesel. Favorable surface area/volume ratio reduces heat transfer, but durability challenges with wrist pins and thermal management being addressed.",
+        "references": [
+          "https://achatespower.com/wp-content/uploads/2019/12/opposed-piston_two-stroke_diesel_engine_advantages.pdf",
+          "https://elibrary.vdi-verlag.de/document/download/pdf/uuid/a07e038d-c619-342d-b08e-9dd18dcc8b60",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1359431121006402",
+          "https://www.sae.org/publications/technical-papers/content/2024-01-2368/"
+        ]
+      },
+      {
+        "id": "supercritical_co2_whr",
+        "label": "Supercritical CO2 Waste Heat Recovery for Diesel/HFO Engines",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "4",
+        "description": "Supercritical CO2 Brayton cycles for waste heat recovery from diesel/HFO engine exhaust. Offers compactness and better thermal matching than ORC but still in development phase. 25% power output increase potential for shipboard applications with higher power output than ORC in some configurations. Requires high-pressure operation (7.4-30 MPa) with turbine efficiency 84-86% achievable in optimized designs.",
+        "references": [
+          "https://duepublico2.uni-due.de/servlets/MCRFileNodeServlet/duepublico_derivate_00073787/130_Song_et_al_Optimal_design_sCO2.pdf",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1359431121006402",
+          "https://www.sciencedirect.com/science/article/pii/S0016236122039382",
+          "https://ieeexplore.ieee.org/document/10243732/",
+          "https://www.mdpi.com/1996-1073/17/12/2960"
+        ]
+      },
+      {
+        "id": "plasma_assisted_combustion",
+        "label": "Plasma-Assisted Combustion for Diesel/HFO Ignition",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "3",
+        "description": "Non-thermal plasma ignition systems to enhance combustion stability, enable lean operation, and reduce emissions in diesel/HFO engines. Still in fundamental research stage at TRL 3-4 for heavy-duty diesel applications. Can stabilize lean combustion and extend flammability limits by generating reactive species (OH, O, H) to accelerate ignition. Requires high-voltage pulse generation and electrode durability research.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1270963821004624",
+          "https://www.sciencedirect.com/science/article/pii/S0016236122039382",
+          "https://energy.sustainability-directory.com/term/plasma-assisted-combustion/",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0016236123010116",
+          "https://www.mdpi.com/1996-1073/17/12/2960"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "subcritical_pc",
+        "target": "supercritical_pc"
+      },
+      {
+        "id": "e2",
+        "source": "supercritical_pc",
+        "target": "usc_pc"
+      },
+      {
+        "id": "e3",
+        "source": "usc_pc",
+        "target": "ausc_700c"
+      },
+      {
+        "id": "e4",
+        "source": "ausc_700c",
+        "target": "ausc_760c"
+      },
+      {
+        "id": "e5",
+        "source": "advanced_martensitic_steels",
+        "target": "supercritical_pc"
+      },
+      {
+        "id": "e6",
+        "source": "advanced_martensitic_steels",
+        "target": "usc_pc"
+      },
+      {
+        "id": "e7",
+        "source": "advanced_austenitic_steels",
+        "target": "usc_pc"
+      },
+      {
+        "id": "e8",
+        "source": "inconel_740h",
+        "target": "ausc_700c"
+      },
+      {
+        "id": "e9",
+        "source": "inconel_740h",
+        "target": "ausc_760c"
+      },
+      {
+        "id": "e10",
+        "source": "haynes_282",
+        "target": "ausc_700c"
+      },
+      {
+        "id": "e11",
+        "source": "haynes_282",
+        "target": "ausc_760c"
+      },
+      {
+        "id": "e12",
+        "source": "hr6w_alloy",
+        "target": "ausc_700c"
+      },
+      {
+        "id": "e13",
+        "source": "alloy_617",
+        "target": "ausc_700c"
+      },
+      {
+        "id": "e14",
+        "source": "titanium_lsb_50_60",
+        "target": "usc_pc"
+      },
+      {
+        "id": "e15",
+        "source": "usc_pc",
+        "target": "isogo_usc_milestone"
+      },
+      {
+        "id": "e16",
+        "source": "usc_pc",
+        "target": "jimah_east_milestone"
+      },
+      {
+        "id": "e17",
+        "source": "usc_pc",
+        "target": "pingshan_milestone"
+      },
+      {
+        "id": "e18",
+        "source": "inconel_740h",
+        "target": "plant_barry_loop"
+      },
+      {
+        "id": "e19",
+        "source": "haynes_282",
+        "target": "plant_barry_loop"
+      },
+      {
+        "id": "e20",
+        "source": "hr6w_alloy",
+        "target": "mikawa_700c_loop"
+      },
+      {
+        "id": "e21",
+        "source": "alloy_617",
+        "target": "mikawa_700c_loop"
+      },
+      {
+        "id": "e22",
+        "source": "inconel_740h",
+        "target": "asme_inconel740h"
+      },
+      {
+        "id": "e23",
+        "source": "haynes_282",
+        "target": "asme_haynes282"
+      },
+      {
+        "id": "e24",
+        "source": "subcritical_pc",
+        "target": "igcc_air_blown"
+      },
+      {
+        "id": "e25",
+        "source": "subcritical_pc",
+        "target": "igcc_oxygen_blown"
+      },
+      {
+        "id": "e26",
+        "source": "igcc_air_blown",
+        "target": "nakoso_igcc_milestone"
+      },
+      {
+        "id": "e27",
+        "source": "pche_recuperator",
+        "target": "sco2_indirect_fired"
+      },
+      {
+        "id": "e28",
+        "source": "high_temp_recuperator_700c",
+        "target": "sco2_indirect_fired"
+      },
+      {
+        "id": "e29",
+        "source": "sco2_indirect_fired",
+        "target": "step_demo_phase1"
+      },
+      {
+        "id": "e30",
+        "source": "inconel_740h",
+        "target": "sco2_indirect_fired"
+      },
+      {
+        "id": "e31",
+        "source": "usc_pc",
+        "target": "ammonia_cofiring_20"
+      },
+      {
+        "id": "e32",
+        "source": "ammonia_burner_technology",
+        "target": "ammonia_cofiring_20"
+      },
+      {
+        "id": "e33",
+        "source": "ammonia_cofiring_20",
+        "target": "ammonia_cofiring_50"
+      },
+      {
+        "id": "e34",
+        "source": "ammonia_cofiring_20",
+        "target": "hekinan_20pct_ammonia"
+      },
+      {
+        "id": "e35",
+        "source": "subcritical_pc",
+        "target": "biomass_cofiring_direct"
+      },
+      {
+        "id": "e36",
+        "source": "subcritical_pc",
+        "target": "biomass_gasification_coupled"
+      },
+      {
+        "id": "e37",
+        "source": "boiler_digital_twin",
+        "target": "usc_pc"
+      },
+      {
+        "id": "e38",
+        "source": "ai_combustion_optimization",
+        "target": "usc_pc"
+      },
+      {
+        "id": "e39",
+        "source": "plasma_burner_system",
+        "target": "subcritical_pc"
+      },
+      {
+        "id": "e40",
+        "source": "plasma_burner_system",
+        "target": "supercritical_pc"
+      },
+      {
+        "id": "e41",
+        "source": "single_crystal_superalloy",
+        "target": "h_class_ccgt",
+        "label": "enables_high_temperature"
+      },
+      {
+        "id": "e42",
+        "source": "single_crystal_superalloy",
+        "target": "j_class_ccgt",
+        "label": "enables_1600C_operation"
+      },
+      {
+        "id": "e43",
+        "source": "thermal_barrier_coating",
+        "target": "h_class_ccgt",
+        "label": "provides_thermal_protection"
+      },
+      {
+        "id": "e44",
+        "source": "thermal_barrier_coating",
+        "target": "j_class_ccgt",
+        "label": "provides_thermal_protection"
+      },
+      {
+        "id": "e45",
+        "source": "ceramic_matrix_composite",
+        "target": "h_class_ccgt",
+        "label": "future_hot_section_upgrade"
+      },
+      {
+        "id": "e46",
+        "source": "dln_combustion",
+        "target": "h_class_ccgt",
+        "label": "enables_low_NOx"
+      },
+      {
+        "id": "e47",
+        "source": "dln_combustion",
+        "target": "j_class_ccgt",
+        "label": "enables_low_NOx"
+      },
+      {
+        "id": "e48",
+        "source": "dln_combustion",
+        "target": "aeroderivative_lm6000",
+        "label": "enables_low_NOx"
+      },
+      {
+        "id": "e49",
+        "source": "multifuel_h2_nozzle",
+        "target": "h2_cofiring_30pct",
+        "label": "enables_h2_blends"
+      },
+      {
+        "id": "e50",
+        "source": "multifuel_h2_nozzle",
+        "target": "h2_ready_100pct",
+        "label": "supports_future_100pct_H2"
+      },
+      {
+        "id": "e51",
+        "source": "h2_mixing_skid",
+        "target": "h2_cofiring_30pct",
+        "label": "provides_fuel_blending"
+      },
+      {
+        "id": "e52",
+        "source": "h2_mixing_skid",
+        "target": "h2_ready_100pct",
+        "label": "provides_fuel_blending"
+      },
+      {
+        "id": "e53",
+        "source": "h2_embrittlement_mitigation",
+        "target": "h2_ready_100pct",
+        "label": "ensures_material_integrity"
+      },
+      {
+        "id": "e54",
+        "source": "ai_autotune",
+        "target": "h_class_ccgt",
+        "label": "optimizes_combustion"
+      },
+      {
+        "id": "e55",
+        "source": "ai_autotune",
+        "target": "j_class_ccgt",
+        "label": "optimizes_combustion"
+      },
+      {
+        "id": "e56",
+        "source": "digital_twin_hrsg",
+        "target": "fast_start_ccgt",
+        "label": "monitors_hrsg_for_cycling"
+      },
+      {
+        "id": "e57",
+        "source": "digital_twin_hrsg",
+        "target": "h_class_ccgt",
+        "label": "supports_condition_based_maintenance"
+      },
+      {
+        "id": "e58",
+        "source": "edge_computing_grid",
+        "target": "fast_start_ccgt",
+        "label": "enables_fast_grid_response"
+      },
+      {
+        "id": "e59",
+        "source": "edge_computing_grid",
+        "target": "aeroderivative_lm6000",
+        "label": "enables_fast_grid_response"
+      },
+      {
+        "id": "e60",
+        "source": "single_crystal_superalloy",
+        "target": "milestone_9ha_64pct",
+        "label": "materials_foundation"
+      },
+      {
+        "id": "e61",
+        "source": "thermal_barrier_coating",
+        "target": "milestone_9ha_64pct",
+        "label": "thermal_management"
+      },
+      {
+        "id": "e62",
+        "source": "single_crystal_superalloy",
+        "target": "milestone_j_series_1600c",
+        "label": "materials_foundation"
+      },
+      {
+        "id": "e63",
+        "source": "thermal_barrier_coating",
+        "target": "milestone_j_series_1600c",
+        "label": "thermal_management"
+      },
+      {
+        "id": "e64",
+        "source": "multifuel_h2_nozzle",
+        "target": "milestone_100h2_utility",
+        "label": "combustion_enabler"
+      },
+      {
+        "id": "e65",
+        "source": "dln_combustion",
+        "target": "milestone_100h2_utility",
+        "label": "combustion_enabler"
+      },
+      {
+        "id": "e66",
+        "source": "h2_embrittlement_mitigation",
+        "target": "milestone_h2ready_orders",
+        "label": "safety_and_materials_basis"
+      },
+      {
+        "id": "e67",
+        "source": "h2_mixing_skid",
+        "target": "milestone_h2ready_orders",
+        "label": "fuel_handling_infrastructure"
+      },
+      {
+        "id": "e68",
+        "source": "h_class_ccgt",
+        "target": "milestone_9ha_64pct",
+        "label": "platform_technology"
+      },
+      {
+        "id": "e69",
+        "source": "j_class_ccgt",
+        "target": "milestone_j_series_1600c",
+        "label": "platform_technology"
+      },
+      {
+        "id": "e70",
+        "source": "h2_ready_100pct",
+        "target": "milestone_100h2_utility",
+        "label": "system_architecture_context"
+      },
+      {
+        "id": "e71",
+        "source": "h2_ready_100pct",
+        "target": "milestone_h2ready_orders",
+        "label": "system_architecture_context"
+      },
+      {
+        "id": "e72",
+        "source": "common_rail_injection",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e73",
+        "source": "electronic_fuel_injection",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e74",
+        "source": "two_stage_turbocharging",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e75",
+        "source": "extreme_miller_cycle",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e76",
+        "source": "large_bore_4stroke",
+        "target": "modular_power_blocks"
+      },
+      {
+        "id": "e77",
+        "source": "large_bore_4stroke",
+        "target": "multi_engine_plants"
+      },
+      {
+        "id": "e78",
+        "source": "whr_boilers",
+        "target": "orc_waste_heat"
+      },
+      {
+        "id": "e79",
+        "source": "orc_waste_heat",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e80",
+        "source": "scr_nox_control",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e81",
+        "source": "scr_nox_control",
+        "target": "oil_gas_turbine_peaking"
+      },
+      {
+        "id": "e82",
+        "source": "ai_predictive_maintenance",
+        "target": "multi_engine_plants"
+      },
+      {
+        "id": "e83",
+        "source": "cylinder_pressure_monitoring",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e84",
+        "source": "digital_twin_engines",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e85",
+        "source": "large_bore_4stroke",
+        "target": "oil_solar_battery_hybrid"
+      },
+      {
+        "id": "e86",
+        "source": "common_rail_injection",
+        "target": "dual_fuel_systems"
+      },
+      {
+        "id": "e87",
+        "source": "electronic_fuel_injection",
+        "target": "dual_fuel_systems"
+      },
+      {
+        "id": "e88",
+        "source": "two_stage_turbocharging",
+        "target": "extreme_miller_cycle"
+      },
+      {
+        "id": "e89",
+        "source": "large_bore_4stroke",
+        "target": "milestone_20mw_single_unit"
+      },
+      {
+        "id": "e90",
+        "source": "common_rail_injection",
+        "target": "milestone_48pct_efficiency"
+      },
+      {
+        "id": "e91",
+        "source": "two_stage_turbocharging",
+        "target": "milestone_48pct_efficiency"
+      },
+      {
+        "id": "e92",
+        "source": "extreme_miller_cycle",
+        "target": "milestone_48pct_efficiency"
+      },
+      {
+        "id": "e93",
+        "source": "dual_fuel_systems",
+        "target": "milestone_biofuel_dropin"
+      },
+      {
+        "id": "e94",
+        "source": "oil_solar_battery_hybrid",
+        "target": "milestone_remote_microgrid"
+      },
+      {
+        "id": "e95",
+        "source": "dual_fuel_systems",
+        "target": "oil_solar_battery_hybrid"
+      },
+      {
+        "id": "e96",
+        "source": "usc_pc",
+        "target": "double_reheat_pc"
+      },
+      {
+        "id": "e97",
+        "source": "inconel_740h",
+        "target": "sco2_oxyfuel_direct_fired"
+      },
+      {
+        "id": "e98",
+        "source": "ammonia_cofiring_20",
+        "target": "coal_ammonia_cofiring_50"
+      },
+      {
+        "id": "e99",
+        "source": "subcritical_pc",
+        "target": "chemical_looping_combustion"
+      },
+      {
+        "id": "e100",
+        "source": "metal_oxide_oxygen_carrier",
+        "target": "chemical_looping_combustion"
+      },
+      {
+        "id": "e101",
+        "source": "chemical_looping_combustion",
+        "target": "clc_1mw_pilot"
+      },
+      {
+        "id": "e102",
+        "source": "chemical_looping_combustion",
+        "target": "clc_clou_50kw_pilot"
+      },
+      {
+        "id": "e103",
+        "source": "subcritical_pc",
+        "target": "pressurized_fluidized_bed_combustion"
+      },
+      {
+        "id": "e104",
+        "source": "subcritical_pc",
+        "target": "flameless_pressurized_oxyfuel"
+      },
+      {
+        "id": "e105",
+        "source": "igcc_oxygen_blown",
+        "target": "igfc_sofc"
+      },
+      {
+        "id": "e106",
+        "source": "subcritical_pc",
+        "target": "coal_hydrogen_production"
+      },
+      {
+        "id": "e107",
+        "source": "additive_manufacturing_blades",
+        "target": "h_class_ccgt",
+        "label": "enables_advanced_cooling"
+      },
+      {
+        "id": "e108",
+        "source": "additive_manufacturing_blades",
+        "target": "j_class_ccgt",
+        "label": "enables_advanced_cooling"
+      },
+      {
+        "id": "e109",
+        "source": "liquid_cooling_blades",
+        "target": "h_class_ccgt",
+        "label": "future_thermal_management"
+      },
+      {
+        "id": "e110",
+        "source": "advanced_thermal_mgmt",
+        "target": "h_class_ccgt",
+        "label": "optimizes_blade_design"
+      },
+      {
+        "id": "e111",
+        "source": "advanced_thermal_mgmt",
+        "target": "j_class_ccgt",
+        "label": "optimizes_blade_design"
+      },
+      {
+        "id": "e112",
+        "source": "micro_gas_turbine",
+        "target": "h2_cofiring_30pct",
+        "label": "distributed_h2_application"
+      },
+      {
+        "id": "e113",
+        "source": "sco2_cycle",
+        "target": "h_class_ccgt",
+        "label": "bottoming_cycle_integration"
+      },
+      {
+        "id": "e114",
+        "source": "sco2_cycle",
+        "target": "j_class_ccgt",
+        "label": "bottoming_cycle_integration"
+      },
+      {
+        "id": "e115",
+        "source": "oxy_combustion",
+        "target": "indirect_brayton",
+        "label": "integrated_concept"
+      },
+      {
+        "id": "e116",
+        "source": "rde_pgc",
+        "target": "h_class_ccgt",
+        "label": "pressure_gain_enabler"
+      },
+      {
+        "id": "e117",
+        "source": "wrc_pgc",
+        "target": "rde_pgc",
+        "label": "alternative_pgc_concept"
+      },
+      {
+        "id": "e118",
+        "source": "ceramic_matrix_composite",
+        "target": "sco2_cycle",
+        "label": "high_temperature_capability"
+      },
+      {
+        "id": "e119",
+        "source": "ceramic_matrix_composite",
+        "target": "oxy_combustion",
+        "label": "high_temperature_capability"
+      },
+      {
+        "id": "e120",
+        "source": "additive_manufacturing_blades",
+        "target": "milestone_step_sco2_pilot",
+        "label": "compact_turbomachinery_design"
+      },
+      {
+        "id": "e121",
+        "source": "rde_pgc",
+        "target": "milestone_rde_venus",
+        "label": "technology_validation"
+      },
+      {
+        "id": "e122",
+        "source": "low_temperature_combustion",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e123",
+        "source": "two_stage_turbocharging",
+        "target": "low_temperature_combustion"
+      },
+      {
+        "id": "e124",
+        "source": "common_rail_injection",
+        "target": "low_temperature_combustion"
+      },
+      {
+        "id": "e125",
+        "source": "ammonia_dual_fuel",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e126",
+        "source": "common_rail_injection",
+        "target": "ammonia_dual_fuel"
+      },
+      {
+        "id": "e127",
+        "source": "two_stage_turbocharging",
+        "target": "ammonia_dual_fuel"
+      },
+      {
+        "id": "e128",
+        "source": "opposed_piston_engine",
+        "target": "large_bore_4stroke"
+      },
+      {
+        "id": "e129",
+        "source": "supercritical_co2_whr",
+        "target": "orc_waste_heat"
+      },
+      {
+        "id": "e130",
+        "source": "whr_boilers",
+        "target": "supercritical_co2_whr"
+      },
+      {
+        "id": "e131",
+        "source": "plasma_assisted_combustion",
+        "target": "low_temperature_combustion"
+      },
+      {
+        "id": "e132",
+        "source": "plasma_assisted_combustion",
+        "target": "ammonia_dual_fuel"
+      }
+    ]
+  }
+}
