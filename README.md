@@ -277,3 +277,31 @@ The application will be available at your Vercel domain with the `/investment-te
 3. Make your changes
 4. Run linting and tests
 5. Submit a pull request
+
+## Adding a New Dataset
+
+Follow these steps to add a new dataset (e.g., a Solar Tech Tree) and fully integrate it into the app.
+
+1. **Prepare the Data Source**
+   - Create a JSON data file (e.g., `data/solar_tech_tree.json`) containing nodes and edges.
+   - Ensure nodes include required properties like `id`, `label`, `type`, and `trl_current`.
+
+2. **Create and Run a Database Seed Script**
+   - Add a script in `scripts/` (e.g., `scripts/add-solar-data.ts`) following the existing fossil/nuclear patterns.
+   - Update `JSON_FILE_PATH` to your new JSON file and set a new `DB_NAME` (e.g., `solar_tt_db`).
+   - Run the script:
+     ```bash
+     npx tsx --env-file=.env.local scripts/add-solar-data.ts
+     ```
+
+3. **Update Node Types and Styling (`src/lib/types.ts`)**
+   - Add new node types to `NODE_LABELS` (e.g., `SolarConcept`).
+   - Assign Tailwind CSS color classes in `LABEL_COLORS`.
+   - Add corresponding entries to `LABEL_COLORS_VARIABLES` so they render correctly.
+
+4. **Register the Topic Configuration (if present, e.g., `src/lib/topicConfig.ts`)**
+   - Add your new topic to the `TopicKey` union.
+   - Add a new entry in `TOPICS` with `id`, `label`, `dbName`, and a tailored `systemPrompt`.
+
+5. **API Routing Integration**
+   - If your API route reads a `topic` query param and maps to `topicConfig.dbName`, no additional fetch changes are needed.
