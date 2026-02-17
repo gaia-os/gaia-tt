@@ -147,6 +147,7 @@ src/
 - Create a new free cluster
 - Note your cluster connection details
 - Run following script to set-up/ reset the DB: https://colab.research.google.com/drive/1D29KXaDIdBglvhCb5NszKSRRKOCMOnTr?usp=sharing
+- You can also add fossil fuel data with: `npx tsx --env-file=.env.local scripts/add-fossil-fuel-data.ts`
 
 ### Installation
 
