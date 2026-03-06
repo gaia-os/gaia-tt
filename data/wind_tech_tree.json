@@ -1,5 +1,4 @@
 {
-  "tech_tree": {
     "graph": {
       "nodes": [
         {
@@ -1078,6 +1077,5 @@
           "target": "multi_rotor_system"
         }
       ]
-    }
   }
 }

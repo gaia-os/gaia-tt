@@ -1,0 +1,59 @@
+name: Run MCS for Specific Tech Trees
+
+on:
+  push:
+    paths:
+      - 'data/fossil_fuel_tt_v2.json'
+      - 'data/nuclear_tt.json'
+      - '.github/workflows/mcs_runner.yml'
+  schedule:
+    # Run nightly at 02:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      run_all:
+        description: 'Run all tech trees (ignore git diff)'
+        required: false
+        default: 'false'
+
+jobs:
+  run-mcs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # needed so git diff HEAD~1 works on push
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install numpy pandas scipy tqdm scikit-learn statsmodels seaborn matplotlib jinja2
+
+      - name: Run MCS for tech trees
+        run: |
+          TARGET_FILES="data/fossil_fuel_tt_v2.json data/nuclear_tt.json"
+          for FILE in $TARGET_FILES; do
+            if [ -f "$FILE" ]; then
+              echo "===== Processing $FILE ====="
+              python simulations/mcs_techtree_runner.py "$FILE" \
+                --simulations 100 \
+                --output-dir ./outputs \
+                --simulation-module-path ./simulations
+            else
+              echo "===== File $FILE not found, skipping ====="
+            fi
+          done
+
+      - name: Commit and push output JSONs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/
+          git diff --cached --quiet || git commit -m "chore: update MCS outputs [skip ci]"
+          git push

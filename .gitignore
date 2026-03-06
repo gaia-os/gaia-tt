@@ -263,4 +263,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# Folders
+simulations/outputs/*
+
 #==========================

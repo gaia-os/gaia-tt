@@ -1,0 +1,218 @@
+[
+  {
+    "Node": "Enabling Tech: AI/ML for Control & Design",
+    "std_class": 5,
+    "Tail_Risiko": 2,
+    "succ_count_class": 5,
+    "dep_count_class": 1,
+    "span_class": 3,
+    "Score": 3.2
+  },
+  {
+    "Node": "Enabling Tech: Advanced Divertor Concepts",
+    "std_class": 2,
+    "Tail_Risiko": 1,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 1,
+    "Score": 1.2
+  },
+  {
+    "Node": "Enabling Tech: HALEU Fuel Supply",
+    "std_class": 5,
+    "Tail_Risiko": 2,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 3,
+    "Score": 2.4
+  },
+  {
+    "Node": "Enabling Tech: HTS Magnets",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 5,
+    "Score": 3.2
+  },
+  {
+    "Node": "Enabling Tech: Metallic Fuel Cycle",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 5,
+    "Score": 3.2
+  },
+  {
+    "Node": "Enabling Tech: Passive Safety Systems",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 2,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 3.2
+  },
+  {
+    "Node": "Enabling Tech: Plasma Heating Systems",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 2,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 3.2
+  },
+  {
+    "Node": "Enabling Tech: Radiation-Hardened Electronics",
+    "std_class": 4,
+    "Tail_Risiko": 2,
+    "succ_count_class": 5,
+    "dep_count_class": 1,
+    "span_class": 3,
+    "Score": 3.0
+  },
+  {
+    "Node": "Enabling Tech: TRISO Fuel Cycle",
+    "std_class": 5,
+    "Tail_Risiko": 2,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 2.6
+  },
+  {
+    "Node": "Enabling Tech: sCO2 Power Cycle",
+    "std_class": 4,
+    "Tail_Risiko": 2,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 2.4
+  },
+  {
+    "Node": "Milestone: FRC Stable Sustainment",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 5,
+    "Score": 3.2
+  },
+  {
+    "Node": "Milestone: First Commercial SMR Build",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 3,
+    "span_class": 4,
+    "Score": 3.4
+  },
+  {
+    "Node": "Milestone: HTGR Demo Reactor Operation",
+    "std_class": 5,
+    "Tail_Risiko": 2,
+    "succ_count_class": 1,
+    "dep_count_class": 3,
+    "span_class": 4,
+    "Score": 3.0
+  },
+  {
+    "Node": "Milestone: IFE High-Rep-Rate Driver",
+    "std_class": 2,
+    "Tail_Risiko": 1,
+    "succ_count_class": 1,
+    "dep_count_class": 3,
+    "span_class": 1,
+    "Score": 1.6
+  },
+  {
+    "Node": "Milestone: LFR Materials Qualification",
+    "std_class": 1,
+    "Tail_Risiko": 1,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 1,
+    "Score": 1.0
+  },
+  {
+    "Node": "Milestone: LTS Tokamak Physics Validation",
+    "std_class": 5,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 3.2
+  },
+  {
+    "Node": "Milestone: MSRE Proof-of-Concept",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 3.0
+  },
+  {
+    "Node": "Milestone: NIF Single-Shot Ignition",
+    "std_class": 4,
+    "Tail_Risiko": 2,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 2.4
+  },
+  {
+    "Node": "Milestone: SFR Prototype Reactor Operation",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 3.0
+  },
+  {
+    "Node": "Milestone: SMR Standard Design Approval",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 4,
+    "Score": 3.0
+  },
+  {
+    "Node": "Milestone: STEP sCO2 Demo Plant Operation",
+    "std_class": 1,
+    "Tail_Risiko": 1,
+    "succ_count_class": 2,
+    "dep_count_class": 3,
+    "span_class": 1,
+    "Score": 1.6
+  },
+  {
+    "Node": "Milestone: Sheared-Flow Z-Pinch Stability",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 5,
+    "Score": 3.2
+  },
+  {
+    "Node": "Milestone: TWR Extreme-Burnup Fuel",
+    "std_class": 2,
+    "Tail_Risiko": 1,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 1,
+    "Score": 1.2
+  },
+  {
+    "Node": "Milestone: W7-X Optimized Physics Proof",
+    "std_class": 5,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1,
+    "span_class": 5,
+    "Score": 3.2
+  }
+]

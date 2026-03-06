@@ -1,0 +1,370 @@
+[
+  {
+    "Node": "50/60-inch Titanium Last-Stage Blades",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.2919817364,
+    "YearsPerTRL_p": 0.0032022638,
+    "RandomDelay_rho": 0.8782225144,
+    "RandomDelay_p": 3.687432277e-33
+  },
+  {
+    "Node": "AI-Based Combustion Optimization",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.5213658641,
+    "YearsPerTRL_p": 2.67e-08,
+    "RandomDelay_rho": 0.7389551036,
+    "RandomDelay_p": 1.683590671e-18
+  },
+  {
+    "Node": "AI-Driven Predictive Maintenance for Diesel/HFO Genset Fleets",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.5696164784,
+    "YearsPerTRL_p": 6e-10,
+    "RandomDelay_rho": 0.7080647137,
+    "RandomDelay_p": 1.748564648e-16
+  },
+  {
+    "Node": "AI\u2011Based Autonomous Combustion Tuning and Controls",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.4832737321,
+    "YearsPerTRL_p": 3.527e-07,
+    "RandomDelay_rho": 0.908986815,
+    "RandomDelay_p": 5.025830393e-39
+  },
+  {
+    "Node": "ASME Code Case for Haynes 282",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.5435089514,
+    "YearsPerTRL_p": 5.1e-09,
+    "RandomDelay_rho": 0.5231549942,
+    "RandomDelay_p": 2.35e-08
+  },
+  {
+    "Node": "ASME Code Case for Inconel 740H",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.6394792621,
+    "YearsPerTRL_p": 0.0,
+    "RandomDelay_rho": 0.3417081134,
+    "RandomDelay_p": 0.0005024025
+  },
+  {
+    "Node": "Additive Manufacturing (3D-Printed) Turbine Blades with Advanced Cooling",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.8429294342,
+    "YearsPerTRL_p": 3.946826994e-28,
+    "RandomDelay_rho": 0.5643702115,
+    "RandomDelay_p": 1e-09
+  },
+  {
+    "Node": "Advanced 9\u201312% Cr Martensitic Steels",
+    "n_obs": 100,
+    "YearsPerTRL_rho": -0.0978594162,
+    "YearsPerTRL_p": 0.3327357462,
+    "RandomDelay_rho": 0.9557726456,
+    "RandomDelay_p": 6.885117818e-54
+  },
+  {
+    "Node": "Advanced Aerothermal Turbine Blade Management",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.836794928,
+    "YearsPerTRL_p": 2.206387159e-27,
+    "RandomDelay_rho": 0.6384335592,
+    "RandomDelay_p": 0.0
+  },
+  {
+    "Node": "Advanced Austenitic Steels (HR3C, Sanicro 25)",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.0233576186,
+    "YearsPerTRL_p": 0.8175703938,
+    "RandomDelay_rho": 0.9644070759,
+    "RandomDelay_p": 2.022067347e-58
+  },
+  {
+    "Node": "Advanced Thermal Barrier Coatings (TBCs)",
+    "n_obs": 100,
+    "YearsPerTRL_rho": -0.0877385051,
+    "YearsPerTRL_p": 0.3853780482,
+    "RandomDelay_rho": 0.9666506304,
+    "RandomDelay_p": 8.781579814e-60
+  },
+  {
+    "Node": "Ammonia Co-firing Burner Technology",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.7349304994,
+    "YearsPerTRL_p": 3.197417414e-18,
+    "RandomDelay_rho": 0.6052570109,
+    "RandomDelay_p": 0.0
+  },
+  {
+    "Node": "Boiler Digital Twin for Flexible Operation",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.5977882348,
+    "YearsPerTRL_p": 1e-10,
+    "RandomDelay_rho": 0.8493529521,
+    "RandomDelay_p": 6.004963375e-29
+  },
+  {
+    "Node": "Ceramic Matrix Composites (CMC) for Gas Turbine Hot Sections",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.734990303,
+    "YearsPerTRL_p": 3.167357308e-18,
+    "RandomDelay_rho": 0.7004402069,
+    "RandomDelay_p": 5.019350545e-16
+  },
+  {
+    "Node": "Digital Twins for Heat Recovery Steam Generators (HRSGs)",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.3477650866,
+    "YearsPerTRL_p": 0.0003922244,
+    "RandomDelay_rho": 0.8996075541,
+    "RandomDelay_p": 4.875618441e-37
+  },
+  {
+    "Node": "Digital Twins for Large Oil-Fired Reciprocating Engines",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.7278216988,
+    "YearsPerTRL_p": 9.653561395e-18,
+    "RandomDelay_rho": 0.6534856249,
+    "RandomDelay_p": 0.0
+  },
+  {
+    "Node": "Dry Low NOx Lean\u2011Premixed Combustion Systems",
+    "n_obs": 100,
+    "YearsPerTRL_rho": -0.1174098392,
+    "YearsPerTRL_p": 0.2446811028,
+    "RandomDelay_rho": 0.9537803572,
+    "RandomDelay_p": 5.685315738e-53
+  },
+  {
+    "Node": "EDF Bouchain 62.22% World\u2011Record CCGT Efficiency",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.1467751739,
+    "YearsPerTRL_p": 0.1450603547,
+    "RandomDelay_rho": 0.9576010129,
+    "RandomDelay_p": 9.089621005e-55
+  },
+  {
+    "Node": "Edge Computing for Gas Turbine Grid Services",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.2448590461,
+    "YearsPerTRL_p": 0.0140765173,
+    "RandomDelay_rho": 0.8757393879,
+    "RandomDelay_p": 9.318100035e-33
+  },
+  {
+    "Node": "Electronic Fuel Injection and Engine Management",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.0443440264,
+    "YearsPerTRL_p": 0.661327768,
+    "RandomDelay_rho": 0.9530534251,
+    "RandomDelay_p": 1.200185446e-52
+  },
+  {
+    "Node": "HR6W Heat-Resistant Alloy",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.7236103873,
+    "YearsPerTRL_p": 1.827794968e-17,
+    "RandomDelay_rho": 0.6819191421,
+    "RandomDelay_p": 0.0
+  },
+  {
+    "Node": "Haynes 282 Superalloy",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.5486144418,
+    "YearsPerTRL_p": 3.4e-09,
+    "RandomDelay_rho": 0.7197596588,
+    "RandomDelay_p": 3.243407106e-17
+  },
+  {
+    "Node": "High-Pressure Common-Rail Injection for Large-Bore Oil Engines",
+    "n_obs": 100,
+    "YearsPerTRL_rho": -0.1475372594,
+    "YearsPerTRL_p": 0.1429610837,
+    "RandomDelay_rho": 0.9604229491,
+    "RandomDelay_p": 3.328581553e-56
+  },
+  {
+    "Node": "High-Temperature Recuperator (700 \u00b0C class)",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.7917408202,
+    "YearsPerTRL_p": 1.062123911e-22,
+    "RandomDelay_rho": 0.5596677925,
+    "RandomDelay_p": 1.4e-09
+  },
+  {
+    "Node": "Hydrogen Embrittlement Mitigation for Turbine Fuel Systems",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.52498909,
+    "YearsPerTRL_p": 2.06e-08,
+    "RandomDelay_rho": 0.6949908076,
+    "RandomDelay_p": 0.0
+  },
+  {
+    "Node": "Hydrogen\u2013Natural Gas Mixing and Conditioning Skids",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.536857197,
+    "YearsPerTRL_p": 8.5e-09,
+    "RandomDelay_rho": 0.8020603929,
+    "RandomDelay_p": 1.151956256e-23
+  },
+  {
+    "Node": "Inconel 617 Alloy",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.7177665876,
+    "YearsPerTRL_p": 4.348057779e-17,
+    "RandomDelay_rho": 0.6672613926,
+    "RandomDelay_p": 0.0
+  },
+  {
+    "Node": "Inconel 740H Superalloy",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.6033028616,
+    "YearsPerTRL_p": 0.0,
+    "RandomDelay_rho": 0.734452446,
+    "RandomDelay_p": 3.44787923e-18
+  },
+  {
+    "Node": "Iron/Copper-Based Oxygen Carriers for CLC",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.8204063733,
+    "YearsPerTRL_p": 1.57619222e-25,
+    "RandomDelay_rho": 0.4415637476,
+    "RandomDelay_p": 4.25e-06
+  },
+  {
+    "Node": "Large-Bore Liquid-Fuel Engines Approaching ~48\u201350% Electrical Efficiency",
+    "n_obs": 89,
+    "YearsPerTRL_rho": 0.5590111385,
+    "YearsPerTRL_p": 1.24e-08,
+    "RandomDelay_rho": 0.4188047653,
+    "RandomDelay_p": 4.41593e-05
+  },
+  {
+    "Node": "Liquid Cooling Systems for Turbine Blades",
+    "n_obs": 95,
+    "YearsPerTRL_rho": 0.8427024256,
+    "YearsPerTRL_p": 9.555458021e-27,
+    "RandomDelay_rho": 0.421592074,
+    "RandomDelay_p": 2.09165e-05
+  },
+  {
+    "Node": "Micro/Small-Scale Gas Turbines for Distributed Generation (<5 MW)",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.7614206421,
+    "YearsPerTRL_p": 3.730798675e-20,
+    "RandomDelay_rho": 0.7490069688,
+    "RandomDelay_p": 3.218137218e-19
+  },
+  {
+    "Node": "Mikawa 700 \u00b0C A-USC Field Test",
+    "n_obs": 33,
+    "YearsPerTRL_rho": 0.8375093513,
+    "YearsPerTRL_p": 1.2e-09,
+    "RandomDelay_rho": 0.075826005,
+    "RandomDelay_p": 0.6749264412
+  },
+  {
+    "Node": "Miller/Atkinson-Type Valve Timing on Turbocharged Oil Engines",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.5792284788,
+    "YearsPerTRL_p": 3e-10,
+    "RandomDelay_rho": 0.4539462058,
+    "RandomDelay_p": 2.1001e-06
+  },
+  {
+    "Node": "Multi\u2011Fuel and Hydrogen\u2011Capable Premix Fuel Nozzles",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.6571987165,
+    "YearsPerTRL_p": 0.0,
+    "RandomDelay_rho": 0.7122046957,
+    "RandomDelay_p": 9.723463751e-17
+  },
+  {
+    "Node": "NETL STEP 10 MWe Supercritical CO\u2082 Pilot Demonstration",
+    "n_obs": 10,
+    "YearsPerTRL_rho": 0.6621705252,
+    "YearsPerTRL_p": 0.0369790734,
+    "RandomDelay_rho": 0.1245667325,
+    "RandomDelay_p": 0.7316992411
+  },
+  {
+    "Node": "Plant Barry 760 \u00b0C A-USC Loop Test",
+    "n_obs": 76,
+    "YearsPerTRL_rho": 0.7630360626,
+    "YearsPerTRL_p": 0.0,
+    "RandomDelay_rho": 0.3762529868,
+    "RandomDelay_p": 0.0008089001
+  },
+  {
+    "Node": "Plasma-Assisted Combustion System",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.3706979073,
+    "YearsPerTRL_p": 0.0001467135,
+    "RandomDelay_rho": 0.9170627276,
+    "RandomDelay_p": 6.455358135e-41
+  },
+  {
+    "Node": "Plasma-Assisted Combustion for Diesel/HFO Ignition",
+    "n_obs": 69,
+    "YearsPerTRL_rho": 0.8724326971,
+    "YearsPerTRL_p": 1.631073676e-22,
+    "RandomDelay_rho": 0.1237466911,
+    "RandomDelay_p": 0.3110417447
+  },
+  {
+    "Node": "Printed Circuit Heat Exchanger (PCHE)",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.6478725644,
+    "YearsPerTRL_p": 0.0,
+    "RandomDelay_rho": 0.8149742692,
+    "RandomDelay_p": 5.901104889e-25
+  },
+  {
+    "Node": "Real-Time Cylinder Pressure Monitoring for Large Engines",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.3416383116,
+    "YearsPerTRL_p": 0.0005038234,
+    "RandomDelay_rho": 0.8929136677,
+    "RandomDelay_p": 9.765399493e-36
+  },
+  {
+    "Node": "Selective Catalytic Reduction (SCR) for NOx Control on Oil Engines",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.0486253188,
+    "YearsPerTRL_p": 0.6309258402,
+    "RandomDelay_rho": 0.9547833058,
+    "RandomDelay_p": 1.987779696e-53
+  },
+  {
+    "Node": "Single\u2011Crystal Nickel\u2011Based Superalloys for Turbine Blades",
+    "n_obs": 100,
+    "YearsPerTRL_rho": -0.0383607506,
+    "YearsPerTRL_p": 0.7047442028,
+    "RandomDelay_rho": 0.9531006453,
+    "RandomDelay_p": 1.143738067e-52
+  },
+  {
+    "Node": "Supercritical CO2 Waste Heat Recovery for Diesel/HFO Engines",
+    "n_obs": 84,
+    "YearsPerTRL_rho": 0.7091559506,
+    "YearsPerTRL_p": 0.0,
+    "RandomDelay_rho": 0.3514651272,
+    "RandomDelay_p": 0.0010446435
+  },
+  {
+    "Node": "Two-Stage Turbocharging for Medium-Speed Diesel/HFO Engines",
+    "n_obs": 100,
+    "YearsPerTRL_rho": 0.3233443215,
+    "YearsPerTRL_p": 0.0010329038,
+    "RandomDelay_rho": 0.8731289511,
+    "RandomDelay_p": 2.417559857e-32
+  },
+  {
+    "Node": "Waste Heat Recovery Boilers on Diesel/HFO Gen-Sets",
+    "n_obs": 100,
+    "YearsPerTRL_rho": -8.756e-05,
+    "YearsPerTRL_p": 0.9993101562,
+    "RandomDelay_rho": 0.9594384046,
+    "RandomDelay_p": 1.083710932e-55
+  }
+]

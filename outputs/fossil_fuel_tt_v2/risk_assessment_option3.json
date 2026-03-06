@@ -1,0 +1,416 @@
+[
+  {
+    "Node": "50/60-inch Titanium Last-Stage Blades",
+    "std_class": 1,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 2,
+    "Score": 1.8
+  },
+  {
+    "Node": "AI-Based Combustion Optimization",
+    "std_class": 2,
+    "Tail_Risiko": 4,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.2
+  },
+  {
+    "Node": "AI-Driven Predictive Maintenance for Diesel/HFO Genset Fleets",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.0
+  },
+  {
+    "Node": "AI\u2011Based Autonomous Combustion Tuning and Controls",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 2,
+    "Score": 2.0
+  },
+  {
+    "Node": "ASME Code Case for Haynes 282",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 3.0,
+    "span_class": 5,
+    "Score": 3.6
+  },
+  {
+    "Node": "ASME Code Case for Inconel 740H",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 3.0,
+    "span_class": 5,
+    "Score": 3.6
+  },
+  {
+    "Node": "Additive Manufacturing (3D-Printed) Turbine Blades with Advanced Cooling",
+    "std_class": 5,
+    "Tail_Risiko": 5,
+    "succ_count_class": 3,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.8
+  },
+  {
+    "Node": "Advanced 9\u201312% Cr Martensitic Steels",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.6
+  },
+  {
+    "Node": "Advanced Aerothermal Turbine Blade Management",
+    "std_class": 5,
+    "Tail_Risiko": 5,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.6
+  },
+  {
+    "Node": "Advanced Austenitic Steels (HR3C, Sanicro 25)",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.4
+  },
+  {
+    "Node": "Advanced Thermal Barrier Coatings (TBCs)",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 4,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 2.0
+  },
+  {
+    "Node": "Ammonia Co-firing Burner Technology",
+    "std_class": 3,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 4,
+    "Score": 2.4
+  },
+  {
+    "Node": "Boiler Digital Twin for Flexible Operation",
+    "std_class": 3,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 4,
+    "Score": 2.4
+  },
+  {
+    "Node": "Ceramic Matrix Composites (CMC) for Gas Turbine Hot Sections",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 3,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.6
+  },
+  {
+    "Node": "Digital Twins for Heat Recovery Steam Generators (HRSGs)",
+    "std_class": 1,
+    "Tail_Risiko": 4,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 2,
+    "Score": 2.0
+  },
+  {
+    "Node": "Digital Twins for Large Oil-Fired Reciprocating Engines",
+    "std_class": 3,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.6
+  },
+  {
+    "Node": "Dry Low NOx Lean\u2011Premixed Combustion Systems",
+    "std_class": 1,
+    "Tail_Risiko": 2,
+    "succ_count_class": 4,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.8
+  },
+  {
+    "Node": "EDF Bouchain 62.22% World\u2011Record CCGT Efficiency",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.4
+  },
+  {
+    "Node": "Edge Computing for Gas Turbine Grid Services",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.6
+  },
+  {
+    "Node": "Electronic Fuel Injection and Engine Management",
+    "std_class": 1,
+    "Tail_Risiko": 2,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.4
+  },
+  {
+    "Node": "HR6W Heat-Resistant Alloy",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.4
+  },
+  {
+    "Node": "Haynes 282 Superalloy",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 4,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.6
+  },
+  {
+    "Node": "High-Pressure Common-Rail Injection for Large-Bore Oil Engines",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 5,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 2.2
+  },
+  {
+    "Node": "High-Temperature Recuperator (700 \u00b0C class)",
+    "std_class": 3,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.0
+  },
+  {
+    "Node": "Hydrogen Embrittlement Mitigation for Turbine Fuel Systems",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 2,
+    "Score": 2.0
+  },
+  {
+    "Node": "Hydrogen\u2013Natural Gas Mixing and Conditioning Skids",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 3,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.4
+  },
+  {
+    "Node": "Inconel 617 Alloy",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 3.0
+  },
+  {
+    "Node": "Inconel 740H Superalloy",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 5,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.8
+  },
+  {
+    "Node": "Iron/Copper-Based Oxygen Carriers for CLC",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.2
+  },
+  {
+    "Node": "Large-Bore Liquid-Fuel Engines Approaching ~48\u201350% Electrical Efficiency",
+    "std_class": 5,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": null,
+    "span_class": 4,
+    "Score": 3.25
+  },
+  {
+    "Node": "Liquid Cooling Systems for Turbine Blades",
+    "std_class": 5,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.4
+  },
+  {
+    "Node": "Micro/Small-Scale Gas Turbines for Distributed Generation (<5 MW)",
+    "std_class": 4,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 5,
+    "Score": 3.2
+  },
+  {
+    "Node": "Mikawa 700 \u00b0C A-USC Field Test",
+    "std_class": 3,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 5.0,
+    "span_class": 2,
+    "Score": 2.8
+  },
+  {
+    "Node": "Miller/Atkinson-Type Valve Timing on Turbocharged Oil Engines",
+    "std_class": 3,
+    "Tail_Risiko": 5,
+    "succ_count_class": 2,
+    "dep_count_class": 3.0,
+    "span_class": 3,
+    "Score": 3.2
+  },
+  {
+    "Node": "Multi\u2011Fuel and Hydrogen\u2011Capable Premix Fuel Nozzles",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 3,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.4
+  },
+  {
+    "Node": "NETL STEP 10 MWe Supercritical CO\u2082 Pilot Demonstration",
+    "std_class": 1,
+    "Tail_Risiko": 1,
+    "succ_count_class": 1,
+    "dep_count_class": 3.0,
+    "span_class": 1,
+    "Score": 1.4
+  },
+  {
+    "Node": "Plant Barry 760 \u00b0C A-USC Loop Test",
+    "std_class": 4,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 5.0,
+    "span_class": 3,
+    "Score": 3.2
+  },
+  {
+    "Node": "Plasma-Assisted Combustion System",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 2,
+    "Score": 2.0
+  },
+  {
+    "Node": "Plasma-Assisted Combustion for Diesel/HFO Ignition",
+    "std_class": 4,
+    "Tail_Risiko": 3,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.6
+  },
+  {
+    "Node": "Printed Circuit Heat Exchanger (PCHE)",
+    "std_class": 2,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 3,
+    "Score": 2.0
+  },
+  {
+    "Node": "Real-Time Cylinder Pressure Monitoring for Large Engines",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 1,
+    "dep_count_class": 1.0,
+    "span_class": 2,
+    "Score": 1.6
+  },
+  {
+    "Node": "Selective Catalytic Reduction (SCR) for NOx Control on Oil Engines",
+    "std_class": 1,
+    "Tail_Risiko": 1,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.2
+  },
+  {
+    "Node": "Single\u2011Crystal Nickel\u2011Based Superalloys for Turbine Blades",
+    "std_class": 1,
+    "Tail_Risiko": 1,
+    "succ_count_class": 4,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.6
+  },
+  {
+    "Node": "Supercritical CO2 Waste Heat Recovery for Diesel/HFO Engines",
+    "std_class": 5,
+    "Tail_Risiko": 5,
+    "succ_count_class": 1,
+    "dep_count_class": 3.0,
+    "span_class": 3,
+    "Score": 3.4
+  },
+  {
+    "Node": "Two-Stage Turbocharging for Medium-Speed Diesel/HFO Engines",
+    "std_class": 1,
+    "Tail_Risiko": 3,
+    "succ_count_class": 5,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 2.2
+  },
+  {
+    "Node": "Waste Heat Recovery Boilers on Diesel/HFO Gen-Sets",
+    "std_class": 1,
+    "Tail_Risiko": 1,
+    "succ_count_class": 2,
+    "dep_count_class": 1.0,
+    "span_class": 1,
+    "Score": 1.2
+  }
+]
