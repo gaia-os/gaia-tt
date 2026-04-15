@@ -1,1082 +1,1082 @@
 {
-  "graph": {
-    "nodes": [
-      {
-        "id": "gfrp_blade",
-        "label": "GFRP Blade (Standard)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "9",
-        "subtype": "MaterialScience",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/",
-          "https://researchportal.bath.ac.uk/en/publications/the-recyclability-of-wind-turbine-blade-material-manufacturing-pr/"
-        ]
-      },
-      {
-        "id": "cfrp_spar_cap",
-        "label": "Carbon Fiber Spar Cap (CFRP)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "9",
-        "subtype": "MaterialScience",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/",
-          "https://docs.nrel.gov/docs/fy22osti/82455.pdf"
-        ]
-      },
-      {
-        "id": "segmented_blade",
-        "label": "Segmented Blades (On-Site Assembly)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "5-6",
-        "subtype": "StructuralInnovation",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://docs.nrel.gov/docs/fy22osti/82455.pdf",
-          "https://www.nasampe.org/store/viewproduct.aspx?id=24022665",
-          "https://radia.com/media/windrunner-the-only-viable-solution-for-enabling-advanced-onshore-wind-technologies"
-        ]
-      },
-      {
-        "id": "smart_rotor_atef",
-        "label": "Smart Rotor / Active Trailing Edge Flaps (ATEF)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "6-7",
-        "subtype": "ActiveAerodynamics",
-        "trl_projected_5_10_years": "8-9",
-        "references": [
-          "https://pureportal.strath.ac.uk/en/studentTheses/the-smart-rotor-wind-turbine-2/",
-          "https://www.sandia.gov/app/uploads/sites/273/2021/12/smart_wind_turbine_design.pdf",
-          "https://www.energy.gov/sites/prod/files/smart_wind_turbine_data.pdf"
-        ]
-      },
-      {
-        "id": "leading_edge_protection",
-        "label": "Leading Edge Protection (LEP) Coatings",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "9",
-        "subtype": "MaterialScience",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
-        ]
-      },
-      {
-        "id": "lifetime_lep_coating",
-        "label": "Lifetime LEP Coating (25-Year Durability)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "6-7",
-        "subtype": "MaterialScience",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
-        ]
-      },
-      {
-        "id": "thermoplastic_blade",
-        "label": "Thermoplastic Resin Blades (Elium/Recyclable)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "7",
-        "subtype": "CircularEconomy",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.vestas.com/en/sustainability/sustainability-product-offerings/blade-circularity",
-          "https://stateofgreen.com/en/solutions/187807/",
-          "https://www.vestas.com/en/sustainability/environment/zero-waste"
-        ]
-      },
-      {
-        "id": "circular_epoxy_cetec",
-        "label": "Circular Epoxy Recovery (Vestas CETEC Process)",
-        "type": "WindConcept",
-        "category": "Rotor System",
-        "trl_current": "6-7",
-        "subtype": "CircularEconomy",
-        "trl_projected_5_10_years": "8-9",
-        "references": [
-          "https://www.vestas.com/en/sustainability/sustainability-product-offerings/blade-circularity",
-          "https://stateofgreen.com/en/solutions/187807/"
-        ]
-      },
-      {
-        "id": "drivetrain_dfig_geared",
-        "label": "High-Speed Geared Drivetrain (DFIG)",
-        "type": "WindConcept",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "9",
-        "subtype": "Legacy",
-        "trl_projected_5_10_years": "9 (Phase-out in offshore)",
-        "references": [
-          "https://www.mdpi.com/2076-3417/12/17/8653",
-          "https://docs.nrel.gov/docs/fy22osti/82406.pdf"
-        ]
-      },
-      {
-        "id": "drivetrain_dd_pmsg",
-        "label": "Direct Drive PMSG (Gearbox-Free)",
-        "type": "WindConcept",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "9",
-        "subtype": "OffshoreStandard",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://docs.nrel.gov/docs/fy22osti/82406.pdf",
-          "https://farmonaut.com/mining/rare-earths-in-wind-turbine-generators-2025-challenges",
-          "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC122671/jrc122671_the_role_of_rare_earth_elements_in_wind_energy_and_electric_mobility_2.pdf"
-        ]
-      },
-      {
-        "id": "drivetrain_medium_speed_hybrid",
-        "label": "Medium-Speed Hybrid Drivetrain (PMSG + 1-2 Stage Gearbox)",
-        "type": "WindConcept",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "9",
-        "subtype": "HybridTopology",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.mdpi.com/2076-3417/12/17/8653",
-          "https://docs.nrel.gov/docs/fy15osti/64269.pdf"
-        ]
-      },
-      {
-        "id": "superconducting_generator_hts",
-        "label": "Superconducting Generator (HTS / MgB2 / ReBCO)",
-        "type": "WindConcept",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "6-7",
-        "subtype": "FrontierGenerator",
-        "trl_projected_5_10_years": "8-9",
-        "references": [
-          "https://digital.library.unt.edu/ark:/67531/metadc827684/",
-          "https://www.utwente.nl/en/tnw/ems/research/sust/EcoSwing/",
-          "https://ioppublishing.org/news/superconducting-wind-turbine-chalks-up-first-test-success/"
-        ]
-      },
-      {
-        "id": "rare_earth_free_magnets",
-        "label": "Rare-Earth-Free Magnets (Iron Nitride / Ferrite)",
-        "type": "WindConcept",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "3-4",
-        "subtype": "MaterialScience",
-        "trl_projected_5_10_years": "6-7",
-        "references": [
-          "https://www.energy.gov/sites/default/files/2024-12/Neodymium%2520Magnets%2520Supply%2520Chain%2520Report%2520-%2520Final%5B1%5D.pdf"
-        ]
-      },
-      {
-        "id": "mv_power_converter",
-        "label": "Medium Voltage Full-Scale Converter (3.3–66 kV)",
-        "type": "WindConcept",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "8-9",
-        "subtype": "PowerElectronics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://docs.nrel.gov/docs/fy15osti/64269.pdf"
-        ]
-      },
-      {
-        "id": "monopile_standard",
-        "label": "Standard Monopile Foundation",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "9",
-        "subtype": "FixedBottom",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/"
-        ]
-      },
-      {
-        "id": "xxl_monopile",
-        "label": "XXL Monopile (12m Diameter, 60m+ Water Depth)",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "8-9",
-        "subtype": "FixedBottom",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/"
-        ]
-      },
-      {
-        "id": "suction_bucket",
-        "label": "Suction Bucket / Caisson Foundation",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "8-9",
-        "subtype": "FixedBottom",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.issmge.org/uploads/publications/132/133/ISFOG2025-658.pdf",
-          "https://orsted.com/en/offshore-wind/innovation/suction-bucket-jacket-foundations"
-        ]
-      },
-      {
-        "id": "floating_semi_submersible",
-        "label": "Semi-Submersible Floating Foundation (e.g., WindFloat)",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "8",
-        "subtype": "FloatingOffshore",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/guide/b-balance-of-plant/b-2-floating-substructure/",
-          "https://www.empireengineering.co.uk/semi-submersible-spar-and-tlp-floating-wind-foundations/"
-        ]
-      },
-      {
-        "id": "floating_spar_buoy",
-        "label": "Spar Buoy Floating Foundation (e.g., Hywind)",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "8",
-        "subtype": "FloatingOffshore",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/",
-          "https://www.empireengineering.co.uk/semi-submersible-spar-and-tlp-floating-wind-foundations/"
-        ]
-      },
-      {
-        "id": "floating_tlp",
-        "label": "Tension Leg Platform (TLP) Floating Foundation",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "5-6",
-        "subtype": "FloatingOffshore",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/",
-          "https://www.empireengineering.co.uk/semi-submersible-spar-and-tlp-floating-wind-foundations/"
-        ]
-      },
-      {
-        "id": "floating_barge",
-        "label": "Barge / Wide-Hull Floating Foundation (e.g., BW Ideol)",
-        "type": "WindConcept",
-        "category": "Support Structures",
-        "trl_current": "6-7",
-        "subtype": "FloatingOffshore",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/"
-        ]
-      },
-      {
-        "id": "dynamic_cable_66kv",
-        "label": "Dynamic Inter-Array Cable (66 kV)",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "8",
-        "subtype": "OffshoreElectrical",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://ore.catapult.org.uk/wp-content/uploads/2018/09/Predicting-Dynamic-Subsea-Cable-Failure-for-Floating-Wind-David-Young-AP-0016.pdf",
-          "https://www.nexans.com/perspective/dynamic-cables-opening-up-new-markets-in-offshore-wind-development/"
-        ]
-      },
-      {
-        "id": "dynamic_cable_132kv",
-        "label": "Dynamic Export Cable (132 kV+)",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "5-6",
-        "subtype": "OffshoreElectrical",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://www.nexans.com/perspective/dynamic-cables-opening-up-new-markets-in-offshore-wind-development/",
-          "https://docs.nrel.gov/docs/fy25osti/91416.pdf"
-        ]
-      },
-      {
-        "id": "array_voltage_66kv",
-        "label": "66 kV Inter-Array Collection System",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "9",
-        "subtype": "GridElectrical",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.carbontrust.com/our-work-and-impact/guides-reports-and-tools/unlocking-the-next-generation-of-offshore-wind-step-change-to-132-kv-array-systems"
-        ]
-      },
-      {
-        "id": "array_voltage_132kv",
-        "label": "132 kV Inter-Array Collection System",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "4-5",
-        "subtype": "GridElectrical",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://www.carbontrust.com/our-work-and-impact/guides-reports-and-tools/unlocking-the-next-generation-of-offshore-wind-step-change-to-132-kv-array-systems",
-          "https://ctprodstorageaccountp.blob.core.windows.net/prod-drupal-files/documents/resource/public/Hi-VAS-Report-June2022.pdf",
-          "https://www.carbontrust.com/news-and-insights/news/global-offshore-wind-industry-to-increase-voltage"
-        ]
-      },
-      {
-        "id": "grid_forming_inverter",
-        "label": "Grid-Forming Inverter (Synthetic Inertia / WindVSG)",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "6-7",
-        "subtype": "GridStability",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.energy.gov/eere/wind/articles/wind-turbines-can-stabilize-grid",
-          "https://www.esig.energy/wp-content/uploads/2022/03/ESIG-GFM-report-2022.pdf"
-        ]
-      },
-      {
-        "id": "hvac_transmission",
-        "label": "HVAC Transmission (<100 km)",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "9",
-        "subtype": "Transmission",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.researchgate.net/publication/364144367_Comparison_of_HVAC_and_HVDC_collection_grids_in_offshore_windfarms"
-        ]
-      },
-      {
-        "id": "hvdc_point_to_point",
-        "label": "HVDC Point-to-Point Transmission (VSC)",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "9",
-        "subtype": "Transmission",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://blog.shuvangkardas.com/offshore-wind-hvdc-vs-hvac-transmission",
-          "https://www.researchgate.net/publication/364144367_Comparison_of_HVAC_and_HVDC_collection_grids_in_offshore_windfarms"
-        ]
-      },
-      {
-        "id": "hvdc_multiterminal",
-        "label": "Multi-Terminal HVDC Grid (North Sea Hub Concept)",
-        "type": "WindConcept",
-        "category": "Electrical & Grid",
-        "trl_current": "5-6",
-        "subtype": "Transmission",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://blog.shuvangkardas.com/offshore-wind-hvdc-vs-hvac-transmission"
-        ]
-      },
-      {
-        "id": "wtiv_vessel",
-        "label": "Wind Turbine Installation Vessel (WTIV / Jack-Up)",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "9",
-        "subtype": "InstallationLogistics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.solvewind.com/blog/news-2/addressing-the-shortage-of-jack-up-vessels-for-15mw-offshore-wind-turbines-challenges-and-innovative-solutions-4",
-          "https://www.energyglobal.com/wind/03022022/rystad-energy-larger-installation-vessels-required-for-super-sized-turbines/"
-        ]
-      },
-      {
-        "id": "next_gen_wtiv",
-        "label": "Next-Gen WTIV (800t+ Crane / 150m+ Hub Height)",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "7-8",
-        "subtype": "InstallationLogistics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.solvewind.com/blog/news-2/addressing-the-shortage-of-jack-up-vessels-for-15mw-offshore-wind-turbines-challenges-and-innovative-solutions-4"
-        ]
-      },
-      {
-        "id": "floating_wind_port",
-        "label": "Floating Wind Quayside Assembly Port",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "5-6",
-        "subtype": "InstallationLogistics",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/guide/i-installation-and-commissioning/i-8-construction-port/",
-          "https://www.nationalwealthfund.org.uk/media/034jmptd/ukib-strategy-update-port-infrastructure-fe06b20eda52435e9c83a0435ef4cd43.pdf"
-        ]
-      },
-      {
-        "id": "digital_twin_data_driven",
-        "label": "Data-Driven Digital Twin (ML / SCADA-Based)",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "9",
-        "subtype": "Digitalization",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://wes.copernicus.org/preprints/wes-2023-108/wes-2023-108.pdf",
-          "https://www.ingeteam.com/Portals/0/OpenContent/Files/12189/Case_study_Ingeteam_-_Smart_SCADA_for_renewable_energy_asset_monitoring-1.pdf"
-        ]
-      },
-      {
-        "id": "digital_twin_physics_based",
-        "label": "Physics-Based Digital Twin (Aero-Elastic Fatigue Monitoring)",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "6-7",
-        "subtype": "Digitalization",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://wes.copernicus.org/preprints/wes-2023-108/wes-2023-108.pdf"
-        ]
-      },
-      {
-        "id": "autonomous_drone_inspection",
-        "label": "Autonomous Drone Blade Inspection",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "9",
-        "subtype": "Robotics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.energy.gov/eere/wind/articles/robotic-systems-improve-blade-reliability"
-        ]
-      },
-      {
-        "id": "blade_crawler_robot",
-        "label": "Internal Blade Crawler Robot (Ultrasonic NDT)",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "6-7",
-        "subtype": "Robotics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.sandia.gov/labnews/2019/06/20/wind-turbines/",
-          "https://www.energy.gov/eere/wind/articles/robotic-systems-improve-blade-reliability"
-        ]
-      },
-      {
-        "id": "repair_robot_lep",
-        "label": "Autonomous LEP Repair Robot (Sand & Paint)",
-        "type": "WindConcept",
-        "category": "Operations & Logistics",
-        "trl_current": "5-6",
-        "subtype": "Robotics",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://www.energy.gov/eere/wind/articles/robotic-systems-improve-blade-reliability"
-        ]
-      },
-      {
-        "id": "airborne_wind_energy",
-        "label": "Airborne Wind Energy (AWE / Kite Systems)",
-        "type": "WindConcept",
-        "category": "Frontier & Emerging",
-        "trl_current": "4-6",
-        "subtype": "FrontierConcept",
-        "trl_projected_5_10_years": "6-7",
-        "references": [
-          "https://docs.nrel.gov/docs/fy21osti/79992.pdf",
-          "https://skysails-power.com/first-flight-in-taiwan/",
-          "https://www.iea.org/data-and-statistics/data-tools/etp-clean-energy-technology-guide"
-        ]
-      },
-      {
-        "id": "floating_vawt",
-        "label": "Floating Vertical Axis Wind Turbine (VAWT / SeaTwirl)",
-        "type": "WindConcept",
-        "category": "Frontier & Emerging",
-        "trl_current": "5",
-        "subtype": "FrontierConcept",
-        "trl_projected_5_10_years": "6-7",
-        "references": [
-          "https://esdnews.com.au/promising-results-from-vertical-axis-wind-turbine-trial/"
-        ]
-      },
-      {
-        "id": "multi_rotor_system",
-        "label": "Multi-Rotor System (4x Smaller Rotors on Single Tower)",
-        "type": "WindConcept",
-        "category": "Frontier & Emerging",
-        "trl_current": "4-5",
-        "subtype": "FrontierConcept",
-        "trl_projected_5_10_years": "6",
-        "references": [
-          "https://www.researchgate.net/publication/395234999_Multi-rotor_wind_turbines_A_review_of_modern_research_efforts_and_challenges"
-        ]
-      },
-      {
-        "id": "milestone_15mw_turbine",
-        "label": "Milestone: 15 MW+ Turbine Commercial Deployment",
-        "type": "Milestone",
-        "category": "Rotor System",
-        "trl_current": "8-9",
-        "subtype": "CommercialDeployment",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://docs.nrel.gov/docs/fy22osti/82455.pdf"
-        ]
-      },
-      {
-        "id": "milestone_blade_recycling_ban",
-        "label": "Milestone: EU Landfill Ban for Wind Blades (Regulatory Driver)",
-        "type": "Milestone",
-        "category": "Rotor System",
-        "trl_current": "9",
-        "subtype": "RegulatoryMilestone",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.vestas.com/en/sustainability/environment/zero-waste"
-        ]
-      },
-      {
-        "id": "milestone_ecoswing_field_test",
-        "label": "Milestone: EcoSwing HTS Generator Field Test (3.6 MW, Denmark)",
-        "type": "Milestone",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "6-7",
-        "subtype": "PrototypeValidation",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://www.utwente.nl/en/tnw/ems/research/sust/EcoSwing/",
-          "https://ioppublishing.org/news/superconducting-wind-turbine-chalks-up-first-test-success/"
-        ]
-      },
-      {
-        "id": "milestone_hywind_tampen",
-        "label": "Milestone: Hywind Tampen — World's Largest Floating Wind Farm",
-        "type": "Milestone",
-        "category": "Support Structures",
-        "trl_current": "8",
-        "subtype": "CommercialPilot",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/"
-        ]
-      },
-      {
-        "id": "milestone_north_sea_hvdc_hub",
-        "label": "Milestone: North Sea Multi-Terminal HVDC Hub (Planning Stage)",
-        "type": "Milestone",
-        "category": "Electrical & Grid",
-        "trl_current": "5-6",
-        "subtype": "GridIntegration",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://blog.shuvangkardas.com/offshore-wind-hvdc-vs-hvac-transmission"
-        ]
-      },
-      {
-        "id": "milestone_grid_forming_100pct_re",
-        "label": "Milestone: 100% Renewable Grid Stability via Grid-Forming Inverters",
-        "type": "Milestone",
-        "category": "Electrical & Grid",
-        "trl_current": "6-7",
-        "subtype": "GridStability",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.energy.gov/eere/wind/articles/wind-turbines-can-stabilize-grid",
-          "https://www.esig.energy/wp-content/uploads/2022/03/ESIG-GFM-report-2022.pdf"
-        ]
-      },
-      {
-        "id": "enabling_carbon_fiber_supply",
-        "label": "Carbon Fiber Supply Chain (Wind-Dedicated)",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "8",
-        "subtype": "SupplyChain",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
-        ]
-      },
-      {
-        "id": "enabling_automated_fiber_placement",
-        "label": "Automated Fiber Placement (AFP) Manufacturing",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "8-9",
-        "subtype": "ManufacturingProcess",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://docs.nrel.gov/docs/fy22osti/82455.pdf"
-        ]
-      },
-      {
-        "id": "enabling_mechanical_adhesive_joints",
-        "label": "Hybrid Mechanical-Adhesive Blade Joints",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "5-6",
-        "subtype": "StructuralEngineering",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://www.nasampe.org/store/viewproduct.aspx?id=24022665"
-        ]
-      },
-      {
-        "id": "enabling_fiber_optic_sensors",
-        "label": "Fiber Optic Strain Gauge Sensors (In-Blade)",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "7-8",
-        "subtype": "SensorTechnology",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://www.sandia.gov/app/uploads/sites/273/2021/12/smart_wind_turbine_design.pdf"
-        ]
-      },
-      {
-        "id": "enabling_lightning_resistant_actuator",
-        "label": "Lightning-Resistant Blade Actuators",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "6-7",
-        "subtype": "ComponentReliability",
-        "trl_projected_5_10_years": "8-9",
-        "references": [
-          "https://pureportal.strath.ac.uk/en/studentTheses/the-smart-rotor-wind-turbine-2/"
-        ]
-      },
-      {
-        "id": "enabling_pyrolysis_recycling",
-        "label": "Pyrolysis Fiber Recovery from Blades",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "7-8",
-        "subtype": "CircularEconomy",
-        "trl_projected_5_10_years": "8-9",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/",
-          "https://researchportal.bath.ac.uk/en/publications/the-recyclability-of-wind-turbine-blade-material-manufacturing-pr/"
-        ]
-      },
-      {
-        "id": "enabling_solvolysis_recycling",
-        "label": "Solvolysis Chemical Resin Recovery",
-        "type": "EnablingTechnology",
-        "category": "Rotor System",
-        "trl_current": "5-6",
-        "subtype": "CircularEconomy",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
-        ]
-      },
-      {
-        "id": "enabling_ree_supply_chain",
-        "label": "Rare Earth Element (Nd/Dy) Supply Chain Diversification",
-        "type": "EnablingTechnology",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "4-6",
-        "subtype": "SupplyChain",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://farmonaut.com/mining/rare-earths-in-wind-turbine-generators-2025-challenges",
-          "https://www.energy.gov/sites/default/files/2024-12/Neodymium%2520Magnets%2520Supply%2520Chain%2520Report%2520-%2520Final%5B1%5D.pdf",
-          "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC122671/jrc122671_the_role_of_rare_earth_elements_in_wind_energy_and_electric_mobility_2.pdf"
-        ]
-      },
-      {
-        "id": "enabling_cryogenic_cooling",
-        "label": "Compact Cryogenic Cooling Systems (20–40 K)",
-        "type": "EnablingTechnology",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "6-7",
-        "subtype": "CryogenicEngineering",
-        "trl_projected_5_10_years": "8",
-        "references": [
-          "https://digital.library.unt.edu/ark:/67531/metadc827684/",
-          "https://www.utwente.nl/en/tnw/ems/research/sust/EcoSwing/"
-        ]
-      },
-      {
-        "id": "enabling_sic_gan_semiconductors",
-        "label": "SiC / GaN Wide-Bandgap Power Semiconductors",
-        "type": "EnablingTechnology",
-        "category": "Drivetrain & Nacelle",
-        "trl_current": "8-9",
-        "subtype": "PowerElectronics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://docs.nrel.gov/docs/fy15osti/64269.pdf"
-        ]
-      },
-      {
-        "id": "enabling_steel_rolling_capacity",
-        "label": "XXL Steel Rolling & Plate Manufacturing Capacity",
-        "type": "EnablingTechnology",
-        "category": "Support Structures",
-        "trl_current": "8",
-        "subtype": "ManufacturingProcess",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/floating-technology/"
-        ]
-      },
-      {
-        "id": "enabling_lazy_wave_cable",
-        "label": "Lazy Wave Dynamic Cable Configuration (Buoyancy Modules)",
-        "type": "EnablingTechnology",
-        "category": "Support Structures",
-        "trl_current": "7-8",
-        "subtype": "SubseaEngineering",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://ore.catapult.org.uk/wp-content/uploads/2018/09/Predicting-Dynamic-Subsea-Cable-Failure-for-Floating-Wind-David-Young-AP-0016.pdf",
-          "https://docs.nrel.gov/docs/fy25osti/91416.pdf"
-        ]
-      },
-      {
-        "id": "enabling_synthetic_mooring",
-        "label": "Synthetic Rope Mooring (Polyester / Nylon)",
-        "type": "EnablingTechnology",
-        "category": "Support Structures",
-        "trl_current": "7-8",
-        "subtype": "SubseaEngineering",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://docs.nrel.gov/docs/fy25osti/91416.pdf",
-          "https://www.dnv.com/group/joint-industry-projects/optimizing-mooring-and-dynamic-cable-design-requirements-for-floating-wind/"
-        ]
-      },
-      {
-        "id": "enabling_shared_mooring",
-        "label": "Shared Mooring Line Arrays (Multi-Turbine Anchoring)",
-        "type": "EnablingTechnology",
-        "category": "Support Structures",
-        "trl_current": "3-4",
-        "subtype": "SubseaEngineering",
-        "trl_projected_5_10_years": "6-7",
-        "references": [
-          "https://docs.nrel.gov/docs/fy25osti/91416.pdf",
-          "https://www.dnv.com/group/joint-industry-projects/optimizing-mooring-and-dynamic-cable-design-requirements-for-floating-wind/"
-        ]
-      },
-      {
-        "id": "enabling_132kv_switchgear",
-        "label": "132 kV Wet Switchgear & Compact Transformers (In-Tower)",
-        "type": "EnablingTechnology",
-        "category": "Electrical & Grid",
-        "trl_current": "4-5",
-        "subtype": "GridElectrical",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://ctprodstorageaccountp.blob.core.windows.net/prod-drupal-files/documents/resource/public/Hi-VAS-Report-June2022.pdf"
-        ]
-      },
-      {
-        "id": "enabling_grid_code_standards",
-        "label": "Grid Code & Market Standards for Synthetic Inertia Services",
-        "type": "EnablingTechnology",
-        "category": "Electrical & Grid",
-        "trl_current": "4-5",
-        "subtype": "RegulatoryFramework",
-        "trl_projected_5_10_years": "7-8",
-        "references": [
-          "https://www.esig.energy/wp-content/uploads/2022/03/ESIG-GFM-report-2022.pdf"
-        ]
-      },
-      {
-        "id": "enabling_ai_predictive_maintenance",
-        "label": "AI-Based Predictive Maintenance & Anomaly Detection",
-        "type": "EnablingTechnology",
-        "category": "Operations & Logistics",
-        "trl_current": "8-9",
-        "subtype": "Digitalization",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://wes.copernicus.org/preprints/wes-2023-108/wes-2023-108.pdf"
-        ]
-      },
-      {
-        "id": "enabling_ahts_vessels",
-        "label": "Anchor Handling Tug Supply (AHTS) Vessels for Floating Install",
-        "type": "EnablingTechnology",
-        "category": "Operations & Logistics",
-        "trl_current": "9",
-        "subtype": "InstallationLogistics",
-        "trl_projected_5_10_years": "9",
-        "references": [
-          "https://guidetofloatingoffshorewind.com/guide/i-installation-and-commissioning/i-8-construction-port/"
-        ]
-      }
-    ],
-    "edges": [
-      {
-        "id": "evol_gfrp_cfrp",
-        "source": "gfrp_blade",
-        "target": "cfrp_spar_cap"
-      },
-      {
-        "id": "evol_gfrp_lep",
-        "source": "gfrp_blade",
-        "target": "leading_edge_protection"
-      },
-      {
-        "id": "evol_lep_lifetime",
-        "source": "leading_edge_protection",
-        "target": "lifetime_lep_coating"
-      },
-      {
-        "id": "dep_cfrp_carbon_supply",
-        "source": "enabling_carbon_fiber_supply",
-        "target": "cfrp_spar_cap"
-      },
-      {
-        "id": "dep_cfrp_afp",
-        "source": "enabling_automated_fiber_placement",
-        "target": "cfrp_spar_cap"
-      },
-      {
-        "id": "dep_segmented_joints",
-        "source": "enabling_mechanical_adhesive_joints",
-        "target": "segmented_blade"
-      },
-      {
-        "id": "dep_cfrp_segmented",
-        "source": "cfrp_spar_cap",
-        "target": "segmented_blade"
-      },
-      {
-        "id": "dep_smart_rotor_sensors",
-        "source": "enabling_fiber_optic_sensors",
-        "target": "smart_rotor_atef"
-      },
-      {
-        "id": "dep_smart_rotor_actuators",
-        "source": "enabling_lightning_resistant_actuator",
-        "target": "smart_rotor_atef"
-      },
-      {
-        "id": "dep_thermoplastic_milestone",
-        "source": "milestone_blade_recycling_ban",
-        "target": "thermoplastic_blade"
-      },
-      {
-        "id": "dep_circular_epoxy_milestone",
-        "source": "milestone_blade_recycling_ban",
-        "target": "circular_epoxy_cetec"
-      },
-      {
-        "id": "dep_pyrolysis_circular",
-        "source": "enabling_pyrolysis_recycling",
-        "target": "circular_epoxy_cetec"
-      },
-      {
-        "id": "dep_solvolysis_circular",
-        "source": "enabling_solvolysis_recycling",
-        "target": "circular_epoxy_cetec"
-      },
-      {
-        "id": "evol_cfrp_15mw_milestone",
-        "source": "cfrp_spar_cap",
-        "target": "milestone_15mw_turbine"
-      },
-      {
-        "id": "evol_dfig_dd",
-        "source": "drivetrain_dfig_geared",
-        "target": "drivetrain_dd_pmsg"
-      },
-      {
-        "id": "evol_dfig_medium_speed",
-        "source": "drivetrain_dfig_geared",
-        "target": "drivetrain_medium_speed_hybrid"
-      },
-      {
-        "id": "dep_dd_ree_supply",
-        "source": "enabling_ree_supply_chain",
-        "target": "drivetrain_dd_pmsg"
-      },
-      {
-        "id": "dep_hts_cryogenics",
-        "source": "enabling_cryogenic_cooling",
-        "target": "superconducting_generator_hts"
-      },
-      {
-        "id": "dep_hts_ecoswing_milestone",
-        "source": "milestone_ecoswing_field_test",
-        "target": "superconducting_generator_hts"
-      },
-      {
-        "id": "dep_mv_converter_sic",
-        "source": "enabling_sic_gan_semiconductors",
-        "target": "mv_power_converter"
-      },
-      {
-        "id": "evol_dd_hts",
-        "source": "drivetrain_dd_pmsg",
-        "target": "superconducting_generator_hts"
-      },
-      {
-        "id": "evol_monopile_xxl",
-        "source": "monopile_standard",
-        "target": "xxl_monopile"
-      },
-      {
-        "id": "dep_xxl_steel",
-        "source": "enabling_steel_rolling_capacity",
-        "target": "xxl_monopile"
-      },
-      {
-        "id": "evol_fixed_floating_semi",
-        "source": "monopile_standard",
-        "target": "floating_semi_submersible"
-      },
-      {
-        "id": "dep_spar_milestone",
-        "source": "milestone_hywind_tampen",
-        "target": "floating_spar_buoy"
-      },
-      {
-        "id": "dep_floating_port",
-        "source": "floating_wind_port",
-        "target": "floating_semi_submersible"
-      },
-      {
-        "id": "dep_floating_port_spar",
-        "source": "floating_wind_port",
-        "target": "floating_spar_buoy"
-      },
-      {
-        "id": "dep_floating_port_barge",
-        "source": "floating_wind_port",
-        "target": "floating_barge"
-      },
-      {
-        "id": "dep_synthetic_mooring_semi",
-        "source": "enabling_synthetic_mooring",
-        "target": "floating_semi_submersible"
-      },
-      {
-        "id": "dep_synthetic_mooring_tlp",
-        "source": "enabling_synthetic_mooring",
-        "target": "floating_tlp"
-      },
-      {
-        "id": "dep_shared_mooring_semi",
-        "source": "enabling_shared_mooring",
-        "target": "floating_semi_submersible"
-      },
-      {
-        "id": "dep_lazy_wave_dynamic66",
-        "source": "enabling_lazy_wave_cable",
-        "target": "dynamic_cable_66kv"
-      },
-      {
-        "id": "dep_lazy_wave_dynamic132",
-        "source": "enabling_lazy_wave_cable",
-        "target": "dynamic_cable_132kv"
-      },
-      {
-        "id": "evol_dynamic_66_132",
-        "source": "dynamic_cable_66kv",
-        "target": "dynamic_cable_132kv"
-      },
-      {
-        "id": "evol_array_66_132",
-        "source": "array_voltage_66kv",
-        "target": "array_voltage_132kv"
-      },
-      {
-        "id": "dep_132kv_switchgear",
-        "source": "enabling_132kv_switchgear",
-        "target": "array_voltage_132kv"
-      },
-      {
-        "id": "dep_grid_forming_grid_code",
-        "source": "enabling_grid_code_standards",
-        "target": "grid_forming_inverter"
-      },
-      {
-        "id": "dep_grid_forming_milestone",
-        "source": "milestone_grid_forming_100pct_re",
-        "target": "grid_forming_inverter"
-      },
-      {
-        "id": "evol_hvac_hvdc",
-        "source": "hvac_transmission",
-        "target": "hvdc_point_to_point"
-      },
-      {
-        "id": "evol_hvdc_multiterminal",
-        "source": "hvdc_point_to_point",
-        "target": "hvdc_multiterminal"
-      },
-      {
-        "id": "dep_hvdc_north_sea_milestone",
-        "source": "milestone_north_sea_hvdc_hub",
-        "target": "hvdc_multiterminal"
-      },
-      {
-        "id": "evol_wtiv_nextgen",
-        "source": "wtiv_vessel",
-        "target": "next_gen_wtiv"
-      },
-      {
-        "id": "dep_floating_ahts",
-        "source": "enabling_ahts_vessels",
-        "target": "floating_semi_submersible"
-      },
-      {
-        "id": "dep_dtwin_ai",
-        "source": "enabling_ai_predictive_maintenance",
-        "target": "digital_twin_data_driven"
-      },
-      {
-        "id": "evol_dtwin_data_physics",
-        "source": "digital_twin_data_driven",
-        "target": "digital_twin_physics_based"
-      },
-      {
-        "id": "evol_drone_crawler",
-        "source": "autonomous_drone_inspection",
-        "target": "blade_crawler_robot"
-      },
-      {
-        "id": "evol_crawler_repair",
-        "source": "blade_crawler_robot",
-        "target": "repair_robot_lep"
-      },
-      {
-        "id": "link_15mw_milestone_ddpmsg",
-        "source": "drivetrain_dd_pmsg",
-        "target": "milestone_15mw_turbine"
-      },
-      {
-        "id": "link_15mw_milestone_monopile",
-        "source": "xxl_monopile",
-        "target": "milestone_15mw_turbine"
-      },
-      {
-        "id": "link_15mw_milestone_vessel",
-        "source": "next_gen_wtiv",
-        "target": "milestone_15mw_turbine"
-      },
-      {
-        "id": "link_floating_vawt_spar",
-        "source": "floating_spar_buoy",
-        "target": "floating_vawt"
-      },
-      {
-        "id": "dep_awe_frontier",
-        "source": "enabling_fiber_optic_sensors",
-        "target": "airborne_wind_energy"
-      },
-      {
-        "id": "dep_multirot_cfrp",
-        "source": "cfrp_spar_cap",
-        "target": "multi_rotor_system"
-      }
-    ]
+    "graph": {
+      "nodes": [
+        {
+          "id": "gfrp_blade",
+          "label": "GFRP Blade (Standard)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "9",
+          "subtype": "MaterialScience",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/",
+            "https://researchportal.bath.ac.uk/en/publications/the-recyclability-of-wind-turbine-blade-material-manufacturing-pr/"
+          ]
+        },
+        {
+          "id": "cfrp_spar_cap",
+          "label": "Carbon Fiber Spar Cap (CFRP)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "9",
+          "subtype": "MaterialScience",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/",
+            "https://docs.nrel.gov/docs/fy22osti/82455.pdf"
+          ]
+        },
+        {
+          "id": "segmented_blade",
+          "label": "Segmented Blades (On-Site Assembly)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "5-6",
+          "subtype": "StructuralInnovation",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://docs.nrel.gov/docs/fy22osti/82455.pdf",
+            "https://www.nasampe.org/store/viewproduct.aspx?id=24022665",
+            "https://radia.com/media/windrunner-the-only-viable-solution-for-enabling-advanced-onshore-wind-technologies"
+          ]
+        },
+        {
+          "id": "smart_rotor_atef",
+          "label": "Smart Rotor / Active Trailing Edge Flaps (ATEF)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "6-7",
+          "subtype": "ActiveAerodynamics",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://pureportal.strath.ac.uk/en/studentTheses/the-smart-rotor-wind-turbine-2/",
+            "https://www.sandia.gov/app/uploads/sites/273/2021/12/smart_wind_turbine_design.pdf",
+            "https://www.energy.gov/sites/prod/files/smart_wind_turbine_data.pdf"
+          ]
+        },
+        {
+          "id": "leading_edge_protection",
+          "label": "Leading Edge Protection (LEP) Coatings",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "9",
+          "subtype": "MaterialScience",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
+          ]
+        },
+        {
+          "id": "lifetime_lep_coating",
+          "label": "Lifetime LEP Coating (25-Year Durability)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "6-7",
+          "subtype": "MaterialScience",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
+          ]
+        },
+        {
+          "id": "thermoplastic_blade",
+          "label": "Thermoplastic Resin Blades (Elium/Recyclable)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "7",
+          "subtype": "CircularEconomy",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.vestas.com/en/sustainability/sustainability-product-offerings/blade-circularity",
+            "https://stateofgreen.com/en/solutions/187807/",
+            "https://www.vestas.com/en/sustainability/environment/zero-waste"
+          ]
+        },
+        {
+          "id": "circular_epoxy_cetec",
+          "label": "Circular Epoxy Recovery (Vestas CETEC Process)",
+          "type": "WindConcept",
+          "category": "Rotor System",
+          "trl_current": "6-7",
+          "subtype": "CircularEconomy",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://www.vestas.com/en/sustainability/sustainability-product-offerings/blade-circularity",
+            "https://stateofgreen.com/en/solutions/187807/"
+          ]
+        },
+        {
+          "id": "drivetrain_dfig_geared",
+          "label": "High-Speed Geared Drivetrain (DFIG)",
+          "type": "WindConcept",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "9",
+          "subtype": "Legacy",
+          "trl_projected_5_10_years": "9 (Phase-out in offshore)",
+          "references": [
+            "https://www.mdpi.com/2076-3417/12/17/8653",
+            "https://docs.nrel.gov/docs/fy22osti/82406.pdf"
+          ]
+        },
+        {
+          "id": "drivetrain_dd_pmsg",
+          "label": "Direct Drive PMSG (Gearbox-Free)",
+          "type": "WindConcept",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "9",
+          "subtype": "OffshoreStandard",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://docs.nrel.gov/docs/fy22osti/82406.pdf",
+            "https://farmonaut.com/mining/rare-earths-in-wind-turbine-generators-2025-challenges",
+            "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC122671/jrc122671_the_role_of_rare_earth_elements_in_wind_energy_and_electric_mobility_2.pdf"
+          ]
+        },
+        {
+          "id": "drivetrain_medium_speed_hybrid",
+          "label": "Medium-Speed Hybrid Drivetrain (PMSG + 1-2 Stage Gearbox)",
+          "type": "WindConcept",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "9",
+          "subtype": "HybridTopology",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.mdpi.com/2076-3417/12/17/8653",
+            "https://docs.nrel.gov/docs/fy15osti/64269.pdf"
+          ]
+        },
+        {
+          "id": "superconducting_generator_hts",
+          "label": "Superconducting Generator (HTS / MgB2 / ReBCO)",
+          "type": "WindConcept",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "6-7",
+          "subtype": "FrontierGenerator",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://digital.library.unt.edu/ark:/67531/metadc827684/",
+            "https://www.utwente.nl/en/tnw/ems/research/sust/EcoSwing/",
+            "https://ioppublishing.org/news/superconducting-wind-turbine-chalks-up-first-test-success/"
+          ]
+        },
+        {
+          "id": "rare_earth_free_magnets",
+          "label": "Rare-Earth-Free Magnets (Iron Nitride / Ferrite)",
+          "type": "WindConcept",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "3-4",
+          "subtype": "MaterialScience",
+          "trl_projected_5_10_years": "6-7",
+          "references": [
+            "https://www.energy.gov/sites/default/files/2024-12/Neodymium%2520Magnets%2520Supply%2520Chain%2520Report%2520-%2520Final%5B1%5D.pdf"
+          ]
+        },
+        {
+          "id": "mv_power_converter",
+          "label": "Medium Voltage Full-Scale Converter (3.3–66 kV)",
+          "type": "WindConcept",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "8-9",
+          "subtype": "PowerElectronics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://docs.nrel.gov/docs/fy15osti/64269.pdf"
+          ]
+        },
+        {
+          "id": "monopile_standard",
+          "label": "Standard Monopile Foundation",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "9",
+          "subtype": "FixedBottom",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/"
+          ]
+        },
+        {
+          "id": "xxl_monopile",
+          "label": "XXL Monopile (12m Diameter, 60m+ Water Depth)",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "8-9",
+          "subtype": "FixedBottom",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/"
+          ]
+        },
+        {
+          "id": "suction_bucket",
+          "label": "Suction Bucket / Caisson Foundation",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "8-9",
+          "subtype": "FixedBottom",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.issmge.org/uploads/publications/132/133/ISFOG2025-658.pdf",
+            "https://orsted.com/en/offshore-wind/innovation/suction-bucket-jacket-foundations"
+          ]
+        },
+        {
+          "id": "floating_semi_submersible",
+          "label": "Semi-Submersible Floating Foundation (e.g., WindFloat)",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "8",
+          "subtype": "FloatingOffshore",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/guide/b-balance-of-plant/b-2-floating-substructure/",
+            "https://www.empireengineering.co.uk/semi-submersible-spar-and-tlp-floating-wind-foundations/"
+          ]
+        },
+        {
+          "id": "floating_spar_buoy",
+          "label": "Spar Buoy Floating Foundation (e.g., Hywind)",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "8",
+          "subtype": "FloatingOffshore",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/",
+            "https://www.empireengineering.co.uk/semi-submersible-spar-and-tlp-floating-wind-foundations/"
+          ]
+        },
+        {
+          "id": "floating_tlp",
+          "label": "Tension Leg Platform (TLP) Floating Foundation",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "5-6",
+          "subtype": "FloatingOffshore",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/",
+            "https://www.empireengineering.co.uk/semi-submersible-spar-and-tlp-floating-wind-foundations/"
+          ]
+        },
+        {
+          "id": "floating_barge",
+          "label": "Barge / Wide-Hull Floating Foundation (e.g., BW Ideol)",
+          "type": "WindConcept",
+          "category": "Support Structures",
+          "trl_current": "6-7",
+          "subtype": "FloatingOffshore",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/"
+          ]
+        },
+        {
+          "id": "dynamic_cable_66kv",
+          "label": "Dynamic Inter-Array Cable (66 kV)",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "8",
+          "subtype": "OffshoreElectrical",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://ore.catapult.org.uk/wp-content/uploads/2018/09/Predicting-Dynamic-Subsea-Cable-Failure-for-Floating-Wind-David-Young-AP-0016.pdf",
+            "https://www.nexans.com/perspective/dynamic-cables-opening-up-new-markets-in-offshore-wind-development/"
+          ]
+        },
+        {
+          "id": "dynamic_cable_132kv",
+          "label": "Dynamic Export Cable (132 kV+)",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "5-6",
+          "subtype": "OffshoreElectrical",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://www.nexans.com/perspective/dynamic-cables-opening-up-new-markets-in-offshore-wind-development/",
+            "https://docs.nrel.gov/docs/fy25osti/91416.pdf"
+          ]
+        },
+        {
+          "id": "array_voltage_66kv",
+          "label": "66 kV Inter-Array Collection System",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "9",
+          "subtype": "GridElectrical",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.carbontrust.com/our-work-and-impact/guides-reports-and-tools/unlocking-the-next-generation-of-offshore-wind-step-change-to-132-kv-array-systems"
+          ]
+        },
+        {
+          "id": "array_voltage_132kv",
+          "label": "132 kV Inter-Array Collection System",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "4-5",
+          "subtype": "GridElectrical",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://www.carbontrust.com/our-work-and-impact/guides-reports-and-tools/unlocking-the-next-generation-of-offshore-wind-step-change-to-132-kv-array-systems",
+            "https://ctprodstorageaccountp.blob.core.windows.net/prod-drupal-files/documents/resource/public/Hi-VAS-Report-June2022.pdf",
+            "https://www.carbontrust.com/news-and-insights/news/global-offshore-wind-industry-to-increase-voltage"
+          ]
+        },
+        {
+          "id": "grid_forming_inverter",
+          "label": "Grid-Forming Inverter (Synthetic Inertia / WindVSG)",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "6-7",
+          "subtype": "GridStability",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.energy.gov/eere/wind/articles/wind-turbines-can-stabilize-grid",
+            "https://www.esig.energy/wp-content/uploads/2022/03/ESIG-GFM-report-2022.pdf"
+          ]
+        },
+        {
+          "id": "hvac_transmission",
+          "label": "HVAC Transmission (<100 km)",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "9",
+          "subtype": "Transmission",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.researchgate.net/publication/364144367_Comparison_of_HVAC_and_HVDC_collection_grids_in_offshore_windfarms"
+          ]
+        },
+        {
+          "id": "hvdc_point_to_point",
+          "label": "HVDC Point-to-Point Transmission (VSC)",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "9",
+          "subtype": "Transmission",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://blog.shuvangkardas.com/offshore-wind-hvdc-vs-hvac-transmission",
+            "https://www.researchgate.net/publication/364144367_Comparison_of_HVAC_and_HVDC_collection_grids_in_offshore_windfarms"
+          ]
+        },
+        {
+          "id": "hvdc_multiterminal",
+          "label": "Multi-Terminal HVDC Grid (North Sea Hub Concept)",
+          "type": "WindConcept",
+          "category": "Electrical & Grid",
+          "trl_current": "5-6",
+          "subtype": "Transmission",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://blog.shuvangkardas.com/offshore-wind-hvdc-vs-hvac-transmission"
+          ]
+        },
+        {
+          "id": "wtiv_vessel",
+          "label": "Wind Turbine Installation Vessel (WTIV / Jack-Up)",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "9",
+          "subtype": "InstallationLogistics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.solvewind.com/blog/news-2/addressing-the-shortage-of-jack-up-vessels-for-15mw-offshore-wind-turbines-challenges-and-innovative-solutions-4",
+            "https://www.energyglobal.com/wind/03022022/rystad-energy-larger-installation-vessels-required-for-super-sized-turbines/"
+          ]
+        },
+        {
+          "id": "next_gen_wtiv",
+          "label": "Next-Gen WTIV (800t+ Crane / 150m+ Hub Height)",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "7-8",
+          "subtype": "InstallationLogistics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.solvewind.com/blog/news-2/addressing-the-shortage-of-jack-up-vessels-for-15mw-offshore-wind-turbines-challenges-and-innovative-solutions-4"
+          ]
+        },
+        {
+          "id": "floating_wind_port",
+          "label": "Floating Wind Quayside Assembly Port",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "5-6",
+          "subtype": "InstallationLogistics",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/guide/i-installation-and-commissioning/i-8-construction-port/",
+            "https://www.nationalwealthfund.org.uk/media/034jmptd/ukib-strategy-update-port-infrastructure-fe06b20eda52435e9c83a0435ef4cd43.pdf"
+          ]
+        },
+        {
+          "id": "digital_twin_data_driven",
+          "label": "Data-Driven Digital Twin (ML / SCADA-Based)",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "9",
+          "subtype": "Digitalization",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://wes.copernicus.org/preprints/wes-2023-108/wes-2023-108.pdf",
+            "https://www.ingeteam.com/Portals/0/OpenContent/Files/12189/Case_study_Ingeteam_-_Smart_SCADA_for_renewable_energy_asset_monitoring-1.pdf"
+          ]
+        },
+        {
+          "id": "digital_twin_physics_based",
+          "label": "Physics-Based Digital Twin (Aero-Elastic Fatigue Monitoring)",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "6-7",
+          "subtype": "Digitalization",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://wes.copernicus.org/preprints/wes-2023-108/wes-2023-108.pdf"
+          ]
+        },
+        {
+          "id": "autonomous_drone_inspection",
+          "label": "Autonomous Drone Blade Inspection",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "9",
+          "subtype": "Robotics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.energy.gov/eere/wind/articles/robotic-systems-improve-blade-reliability"
+          ]
+        },
+        {
+          "id": "blade_crawler_robot",
+          "label": "Internal Blade Crawler Robot (Ultrasonic NDT)",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "6-7",
+          "subtype": "Robotics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.sandia.gov/labnews/2019/06/20/wind-turbines/",
+            "https://www.energy.gov/eere/wind/articles/robotic-systems-improve-blade-reliability"
+          ]
+        },
+        {
+          "id": "repair_robot_lep",
+          "label": "Autonomous LEP Repair Robot (Sand & Paint)",
+          "type": "WindConcept",
+          "category": "Operations & Logistics",
+          "trl_current": "5-6",
+          "subtype": "Robotics",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://www.energy.gov/eere/wind/articles/robotic-systems-improve-blade-reliability"
+          ]
+        },
+        {
+          "id": "airborne_wind_energy",
+          "label": "Airborne Wind Energy (AWE / Kite Systems)",
+          "type": "WindConcept",
+          "category": "Frontier & Emerging",
+          "trl_current": "4-6",
+          "subtype": "FrontierConcept",
+          "trl_projected_5_10_years": "6-7",
+          "references": [
+            "https://docs.nrel.gov/docs/fy21osti/79992.pdf",
+            "https://skysails-power.com/first-flight-in-taiwan/",
+            "https://www.iea.org/data-and-statistics/data-tools/etp-clean-energy-technology-guide"
+          ]
+        },
+        {
+          "id": "floating_vawt",
+          "label": "Floating Vertical Axis Wind Turbine (VAWT / SeaTwirl)",
+          "type": "WindConcept",
+          "category": "Frontier & Emerging",
+          "trl_current": "5",
+          "subtype": "FrontierConcept",
+          "trl_projected_5_10_years": "6-7",
+          "references": [
+            "https://esdnews.com.au/promising-results-from-vertical-axis-wind-turbine-trial/"
+          ]
+        },
+        {
+          "id": "multi_rotor_system",
+          "label": "Multi-Rotor System (4x Smaller Rotors on Single Tower)",
+          "type": "WindConcept",
+          "category": "Frontier & Emerging",
+          "trl_current": "4-5",
+          "subtype": "FrontierConcept",
+          "trl_projected_5_10_years": "6",
+          "references": [
+            "https://www.researchgate.net/publication/395234999_Multi-rotor_wind_turbines_A_review_of_modern_research_efforts_and_challenges"
+          ]
+        },
+        {
+          "id": "milestone_15mw_turbine",
+          "label": "Milestone: 15 MW+ Turbine Commercial Deployment",
+          "type": "Milestone",
+          "category": "Rotor System",
+          "trl_current": "8-9",
+          "subtype": "CommercialDeployment",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://docs.nrel.gov/docs/fy22osti/82455.pdf"
+          ]
+        },
+        {
+          "id": "milestone_blade_recycling_ban",
+          "label": "Milestone: EU Landfill Ban for Wind Blades (Regulatory Driver)",
+          "type": "Milestone",
+          "category": "Rotor System",
+          "trl_current": "9",
+          "subtype": "RegulatoryMilestone",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.vestas.com/en/sustainability/environment/zero-waste"
+          ]
+        },
+        {
+          "id": "milestone_ecoswing_field_test",
+          "label": "Milestone: EcoSwing HTS Generator Field Test (3.6 MW, Denmark)",
+          "type": "Milestone",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "6-7",
+          "subtype": "PrototypeValidation",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://www.utwente.nl/en/tnw/ems/research/sust/EcoSwing/",
+            "https://ioppublishing.org/news/superconducting-wind-turbine-chalks-up-first-test-success/"
+          ]
+        },
+        {
+          "id": "milestone_hywind_tampen",
+          "label": "Milestone: Hywind Tampen — World's Largest Floating Wind Farm",
+          "type": "Milestone",
+          "category": "Support Structures",
+          "trl_current": "8",
+          "subtype": "CommercialPilot",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/"
+          ]
+        },
+        {
+          "id": "milestone_north_sea_hvdc_hub",
+          "label": "Milestone: North Sea Multi-Terminal HVDC Hub (Planning Stage)",
+          "type": "Milestone",
+          "category": "Electrical & Grid",
+          "trl_current": "5-6",
+          "subtype": "GridIntegration",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://blog.shuvangkardas.com/offshore-wind-hvdc-vs-hvac-transmission"
+          ]
+        },
+        {
+          "id": "milestone_grid_forming_100pct_re",
+          "label": "Milestone: 100% Renewable Grid Stability via Grid-Forming Inverters",
+          "type": "Milestone",
+          "category": "Electrical & Grid",
+          "trl_current": "6-7",
+          "subtype": "GridStability",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.energy.gov/eere/wind/articles/wind-turbines-can-stabilize-grid",
+            "https://www.esig.energy/wp-content/uploads/2022/03/ESIG-GFM-report-2022.pdf"
+          ]
+        },
+        {
+          "id": "enabling_carbon_fiber_supply",
+          "label": "Carbon Fiber Supply Chain (Wind-Dedicated)",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "8",
+          "subtype": "SupplyChain",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
+          ]
+        },
+        {
+          "id": "enabling_automated_fiber_placement",
+          "label": "Automated Fiber Placement (AFP) Manufacturing",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "8-9",
+          "subtype": "ManufacturingProcess",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://docs.nrel.gov/docs/fy22osti/82455.pdf"
+          ]
+        },
+        {
+          "id": "enabling_mechanical_adhesive_joints",
+          "label": "Hybrid Mechanical-Adhesive Blade Joints",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "5-6",
+          "subtype": "StructuralEngineering",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://www.nasampe.org/store/viewproduct.aspx?id=24022665"
+          ]
+        },
+        {
+          "id": "enabling_fiber_optic_sensors",
+          "label": "Fiber Optic Strain Gauge Sensors (In-Blade)",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "7-8",
+          "subtype": "SensorTechnology",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://www.sandia.gov/app/uploads/sites/273/2021/12/smart_wind_turbine_design.pdf"
+          ]
+        },
+        {
+          "id": "enabling_lightning_resistant_actuator",
+          "label": "Lightning-Resistant Blade Actuators",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "6-7",
+          "subtype": "ComponentReliability",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://pureportal.strath.ac.uk/en/studentTheses/the-smart-rotor-wind-turbine-2/"
+          ]
+        },
+        {
+          "id": "enabling_pyrolysis_recycling",
+          "label": "Pyrolysis Fiber Recovery from Blades",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "7-8",
+          "subtype": "CircularEconomy",
+          "trl_projected_5_10_years": "8-9",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/",
+            "https://researchportal.bath.ac.uk/en/publications/the-recyclability-of-wind-turbine-blade-material-manufacturing-pr/"
+          ]
+        },
+        {
+          "id": "enabling_solvolysis_recycling",
+          "label": "Solvolysis Chemical Resin Recovery",
+          "type": "EnablingTechnology",
+          "category": "Rotor System",
+          "trl_current": "5-6",
+          "subtype": "CircularEconomy",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10108337/"
+          ]
+        },
+        {
+          "id": "enabling_ree_supply_chain",
+          "label": "Rare Earth Element (Nd/Dy) Supply Chain Diversification",
+          "type": "EnablingTechnology",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "4-6",
+          "subtype": "SupplyChain",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://farmonaut.com/mining/rare-earths-in-wind-turbine-generators-2025-challenges",
+            "https://www.energy.gov/sites/default/files/2024-12/Neodymium%2520Magnets%2520Supply%2520Chain%2520Report%2520-%2520Final%5B1%5D.pdf",
+            "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC122671/jrc122671_the_role_of_rare_earth_elements_in_wind_energy_and_electric_mobility_2.pdf"
+          ]
+        },
+        {
+          "id": "enabling_cryogenic_cooling",
+          "label": "Compact Cryogenic Cooling Systems (20–40 K)",
+          "type": "EnablingTechnology",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "6-7",
+          "subtype": "CryogenicEngineering",
+          "trl_projected_5_10_years": "8",
+          "references": [
+            "https://digital.library.unt.edu/ark:/67531/metadc827684/",
+            "https://www.utwente.nl/en/tnw/ems/research/sust/EcoSwing/"
+          ]
+        },
+        {
+          "id": "enabling_sic_gan_semiconductors",
+          "label": "SiC / GaN Wide-Bandgap Power Semiconductors",
+          "type": "EnablingTechnology",
+          "category": "Drivetrain & Nacelle",
+          "trl_current": "8-9",
+          "subtype": "PowerElectronics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://docs.nrel.gov/docs/fy15osti/64269.pdf"
+          ]
+        },
+        {
+          "id": "enabling_steel_rolling_capacity",
+          "label": "XXL Steel Rolling & Plate Manufacturing Capacity",
+          "type": "EnablingTechnology",
+          "category": "Support Structures",
+          "trl_current": "8",
+          "subtype": "ManufacturingProcess",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/floating-technology/"
+          ]
+        },
+        {
+          "id": "enabling_lazy_wave_cable",
+          "label": "Lazy Wave Dynamic Cable Configuration (Buoyancy Modules)",
+          "type": "EnablingTechnology",
+          "category": "Support Structures",
+          "trl_current": "7-8",
+          "subtype": "SubseaEngineering",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://ore.catapult.org.uk/wp-content/uploads/2018/09/Predicting-Dynamic-Subsea-Cable-Failure-for-Floating-Wind-David-Young-AP-0016.pdf",
+            "https://docs.nrel.gov/docs/fy25osti/91416.pdf"
+          ]
+        },
+        {
+          "id": "enabling_synthetic_mooring",
+          "label": "Synthetic Rope Mooring (Polyester / Nylon)",
+          "type": "EnablingTechnology",
+          "category": "Support Structures",
+          "trl_current": "7-8",
+          "subtype": "SubseaEngineering",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://docs.nrel.gov/docs/fy25osti/91416.pdf",
+            "https://www.dnv.com/group/joint-industry-projects/optimizing-mooring-and-dynamic-cable-design-requirements-for-floating-wind/"
+          ]
+        },
+        {
+          "id": "enabling_shared_mooring",
+          "label": "Shared Mooring Line Arrays (Multi-Turbine Anchoring)",
+          "type": "EnablingTechnology",
+          "category": "Support Structures",
+          "trl_current": "3-4",
+          "subtype": "SubseaEngineering",
+          "trl_projected_5_10_years": "6-7",
+          "references": [
+            "https://docs.nrel.gov/docs/fy25osti/91416.pdf",
+            "https://www.dnv.com/group/joint-industry-projects/optimizing-mooring-and-dynamic-cable-design-requirements-for-floating-wind/"
+          ]
+        },
+        {
+          "id": "enabling_132kv_switchgear",
+          "label": "132 kV Wet Switchgear & Compact Transformers (In-Tower)",
+          "type": "EnablingTechnology",
+          "category": "Electrical & Grid",
+          "trl_current": "4-5",
+          "subtype": "GridElectrical",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://ctprodstorageaccountp.blob.core.windows.net/prod-drupal-files/documents/resource/public/Hi-VAS-Report-June2022.pdf"
+          ]
+        },
+        {
+          "id": "enabling_grid_code_standards",
+          "label": "Grid Code & Market Standards for Synthetic Inertia Services",
+          "type": "EnablingTechnology",
+          "category": "Electrical & Grid",
+          "trl_current": "4-5",
+          "subtype": "RegulatoryFramework",
+          "trl_projected_5_10_years": "7-8",
+          "references": [
+            "https://www.esig.energy/wp-content/uploads/2022/03/ESIG-GFM-report-2022.pdf"
+          ]
+        },
+        {
+          "id": "enabling_ai_predictive_maintenance",
+          "label": "AI-Based Predictive Maintenance & Anomaly Detection",
+          "type": "EnablingTechnology",
+          "category": "Operations & Logistics",
+          "trl_current": "8-9",
+          "subtype": "Digitalization",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://wes.copernicus.org/preprints/wes-2023-108/wes-2023-108.pdf"
+          ]
+        },
+        {
+          "id": "enabling_ahts_vessels",
+          "label": "Anchor Handling Tug Supply (AHTS) Vessels for Floating Install",
+          "type": "EnablingTechnology",
+          "category": "Operations & Logistics",
+          "trl_current": "9",
+          "subtype": "InstallationLogistics",
+          "trl_projected_5_10_years": "9",
+          "references": [
+            "https://guidetofloatingoffshorewind.com/guide/i-installation-and-commissioning/i-8-construction-port/"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "evol_gfrp_cfrp",
+          "source": "gfrp_blade",
+          "target": "cfrp_spar_cap"
+        },
+        {
+          "id": "evol_gfrp_lep",
+          "source": "gfrp_blade",
+          "target": "leading_edge_protection"
+        },
+        {
+          "id": "evol_lep_lifetime",
+          "source": "leading_edge_protection",
+          "target": "lifetime_lep_coating"
+        },
+        {
+          "id": "dep_cfrp_carbon_supply",
+          "source": "enabling_carbon_fiber_supply",
+          "target": "cfrp_spar_cap"
+        },
+        {
+          "id": "dep_cfrp_afp",
+          "source": "enabling_automated_fiber_placement",
+          "target": "cfrp_spar_cap"
+        },
+        {
+          "id": "dep_segmented_joints",
+          "source": "enabling_mechanical_adhesive_joints",
+          "target": "segmented_blade"
+        },
+        {
+          "id": "dep_cfrp_segmented",
+          "source": "cfrp_spar_cap",
+          "target": "segmented_blade"
+        },
+        {
+          "id": "dep_smart_rotor_sensors",
+          "source": "enabling_fiber_optic_sensors",
+          "target": "smart_rotor_atef"
+        },
+        {
+          "id": "dep_smart_rotor_actuators",
+          "source": "enabling_lightning_resistant_actuator",
+          "target": "smart_rotor_atef"
+        },
+        {
+          "id": "dep_thermoplastic_milestone",
+          "source": "milestone_blade_recycling_ban",
+          "target": "thermoplastic_blade"
+        },
+        {
+          "id": "dep_circular_epoxy_milestone",
+          "source": "milestone_blade_recycling_ban",
+          "target": "circular_epoxy_cetec"
+        },
+        {
+          "id": "dep_pyrolysis_circular",
+          "source": "enabling_pyrolysis_recycling",
+          "target": "circular_epoxy_cetec"
+        },
+        {
+          "id": "dep_solvolysis_circular",
+          "source": "enabling_solvolysis_recycling",
+          "target": "circular_epoxy_cetec"
+        },
+        {
+          "id": "evol_cfrp_15mw_milestone",
+          "source": "cfrp_spar_cap",
+          "target": "milestone_15mw_turbine"
+        },
+        {
+          "id": "evol_dfig_dd",
+          "source": "drivetrain_dfig_geared",
+          "target": "drivetrain_dd_pmsg"
+        },
+        {
+          "id": "evol_dfig_medium_speed",
+          "source": "drivetrain_dfig_geared",
+          "target": "drivetrain_medium_speed_hybrid"
+        },
+        {
+          "id": "dep_dd_ree_supply",
+          "source": "enabling_ree_supply_chain",
+          "target": "drivetrain_dd_pmsg"
+        },
+        {
+          "id": "dep_hts_cryogenics",
+          "source": "enabling_cryogenic_cooling",
+          "target": "superconducting_generator_hts"
+        },
+        {
+          "id": "dep_hts_ecoswing_milestone",
+          "source": "milestone_ecoswing_field_test",
+          "target": "superconducting_generator_hts"
+        },
+        {
+          "id": "dep_mv_converter_sic",
+          "source": "enabling_sic_gan_semiconductors",
+          "target": "mv_power_converter"
+        },
+        {
+          "id": "evol_dd_hts",
+          "source": "drivetrain_dd_pmsg",
+          "target": "superconducting_generator_hts"
+        },
+        {
+          "id": "evol_monopile_xxl",
+          "source": "monopile_standard",
+          "target": "xxl_monopile"
+        },
+        {
+          "id": "dep_xxl_steel",
+          "source": "enabling_steel_rolling_capacity",
+          "target": "xxl_monopile"
+        },
+        {
+          "id": "evol_fixed_floating_semi",
+          "source": "monopile_standard",
+          "target": "floating_semi_submersible"
+        },
+        {
+          "id": "dep_spar_milestone",
+          "source": "milestone_hywind_tampen",
+          "target": "floating_spar_buoy"
+        },
+        {
+          "id": "dep_floating_port",
+          "source": "floating_wind_port",
+          "target": "floating_semi_submersible"
+        },
+        {
+          "id": "dep_floating_port_spar",
+          "source": "floating_wind_port",
+          "target": "floating_spar_buoy"
+        },
+        {
+          "id": "dep_floating_port_barge",
+          "source": "floating_wind_port",
+          "target": "floating_barge"
+        },
+        {
+          "id": "dep_synthetic_mooring_semi",
+          "source": "enabling_synthetic_mooring",
+          "target": "floating_semi_submersible"
+        },
+        {
+          "id": "dep_synthetic_mooring_tlp",
+          "source": "enabling_synthetic_mooring",
+          "target": "floating_tlp"
+        },
+        {
+          "id": "dep_shared_mooring_semi",
+          "source": "enabling_shared_mooring",
+          "target": "floating_semi_submersible"
+        },
+        {
+          "id": "dep_lazy_wave_dynamic66",
+          "source": "enabling_lazy_wave_cable",
+          "target": "dynamic_cable_66kv"
+        },
+        {
+          "id": "dep_lazy_wave_dynamic132",
+          "source": "enabling_lazy_wave_cable",
+          "target": "dynamic_cable_132kv"
+        },
+        {
+          "id": "evol_dynamic_66_132",
+          "source": "dynamic_cable_66kv",
+          "target": "dynamic_cable_132kv"
+        },
+        {
+          "id": "evol_array_66_132",
+          "source": "array_voltage_66kv",
+          "target": "array_voltage_132kv"
+        },
+        {
+          "id": "dep_132kv_switchgear",
+          "source": "enabling_132kv_switchgear",
+          "target": "array_voltage_132kv"
+        },
+        {
+          "id": "dep_grid_forming_grid_code",
+          "source": "enabling_grid_code_standards",
+          "target": "grid_forming_inverter"
+        },
+        {
+          "id": "dep_grid_forming_milestone",
+          "source": "milestone_grid_forming_100pct_re",
+          "target": "grid_forming_inverter"
+        },
+        {
+          "id": "evol_hvac_hvdc",
+          "source": "hvac_transmission",
+          "target": "hvdc_point_to_point"
+        },
+        {
+          "id": "evol_hvdc_multiterminal",
+          "source": "hvdc_point_to_point",
+          "target": "hvdc_multiterminal"
+        },
+        {
+          "id": "dep_hvdc_north_sea_milestone",
+          "source": "milestone_north_sea_hvdc_hub",
+          "target": "hvdc_multiterminal"
+        },
+        {
+          "id": "evol_wtiv_nextgen",
+          "source": "wtiv_vessel",
+          "target": "next_gen_wtiv"
+        },
+        {
+          "id": "dep_floating_ahts",
+          "source": "enabling_ahts_vessels",
+          "target": "floating_semi_submersible"
+        },
+        {
+          "id": "dep_dtwin_ai",
+          "source": "enabling_ai_predictive_maintenance",
+          "target": "digital_twin_data_driven"
+        },
+        {
+          "id": "evol_dtwin_data_physics",
+          "source": "digital_twin_data_driven",
+          "target": "digital_twin_physics_based"
+        },
+        {
+          "id": "evol_drone_crawler",
+          "source": "autonomous_drone_inspection",
+          "target": "blade_crawler_robot"
+        },
+        {
+          "id": "evol_crawler_repair",
+          "source": "blade_crawler_robot",
+          "target": "repair_robot_lep"
+        },
+        {
+          "id": "link_15mw_milestone_ddpmsg",
+          "source": "drivetrain_dd_pmsg",
+          "target": "milestone_15mw_turbine"
+        },
+        {
+          "id": "link_15mw_milestone_monopile",
+          "source": "xxl_monopile",
+          "target": "milestone_15mw_turbine"
+        },
+        {
+          "id": "link_15mw_milestone_vessel",
+          "source": "next_gen_wtiv",
+          "target": "milestone_15mw_turbine"
+        },
+        {
+          "id": "link_floating_vawt_spar",
+          "source": "floating_spar_buoy",
+          "target": "floating_vawt"
+        },
+        {
+          "id": "dep_awe_frontier",
+          "source": "enabling_fiber_optic_sensors",
+          "target": "airborne_wind_energy"
+        },
+        {
+          "id": "dep_multirot_cfrp",
+          "source": "cfrp_spar_cap",
+          "target": "multi_rotor_system"
+        }
+      ]
   }
   
 }
