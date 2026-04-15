@@ -1,0 +1,2408 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": "atmospheric_steam_engine",
+        "label": "Atmospheric Steam Engine Power Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "The earliest coal-fired power generation concept, exemplified by Thomas Newcomen's 1712 engine. Operated below atmospheric pressure using steam condensation to drive a piston. Extremely low thermal efficiency (<1%), used primarily for mine dewatering. James Watt's 1769 separate condenser improvement raised efficiency to ~3%. Formed the conceptual bedrock of all subsequent steam-cycle power generation.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine",
+          "https://history.alberta.ca/energyheritage/coal/early-coal-history-to-1900/the-steam-engine-the-industrial-revolution-and-coal",
+          "https://geosci.uchicago.edu/~moyer/GEOS24705/2017/Slides/Slides_Lecture6.pdf"
+        ]
+      },
+      {
+        "id": "reciprocating_steam_plant",
+        "label": "Reciprocating Steam Engine Central Station",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "The first generation of centralized coal-fired electricity generating stations, typified by Edison's Pearl Street Station (1882). Used reciprocating (piston) steam engines coupled to DC dynamos. Operated at low pressures (~150 psi) and temperatures (~180°C), yielding efficiencies of 4–8%. Coal was hand-fired into fire-tube boilers. Marked the birth of the electric utility industry.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Pearl_Street_Station",
+          "https://projectdesign.io/thomas-edisons-pearl-street-station/",
+          "https://historictownsofamerica.com/first-power-plant-station"
+        ]
+      },
+      {
+        "id": "steam_turbine_plant",
+        "label": "Steam Turbine Coal Power Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Replaced reciprocating engines with rotary steam turbines (Parsons, 1884). Turbines offered far higher rotational speeds and power densities, enabling large-scale AC generation. By 1910, turbine plants of 10–25 MW were common, with efficiencies reaching 15%. The shift to turbines established the canonical Rankine cycle architecture that defines all subsequent steam plants.",
+        "references": [
+          "https://www.drax.com/power-generation/turbines-came-to-power-the-world/",
+          "https://www.powermag.com/history-of-power-the-evolution-of-the-electric-generation-industry/",
+          "https://energyeducation.ca/encyclopedia/Rankine_cycle"
+        ]
+      },
+      {
+        "id": "subcritical_pc_plant",
+        "label": "Subcritical Pulverized Coal (PC) Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "The dominant 20th-century coal power paradigm. Pulverized coal (ground to 75 µm) is pneumatically injected into a furnace and burned in suspension, enabling much higher heat-release rates than stoker firing. Operates below the critical point of water (<22.1 MPa, typically 16–18 MPa / 540°C). Net efficiency is 33–37% (HHV). Global installed capacity exceeds 1,000 GW.",
+        "references": [
+          "https://www.gem.wiki/Coal_power_technologies",
+          "https://www.gem.wiki/Coal_combustion_efficiency",
+          "https://www.sciencedirect.com/topics/engineering/pulverized-fuel-boiler"
+        ]
+      },
+      {
+        "id": "supercritical_pc_plant",
+        "label": "Supercritical Pulverized Coal (SC) Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Operates above the thermodynamic critical point of water (>22.1 MPa, ~540–560°C). Above the critical point, there is no phase transition between liquid and steam, enabling a continuous, more efficient thermodynamic cycle. Net efficiency reaches 38–42% (HHV). CO2 emissions approximately 800 kg/MWh vs. ~950 for subcritical. Pioneered at Eddystone Station (1960) and now standard for new coal capacity in China, Europe, and Japan.",
+        "references": [
+          "https://iea.blob.core.windows.net/assets/4bfcc54d-d130-413c-9511-e0c2eb85328f/HELE_Foldout_A3_2ndProofs.pdf",
+          "https://nachhaltigwirtschaften.at/en/iea/publications/iea-ccc-performance-and-risks-of-advanced-pulverised-coal-plant-2008.php",
+          "https://www.osti.gov/biblio/1542449",
+          "https://ethw.org/ASME-Landmark:Eddystone_Station_Unit",
+          "https://etheses.bham.ac.uk/3662/1/Mohamed12PhD.pdf"
+        ]
+      },
+      {
+        "id": "ultra_supercritical_plant",
+        "label": "Ultra-Supercritical (USC) PC Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Pushes steam conditions to >25 MPa and >580°C (often 600–620°C). Efficiency of 42–46% (HHV), reducing CO2 intensity to ~740 kg/MWh. Enabled by the development of advanced ferritic steels (P91, P92) and nickel-based superalloys for high-temperature headers and turbine blades. Leading examples include the Danish Nordjylland Unit 3 (1998) and the German Niederaussem BoA unit.",
+        "references": [
+          "https://iea.blob.core.windows.net/assets/4bfcc54d-d130-413c-9511-e0c2eb85328f/HELE_Foldout_A3_2ndProofs.pdf",
+          "https://projekter.aau.dk/projekter/files/15056462/08_OK-report.pdf",
+          "https://stumejournals.com/journals/mtm/2021/1/28.full.pdf"
+        ]
+      },
+      {
+        "id": "advanced_ultra_supercritical_plant",
+        "label": "Advanced Ultra-Supercritical (A-USC) Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "Next-generation design targeting steam conditions of 700–760°C / 35 MPa, projecting efficiencies of 48–52% (HHV). Requires nickel-based superalloys (Inconel 740H, Haynes 282) for the entire high-temperature section. NETL's AUSC Consortium completed fabrication of full-scale 800 MW-class components by 2023, including a turbine rotor and superheater tube assembly. Commercial deployment not yet achieved.",
+        "references": [
+          "https://www.powermag.com/alstom-reports-major-boost-for-advanced-ultrasupercritical-technology/",
+          "https://iea.blob.core.windows.net/assets/4bfcc54d-d130-413c-9511-e0c2eb85328f/HELE_Foldout_A3_2ndProofs.pdf",
+          "https://www.intechopen.com/chapters/49076",
+          "https://www.ijsrp.org/research-paper-1118/ijsrp-p8367.pdf",
+          "https://www.asminternational.org/wp-content/uploads/files/05440G/05440G-preview.pdf"
+        ]
+      },
+      {
+        "id": "igcc_plant",
+        "label": "Integrated Gasification Combined Cycle (IGCC) Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Converts coal into syngas (CO + H2) via high-temperature partial oxidation (gasification), then cleans the syngas and burns it in a gas turbine. Waste heat from the gas turbine exhaust drives a heat recovery steam generator and a steam turbine (combined cycle). Net efficiency of 38–42% (HHV). Reference plants: Polk Power Station (USA, 1996), Wabash River (USA, 1995), Buggenum (Netherlands, 1994).",
+        "references": [
+          "https://en.wikipedia.org/wiki/Integrated_gasification_combined_cycle",
+          "https://www.osti.gov/biblio/349105",
+          "https://www.netl.doe.gov/research/coal/energy-systems/gasification/gasifipedia/nuon"
+        ]
+      },
+      {
+        "id": "cfb_plant",
+        "label": "Circulating Fluidized Bed (CFB) Combustion Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Coal particles are kept in turbulent suspension by upward air flow at lower temperatures (850–900°C) than PC plants. The lower temperature inherently suppresses NOx formation, and in-situ SO2 capture is achieved by injecting limestone into the bed. Fuel-flexible: burns low-rank coals, biomass, and waste fuels. Scales to 600+ MW (Łagisza, Poland — the world's first supercritical CFB, 2009). Efficiency is 38–42% at supercritical conditions.",
+        "references": [
+          "https://www.nsenergybusiness.com/analysis/featurelagisza-world-s-largest-cfb-boiler-begins-commercial-operation/",
+          "https://www.power-technology.com/projects/lagisza/",
+          "https://www.powermag.com/advanced-cfb-technology-gains-global-market-share/"
+        ]
+      },
+      {
+        "id": "post_combustion_ccs_plant",
+        "label": "Post-Combustion CCS (Amine Scrubbing) Coal Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "CO2 is captured from the flue gas of a conventional PC plant using chemical absorption (typically monoethanolamine MEA or advanced amines). The captured CO2 is compressed and geologically sequestered. The energy penalty for solvent regeneration reduces net plant efficiency by 8–12 percentage points. The Boundary Dam project (Saskatchewan, Canada, 2014) was the first commercial-scale post-combustion CCS on a coal plant (110 MW CO2 capture).",
+        "references": [
+          "http://sequestration.mit.edu/tools/projects/boundary_dam.html",
+          "https://www.saskpower.com/our-power-future/infrastructure-projects/carbon-capture-and-storage/boundary-dam-carbon-capture-project",
+          "https://dash.harvard.edu/bitstreams/7312037d-225f-6bd4-e053-0100007fdf3b/download"
+        ]
+      },
+      {
+        "id": "oxyfuel_ccs_plant",
+        "label": "Oxy-Fuel Combustion CCS Coal Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Coal is combusted in a mixture of pure oxygen (from an air separation unit) and recycled flue gas instead of air. This eliminates nitrogen from the combustion stream, producing a flue gas that is ~90% CO2 and H2O — the water is condensed, yielding a near-pure CO2 stream for compression and sequestration. Net efficiency penalty is 6–10 pp vs. a reference plant. The Schwarze Pumpe pilot (Germany, Vattenfall, 30 MWth, 2008) was the landmark oxy-fuel demonstration.",
+        "references": [
+          "https://sequestration.mit.edu/tools/projects/vattenfall_oxyfuel.html",
+          "https://www.sciencedirect.com/science/article/pii/S1876610209000782",
+          "https://www.sciencedirect.com/science/article/pii/S1876610211001421",
+          "https://ieaghg.org/publications/oxy-combustion-processes-for-co2-capture-from-power-plant/"
+        ]
+      },
+      {
+        "id": "igfc_plant",
+        "label": "Integrated Gasification Fuel Cell (IGFC) Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Next-generation concept replacing the gas turbine in IGCC with a solid oxide fuel cell (SOFC) power block. Cleaned coal-derived syngas is fed directly into pressurized SOFC stacks for electrochemical power generation at ~60% efficiency, with the hot SOFC exhaust driving a bottoming cycle. System-level efficiencies of 50–60% with inherent CO2 separation are projected. DOE NETL's IGFC program and syngas-fed SOFC module tests at 20 kW scale (Ningxia Coal, China) confirm the technical pathway; no commercial-scale plant exists.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Integrated_gasification_fuel_cell_cycle",
+          "https://www.osti.gov/biblio/1880831",
+          "https://escholarship.org/content/qt3r14b88j/qt3r14b88j_noSplash_00e3ccd73432d0af66fc58484eee5792.pdf",
+          "https://d-nb.info/1244082996/34"
+        ]
+      },
+      {
+        "id": "sco2_coal_plant",
+        "label": "Supercritical CO2 (sCO2) Brayton Cycle Coal Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Uses supercritical CO2 as the working fluid in a closed-loop Brayton cycle instead of steam. At supercritical conditions (>31°C / >7.4 MPa), CO2 enables >50% cycle efficiency projections with compact turbomachinery up to 10× smaller than equivalent steam systems. Applicable to coal via indirect (oxy-CFB heat source) or direct-fired configurations with inherent CO2 capture. The STEP Demo (GTI/SwRI/NETL, 10 MWe, Texas) successfully completed Phase 1 in October 2024, validating the cycle.",
+        "references": [
+          "https://www.powermag.com/breakthrough-for-sco2-power-cycle-as-step-demo-completes-phase-1-of-10-mw-project/",
+          "https://www.swri.org/newsroom/press-releases/step-demo-supercritical-co2-pilot-plant-generates-electricity-the-first-time",
+          "https://www.gti.energy/wp-content/uploads/2024/10/STEP-Demo-Facility-Flyer_8-24.pdf",
+          "https://www.osti.gov/biblio/1881974",
+          "https://sco2symposium.com/papers2016/OxyFuel/104paper.pdf",
+          "https://duepublico2.uni-due.de/servlets/MCRFileNodeServlet/duepublico_derivate_00046046/Mecheri_Sco2_closed_Brayton_cycle.pdf"
+        ]
+      },
+      {
+        "id": "chemical_looping_plant",
+        "label": "Chemical Looping Combustion (CLC) Coal Plant",
+        "type": "ReactorConcept",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Coal is combusted using a solid metal oxide oxygen carrier that cycles between an air reactor (oxidation) and a fuel reactor (reduction), transferring oxygen to the fuel without direct contact with air. The flue gas from the fuel reactor is inherently pure CO2 and H2O — eliminating costly post-combustion or oxy-fuel separation. Alstom demonstrated self-sustained operation at 3 MWth (Windsor, CT); IFPEN/Dongfang Boiler are constructing a ~10 MWth pre-industrial demonstrator targeting TRL7 in Deyang, China.",
+        "references": [
+          "https://www.power-eng.com/nuclear/revolutionary-chemical-looping-technology-advances-clean-coal/",
+          "https://www.ifpenergiesnouvelles.com/article/building-largest-chemical-looping-combustion-clc-facility-drive-down-cost-carbon-capture",
+          "https://www.osti.gov/biblio/1113766",
+          "https://www.sciencedirect.com/science/article/pii/S1750583623001457"
+        ]
+      },
+      {
+        "id": "pearl_street_station",
+        "label": "Pearl Street Station (1882)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Edison's Pearl Street Station in Manhattan, opened September 4, 1882. The world's first central coal-fired power station for public electricity supply. Operated six 'Jumbo' dynamos driven by reciprocating steam engines, supplying 110V DC to 59 customers. Peak capacity ~600 kW. Proved the viability of centralized fossil-fuel power generation and the commercial electric utility model.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Pearl_Street_Station",
+          "https://projectdesign.io/thomas-edisons-pearl-street-station/",
+          "https://www.asme.org/about-asme/engineering-history/landmarks/48-edison-jumbo-engine-driver-dynamo",
+          "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/331164/"
+        ]
+      },
+      {
+        "id": "holborn_viaduct",
+        "label": "Holborn Viaduct Station (1882)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Edison's London generating station at Holborn Viaduct, operational January 1882 — months before Pearl Street. Powered by coal-fired reciprocating steam engines, it supplied public street lighting and private consumers. Though smaller than Pearl Street, it was the first public steam-powered electricity supply station in the world, validating the reciprocating steam plant concept in a revenue context.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Holborn_Viaduct_power_station",
+          "https://www.wikiwand.com/en/articles/Holborn_Viaduct_power_station"
+        ]
+      },
+      {
+        "id": "parsons_turbine_1884",
+        "label": "Parsons Steam Turbine (1884)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Charles Parsons demonstrated the first practical multi-stage axial steam turbine in 1884, coupled directly to a 7.5 kW alternator. The turbine achieved speeds of 18,000 RPM, a revolutionary departure from reciprocating engines. By 1890, Parsons turbines were powering the Forth Banks Power Station in Newcastle. This invention is the single most transformative event in the history of electricity generation.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Charles_Algernon_Parsons",
+          "https://www.britannica.com/biography/Charles-Algernon-Parsons",
+          "https://www.encyclopedia.com/people/science-and-technology/technology-biographies/sir-charles-algernon-parsons",
+          "https://www.gracesguide.co.uk/Forth_Banks_Power_Station"
+        ]
+      },
+      {
+        "id": "riverside_station_pc",
+        "label": "Riverside Station PC Firing (1918)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Commonwealth Edison's Riverside Station in Chicago demonstrated the first large-scale commercial use of pulverized coal firing in the US (1918–1920), a technology developed by Babcock & Wilcox. Pulverized coal firing dramatically increased combustion intensity and enabled much larger boiler units. This proved the pulverized coal concept at commercial scale and triggered industry-wide adoption over the following two decades.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Pulverized_coal-fired_boiler",
+          "https://www.survivorlibrary.com/library/powdered_coal_as_a_fuel_1920.pdf",
+          "https://www.babcock.com/home/about/corporate/history"
+        ]
+      },
+      {
+        "id": "nordjylland_usc",
+        "label": "Nordjylland Unit 3 USC (1998)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Denmark's Nordjylland Unit 3 (commissioned 1998, Elsam) became the world's first ultra-supercritical coal plant, operating at 29 MPa / 582°C / 580°C reheat, achieving a net electrical efficiency of 47%. It demonstrated that P91/P92 ferritic steels could sustain USC conditions reliably at commercial scale and became the global template for subsequent USC plant designs.",
+        "references": [
+          "https://www.modernpowersystems.com/analysis/advanced-technology-for-nordjyllandsv-rket-unit-3/",
+          "https://projekter.aau.dk/projekter/files/15056462/08_OK-report.pdf",
+          "https://www.atlantis-press.com/article/25840488.pdf"
+        ]
+      },
+      {
+        "id": "polk_igcc",
+        "label": "Polk Power Station IGCC (1996)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Tampa Electric's Polk Power Station (250 MW, operational 1996) was the first commercial IGCC plant in the US, built under the DOE's Clean Coal Technology Program. Used the Texaco (GE) entrained-flow gasifier. Demonstrated reliable commercial IGCC operation over 20+ years, validating gasification, syngas cleanup, and combined-cycle integration at ~37% net efficiency.",
+        "references": [
+          "https://www.netl.doe.gov/research/Coal/energy-systems/gasification/gasifipedia/tampa",
+          "https://www.osti.gov/biblio/349105",
+          "https://www.osti.gov/biblio/682322",
+          "https://www.energy.gov/sites/prod/files/EA-1867-FEA-2011.pdf",
+          "https://www.power-eng.com/coal/clean-coal-at-polk-power-station/"
+        ]
+      },
+      {
+        "id": "boundary_dam_ccs",
+        "label": "Boundary Dam CCS Unit 3 (2014)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "SaskPower's Boundary Dam Unit 3 in Saskatchewan, Canada (commissioned October 2014) became the world's first commercial-scale post-combustion CCS installation on a coal power plant. Designed to capture 1 Mt CO2/year via MEA amine scrubbing from a 110 MW coal unit. Provided invaluable real-world data on post-combustion CCS performance and cost at commercial scale.",
+        "references": [
+          "http://sequestration.mit.edu/tools/projects/boundary_dam.html",
+          "https://www.saskpower.com/our-power-future/infrastructure-projects/carbon-capture-and-storage/boundary-dam-carbon-capture-project",
+          "https://www.powermag.com/worlds-first-post-combustion-ccs-coal-unit-online-in-canada/",
+          "https://ccsknowledge.com/insight/boundary-dam-unit-3-ccs-facility-celebrating-success-and-sharing-lessons-learned/"
+        ]
+      },
+      {
+        "id": "schwarze_pumpe_oxyfuel",
+        "label": "Schwarze Pumpe Oxy-Fuel Pilot (2008)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Vattenfall's Schwarze Pumpe plant in Spremberg, Germany (30 MWth, operational September 2008) was the world's first oxy-fuel combustion pilot plant for coal. It demonstrated the full oxy-fuel process chain: air separation, oxy-combustion, flue gas recirculation, CO2 purification and compression. Operated until 2014, generating critical data on combustion stability, corrosion, and process integration.",
+        "references": [
+          "https://sequestration.mit.edu/tools/projects/vattenfall_oxyfuel.html",
+          "https://www.sciencedirect.com/science/article/pii/S1876610209000782",
+          "https://www.sciencedirect.com/science/article/pii/S1876610211001421"
+        ]
+      },
+      {
+        "id": "lagisza_scfb",
+        "label": "Łagisza Supercritical CFB (2009)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "The 460 MW Łagisza power plant in Poland (commissioned 2009, built by Foster Wheeler for Tauron) was the world's first supercritical circulating fluidized bed boiler. It demonstrated that CFB technology could be elevated to supercritical steam parameters (27.5 MPa / 560°C), achieving ~43% efficiency — a pivotal proof of concept for high-efficiency, fuel-flexible coal combustion.",
+        "references": [
+          "https://www.power-technology.com/projects/lagisza/",
+          "https://www.nsenergybusiness.com/analysis/featurelagisza-world-s-largest-cfb-boiler-begins-commercial-operation/",
+          "https://www.powermag.com/operation-of-worlds-first-supercritical-cfb-steam-generator-begins-in-poland/",
+          "https://www.processeng.biz/iea-fbc.org/upload/59_1_Kettunen.pdf"
+        ]
+      },
+      {
+        "id": "step_demo_sco2",
+        "label": "STEP Demo sCO2 Pilot (10 MWe, 2024)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "The $169M Supercritical Transformational Electric Power (STEP) Demo facility at Southwest Research Institute in San Antonio, TX — led by GTI Energy with GE Vernova and NETL — successfully completed Phase 1 testing in October 2024. Demonstrated the world's largest indirect-fired sCO2 power cycle at 10 MW scale, operating at 500°C / 250 bar and full turbine speed of 27,000 RPM. Validated commercial readiness of sCO2 turbomachinery for coal-coupled applications.",
+        "references": [
+          "https://www.gti.energy/step-demo/",
+          "https://www.gti.energy/increasing-power-plant-efficiency-with-supercritical-carbon-dioxide-sco2-power-cycles/",
+          "https://www.swri.org/newsroom/press-releases/step-demo-pilot-plant-achieves-full-operational-conditions-phase-1-of-testing",
+          "https://www.eurekalert.org/news-releases/1061567",
+          "https://www.gti.energy/wp-content/uploads/2024/10/STEP-Demo-Facility-Flyer_8-24.pdf"
+        ]
+      },
+      {
+        "id": "plant_barry_ausc",
+        "label": "Plant Barry A-USC Steam Loop Test (2015)",
+        "type": "Milestone",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "At Southern Company's Plant Barry Unit 4 (Alabama), Alstom successfully operated a full-scale A-USC steam loop for over 17,000 hours at temperatures exceeding 760°C — the highest ever sustained at a pulverized coal plant. The loop contained 94 specimens from eight nickel superalloys and three surface coatings. Post-test inspections confirmed retention of original mechanical integrity, providing the critical materials performance database for A-USC commercial design.",
+        "references": [
+          "https://www.poweronline.com/doc/major-milestone-development-advanced-ultra-supercritical-steam-power-plants-0001",
+          "https://www.alstom.com/press-releases-news/2014/12/major-milestone-achieved-in-the-development-of-advanced-ultra-supercritical-steam-power-plants",
+          "https://www.asminternational.org/wp-content/uploads/files/05440G/05440G-preview.pdf",
+          "https://www.osti.gov/biblio/1875111"
+        ]
+      },
+      {
+        "id": "fire_tube_boiler",
+        "label": "Fire-Tube Boiler Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "The earliest practical coal-fired steam generators, where hot combustion gases pass through tubes submerged in a water-filled shell. Cornish and Lancashire boilers (1815–1840s) were the workhorses of early industry. Limited to ~15 bar / 180°C by the tensile strength of wrought iron. Their simplicity enabled the first generation of central power stations but were superseded by water-tube designs for large-scale power generation.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Fire-tube_boiler",
+          "https://en.wikipedia.org/wiki/Flued_boiler",
+          "https://www.britannica.com/technology/Lancashire-boiler",
+          "https://kemptonsteam.org/history/coal-fired-boilers/"
+        ]
+      },
+      {
+        "id": "water_tube_boiler",
+        "label": "Water-Tube Boiler Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "In water-tube boilers (Babcock & Wilcox patent, 1867), water circulates inside tubes externally heated by combustion gases. This allows much higher operating pressures and larger steam-generating capacities. Essential for steam turbine plants and all subsequent high-pressure PC plant designs. The B&W design became the industry standard for utility boilers.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Babcock_&_Wilcox",
+          "https://americanhistory.si.edu/collections/object/nmah_846109",
+          "https://www.babcock.com/home/about/corporate/history",
+          "https://www.invent.org/inductees/stephen-wilcox-jr"
+        ]
+      },
+      {
+        "id": "pulverized_coal_combustion",
+        "label": "Pulverized Coal (PC) Combustion Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Coal is ground in ball or roller mills to a fine powder (~75 µm, 70% passing 200 mesh) and pneumatically injected into the furnace through burners, burning in suspension like a gas. Developed commercially in the 1910s–1920s. PC firing achieves complete, intense combustion, allows precise load control, enables very large boiler outputs (>1,000 MWth), and is compatible with a wide range of coal ranks.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Pulverized_coal-fired_boiler",
+          "https://www.sciencedirect.com/topics/engineering/pulverized-coal-boiler",
+          "https://www.powermag.com/history-of-power-the-evolution-of-the-electric-generation-industry/"
+        ]
+      },
+      {
+        "id": "low_nox_burner",
+        "label": "Low-NOx Burner Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Advanced PC burner designs (e.g., dual-register, axially staged) that create fuel-rich inner zones and air-rich outer zones, inhibiting thermal and fuel NOx formation. Developed from the 1980s onwards in response to the US Clean Air Act Amendments. Reduces NOx by 40–60% vs. conventional burners at minimal efficiency penalty. A prerequisite for regulatory compliance at all modern PC plants.",
+        "references": [
+          "https://www.sustainable-carbon.org/wp-content/uploads/dlm_uploads/reports/pollutioncontroltechnologies/nox-controls-for-pulverised-coal-fired-power-stations-ccc172.pdf",
+          "https://www.babcockpower.com/wp-content/uploads/2018/02/controlling-nox-emissions-to-meet-the-1990-clean-air-act.pdf",
+          "https://www.babcockpower.com/wp-content/uploads/2018/02/low-nox-combustion-technologies-to-meet-the-1990-clean-air-act-amendments.pdf",
+          "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100PZ5Q.TXT",
+          "https://p2infohouse.org/ref/16/15937.pdf"
+        ]
+      },
+      {
+        "id": "supercritical_rankine_cycle",
+        "label": "Supercritical Rankine Thermodynamic Cycle",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "A modification of the Rankine steam cycle where working fluid is pressurized above its critical point (22.1 MPa for water) before heat addition. Above the critical point, no phase change occurs, reducing irreversibilities and increasing the mean temperature of heat addition. The efficiency gain over subcritical cycles is 4–8 percentage points. The thermodynamic principle enabling all supercritical and ultra-supercritical plant designs.",
+        "references": [
+          "https://www.nuclear-power.com/nuclear-engineering/thermodynamics/thermodynamic-cycles/rankine-cycle-steam-turbine-cycle/supercritical-rankine-cycle/",
+          "https://fiveable.me/thermodynamics-ii/key-terms/supercritical-rankine-cycle",
+          "https://iea.blob.core.windows.net/assets/4bfcc54d-d130-413c-9511-e0c2eb85328f/HELE_Foldout_A3_2ndProofs.pdf"
+        ]
+      },
+      {
+        "id": "reheat_steam_cycle",
+        "label": "Reheat Steam Cycle",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "After partial expansion through a high-pressure turbine, steam is returned to the boiler reheater to be brought back up to near-maximum temperature before entering the intermediate-pressure turbine. Double-reheat provides a further 1.5–2.0 pp efficiency gain. An indispensable component of all utility-scale steam turbine plants.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Rankine_cycle",
+          "https://www.vaia.com/en-us/explanations/engineering/engineering-thermodynamics/reheat-rankine-cycle/",
+          "https://www.osti.gov/etdeweb/servlets/purl/21369447"
+        ]
+      },
+      {
+        "id": "ferritic_creep_steels",
+        "label": "Advanced Ferritic Creep-Resistant Steels (P91/P92)",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Modified 9–12% chromium martensitic steels (P91: 9Cr-1Mo-V-Nb; P92: 9Cr-1.8W-0.5Mo-V-Nb) with exceptional creep resistance up to ~620°C. Enabled by precipitation hardening from fine M23C6 carbides and MX nitrides in a tempered martensitic matrix. P91 is the workhorse of USC steam piping, headers, and turbine casings. Absolutely critical enabling materials for USC plants.",
+        "references": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11721015/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC9030032/",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0921509317305804",
+          "https://www.osti.gov/pages/biblio/2282474",
+          "https://niobium.tech/-/media/niobiumtech/attachments-biblioteca-tecnica/nt_creep-resistant-ferritic-steels-for-power-plants.pdf",
+          "https://www.phase-trans.msm.cam.ac.uk/2005/LINK/188.pdf",
+          "https://usea.org/sites/default/files/042014_High%20temperature%20steels%20in%20pulverised%20coal%20technology_ccc234.pdf",
+          "http://nickelalloys.com.br/Metrode%20CD%202011/Technical%20Literature/CrMo%20-%20P92/P92%20paper-IIW%20Conference-Graz.pdf"
+        ]
+      },
+      {
+        "id": "nickel_superalloys",
+        "label": "High-Temperature Nickel-Based Superalloys",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Precipitation-hardened Ni-Cr-Co alloys (Inconel 617, Inconel 740H, Haynes 282) strengthened by coherent γ' (Ni3Al/Ti) precipitates. Retain strength and oxidation resistance up to 700–760°C, far beyond the ~620°C limit of ferritic steels. By 2015, NETL's AUSC Consortium confirmed Inconel 740H and Haynes 282 meet the fabricability and long-term mechanical strength requirements for 760°C service. Key materials bridge to A-USC commercialization.",
+        "references": [
+          "https://www.netl.doe.gov/sites/default/files/2017-12/Presentantion_20160420_1600A_FWP-FEAA061_ORNL.pdf",
+          "https://info.ornl.gov/sites/publications/Files/Pub140621.pdf",
+          "https://haynesintl.com/wp-content/uploads/2023/09/282-brochure.pdf",
+          "https://www.ijraset.com/research-paper/machinability-and-chip-morphology-study-of-inconel-740h-and-haynes-282"
+        ]
+      },
+      {
+        "id": "protective_coatings_oxidation",
+        "label": "High-Temperature Oxidation/Corrosion Resistant Coatings",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Thermal spray (HVOF), chemical vapor deposition (CVD), and diffusion aluminide coatings applied to boiler tube and superheater surfaces to resist fireside corrosion and steam-side oxidation above 600°C. Coatings such as Inconel 625 weld overlays and MCrAlY bond coats extend component life in USC and A-USC environments. Plant Barry testing at >760°C validated eight coating variants in coal combustion atmospheres.",
+        "references": [
+          "https://www.osti.gov/servlets/purl/833938",
+          "https://www.sciencedirect.com/science/article/abs/pii/S025789721200922X",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0010938X14001577",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0010938X21001141",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0257897219304207"
+        ]
+      },
+      {
+        "id": "coal_gasification_technology",
+        "label": "Entrained-Flow Coal Gasification Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Pulverized coal is reacted with controlled sub-stoichiometric oxygen at high temperatures (1,300–1,600°C) and pressures (2–8 MPa) in an entrained-flow reactor, producing syngas (CO + H2). Key gasifier designs include GE (Texaco) downflow, Shell upflow, and Siemens. High temperature ensures complete carbon conversion and ash slagging. The core enabling technology for all IGCC plants.",
+        "references": [
+          "https://www.sciencedirect.com/topics/engineering/entrained-flow-gasifier",
+          "https://www.ctc-n.org/technologies/integrated-gasification-combined-cycle",
+          "https://www.osti.gov/biblio/2282642"
+        ]
+      },
+      {
+        "id": "syngas_cleanup",
+        "label": "Syngas Desulfurization and Cleanup Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Multi-stage process to remove contaminants (H2S, COS, HCl, NH3, heavy metals, particulates) from raw syngas before combustion or CO2 capture. Key steps: particulate cyclone/filter, water scrubbing, Selexol or Rectisol acid gas removal (AGR) for sulfur compounds achieving H2S removal >99.9%. Also where pre-combustion CO2 capture (IGCC-CCS) is most cost-effectively integrated.",
+        "references": [
+          "https://www.osti.gov/servlets/purl/1826577",
+          "https://en.wikipedia.org/wiki/Integrated_gasification_combined_cycle",
+          "https://www.rti.org/brochures/syngas-cleanup-warm-desulfurization-process-capable-and-economic-gas-cleanup-option"
+        ]
+      },
+      {
+        "id": "combined_cycle_integration",
+        "label": "Gas-Steam Combined Cycle Integration (Brayton-Rankine)",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Topping Brayton cycle (gas turbine) exhaust gases (~600°C) pass through a heat recovery steam generator to produce steam for a bottoming Rankine cycle (steam turbine). Combined efficiency far exceeds either cycle alone (60%+ on natural gas). In IGCC, clean syngas powers the gas turbine. F-class and H-class gas turbine advances made large, efficient IGCC combined cycles feasible.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Integrated_gasification_combined_cycle",
+          "https://www.gevernova.com/gas-power/products/gas-turbines/h-class-gas-turbines"
+        ]
+      },
+      {
+        "id": "gasification_asu",
+        "label": "Industrial Gasification ASU",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "High-capacity cryogenic distillation unit optimized for gasification or oxy-fuel coal combustion. Designed for massive scale (up to 5,000 tonnes O2/day), these units provide the high-volume oxygen stream required to convert solid coal into syngas (IGCC) or for carbon-ready combustion.",
+        "references": [
+          "https://innovation.world/invention/the-hampson-linde-cycle/",
+          "https://www.shengerhk.com/en/cryogenic-air-separation-units/",
+          "https://wyoscholar.uwyo.edu/bitstreams/a8baa31d-3893-4a73-bf1b-4fee74cb7ffa/download"
+        ]
+      },
+      {
+        "id": "amine_scrubbing_ccs",
+        "label": "Amine-Based Post-Combustion CO2 Capture",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Chemical absorption of CO2 from flue gases using aqueous amine solvents (MEA, MDEA, piperazine-based advanced solvents). CO2 reacts reversibly with the amine at ~40–60°C; the CO2-rich solvent is regenerated by heating to ~120°C. State-of-the-art advanced solvents reduce energy penalty vs. MEA by 20–30%. The most mature large-scale CO2 capture technology for coal flue gas.",
+        "references": [
+          "https://gccassociation.org/cement-and-concrete-innovation/carbon-capture-and-utilisation/amine-based-post-combustion-capture/",
+          "https://www.science.org/doi/10.1126/science.1176731"
+        ]
+      },
+      {
+        "id": "co2_compression_storage",
+        "label": "CO2 Compression, Transport and Geological Sequestration",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "Captured CO2 is dehydrated and compressed to supercritical conditions (~15 MPa) for pipeline transport, then injected into geological formations: deep saline aquifers, depleted oil/gas reservoirs, or coal seams. Estimated global geological storage potential >10,000 Gt CO2. The Sleipner project (Norway, 1996) pioneered industrial-scale CO2 injection at 1 Mt/year.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Sleipner_gas_field",
+          "https://crsreports.congress.gov/product/pdf/R/R46192/2",
+          "https://www.ctc-n.org/technologies/co2-storage-technologies",
+          "http://sequestration.mit.edu/tools/projects/sleipner.html"
+        ]
+      },
+      {
+        "id": "fluidized_bed_combustion",
+        "label": "Circulating Fluidized Bed (CFB) Combustion Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Coal particles are fluidized by upward air flow at velocities sufficient to entrain them (>5 m/s), creating turbulent suspension at 850–900°C. Circulating CFBs use a cyclone to separate and recirculate entrained particles. The lower combustion temperature inherently limits thermal NOx. In-bed limestone injection captures SO2. Capable of burning a wide range of fuels including high-sulfur/high-ash coals, biomass, and waste.",
+        "references": [
+          "https://www.doosanlentjes.com/en/services/circulating-fluidised-bed_benefits",
+          "https://www.power-technology.com/projects/lagisza/"
+        ]
+      },
+      {
+        "id": "once_through_boiler",
+        "label": "Once-Through (Benson/Sulzer) Boiler Design",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "In a once-through (forced-flow) boiler, feedwater makes a single pass through heating surfaces, eliminating the steam drum. Above the critical point, no steam-water separation is needed — the once-through design is therefore essential for supercritical operation. The Benson boiler (Siemens, 1927) was the pioneering design. Also enables faster load-following.",
+        "references": [
+          "https://testbook.com/mechanical-engineering/benson-boiler",
+          "https://mechanicalbooster.com/2017/02/benson-boiler.html",
+          "https://masters.donntu.ru/2012/iii/danshina/library/9.htm",
+          "https://www.powermag.com/first-posiflow-benson-boiler-completes-seven-years-of-service/"
+        ]
+      },
+      {
+        "id": "advanced_turbine_blade_cooling",
+        "label": "Advanced Gas Turbine Blade Cooling and TBC",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Modern F- and H-class gas turbines (used in IGCC power blocks) operate at turbine inlet temperatures of 1,350–1,500°C — far above the melting point of nickel superalloy blades. This is made possible by internal convective cooling channels, film cooling (air ejected through surface holes), and thermal barrier coatings (TBC: yttria-stabilized zirconia, 100–300 µm). These technologies enable the combustion temperatures that yield IGCC combined-cycle efficiency.",
+        "references": [
+          "https://www.witpress.com/Secure/elibrary/papers/HT08/HT08014FU1.pdf",
+          "https://www.ornl.gov/publication/interface-science-thermal-barrier-coatings",
+          "https://www.power-technology.com/features/feature1084/",
+          "https://alliedpg.com/latest-articles/types-of-coatings-for-gas-turbine-blades/"
+        ]
+      },
+      {
+        "id": "water_wall_membrane_panels",
+        "label": "Membrane Water-Wall Panel Construction",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "Modern utility boilers use gas-tight membrane wall panels — rows of parallel steel tubes connected by welded fins — forming the furnace enclosure. Gas-tight construction eliminates air in-leakage; thermally efficient; structurally robust. For supercritical plants, tube metallurgy progresses from carbon steel through T12/T22 Cr-Mo steels to T91 and T92 in the superheater region.",
+        "references": [
+          "https://www.lordfintube.com/membrane-water-wall-panel_1301.html",
+          "https://www.boiler-unit.com/sale-11855078-high-strength-structure-boiler-membrane-boiler-wall-corrosion-resistant.html",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0010938X23003943"
+        ]
+      },
+      {
+        "id": "steam_turbine_technology",
+        "label": "Multi-Stage Axial Steam Turbine Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "9",
+        "description": "The progression from Parsons' 1884 single-stage turbine to modern 3-cylinder (HP/IP/LP) tandem-compound turbines with 50+ stages. Key advances include impulse-reaction blade aerodynamics, controlled-extraction for feedwater heating, and long last-stage LP blades (up to 1.4 m in 50 Hz machines). Modern utility steam turbines achieve internal efficiencies of 88–92%.",
+        "references": [
+          "https://ems-powermachines.com/hp-ip-lp-steam-turbine/",
+          "https://www.linquip.com/blog/steam-turbine-efficiency-complete-explanation/",
+          "https://turtleturbines.com/blog/technology-9/multistage-steam-turbines-13390",
+          "https://www.softinway.com/3-2-preliminary-design-of-the-multistage-axial-flow-turbine-method-description/"
+        ]
+      },
+      {
+        "id": "pre_combustion_capture",
+        "label": "Pre-Combustion CO2 Capture (Water-Gas Shift + Selexol)",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "8",
+        "description": "In an IGCC-CCS configuration, cleaned syngas (CO + H2) is reacted with steam over a catalyst in water-gas shift (WGS) reactors: CO + H2O → CO2 + H2. This produces a high-pressure H2-rich fuel gas and a concentrated CO2 stream (~40% vol). The CO2 is absorbed by a physical solvent (Selexol, Rectisol) at high pressure — far less energy-intensive than post-combustion capture from dilute flue gas.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/ie2022465",
+          "https://www.cmu.edu/ceic/assets/docs/publications/working-papers/ceic-03-02.pdf",
+          "https://www.sciencedirect.com/science/article/pii/S1750583615001589"
+        ]
+      },
+      {
+        "id": "sofc_technology",
+        "label": "Solid Oxide Fuel Cell (SOFC) Technology for Coal Syngas",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "6",
+        "description": "High-temperature electrochemical devices (700–1,000°C) where cleaned coal-derived syngas (CO + H2) is directly oxidized at a nickel/YSZ cermet anode, producing electricity without combustion. CO is electrochemically active — not a poison — at SOFC temperatures. Efficiencies >60% are achievable in SOFC-turbine hybrids. DOE NETL's SOFC program targets stack cost of $225/kW and 40,000-hour lifetime. 20 kW syngas-fed module tests have been validated in China.",
+        "references": [
+          "https://researchrepository.wvu.edu/etd/4599/",
+          "https://pubs.acs.org/doi/abs/10.1021/ie300841m",
+          "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2022.1017829/full",
+          "https://academic.oup.com/ce/article-abstract/9/1/19/7942046"
+        ]
+      },
+      {
+        "id": "sco2_turbomachinery",
+        "label": "Supercritical CO2 Turbomachinery and Heat Exchangers",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "High-speed (27,000 RPM), compact turbines and compressors designed for supercritical CO2 working fluid, alongside printed circuit heat exchangers (PCHEs) for recuperation. sCO2 turbomachinery is up to 10× smaller than equivalent steam systems. The STEP Demo (2024) demonstrated the world's largest sCO2 stop valve, control valve, and Inconel 725 piping installation at 250 bar. Critical enabling hardware for coal-coupled sCO2 Brayton plants.",
+        "references": [
+          "https://www.bakerhughes.com/sites/bakerhughes/files/2021-07/BakerHughes_Case_sCO2_A4-070721.pdf",
+          "https://en.shenshiec.com/blog/Why-PCHEs-Are-Ideal-for-Supercritical-CO2-Brayton-Cycles_b15204",
+          "https://www.swri.org/newsroom/press-releases/step-demo-pilot-plant-makes-new-breakthrough-sco2-power-generation",
+          "https://www.eurekalert.org/news-releases/1032003"
+        ]
+      },
+      {
+        "id": "calcium_looping_capture",
+        "label": "Calcium Looping (CaL) CO2 Capture Technology",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Post-combustion CO2 capture using CaO as a solid sorbent cycling between a carbonator (CO2 absorption at ~650°C, forming CaCO3) and an oxy-fired calciner (CaCO3 regeneration at ~950°C, releasing concentrated CO2). Lower energy penalty than MEA scrubbing; carbonator heat is recovered at boiler temperatures. La Pereda pilot (Spain, CSIC) reached TRL7 with >99% CO2 capture efficiency demonstrated on a 2 MWth oxy-fired CFB calciner in 2024 campaign.",
+        "references": [
+          "https://zenodo.org/records/14770572",
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.4c02472",
+          "https://pubmed.ncbi.nlm.nih.gov/39108832/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11299141/"
+        ]
+      },
+      {
+        "id": "clc_oxygen_carrier",
+        "label": "Chemical Looping Oxygen Carrier Materials",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "5",
+        "description": "Metal oxide particles (Fe2O3/Fe3O4, CuO/Cu, Mn3O4/MnO, or composite oxides) that cycle between oxidized and reduced states to transfer oxygen from air to fuel without direct mixing. Cu-based CLOU (Chemical Looping with Oxygen Uncoupling) releases gaseous O2 directly, improving solid fuel conversion. Recent work confirmed advancement from TRL4 to TRL5 with a magnetic CuMnFe carrier in a continuous 50 kWth unit burning coal and biomass.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.4c03173",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12308820/",
+          "https://pubmed.ncbi.nlm.nih.gov/40740601/",
+          "https://www.sciencedirect.com/science/article/pii/S1385894722059642"
+        ]
+      },
+      {
+        "id": "printed_circuit_heat_exchanger",
+        "label": "Printed Circuit Heat Exchanger (PCHE) for sCO2",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Diffusion-bonded compact heat exchangers with chemically-etched microchannels (typically <2 mm diameter), enabling very high heat transfer coefficients and operating pressures (>30 MPa) in a small footprint. Essential for efficient recuperation in sCO2 Brayton cycles, where the working fluid's rapidly changing specific heat near the critical point creates a pinch-point challenge in conventional shell-and-tube designs. The STEP Demo installed the world's largest PCHEs for its 10 MWe sCO2 system.",
+        "references": [
+          "https://duepublico2.uni-due.de/receive/duepublico_mods_00073946",
+          "https://www.osti.gov/servlets/purl/1509704",
+          "https://en.shenshiec.com/blog/Why-PCHEs-Are-Ideal-for-Supercritical-CO2-Brayton-Cycles_b15204",
+          "https://www.linkedin.com/posts/shaunaskewjones_heatric-pches-on-step-demo-sco2-heat-exchanger-activity-7376208790381076480-RylN"
+        ]
+      },
+      {
+        "id": "hydrogen_turbine_igcc",
+        "label": "Hydrogen-Tolerant Gas Turbine Combustor",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "7",
+        "description": "Modified F- and H-class gas turbine combustors designed to burn high-hydrogen content syngas (50–100% H2 by volume) as required in IGCC-CCS configurations. H2 has a much higher flame speed and adiabatic flame temperature than natural gas or CO-rich syngas, requiring premix combustor redesign to prevent flashback and thermoacoustic instability. GE, Siemens, and Mitsubishi have demonstrated >50% H2-content blends at commercial turbine scale.",
+        "references": [
+          "https://etn.global/wp-content/uploads/2019/02/H2-IGCC-Final-Publishable-Summary.pdf",
+          "https://www.osti.gov/servlets/purl/1261809",
+          "https://www.modernpowersystems.com/analysis/hydrogen-firing-in-gas-turbines-and-its-impact-on-hrsgs-11305390/",
+          "https://www.powermag.com/high-volume-hydrogen-gas-turbines-take-shape/"
+        ]
+      },
+      {
+        "id": "direct_mineral_carbonation",
+        "label": "Direct Mineral Carbonation for CO2 Storage",
+        "type": "EnablingTechnology",
+        "category": "Coal",
+        "trl_current": "4",
+        "description": "Accelerated weathering of calcium- and magnesium-silicate minerals or alkaline coal combustion by-products (fly ash, bottom ash) with CO2 to form stable carbonate minerals, permanently mineralizing CO2 as a solid product. The reaction is thermodynamically spontaneous but kinetically very slow at ambient conditions. High-pressure/high-temperature aqueous mineral carbonation has been demonstrated at bench scale; costs remain high (~$50–300/t CO2). Active research at NETL and multiple universities.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/acssuschemeng.1c07867",
+          "https://pubmed.ncbi.nlm.nih.gov/17438820/",
+          "https://www.osti.gov/biblio/20885852"
+        ]
+      },
+      {
+        "id": "simple_cycle_gt",
+        "label": "Simple Cycle Gas Turbine",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "The foundational open-cycle Brayton cycle plant where compressed air is mixed with fuel and ignited; hot exhaust gases drive the turbine directly. Thermal efficiencies are limited to ~35–40% because exhaust heat is wasted. These units remain critical for peaking power due to fast start capability.",
+        "references": [
+          "https://www.aerostudents.com/courses/gas-turbines/basicsOfGasTurbines.pdf",
+          "https://www.eolss.net/sample-chapters/c08/e3-10-03-07.pdf",
+          "https://en.wikipedia.org/wiki/Simple_cycle_combustion_turbine",
+          "https://www.epa.gov/sites/default/files/2020-10/documents/c03s01.pdf",
+          "https://alliedpg.com/latest-articles/gas-turbine-power-station/",
+          "https://www.powermag.com/simple-cycle-combined-cycle-or-a-hybrid-approach/",
+          "https://www.sfu.ca/~mbahrami/ENSC%20461/Notes/Brayton%20Cycle.pdf"
+        ]
+      },
+      {
+        "id": "ccgt",
+        "label": "Combined Cycle Gas Turbine (CCGT)",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Combines a gas turbine (Brayton cycle) with a heat recovery steam generator (HRSG) and a steam turbine (Rankine cycle). Recovers exhaust heat to generate additional power, pushing net electrical efficiency to 60–64%. The dominant technology for natural gas baseload power generation globally.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Simple_cycle_combustion_turbine",
+          "https://en.wikipedia.org/wiki/Brayton_cycle",
+          "https://www.siemens-energy.com/global/en/home/products-services/product/peaker-plants.html",
+          "https://en.wikipedia.org/wiki/Peaking_power_plant"
+        ]
+      },
+      {
+        "id": "dln_burner",
+        "label": "Dry Low-NOx (DLN) Hydrogen-Ready Burner",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "7",
+        "description": "Advanced lean premix combustion system that minimises NOx formation without water injection (wet suppression). Modern DLN-2.6+ designs from GE and Siemens can operate on up to 100% hydrogen blends, positioning gas turbines as flexible assets in a hydrogen economy. Key challenge is managing combustion dynamics (flashback, thermoacoustic oscillations) at elevated H2 fractions.",
+        "references": [
+          "https://www.gevernova.com/news/press-releases/ge-vernova-validates-100-hydrogen-fueled-dln-combustor-technology-aiming-6",
+          "https://www.powermag.com/ge-vernova-validates-100-hydrogen-fueled-dln-combustor-technology/",
+          "https://www.scribd.com/document/867410054/GE-DLN-2-6-ASME-paper",
+          "https://www.modernpowersystems.com/analysis/hydrogen-the-burning-issue-for-oems-7872317/"
+        ]
+      },
+      {
+        "id": "allam_cycle",
+        "label": "Allam-Fetvedt Cycle",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "7",
+        "description": "A supercritical CO2 oxy-combustion power cycle developed by NET Power. Natural gas is combusted in pure oxygen, producing only CO2 and water. Supercritical CO2 is used as the working fluid in a recuperated Brayton cycle, enabling near-100% carbon capture at no efficiency penalty (target 59% LHV net). Addresses fundamental fossil-fuel decarbonisation challenge.",
+        "references": [
+          "https://netpower.com/technology/",
+          "https://en.wikipedia.org/wiki/Allam_power_cycle",
+          "https://sequestration.mit.edu/tools/projects/net_power.html",
+          "https://www.powermag.com/net-powers-first-allam-cycle-300-mw-gas-fired-project-will-be-built-in-texas/"
+        ]
+      },
+      {
+        "id": "scco2_brayton",
+        "label": "Supercritical CO2 Brayton Cycle",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "7",
+        "description": "A closed-loop power cycle using CO2 above its critical point (31°C, 73.8 bar) as working fluid. The high density of sCO2 near the critical point dramatically reduces compressor work, enabling compact turbomachinery and projected efficiencies exceeding 50% even at smaller scales. Applicable to CSP, nuclear, and waste heat as well as gas turbine topping cycles.",
+        "references": [
+          "https://netpower.com/technology/",
+          "https://thermalscience.rs/pdfs/papers-2020/TSCI200314294Y.pdf",
+          "https://www.modernpowersystems.com/analysis/a-step-forward-for-sco2-power-cycles-11423286/"
+        ]
+      },
+      {
+        "id": "flng",
+        "label": "Floating LNG (FLNG)",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "8",
+        "description": "Offshore facility mounted on a floating hull that processes, liquefies, stores, and offloads LNG without a fixed pipeline connection to shore. Unlocks stranded offshore gas fields. Shell's Prelude FLNG (488m) is the world's largest floating structure. Key challenges include motion-induced sloshing in cryogenic tanks and marine-rated refrigeration integration.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Floating_liquefied_natural_gas",
+          "https://www.ship-technology.com/projects/prelude-floating-liquefied-natural-gas-flng/",
+          "https://www.energy.gov/fecm/articles/offshore-lng-technologies-facilities"
+        ]
+      },
+      {
+        "id": "shale_gas_production",
+        "label": "Shale Gas Production (Unconventional Gas)",
+        "type": "ReactorConcept",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Commercial extraction of natural gas from low-permeability shale formations using a combined horizontal drilling and multistage hydraulic fracturing approach. The US shale revolution (post-2008) transformed global gas markets, reducing US gas prices by ~70% and enabling LNG export competitiveness. Requires continuous drilling programmes due to steep decline curves.",
+        "references": [
+          "https://cepr.org/voxeu/columns/how-shale-oil-revolution-has-affected-us-oil-and-gasoline-prices",
+          "https://www.cnx.com/about-us/what-we-do/how-we-produce-natural-gas/",
+          "https://www.journals.uchicago.edu/doi/abs/10.1093/reep/rew001"
+        ]
+      },
+      {
+        "id": "hrsg",
+        "label": "Heat Recovery Steam Generator (HRSG)",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Waste-heat boiler placed downstream of a gas turbine exhaust. Uses the ~580–620°C exhaust stream to generate high-pressure steam via a series of economisers, evaporators, and superheaters. Multi-pressure (2 or 3 pressure levels) HRSGs increase cycle efficiency. The critical interface component enabling combined cycle operation.",
+        "references": [
+          "https://savree.com/en/encyclopedia/heat-recovery-steam-generator-hrsg",
+          "https://boilersinfo.com/heat-recovery-steam-generators-hrsg/",
+          "https://www.power-eng.com/gas/hrsg-design-to-meet-next-generation-cycling-and-efficiency-requirements/"
+        ]
+      },
+      {
+        "id": "aeroderivative_blades",
+        "label": "Aeroderivative Turbine Blade Technology",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Turbine blades adapted from aircraft jet engine technology for industrial gas turbines. Features internal convective cooling channels, film cooling holes, and thermal barrier coatings (TBCs). Enable turbine inlet temperatures (TIT) exceeding 1,400°C, far above the melting point of the base alloy (~1,300°C). Applied to both heavy-frame and aeroderivative (LM2500, LM6000) turbine families.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Aeroderivative_gas_turbine_engine",
+          "https://www.sae.org/publications/technical-papers/content/2021-01-0033/",
+          "https://www.power-eng.com/coal/mhi-achieves-1600/",
+          "http://www.phase-trans.msm.cam.ac.uk/2003/Superalloys/coatings/index.html"
+        ]
+      },
+      {
+        "id": "single_crystal_alloy",
+        "label": "Single-Crystal Nickel Superalloy (SX Blades)",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Turbine blades cast as a single crystal (e.g., CMSX-4, René N6) to eliminate grain boundaries that are the primary creep and fatigue failure sites at high temperatures. SX alloys enable operating temperatures 100–150°C above conventionally-cast alloys. Manufactured via directional solidification using a grain selector or seed crystal, combined with complex ceramic core investment casting for internal cooling passages.",
+        "references": [
+          "https://www.fushunspecialsteel.com/cmsx-4-single-crystal-superalloy/",
+          "https://www.newayaerotech.com/pt/services/single-crystal-casting/rene-n6",
+          "https://www.newayaerotech.com/fr/blogs/directional-solidification-achieve-superior-mechanical-properties-in-turbine-blades",
+          "https://ntrs.nasa.gov/api/citations/19830012675/downloads/19830012675.pdf"
+        ]
+      },
+      {
+        "id": "tbc_coating",
+        "label": "Thermal Barrier Coating (TBC) Systems",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Multi-layer ceramic coating (typically yttria-stabilised zirconia, YSZ) applied to hot-section turbine blades via electron beam physical vapour deposition (EB-PVD) or air plasma spray (APS). Provides 100–300°C temperature drop across the ~125–250 µm coating thickness, enabling higher turbine inlet temperatures or extended component life. Bond coat (MCrAlY) provides oxidation resistance and adhesion.",
+        "references": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7579325/",
+          "https://www.scientific.net/MSF.1016.407",
+          "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.17452",
+          "https://arxiv.org/pdf/2306.02720.pdf"
+        ]
+      },
+      {
+        "id": "cfd_combustion",
+        "label": "Computational Fluid Dynamics (CFD) for Combustion",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Numerical simulation of reacting flows within gas turbine combustors. Large Eddy Simulation (LES) and Reynolds-Averaged Navier-Stokes (RANS) approaches resolve turbulence-flame interactions, predict NOx and CO emissions, and identify thermoacoustic instabilities. CFD reduces physical rig testing cycles by 40–60% and is essential for DLN burner development, especially for hydrogen fuel blends where flashback risk is heightened.",
+        "references": [
+          "https://www.combustion-institute.it/proceedings/proc2003/703.PDF",
+          "https://www.sciencedirect.com/science/article/pii/S2949821X25002601",
+          "http://publications.rwth-aachen.de/record/688478/files/688478.pdf?subformat=pdfa",
+          "https://web.stanford.edu/group/ctr/ResBriefs05/schluter2.pdf"
+        ]
+      },
+      {
+        "id": "lean_premix_combustion",
+        "label": "Lean Premix Combustion Technology",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Pre-mixes fuel and air upstream of the flame zone to achieve a uniform, lean (excess air) mixture. Lean flames burn at lower temperatures (~1,750°C vs. >2,100°C for diffusion flames), drastically reducing thermal NOx formation (Zeldovich mechanism). The enabling principle behind all DLN combustion systems. Replaced earlier diffusion flame and wet-injection approaches from the 1990s onward.",
+        "references": [
+          "https://netl.doe.gov/sites/default/files/gas-turbine-handbook/3-2-1-2.pdf",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0360128598000148",
+          "https://asmedigitalcollection.asme.org/GT/proceedings/GT2022/86021/V005T09A005/1148837",
+          "https://pollution.sustainability-directory.com/learn/what-is-the-zeldovich-mechanism-and-why-is-it-so-sensitive-to-temperature/"
+        ]
+      },
+      {
+        "id": "scco2_turbomachinery",
+        "label": "Supercritical CO2 Turbomachinery",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "6",
+        "description": "Specialised compressors and turbines designed to operate with supercritical CO2 at 200–300 bar and 550–700°C. sCO2's high density allows 10x smaller turbomachinery than steam equivalents. Key engineering challenges include seal technology (dry gas seals at extreme conditions), bearing design, and rotor dynamics. Southwest Research Institute's 10 MWe test loop is a landmark development rig.",
+        "references": [
+          "https://www.bakerhughes.com/sites/bakerhughes/files/2021-07/BakerHughes_Case_sCO2_A4-070721.pdf",
+          "https://sco2symposium.com/proceedings2024/105-paper.pdf",
+          "https://bura.brunel.ac.uk/bitstream/2438/22049/1/FullText.pdf"
+        ]
+      },
+      {
+        "id": "oxy_combustion",
+        "label": "Oxy-Fuel Combustion",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "7",
+        "description": "Combustion of hydrocarbon fuel in a stream of high-purity oxygen (>95% O2) rather than air. Eliminates nitrogen from the combustion products, yielding a flue gas of predominantly CO2 and H2O, enabling easy CO2 capture by condensation. Requires an air separation unit (ASU) or membrane oxygen separation. Used as the combustion approach in the Allam-Fetvedt cycle. Increases fuel input costs by ~15–20% due to oxygen production energy.",
+        "references": [
+          "https://energyresearchfacility.utah.edu/research-oxy-fuel-combustion/",
+          "https://pubs.acs.org/doi/10.1021/acsomega.3c05034",
+          "https://netl.doe.gov/sites/default/files/netl-file/21TMCES_Moore_OxyFuel.pdf",
+          "https://sco2symposium.com/papers2016/OxyFuel/040paper.pdf"
+        ]
+      },
+      {
+        "id": "oxyfuel_asu",
+        "label": "Oxy-Combustion ASU (Allam Cycle)",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Precision cryogenic air separation system integrated into high-pressure oxy-combustion cycles. Crucial for the Allam Cycle, it produces the >95% pure O2 stream needed to combust natural gas in a CO2 atmosphere, facilitating 100% carbon capture with minimal parasitic load (200–250 kWh/tonne).",
+        "references": [
+          "https://cryospain.com/air-separation-unit",
+          "https://innovation.world/invention/the-hampson-linde-cycle/",
+          "https://en.wikipedia.org/wiki/Air_separation",
+          "https://pubs.aip.org/aip/acp/article-pdf/1573/1/1373/12111285/1373_1_online.pdf"
+        ]
+      },
+      {
+        "id": "hydraulic_fracturing",
+        "label": "Multistage Hydraulic Fracturing",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Stimulation technique injecting high-pressure fluid (typically water, sand proppant, and chemical additives) into shale formations to propagate fracture networks. Modern multi-cluster, multi-stage completions with 40–100+ stages per horizontal well (using plug-and-perf or sliding sleeve methods) are standard practice. Enabled recovery of gas from formations with permeabilities of <0.01 millidarcy that conventional wells cannot produce economically.",
+        "references": [
+          "https://www.boretherockies.com/2021/10/01/hydraulic-fracturing-and-horizontal-drilling/",
+          "https://gisera.csiro.au/resources/videos-and-animations/shale-gas/",
+          "https://www.sciencedirect.com/topics/engineering/shale-gas",
+          "https://en.wikipedia.org/wiki/Hydraulic_fracturing"
+        ]
+      },
+      {
+        "id": "horizontal_drilling",
+        "label": "Horizontal Directional Drilling (HDD)",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Drilling technique that uses a downhole motor and measurement-while-drilling (MWD) tools to steer the wellbore from vertical to horizontal, allowing 1–3 km lateral sections within a target shale formation. Maximises contact with the reservoir rock layer. Combined with multistage hydraulic fracturing, it is the essential co-technology of the shale gas revolution. Modern rotary steerable systems achieve sub-metre wellbore positioning accuracy.",
+        "references": [
+          "https://www.slb.com/resource-library/industry-article/drl/rotary-steerable-systems-optimize-wells-in-variety-of-environments",
+          "https://www.halliburton.com/en/well-construction/drilling/directional-drilling-solutions/rotary-steerables",
+          "https://www.weatherford.com/drilling-and-evaluation/drilling-services/rotary-steerable-systems/",
+          "https://worldhdd.com/hdd-industry-in-the-oil-and-gas-fields/"
+        ]
+      },
+      {
+        "id": "lng_liquefaction",
+        "label": "LNG Liquefaction Technology",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Refrigeration process that cools natural gas to -162°C for storage and transport as liquid at near-atmospheric pressure. The APCI (Air Products) C3-MR (propane pre-cooled mixed refrigerant) cycle dominates large baseload trains. The ConocoPhillips Optimised Cascade process and Shell DMR are key alternatives. Train capacities now exceed 8 MTPA. Requires prior gas treatment to remove CO2, H2S, and water to avoid freeze-out.",
+        "references": [
+          "https://www.scribd.com/doc/237389530/c3mr-4",
+          "https://lnglicensing.conocophillips.com/what-we-do/lng-technology/optimized-cascade-process/",
+          "https://www.scribd.com/document/57308172/The-C3MR-Liquefaction-Cycle"
+        ]
+      },
+      {
+        "id": "marine_cryogenic_storage",
+        "label": "Marine Cryogenic LNG Storage & Containment",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "8",
+        "description": "Insulated tank systems designed to store LNG at -162°C on floating vessels. The Moss Rosenberg spherical tank and membrane tank (GTT Mark III, NO96) designs are the industry standards. For FLNG applications, cryogenic tanks must withstand vessel motion (roll, pitch, sloshing) without structural failure—a more demanding design envelope than onshore tanks. Anti-sloshing baffles and partial fill restrictions are common mitigations.",
+        "references": [
+          "https://www.wartsila.com/encyclopedia/term/moss-rossenberg-system",
+          "https://www.gtt.fr/technologies/markiii-systems",
+          "https://www.linkedin.com/posts/mennogazendam_this-is-what-an-lng-tanker-looks-like-beneath-activity-7361675374134489088-a9_a",
+          "https://www.scribd.com/document/360750691/Design-Challenges-for-Floating-LNG-FSRU"
+        ]
+      },
+      {
+        "id": "lng_regasification",
+        "label": "LNG Regasification Terminals (FSRU & Onshore)",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Facilities that receive, store, and vaporise LNG back to pipeline-specification gas. Onshore terminals use seawater or submerged combustion vaporisers (SCV). Floating Storage and Regasification Units (FSRUs) are converted LNG carriers that provide rapid, lower-CAPEX import capacity — deployed in >40 countries. The FSRU market has accelerated European energy security efforts post-2022.",
+        "references": [
+          "https://www.oil-gasportal.com/floating-storage-regasification-units-fsru/",
+          "https://ww2.eagle.org/en/Products-and-Services/sustainability/gas-solutions/floating-storage-regasification-unit.html",
+          "https://www.dnv.com/energy/services/gas-value-chain/floating-storage-and-regasification-units/",
+          "https://vetonainvestment.com/finances/lng-regasification-terminals/lng-regasification-terminal-construction.html"
+        ]
+      },
+      {
+        "id": "advanced_materials_htsc",
+        "label": "Oxide Dispersion Strengthened (ODS) Alloys",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "5",
+        "description": "Next-generation high-temperature structural materials produced by mechanical alloying of nickel or iron-based superalloys with dispersed nano-scale yttria (Y2O3) particles. The incoherent oxide dispersion pins dislocations and grain boundaries, potentially enabling service temperatures 100–200°C above current SX alloys. Under active R&D for turbine blades and combustor liners targeting 1,700°C+ turbine inlet temperatures.",
+        "references": [
+          "https://ntrs.nasa.gov/citations/19870008450",
+          "https://patents.google.com/patent/US4781772A/en",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1005030224006443"
+        ]
+      },
+      {
+        "id": "additive_manufacturing_turbine",
+        "label": "Additive Manufacturing for Turbine Components",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "6",
+        "description": "Selective laser melting (SLM) and directed energy deposition (DED) methods to fabricate or repair gas turbine hot-section components. Enables complex internal cooling geometries (lattice structures, conformal channels) not achievable by casting. GE Aviation has certified additively manufactured fuel nozzles for the LEAP engine. For power generation turbines, the challenge is qualifying AM Inconel 718 and CM247LC parts for the longer maintenance intervals required.",
+        "references": [
+          "https://www.voxelmatters.com/ge-aviation-already-3d-printed-30000-fuel-nozzles-for-its-leap-engine/",
+          "https://www.geaerospace.com/news/articles/manufacturing/manufacturing-milestone-30000-additive-fuel-nozzles",
+          "https://d3.harvard.edu/platform-rctom/submission/additive-manufacturing-at-ge-aviation/",
+          "https://revista-dyna.com/index.php/DYNA/article/view/555"
+        ]
+      },
+      {
+        "id": "co2_recuperator",
+        "label": "High-Temperature sCO2 Recuperator / Heat Exchanger",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "6",
+        "description": "Compact, high-effectiveness (>95%) heat exchangers that recover thermal energy from the turbine exhaust back to the high-pressure sCO2 stream before it enters the combustor. Printed circuit heat exchangers (PCHEs) from Heatric are the leading design. Material challenges are severe: the HX must withstand ~700°C, 300 bar CO2 on the high-pressure side and >700°C on the turbine exit side, with significant thermal cycling.",
+        "references": [
+          "https://www.osti.gov/biblio/2422315",
+          "https://www.osti.gov/biblio/1571297",
+          "https://www.heatric.com/app/uploads/2018/04/Economic-analysis-of-SCO2-cycles-with-PCHE-Recuperator-design-optimisation.pdf",
+          "https://www.osti.gov/servlets/purl/1509704"
+        ]
+      },
+      {
+        "id": "digital_twin_gt",
+        "label": "Gas Turbine Digital Twin & Predictive Maintenance",
+        "type": "EnablingTechnology",
+        "category": "Gas",
+        "trl_current": "8",
+        "description": "Physics-informed computational models of operating gas turbines calibrated continuously against real-time sensor data. Enables prediction of component degradation (blade tip clearance growth, compressor fouling, combustor liner cracking), dynamic optimisation of operating conditions, and condition-based maintenance scheduling. GE's APM (Asset Performance Management) and Siemens' Omnivise T3000 are commercial platforms.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1359431124006227",
+          "https://www.siemens-energy.com/global/en/home/products-services/product/omnivise-t3000.html",
+          "https://www.lifepredictiontech.com/digital-twin-gas-turbines"
+        ]
+      },
+      {
+        "id": "milestone_net_power_la_porte",
+        "label": "NET Power La Porte Demo Plant (50 MWt)",
+        "type": "Milestone",
+        "category": "Gas",
+        "trl_current": "7",
+        "description": "The world's first Allam-Fetvedt Cycle demonstration facility, a 50 MWt (approximately 25 MWe) natural gas plant in La Porte, Texas, operated by NET Power. Successfully achieved first fire in May 2018 and produced electricity to the grid. Validated the core thermodynamic cycle, oxy-combustion operation, sCO2 turbomachinery, and the high-effectiveness recuperator under integrated conditions. Informed the design of the commercial-scale 300 MWe unit.",
+        "references": [
+          "https://www.power-technology.com/projects/net-powers-clean-energy-demonstration-plant-la-porte-texas/",
+          "https://en.wikipedia.org/wiki/Allam_power_cycle",
+          "https://en.wikipedia.org/wiki/NET_Power_Demonstration_Facility",
+          "https://netpower.com/technology/",
+          "https://www.powermag.com/breakthrough-net-powers-allam-cycle-test-facility-delivers-first-power-to-ercot-grid/"
+        ]
+      },
+      {
+        "id": "milestone_swri_10mw_scco2",
+        "label": "SwRI 10 MWe sCO2 Test Loop (STEP)",
+        "type": "Milestone",
+        "category": "Gas",
+        "trl_current": "7",
+        "description": "The Supercritical Transformational Electric Power (STEP) facility at Southwest Research Institute in San Antonio, Texas. A ~10 MWe recompression Brayton cycle loop funded by DOE (~$119M), designed to demonstrate sCO2 cycle efficiency, turbomachinery performance, and system integration at a scale relevant to commercial validation. Operations began in the early 2020s and provide critical engineering data for scaling to >100 MWe.",
+        "references": [
+          "https://www.swri.org/markets/energy-environment/power-generation-utilities/advanced-power-systems/supercritical-transformational-electric-power-pilot-plant",
+          "https://www.eurekalert.org/news-releases/1032003",
+          "https://www.eurekalert.org/news-releases/1061567",
+          "https://www.powermag.com/wp-content/uploads/2024/10/step-cycles-schematic-792x1024.jpg"
+        ]
+      },
+      {
+        "id": "milestone_prelude_flng",
+        "label": "Shell Prelude FLNG First Cargo (2019)",
+        "type": "Milestone",
+        "category": "Gas",
+        "trl_current": "8",
+        "description": "Shell's Prelude FLNG facility, located 475 km north of Broome, Western Australia, loaded its first LNG cargo in June 2019. At 488m long and 600,000 tonnes displacement, it is the world's largest floating structure ever built. Demonstrated the integration of offshore gas processing, liquefaction (APCI DMR process), storage, and ship-to-ship LNG transfer in an open-ocean, cyclone-exposed environment. Proved the FLNG concept at full commercial scale.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Prelude_FLNG",
+          "https://www.inpex.com.au/projects/prelude-flng/"
+        ]
+      },
+      {
+        "id": "milestone_barnett_shale",
+        "label": "Barnett Shale Commercial Production (Mitchell Energy, 1998)",
+        "type": "Milestone",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Mitchell Energy's sustained commercial production from the Barnett Shale of the Fort Worth Basin, Texas, following years of experimentation with slickwater hydraulic fracturing by founder George Mitchell. The 1998–2002 commercial breakthrough is widely credited as the birth of the shale gas revolution. It proved that combining horizontal drilling with slickwater fracking could economically unlock tight shale reservoirs, a template replicated globally.",
+        "references": [
+          "https://www.adv-res.com/pdf/Kuuskraa_Case_Study_1_Barnett_Shale_China_Workshop_APR_2010.pdf",
+          "https://cgmf.org/blog-entry/579/George-P.-Mitchell-The-wildcatter-who-changed-energy-forever.html",
+          "https://www.txoga.org/shale-story-barnett/",
+          "https://jpt.spe.org/george-p-mitchell-and-barnett-shale",
+          "https://en.wikipedia.org/wiki/Barnett_Shale"
+        ]
+      },
+      {
+        "id": "milestone_first_ccgt",
+        "label": "First Modern CCGT Plant (1970s–1980s)",
+        "type": "Milestone",
+        "category": "Gas",
+        "trl_current": "9",
+        "description": "Early integrated combined cycle plants in the 1970s and 1980s, culminating in designs like the 9E-class GE gas turbine combined cycle units. The deployment of the GE Frame 7F turbine in the early 1990s (first firing in 1990, Siemens V94.2 equivalent) marked the entry into the 'F-class' era with turbine inlet temperatures exceeding 1,300°C and net plant efficiencies approaching 55%. These milestones proved the commercial viability of large-scale CCGT.",
+        "references": [
+          "https://www.powermag.com/history-of-power-the-evolution-of-the-electric-generation-industry/",
+          "https://historicengland.org.uk/research/results/reports/8477/CombinedCycleGasTurbinePowerStations_AnHistoricalOverview",
+          "https://www.rwe.com/en/the-group/countries-and-locations/gersteinwerk-power-plant/",
+          "http://courses.washington.edu/mengr430/au07/handouts/ge/product_des.pdf"
+        ]
+      },
+      {
+        "id": "thermal_cracking_burton",
+        "label": "Burton Thermal Cracking Process",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "First commercially successful thermal cracking process, patented by William Burton (Standard Oil of Indiana) in 1913. Operated at ~400°C and ~75 psi, doubling gasoline yield per barrel. Demonstrated that heavy fractions could be catalytically broken into lighter products, validating the cracking paradigm.",
+        "references": [
+          "https://www.ebsco.com/research-starters/history/burton-refines-petroleum-thermal-cracking",
+          "https://www.britannica.com/biography/William-Merriam-Burton",
+          "https://en.wikipedia.org/wiki/Burton_process"
+        ]
+      },
+      {
+        "id": "thermal_cracking",
+        "label": "Thermal Cracking",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "High-temperature (450–540°C), elevated-pressure pyrolysis of heavy hydrocarbons to break C–C bonds and generate lighter olefinic products. Preceded catalytic cracking; still used in visbreaking (viscosity reduction) and coking operations. Free-radical chain mechanism with no catalyst.",
+        "references": [
+          "https://www.chemguide.co.uk/organicprops/alkanes/cracking.html",
+          "https://www.britannica.com/technology/petroleum-refining/Visbreaking-thermal-cracking-and-coking",
+          "https://archive.nptel.ac.in/content/storage2/courses/103107082/module6/lecture4/lecture4.pdf",
+          "https://www.sciencedirect.com/topics/engineering/thermal-cracking"
+        ]
+      },
+      {
+        "id": "fcc_unit",
+        "label": "Fluid Catalytic Cracking (FCC)",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "The workhorse of modern gasoline production. VGO feed contacts fluidised zeolite catalyst at 490–550°C; cracked products are separated in a fractionator while spent catalyst is regenerated continuously by air combustion in a separate regenerator vessel. Produces ~50% of global gasoline supply.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Fluid_catalytic_cracking",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11243199/",
+          "https://pubs.rsc.org/en/content/articlelanding/2015/cs/c5cs00376h"
+        ]
+      },
+      {
+        "id": "zeolite_catalysts",
+        "label": "Zeolite (Y-type) Catalysts",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Synthetic aluminosilicate crystalline materials (primarily Y-zeolite and ZSM-5) with Brønsted acid sites and pore diameters of 7–12 Å that provide shape-selective catalytic cracking. Introduced into FCC in the early 1960s, increasing gasoline octane and yield dramatically over earlier amorphous silica–alumina catalysts.",
+        "references": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC4594121/",
+          "https://en.wikipedia.org/wiki/Fluid_catalytic_cracking",
+          "https://www.sciencedirect.com/science/article/pii/S1387181123001981",
+          "https://pubs.acs.org/doi/10.1021/acs.iecr.1c04656"
+        ]
+      },
+      {
+        "id": "cobt_mo_catalysts",
+        "label": "Cobalt–Molybdenum (CoMo) Hydrotreating Catalysts",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Alumina-supported CoMo sulfide catalysts operating at 300–380°C and 30–130 bar H₂ for hydrodesulfurisation (HDS), hydrodenitrogenation (HDN), and hydrodeoxygenation (HDO). The sulfided MoS₂ active phase with Co promoter atoms at edge sites is the commercial standard for diesel and naphtha hydrotreating.",
+        "references": [
+          "https://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.4c00045",
+          "https://www.sciencedirect.com/science/article/abs/pii/S092058611500423X",
+          "https://pubs.acs.org/doi/10.1021/acscatal.7b04260",
+          "https://www.osti.gov/etdeweb/biblio/20700695"
+        ]
+      },
+      {
+        "id": "hydrocracking",
+        "label": "Hydrocracking Unit",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Fixed-bed catalytic reactor operating at 350–450°C and 100–200 bar H₂ pressure over bifunctional Ni-Mo/W-Mo zeolite catalysts. Converts heavy VGO into high-quality diesel, jet fuel, and naphtha with virtually zero sulphur. Preferred over FCC for producing middle distillates; requires large H₂ supply and Cr-Mo alloy reactor vessels.",
+        "references": [
+          "https://pubs.rsc.org/en/content/articlelanding/2024/se/d3se01573d",
+          "https://doi.org/10.1021/acs.iecr.7b04981",
+          "https://pubs.acs.org/doi/abs/10.1021/ie060247q",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC8567256/",
+          "https://pubs.acs.org/doi/10.1021/acs.iecr.0c05416",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0926860X97003207"
+        ]
+      },
+      {
+        "id": "highpressure_vessel_metallurgy",
+        "label": "Cr–Mo Alloy High-Pressure Vessel Metallurgy",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Development of 1.25Cr–0.5Mo, 2.25Cr–1Mo, and 3Cr–1Mo–0.25V low-alloy steels (per ASME Section VIII Div. 2 and API 934) capable of withstanding >200 bar H₂ at 450°C without hydrogen embrittlement or Nelson-curve creep failure. Enabled the high-pressure hydroprocessing reactors that define modern refineries.",
+        "references": [
+          "https://www.intertekinform.com/en-gb/standards/asme-pv-code-8-div-2-2017-138904_saig_asme_asme_297942/",
+          "https://patents.google.com/patent/CN106596729B/en",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0167663624001716",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7288120/",
+          "https://ammoniaknowhow.com/handling-the-heat/"
+        ]
+      },
+      {
+        "id": "nimo_catalysts",
+        "label": "Nickel–Molybdenum (NiMo) Hydrocracking Catalysts",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "NiMo on amorphous silica–alumina or Y-zeolite supports; the higher hydrogenation activity of Ni vs Co makes NiMo preferred for hydrocracking (deep aromatic saturation) while CoMo is preferred for HDS. Catalyst regeneration via controlled burn extends cycle life to 3–5 years.",
+        "references": [
+          "https://www.frontiersin.org/journals/chemical-engineering/articles/10.3389/fceng.2021.764931/full",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0920586105005900",
+          "https://journal.ugm.ac.id/ijc/article/view/21801",
+          "https://pubs.acs.org/doi/10.1021/ef400623f",
+          "https://www.linkedin.com/pulse/chemistry-behind-hydroprocessing-catalysts-da-silva-mba--bkylf"
+        ]
+      },
+      {
+        "id": "bioslurry_valorisation",
+        "label": "Bio-Slurry Hydrocracking (Co-Processing)",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "7",
+        "description": "Upgrading of pyrolysis oil (bio-oil) or HTL (hydrothermal liquefaction) slurry co-fed with VGO in existing hydrocracking units at 5–20 wt% bio-feed ratio. Produces renewable diesel and biojet components. Requires catalyst poison (alkali, water) management and deoxygenation under high H₂ partial pressure. Pilots operational at Neste and Topsoe; commercial scale by ~2027.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/S0016236121003447",
+          "https://pubs.acs.org/doi/10.1021/acssuschemeng.9b04792",
+          "https://onepetro.org/URTECONF/proceedings-abstract/21URTC/2-21URTC/D021S021R003/465959"
+        ]
+      },
+      {
+        "id": "htl_process",
+        "label": "Hydrothermal Liquefaction (HTL)",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "6",
+        "description": "Sub-/supercritical water processing of wet biomass (algae, sewage sludge, lignocellulose) at 250–375°C and 100–250 bar to depolymerise carbohydrates and proteins into a crude biocrude oil (energy density ~35 MJ/kg). Avoids energy-intensive drying step vs pyrolysis. TRL 6 — continuous pilot plants at >1 t/day operational; pre-commercial scale-up ongoing.",
+        "references": [
+          "https://www.vinci-technologies.com/achievement/biomass-and-or-plastic-wastes-hydrothermal-liquefaction-htl-pilot-plant/9/",
+          "https://www.nature.com/articles/s41598-019-51315-5",
+          "https://pubs.acs.org/doi/10.1021/acs.iecr.3c01587",
+          "https://www.re-cord.org/RESAREA_htl.php",
+          "https://www.ri.se/en/test-demo/hydrothermal-liquefaction-htl",
+          "https://bce.au.dk/en/research/facilities/htl-pilot-plant"
+        ]
+      },
+      {
+        "id": "cfd_reactor_design",
+        "label": "Computational Fluid Dynamics (CFD) for Reactor Design",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Multiphase CFD simulation (ANSYS Fluent, OpenFOAM) of fluid–catalyst–heat interactions in FCC risers, hydrocracker fixed beds, and distillation column internals. Enables optimisation of feed nozzle geometry, catalyst circulation, and heat distribution without physical prototyping. Reduced FCC riser scale-up risk from lab to commercial by validating hydrodynamics computationally.",
+        "references": [
+          "https://www.mr-cfd.com/shop/fcc-riser-gas-solid-separation-system-cfd-simulation/",
+          "https://pubs.acs.org/doi/10.1021/acsomega.2c01886",
+          "https://pubs.acs.org/doi/10.1021/acs.iecr.3c02516",
+          "https://www.chemisgroup.us/articles/OJC-10-133.php"
+        ]
+      },
+      {
+        "id": "cable_tool_drilling",
+        "label": "Cable-Tool Percussion Drilling",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "The original well-drilling technology (Drake Well, 1859): a weighted chisel bit raised and dropped on a rope or cable to pulverise rock. Limited to ~600 m, vertical only, and extremely slow. Superseded by rotary drilling after ~1900 but still used for water wells. Established the conceptual basis for targeted reservoir penetration.",
+        "references": [
+          "https://findwellwater.ca/cable-tool-drilling/",
+          "https://www.rigworker.com/petroleum-engineering/cable-tool-drilling.html",
+          "https://www.theengineeringcommunity.org/drilling-wells-methods-advantages-and-disadvantages/",
+          "https://wellowner.org/resources/basics/drilling-methods/cable-tool/",
+          "https://www.thedriller.com/articles/90011-knowing-when-to-use-cable-tool-vs-rotary-drilling-is-important"
+        ]
+      },
+      {
+        "id": "drake_well",
+        "label": "Drake Well, Titusville PA (1859)",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Edwin Drake's 21.2-metre well in Titusville, Pennsylvania, drilled using steam-powered cable-tool percussion, struck oil on 27 August 1859. The world's first purposely drilled commercial oil well; it proved that oil could be extracted at industrial scale from the subsurface, triggering the modern petroleum industry.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Drake_Well",
+          "https://www.pa.gov/agencies/phmc/historic-sites-and-museums/pahistory2go/drake-well-museum",
+          "https://info.mysticstamp.com/first-major-commercial-oil-well-in-the-u-s_tdih/",
+          "https://www.historyofinformation.com/detail.php?entryid=3061",
+          "https://aoghs.org/petroleum-discoveries/"
+        ]
+      },
+      {
+        "id": "onshore_rotary_derrick",
+        "label": "Onshore Rotary Derrick",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Steel derrick structure housing a rotary drilling rig with a kelly drive (later top-drive) rotating a drill string with tricone or PDC bit at bottom. Standard onshore land rig capable of drilling to 6,000+ m vertical depth. The dominant extraction platform from ~1910 to present for onshore conventional fields.",
+        "references": [
+          "https://www.slideshare.net/slideshow/rotary-drilling-rig-onshore/139835964",
+          "https://www.rockpecker.com/drilling-news/2025/2/28/lets-understand-rotary-system-of-a-drilling-rig",
+          "https://www.esimtech.com/the-evolution-of-land-oil-rigs-from-traditional-derricks-to-modern-onshore-drilling",
+          "https://www.oil-gasportal.com/drilling/technologies/",
+          "https://www.drillingmanual.com/derrick-drilling-rig-oil-gas/"
+        ]
+      },
+      {
+        "id": "rotary_drilling",
+        "label": "Rotary Drilling with Mud Circulation",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Continuous rotation of a drill string with weighted drilling mud (later synthetic oil-based muds) circulated down the drillstring and back up the annulus to remove cuttings, stabilise the borehole, and control formation pressure. Patented improvements post-Spindletop (1901) enabled depths beyond 3,000 m and the directional drilling era.",
+        "references": [
+          "https://www.cascade-env.com/drilling-technologies/rotary-drilling/",
+          "https://www.massenzarigs.com/direct-circulation-drilling/",
+          "https://www.sinodrills.com/what-is-rotary-drilling/",
+          "https://www.rockpecker.com/drilling-news/2025/2/28/lets-understand-rotary-system-of-a-drilling-rig",
+          "https://www.e-education.psu.edu/png301/node/726"
+        ]
+      },
+      {
+        "id": "spindletop",
+        "label": "Spindletop Gusher, Beaumont TX (1901)",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "The Lucas No. 1 well at Spindletop Hill, drilled using rotary equipment to 347 m, blew out on 10 January 1901 producing ~100,000 bbl/day — 17× daily US production at the time. It validated rotary drilling at commercial scale and triggered the Texas oil boom and Gulf of Mexico exploration.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Spindletop",
+          "https://www.texasalmanac.com/articles/oil-and-texas-a-cultural-history",
+          "https://aoghs.org/petroleum-pioneers/spindletop-launches-modern-oil-industry/",
+          "https://www.ebsco.com/research-starters/mining-and-mineral-resources/discovery-oil-spindletop",
+          "https://www.resources.org/common-resources/spindletop-the-original-oil-quotboomtownquot/"
+        ]
+      },
+      {
+        "id": "directional_drilling",
+        "label": "Directional & Horizontal Drilling",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Controlled deviation of the wellbore from vertical using bent sub assemblies, measurement-while-drilling (MWD) tools, and rotary steerable systems (RSS). Horizontal wells increase reservoir contact by 5–20× vs vertical wells. Required for multilateral completions, extended-reach wells, and shale reservoir drainage. Became routine by the 1990s.",
+        "references": [
+          "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/drilling/directional-drilling",
+          "https://en.wikipedia.org/wiki/Directional_drilling",
+          "https://www.esimtech.com/how-rotary-steerable-systems-revolutionize-directional-drilling-in-the-oil-and-gas-industry.html",
+          "https://www.weatherford.com/products-and-services/drilling-and-evaluation/drilling-services/rotary-steerable-systems/",
+          "https://www.sciencedirect.com/topics/engineering/horizontal-drilling"
+        ]
+      },
+      {
+        "id": "mwd_lwd",
+        "label": "MWD / LWD Downhole Telemetry",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Measurement-While-Drilling and Logging-While-Drilling tools transmit real-time formation evaluation data (gamma ray, resistivity, neutron-density porosity, formation pressure) and toolface orientation to surface via mud-pulse or electromagnetic telemetry while drilling. Enables geosteering — real-time trajectory adjustment to stay within a producing zone only centimetres thick.",
+        "references": [
+          "https://www.sinodrills.com/lwd-vs-mwd/",
+          "https://smkst-petro.com/difference-between-mwd-lwd/",
+          "https://www.spec2000.net/log-data-acquisition/logging-measurements-while-drilling-mwd-and-geosteering.htm",
+          "https://www.altantechnologies.com/systems/mw-telemetry/"
+        ]
+      },
+      {
+        "id": "leduc_discovery",
+        "label": "Leduc No. 1 Discovery, Alberta (1947)",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Imperial Oil's Leduc No. 1 well, completed on 13 February 1947 in the Devonian Leduc reef, inaugurated the modern Alberta oil industry and demonstrated that 3D seismic and geophysical methods could reliably locate deep structural traps in sedimentary basins — validating subsurface imaging as a primary exploration tool.",
+        "references": [
+          "https://en.wikipedia.org/wiki/Leduc_No._1",
+          "https://discoverapega.ca/stories/black-gold-leduc-no-1-oil-strike-makes-history/",
+          "https://geoexpro.com/heavy-oil-from-an-ancient-reef/",
+          "https://www.historicplaces.ca/en/rep-reg/place-lieu.aspx?id=5059",
+          "https://pubs.geoscienceworld.org/aapg/aapgbull/article/33/4/572/547725/Leduc-Oil-Field-Alberta-A-Devonian-Coral-Reef"
+        ]
+      },
+      {
+        "id": "offshore_fixed_platform",
+        "label": "Offshore Fixed-Leg Steel Platform",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Jacket-type or gravity-based structure fixed to the seabed in water depths up to ~500 m. Production equipment, wellheads, and accommodation sit on the topsides. First used in the Gulf of Mexico (1947). Still the dominant shallow-water (<300 m) production platform type globally (~7,000 structures offshore).",
+        "references": [
+          "https://www.texasce.org/tce-news/historic-overview-of-u-s-fixed-offshore-platforms-part-i/",
+          "https://www.scribd.com/document/473606859/Offshore-Fixed-Platform-Notes",
+          "https://www.alibaba.com/product-insights/types-of-offshore-platform.html",
+          "https://intrinsicallysafestore.com/blog/what-are-the-different-types-of-offshore-platforms/",
+          "https://www.sciencedirect.com/topics/engineering/fixed-offshore-platform"
+        ]
+      },
+      {
+        "id": "subsea_completion",
+        "label": "Subsea Wellhead Completion System",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "All production equipment (Christmas tree, manifold, flowlines, umbilicals) located on the seabed rather than on a surface platform. Enables production from water depths up to 3,000 m. Tied back to a host platform or FPSO via insulated flowlines. First deployed in the Gulf of Mexico in the 1960s; now the standard for deep and ultra-deepwater fields.",
+        "references": [
+          "https://www.sciencedirect.com/topics/engineering/subsea-production-system",
+          "https://www.rigzone.com/insights/how-it-works-3/how-is-subsea-engineering-applied-to-deepwater-oil-production-566",
+          "https://sut-us.org/pages_data/files/SUT-SAC-8-Subsea-completions_637302424269626242.pdf",
+          "https://www.slb.com/resource-library/oilfield-review/defining-series/defining-subsea-infrastructure",
+          "https://jpt.spe.org/gulf-of-mexico-case-study-highlights-smart-completion-application-restricted"
+        ]
+      },
+      {
+        "id": "fpso",
+        "label": "Deepwater FPSO (Floating Production Storage and Offloading)",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "A ship-shaped or converted tanker vessel moored at field via a turret or spread-mooring, receiving well fluids from subsea trees via flexible risers, processing oil/gas/water on board, storing crude in its cargo tanks, and offloading periodically to shuttle tankers. Operates in water depths up to 3,000 m. Over 300 FPSOs currently operational worldwide.",
+        "references": [
+          "https://www.dxpe.com/floating-production-storage-offloading-fpso/"
+        ]
+      },
+      {
+        "id": "flexible_riser_tech",
+        "label": "Flexible Pipe & Dynamic Riser Technology",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Unbonded flexible pipe with alternating layers of stainless steel armour wires and polymer sheaths (per API 17B/17J) capable of handling high internal pressure (up to 700 bar) and large dynamic bending radii in 2,000 m water depths. Connects seabed equipment to floating vessels that heave, pitch, and roll.",
+        "references": [
+          "https://www.offshore-mag.com/deepwater/article/16759046/deepwater-ep-dynamic-risers-key-component-for-deepwater-drilling-floatin",
+          "https://www.intechopen.com/chapters/85818",
+          "https://www.osti.gov/biblio/434002"
+        ]
+      },
+      {
+        "id": "digital_twin_reservoir",
+        "label": "Autonomous Digital Twin Reservoir",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "7",
+        "description": "A continuously updated, cloud-hosted reservoir simulation model integrating real-time downhole sensor data, production history, and 4D seismic surveys. AI/ML optimisers autonomously recommend choke settings, injection rates, and infill drilling locations. Equinor's Breidablikk and BP's APEX system are current TRL 7–8 deployments; full closed-loop autonomous control is TRL 7.",
+        "references": [
+          "https://www.equinor.com/news/archive/202009-breidablikk-pdo",
+          "https://www.wtauserver.com/en/digital-twin-platform-for-reservoirs/",
+          "https://pubs.aip.org/aip/cha/article/33/3/033111/2881229/Reservoir-computing-as-digital-twins-for-nonlinear"
+        ]
+      },
+      {
+        "id": "4d_seismic",
+        "label": "4D Time-Lapse Seismic Monitoring",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Repeated 3D seismic surveys over a producing field at multi-year intervals; the difference cube highlights fluid movement (oil–water contact migration, gas cap expansion) within the reservoir. Enables drill-to-target optimisation, identifies bypassed pay, and validates simulation models. Standard in North Sea UKCS and deepwater Brazil.",
+        "references": [
+          "https://umbrex.com/resources/how-to-analyze-an-upstream-oil-company/advanced-4d-seismic-monitoring-and-reservoir-surveillance-an",
+          "https://world-science.ru/en/article/view?id=29692",
+          "https://www.unmannedsystemstechnology.com/feature/case-study-deepwater-autonomous-seismic-data-gathering/",
+          "https://sharpreflections.com/software/4d/",
+          "https://www.oedigital.com/news/451814-shell-s-4d-optimizes-brazil-waterflood-project"
+        ]
+      },
+      {
+        "id": "ml_reservoir_optimisation",
+        "label": "ML-Based Reservoir Optimisation",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "Physics-informed neural networks (PINNs), gradient-boosted tree models, and deep reinforcement learning applied to well-control optimisation (water injection rates, artificial lift settings). Reduces simulation run time from hours to milliseconds for real-time closed-loop control. TRL 8 — commercial deployment by Roxar, Emerson, and TotalEnergies.",
+        "references": [
+          "https://pubs.aip.org/aip/pof/article/36/11/116617/3322481/A-novel-reservoir-simulation-model-based-on",
+          "https://arxiv.org/abs/2512.03923",
+          "https://www.earthdoc.org/content/papers/10.3997/2214-4609.202437075",
+          "https://arxiv.org/pdf/2203.13375.pdf"
+        ]
+      },
+      {
+        "id": "iot_downhole_sensors",
+        "label": "IIoT Permanent Downhole Gauges",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Fibre-optic distributed temperature/strain sensing (DTS/DSS) and quartz-crystal pressure/temperature gauges permanently installed in completions, transmitting at 1 Hz to surface via downhole communication cables. Provides the real-time bottom-hole data feed required by digital twin reservoir models. Operating MTBF >10 years in >200°C environments.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/S2949891025001502",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12568172/",
+          "https://onepetro.org/doi/10.2118/101234-MS",
+          "https://researchportal.hw.ac.uk/en/publications/tracking-the-state-and-diagnosing-downhole-permanent-sensors-in-i-2",
+          "https://www.sciencedirect.com/science/article/pii/S2949891025001502"
+        ]
+      },
+      {
+        "id": "refinery_ccs",
+        "label": "Refinery Post-Combustion Carbon Capture",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "Amine scrubbing (MEA or advanced solvents) or solid sorbent systems applied to refinery fired heater and FCC regenerator flue gas streams (10–15 vol% CO₂) to capture 85–95% of CO₂ for geological storage or utilisation. Quest CCS project (Shell, Alberta) has captured >7 Mt CO₂ since 2015. Commercial but at cost premium vs unabated.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/acs.est.2c07440",
+          "https://www.offshore-technology.com/projects/quest-carbon-capture-and-storage-project-alberta/",
+          "https://sequestration.mit.edu/tools/projects/quest.html",
+          "https://ieaghg.org/publications/post-combustion-carbon-capture-from-coal-fired-plants-solvent-scrubbing/",
+          "https://gccassociation.org/cement-and-concrete-innovation/carbon-capture-and-utilisation/amine-based-post-combustion-capture/",
+          "https://www.science.org/doi/10.1126/science.1176731",
+          "https://netl.doe.gov/projects/files/CostofCapturingCO2fromIndustrialSources_071522.pdf"
+        ]
+      },
+      {
+        "id": "amine_scrubbing",
+        "label": "Advanced Amine Solvent Scrubbing",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Aqueous amine solutions (30 wt% MEA baseline; advanced solvents: CESAR1, MHI KS-1, Cansolv) absorb CO₂ from flue gas at 40–60°C; the rich solvent is regenerated by steam stripping at 120°C. Regeneration energy ~2.5–3.5 GJ/tCO₂ for MEA; advanced blends target <2 GJ/tCO₂. Technology basis of all large-scale post-combustion CCS projects.",
+        "references": [
+          "https://gccassociation.org/cement-and-concrete-innovation/carbon-capture-and-utilisation/amine-based-post-combustion-capture/",
+          "https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/tr/pdf/e481/e481026.pdf",
+          "https://www.osti.gov/servlets/purl/1127311/",
+          "https://www.osti.gov/servlets/purl/945367",
+          "https://papers.ssrn.com/sol3/Delivery.cfm/91419e1e-5baf-4e77-b5fc-e49217a59590-MECA.pdf?abstractid=5349470&mirid=1"
+        ]
+      },
+      {
+        "id": "quest_ccs",
+        "label": "Quest CCS Project, Fort Saskatchewan (2015)",
+        "type": "Milestone",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Shell's Quest carbon capture and storage project at the Scotford Upgrader, Alberta, began injection of CO₂ from oil sands hydrogen production in November 2015. First large-scale CCS project on an oil refining/upgrading complex; validated geological storage in the Basal Cambrian Sands saline aquifer at >2,300 m depth.",
+        "references": [
+          "https://sequestration.mit.edu/tools/projects/quest.html",
+          "https://ieaghg.org/publications/the-shell-quest-carbon-capture-and-storage-project/",
+          "https://open.alberta.ca/publications/quest-carbon-capture-and-storage-project-annual-report-2021",
+          "https://www.aer.ca/documents/by-topic/ccus/2023-ShellQuest-Closure-Plan.pdf",
+          "https://natural-resources.canada.ca/funding-partnerships/shell-canada-energy-quest-project",
+          "https://www.cbc.ca/news/canada/calgary/shell-canada-oil-sands-alberta-carbon-capture-1.7445699"
+        ]
+      },
+      {
+        "id": "hydrogen_coproc",
+        "label": "Hydrogen–Oil Co-Processing (Refinery H₂ Integration)",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "7",
+        "description": "Integration of low-carbon H₂ (green or blue) into hydroprocessing units to decarbonise refinery hydrogen supply (currently ~1 kg H₂ consumed per barrel refined). Pilot projects replacing SMR-derived H₂ with electrolytic H₂ in hydrotreaters. TRL 7 — Shell's Rhineland refinery (Germany) electrolysis pilot operational since 2021.",
+        "references": [
+          "https://itm-power.com/news/shell-starts-up-europe-s-largest-pem-green-hydrogen-electrolyser-update-on-refhyne-ii",
+          "https://hydrogen-central.com/refhyne-largest-pem-electrolyzer-green-hydrogen-shell-rhineland/",
+          "https://www.industrialinfo.com/iirenergy/industry-news/article/shell-starts-europes-largest-green-hydrogen-plant--299592",
+          "https://itm-power.com/markets/refinery-hydrogen",
+          "https://www.topsoe.com/blog/how-refineries-can-decarbonize-operations-through-smart-use-of-low-carbon-hydrogen",
+          "https://www.azocleantech.com/article.aspx?ArticleID=2056"
+        ]
+      },
+      {
+        "id": "pem_electrolysis",
+        "label": "PEM Water Electrolysis (Green H₂)",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "Proton exchange membrane electrolysers (Nafion membrane) achieving 65–70% system efficiency (HHV) at current densities of 1–3 A/cm². Produces ultra-pure H₂ suitable for refinery hydroprocessing. Capital cost declining from ~$1,200/kW (2020) toward $300/kW target (2030) per IEA roadmap. TRL 8 — multi-MW commercial units operational.",
+        "references": [
+          "https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/24005-clean-hydrogen-production-cost-pem-electrolyzer.pdf",
+          "https://docs.nrel.gov/docs/fy24osti/87625.pdf",
+          "https://www.ise.fraunhofer.de/content/dam/ise/de/documents/publications/studies/cost-forecast-for-low-temperature-electrolysis.pdf",
+          "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/hydrogen-solutions.html",
+          "https://www.academia.edu/28971141/Properties_of_Nafion_membranes_under_PEM_water_electrolysis_conditions"
+        ]
+      },
+      {
+        "id": "blue_hydrogen_smr_ccs",
+        "label": "Blue Hydrogen (SMR + CCS)",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "Steam methane reforming (SMR) or autothermal reforming (ATR) of natural gas with post-combustion or pre-combustion CO₂ capture achieving 85–95% carbon abatement. Lower cost than green H₂ at current electrolyser prices. TRL 8 — Air Products' NEOM Blue H₂ and HyNet projects in UK and USA approaching final investment decision.",
+        "references": [
+          "https://www.nature.com/articles/s41467-024-50090-w",
+          "https://www.frompollutiontosolution.org/hydrogen-from-smr-and-ccs",
+          "https://www.globalccsinstitute.com/wp-content/uploads/2025/08/CCE-Blue-Hydrogen.pdf",
+          "https://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.5c03236",
+          "https://www.gasworld.com/story/analysis-why-has-air-products-rethought-its-neom-hydrogen-strategy/2155600.article",
+          "https://knowledge.energyinst.org/new-energy-world/article?id=138543",
+          "https://www.fuelcellchina.com/Industry_information_details/3224.html"
+        ]
+      },
+      {
+        "id": "shale_hydraulic_fracturing",
+        "label": "Shale Tight-Oil Hydraulic Fracturing",
+        "type": "ReactorConcept",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Multi-stage hydraulic fracturing of horizontal wells in low-permeability (<0.1 mD) shale reservoirs. High-viscosity slickwater or crosslinked gel fluid carrying proppant (100-mesh sand or ceramic) at up to 100 bbl/min and 10,000 psi creates a fracture network with conductivity 10,000× that of the matrix. Unlocked Bakken, Permian, and Eagle Ford — adding 9 Mbbl/d to US production.",
+        "references": [
+          "https://www.ncbi.nlm.nih.gov/sites/books/NBK338535/",
+          "https://www.nationalacademies.org/read/21882",
+          "https://dnicolasespinoza.github.io/node58.html",
+          "https://webthesis.biblio.polito.it/19979/1/tesi.pdf",
+          "https://www.iandexterpalmer.com/publicity/proppant/",
+          "https://natural-resources.canada.ca/energy-sources/fossil-fuels/shale-tight-resources-canada"
+        ]
+      },
+      {
+        "id": "pdc_drill_bits",
+        "label": "Polycrystalline Diamond Compact (PDC) Drill Bits",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Fixed-cutter bits with thermally stable synthetic diamond tables bonded to tungsten carbide substrates (per API Spec 7-1). PDC bits achieve 3–10× higher ROP and drill life vs tricone roller bits in medium-hard formations. The primary drill bit for shale horizontal sections; ~80% of wells drilled globally use PDC bits.",
+        "references": [
+          "https://drillingcontractor.org/steel-body-pdc-bit-targets-shale-drilling-9942",
+          "https://www.nature.com/articles/s41598-025-87484-9",
+          "https://pdcdrill.com/blogs/blog/pdc-drill-bit-performance-and-application",
+          "https://pdcdrill.com/blogs/blog/pdc-drill-bit-performance",
+          "https://pdcdrill.com/blogs/blog/pdc-drill-bit",
+          "https://www.kingpdc.com/pdc-drill-bit-vs-tricone/",
+          "https://www.sinodrills.com/pdc-drill-bit-vs-tricone/",
+          "https://knowledge.welongoiltools.com/pdc-vs-tricone-drill-bit-which-is-better-for-your-project"
+        ]
+      },
+      {
+        "id": "proppant_engineering",
+        "label": "Engineered Proppant (Ceramic & Coated Sand)",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Sintered bauxite/kaolin ceramic proppant and resin-coated sand with crush strength up to 20,000 psi and near-perfect sphericity (0.9+ Krumbein) maintain fracture conductivity after closure stress. Replaced raw river sand in deep high-stress shale completions. Critical enabling material for sustained tight-oil production.",
+        "references": [
+          "https://carbo.tech/resources/ceramic-proppant-technology/",
+          "https://jpt.spe.org/proppant-goes-extremes",
+          "https://www.ethw.org/Proppants",
+          "https://www.sciencedirect.com/science/article/abs/pii/S001623612402235X",
+          "https://www.intechopen.com/chapters/79216",
+          "https://www.sciencedirect.com/science/article/pii/S2405656125001051",
+          "https://feeco.com/ceramic-proppants-specialized-alternative-frac-sand/"
+        ]
+      },
+      {
+        "id": "cfd_wellbore_flow",
+        "label": "CFD Wellbore & Multiphase Flow Modelling",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "9",
+        "description": "Drift-flux and two-fluid CFD models (OLGA, LedaFlow) simulating gas–liquid–solid flow regimes (slug, annular, dispersed) in production tubing, risers, and flowlines over 100 km tiebacks. Essential for FPSO riser design, flow assurance (wax, hydrate, scale inhibition), and separator sizing. Validates hardware design before deepwater installation.",
+        "references": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S0016236126004230",
+          "https://resources.sw.siemens.com/en-US/white-paper-multiphase-flow-simulation-oil-and-gas/",
+          "https://wileyonlinelibrary.com/journal/OGF",
+          "https://www.witpress.com/elibrary/wit-transactions-on-modelling-and-simulation/55/24856",
+          "https://ledaflow.com",
+          "https://evoleap.com/ledaflow-functionality-support",
+          "https://calsep.com/pvtsim-nova/find-a-pvtsim-package/pvtsim-for-olga-ledaflow/",
+          "https://backend.orbit.dtu.dk/ws/portalfiles/portal/138476614/BEFO_1_s2.0_S0920410517307933_main1.pdf"
+        ]
+      },
+      {
+        "id": "solids_sorbent_ccs",
+        "label": "Solid Sorbent / Chemical Looping CCS",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "5",
+        "description": "Calcium looping (CaL) or chemical looping combustion (CLC) using CaO/CaCO₃ or metal-oxide oxygen carriers to capture CO₂ at 600–900°C. Potentially 40–50% lower energy penalty than amine scrubbing. TRL 5 — 1.9 MWth pilot at Stuttgart (IHI Corp) and 1 MWth at Cranfield demonstrated; scale-up to commercial size remains the key challenge.",
+        "references": [
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.4c02472",
+          "https://gccassociation.org/cement-and-concrete-innovation/carbon-capture-and-utilisation/calcium-looping/",
+          "https://www.nature.com/articles/s41586-024-07683-8",
+          "https://research.chalmers.se/publication/244817/file/244817_Fulltext.pdf",
+          "https://pubs.acs.org/doi/10.1021/acs.energyfuels.2c04297",
+          "https://www.sciencedirect.com/science/article/pii/S0378382025002036",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11299141/",
+          "https://eureka.patsnap.com/report-research-on-solid-sorbents-for-co2-capture-for-high-throughput-carbon-capture-systems"
+        ]
+      },
+      {
+        "id": "ai_drilling_optimisation",
+        "label": "AI-Driven Automated Drilling Optimisation",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "8",
+        "description": "Machine-learning drilling advisory systems (e.g., Halliburton iCruise, Weatherford CoPilot) that ingest real-time WOB, RPM, torque, MSE, and MWD data to autonomously adjust drilling parameters and steer the bit without driller input. Reducing NPT (non-productive time) by 15–25% in field trials. TRL 8 — deployed commercially in Permian and North Sea.",
+        "references": [
+          "https://www.ijert.org/automated-drilling-process-control-using-artificial-intelligence-a-novel-framework-for-unconventional-reservoirs",
+          "https://www.halliburton.com/en/products/icruise-intelligent-rotary-steerable-system",
+          "https://www.halliburton.com/en/energy-pulse/artificial-intelligence-drilling-accelerates-new-era-of-excellence",
+          "https://www.halliburton.com/en/products/icruise-x-intelligent-rotary-steerable-system",
+          "https://www.weatherford.com/energy-solutions/rig-enablement-solutions/managed-pressure-drilling-systems",
+          "https://www.e3team.com/ai-in-drilling-optimization/",
+          "https://wjarr.com/node/8331"
+        ]
+      },
+      {
+        "id": "carbon_nanotube_membranes",
+        "label": "Carbon Nanotube Composite Refinery Membranes",
+        "type": "EnablingTechnology",
+        "category": "Oil",
+        "trl_current": "4",
+        "description": "Aligned carbon nanotube (CNT) or graphene oxide membranes for H₂/CH₄ separation and desulfurisation in refinery gas streams. Lab-demonstrated H₂ permeance >10,000 GPU with selectivity H₂/CH₄ >100 at 200°C. TRL 4 — bench scale; scale-up of defect-free large-area membranes and module integration remain key barriers per DOE Membrane Technology program.",
+        "references": [
+          "https://pubs.acs.org/doi/abs/10.1021/jp3098022",
+          "https://www.science.org/doi/10.1126/science.1092048",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625587/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC9169492/",
+          "https://pubs.rsc.org/en/content/articlehtml/2017/ra/c7ra08570b",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0957582025006494",
+          "https://refiningcommunity.com/cfd-simulation-of-hydrogen-sulfide-h2s-desulfurization-using-ionic-liquids-and-graphene-oxide-membrane"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "c01",
+        "source": "fire_tube_boiler",
+        "target": "atmospheric_steam_engine"
+      },
+      {
+        "id": "c02",
+        "source": "fire_tube_boiler",
+        "target": "reciprocating_steam_plant"
+      },
+      {
+        "id": "c03",
+        "source": "water_tube_boiler",
+        "target": "reciprocating_steam_plant"
+      },
+      {
+        "id": "c04",
+        "source": "water_tube_boiler",
+        "target": "steam_turbine_plant"
+      },
+      {
+        "id": "c05",
+        "source": "steam_turbine_technology",
+        "target": "steam_turbine_plant"
+      },
+      {
+        "id": "c06",
+        "source": "steam_turbine_technology",
+        "target": "subcritical_pc_plant"
+      },
+      {
+        "id": "c07",
+        "source": "pulverized_coal_combustion",
+        "target": "subcritical_pc_plant"
+      },
+      {
+        "id": "c08",
+        "source": "pulverized_coal_combustion",
+        "target": "cfb_plant"
+      },
+      {
+        "id": "c09",
+        "source": "low_nox_burner",
+        "target": "subcritical_pc_plant"
+      },
+      {
+        "id": "c10",
+        "source": "esp_fgd_scr",
+        "target": "subcritical_pc_plant"
+      },
+      {
+        "id": "c11",
+        "source": "esp_fgd_scr",
+        "target": "supercritical_pc_plant"
+      },
+      {
+        "id": "c12",
+        "source": "supercritical_rankine_cycle",
+        "target": "supercritical_pc_plant"
+      },
+      {
+        "id": "c13",
+        "source": "supercritical_rankine_cycle",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c14",
+        "source": "once_through_boiler",
+        "target": "supercritical_pc_plant"
+      },
+      {
+        "id": "c15",
+        "source": "once_through_boiler",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c16",
+        "source": "reheat_steam_cycle",
+        "target": "supercritical_pc_plant"
+      },
+      {
+        "id": "c17",
+        "source": "reheat_steam_cycle",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c18",
+        "source": "ferritic_creep_steels",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c19",
+        "source": "ferritic_creep_steels",
+        "target": "nickel_superalloys"
+      },
+      {
+        "id": "c20",
+        "source": "water_wall_membrane_panels",
+        "target": "supercritical_pc_plant"
+      },
+      {
+        "id": "c21",
+        "source": "water_wall_membrane_panels",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c22",
+        "source": "nickel_superalloys",
+        "target": "advanced_ultra_supercritical_plant"
+      },
+      {
+        "id": "c23",
+        "source": "protective_coatings_oxidation",
+        "target": "advanced_ultra_supercritical_plant"
+      },
+      {
+        "id": "c24",
+        "source": "protective_coatings_oxidation",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c25",
+        "source": "fluidized_bed_combustion",
+        "target": "cfb_plant"
+      },
+      {
+        "id": "c26",
+        "source": "supercritical_rankine_cycle",
+        "target": "cfb_plant"
+      },
+      {
+        "id": "c27",
+        "source": "coal_gasification_technology",
+        "target": "igcc_plant"
+      },
+      {
+        "id": "c29",
+        "source": "combined_cycle_integration",
+        "target": "igcc_plant"
+      },
+      {
+        "id": "c30",
+        "source": "gasification_asu",
+        "target": "igcc_plant"
+      },
+      {
+        "id": "c31",
+        "source": "gasification_asu",
+        "target": "oxyfuel_ccs_plant"
+      },
+      {
+        "id": "c32",
+        "source": "advanced_turbine_blade_cooling",
+        "target": "igcc_plant"
+      },
+      {
+        "id": "c33",
+        "source": "amine_scrubbing_ccs",
+        "target": "post_combustion_ccs_plant"
+      },
+      {
+        "id": "c34",
+        "source": "co2_compression_storage",
+        "target": "post_combustion_ccs_plant"
+      },
+      {
+        "id": "c35",
+        "source": "co2_compression_storage",
+        "target": "oxyfuel_ccs_plant"
+      },
+      {
+        "id": "c37",
+        "source": "syngas_cleanup",
+        "target": "pre_combustion_capture"
+      },
+      {
+        "id": "c38",
+        "source": "pearl_street_station",
+        "target": "reciprocating_steam_plant"
+      },
+      {
+        "id": "c39",
+        "source": "holborn_viaduct",
+        "target": "reciprocating_steam_plant"
+      },
+      {
+        "id": "c40",
+        "source": "parsons_turbine_1884",
+        "target": "steam_turbine_plant"
+      },
+      {
+        "id": "c41",
+        "source": "riverside_station_pc",
+        "target": "subcritical_pc_plant"
+      },
+      {
+        "id": "c42",
+        "source": "eddystone_station",
+        "target": "supercritical_pc_plant"
+      },
+      {
+        "id": "c43",
+        "source": "nordjylland_usc",
+        "target": "ultra_supercritical_plant"
+      },
+      {
+        "id": "c44",
+        "source": "polk_igcc",
+        "target": "igcc_plant"
+      },
+      {
+        "id": "c45",
+        "source": "boundary_dam_ccs",
+        "target": "post_combustion_ccs_plant"
+      },
+      {
+        "id": "c46",
+        "source": "schwarze_pumpe_oxyfuel",
+        "target": "oxyfuel_ccs_plant"
+      },
+      {
+        "id": "c47",
+        "source": "lagisza_scfb",
+        "target": "cfb_plant"
+      },
+      {
+        "id": "c48",
+        "source": "sofc_technology",
+        "target": "igfc_plant"
+      },
+      {
+        "id": "c49",
+        "source": "coal_gasification_technology",
+        "target": "igfc_plant"
+      },
+      {
+        "id": "c50",
+        "source": "syngas_cleanup",
+        "target": "igfc_plant"
+      },
+      {
+        "id": "c52",
+        "source": "printed_circuit_heat_exchanger",
+        "target": "sco2_coal_plant"
+      },
+      {
+        "id": "c53",
+        "source": "fluidized_bed_combustion",
+        "target": "sco2_coal_plant"
+      },
+      {
+        "id": "c54",
+        "source": "clc_oxygen_carrier",
+        "target": "chemical_looping_plant"
+      },
+      {
+        "id": "c55",
+        "source": "gasification_asu",
+        "target": "chemical_looping_plant"
+      },
+      {
+        "id": "c56",
+        "source": "co2_compression_storage",
+        "target": "chemical_looping_plant"
+      },
+      {
+        "id": "c57",
+        "source": "calcium_looping_capture",
+        "target": "post_combustion_ccs_plant"
+      },
+      {
+        "id": "c58",
+        "source": "calcium_looping_capture",
+        "target": "cfb_plant"
+      },
+      {
+        "id": "c59",
+        "source": "hydrogen_turbine_igcc",
+        "target": "igcc_plant"
+      },
+      {
+        "id": "c60",
+        "source": "pre_combustion_capture",
+        "target": "hydrogen_turbine_igcc"
+      },
+      {
+        "id": "c61",
+        "source": "step_demo_sco2",
+        "target": "sco2_coal_plant"
+      },
+      {
+        "id": "c62",
+        "source": "plant_barry_ausc",
+        "target": "advanced_ultra_supercritical_plant"
+      },
+      {
+        "id": "c63",
+        "source": "direct_mineral_carbonation",
+        "target": "post_combustion_ccs_plant"
+      },
+      {
+        "id": "c64",
+        "source": "sco2_turbomachinery",
+        "target": "printed_circuit_heat_exchanger"
+      },
+      {
+        "id": "g01",
+        "source": "hrsg",
+        "target": "ccgt"
+      },
+      {
+        "id": "g02",
+        "source": "aeroderivative_blades",
+        "target": "ccgt"
+      },
+      {
+        "id": "g03",
+        "source": "aeroderivative_blades",
+        "target": "simple_cycle_gt"
+      },
+      {
+        "id": "g04",
+        "source": "single_crystal_alloy",
+        "target": "aeroderivative_blades"
+      },
+      {
+        "id": "g05",
+        "source": "tbc_coating",
+        "target": "aeroderivative_blades"
+      },
+      {
+        "id": "g06",
+        "source": "lean_premix_combustion",
+        "target": "dln_burner"
+      },
+      {
+        "id": "g07",
+        "source": "cfd_combustion",
+        "target": "lean_premix_combustion"
+      },
+      {
+        "id": "g08",
+        "source": "h2_combustion_dynamics",
+        "target": "dln_burner"
+      },
+      {
+        "id": "g09",
+        "source": "cfd_combustion",
+        "target": "h2_combustion_dynamics"
+      },
+      {
+        "id": "g10",
+        "source": "oxy_combustion",
+        "target": "allam_cycle"
+      },
+      {
+        "id": "g11",
+        "source": "scco2_turbomachinery",
+        "target": "allam_cycle"
+      },
+      {
+        "id": "g12",
+        "source": "scco2_turbomachinery",
+        "target": "scco2_brayton"
+      },
+      {
+        "id": "g13",
+        "source": "co2_recuperator",
+        "target": "allam_cycle"
+      },
+      {
+        "id": "g14",
+        "source": "oxyfuel_asu",
+        "target": "oxy_combustion"
+      },
+      {
+        "id": "g15",
+        "source": "hydraulic_fracturing",
+        "target": "shale_gas_production"
+      },
+      {
+        "id": "g16",
+        "source": "horizontal_drilling",
+        "target": "shale_gas_production"
+      },
+      {
+        "id": "g18",
+        "source": "marine_cryogenic_storage",
+        "target": "flng"
+      },
+      {
+        "id": "g19",
+        "source": "lng_regasification",
+        "target": "flng"
+      },
+      {
+        "id": "g20",
+        "source": "early_gas_pipeline",
+        "target": "simple_cycle_gt"
+      },
+      {
+        "id": "g21",
+        "source": "advanced_materials_htsc",
+        "target": "single_crystal_alloy"
+      },
+      {
+        "id": "g22",
+        "source": "additive_manufacturing_turbine",
+        "target": "aeroderivative_blades"
+      },
+      {
+        "id": "g23",
+        "source": "digital_twin_gt",
+        "target": "ccgt"
+      },
+      {
+        "id": "g24",
+        "source": "milestone_net_power_la_porte",
+        "target": "allam_cycle"
+      },
+      {
+        "id": "g25",
+        "source": "milestone_swri_10mw_scco2",
+        "target": "scco2_brayton"
+      },
+      {
+        "id": "g26",
+        "source": "milestone_prelude_flng",
+        "target": "flng"
+      },
+      {
+        "id": "g27",
+        "source": "milestone_barnett_shale",
+        "target": "shale_gas_production"
+      },
+      {
+        "id": "g28",
+        "source": "milestone_first_ccgt",
+        "target": "ccgt"
+      },
+      {
+        "id": "g29",
+        "source": "co2_recuperator",
+        "target": "scco2_brayton"
+      },
+      {
+        "id": "g30",
+        "source": "lng_liquefaction",
+        "target": "lng_regasification"
+      },
+      {
+        "id": "o02",
+        "source": "cable_tool_drilling",
+        "target": "drake_well"
+      },
+      {
+        "id": "o03",
+        "source": "drake_well",
+        "target": "onshore_rotary_derrick"
+      },
+      {
+        "id": "o04",
+        "source": "rotary_drilling",
+        "target": "onshore_rotary_derrick"
+      },
+      {
+        "id": "o05",
+        "source": "rotary_drilling",
+        "target": "offshore_fixed_platform"
+      },
+      {
+        "id": "o06",
+        "source": "spindletop",
+        "target": "onshore_rotary_derrick"
+      },
+      {
+        "id": "o07",
+        "source": "directional_drilling",
+        "target": "subsea_completion"
+      },
+      {
+        "id": "o08",
+        "source": "directional_drilling",
+        "target": "shale_hydraulic_fracturing"
+      },
+      {
+        "id": "o09",
+        "source": "mwd_lwd",
+        "target": "directional_drilling"
+      },
+      {
+        "id": "o10",
+        "source": "mwd_lwd",
+        "target": "ai_drilling_optimisation"
+      },
+      {
+        "id": "o11",
+        "source": "leduc_discovery",
+        "target": "offshore_fixed_platform"
+      },
+      {
+        "id": "o12",
+        "source": "flexible_riser_tech",
+        "target": "fpso"
+      },
+      {
+        "id": "o13",
+        "source": "flexible_riser_tech",
+        "target": "subsea_completion"
+      },
+      {
+        "id": "o14",
+        "source": "cfd_wellbore_flow",
+        "target": "fpso"
+      },
+      {
+        "id": "o15",
+        "source": "cfd_wellbore_flow",
+        "target": "subsea_completion"
+      },
+      {
+        "id": "o16",
+        "source": "4d_seismic",
+        "target": "digital_twin_reservoir"
+      },
+      {
+        "id": "o17",
+        "source": "ml_reservoir_optimisation",
+        "target": "digital_twin_reservoir"
+      },
+      {
+        "id": "o19",
+        "source": "iot_downhole_sensors",
+        "target": "ml_reservoir_optimisation"
+      },
+      {
+        "id": "o20",
+        "source": "ai_drilling_optimisation",
+        "target": "digital_twin_reservoir"
+      },
+      {
+        "id": "o21",
+        "source": "pdc_drill_bits",
+        "target": "shale_hydraulic_fracturing"
+      },
+      {
+        "id": "o22",
+        "source": "proppant_engineering",
+        "target": "shale_hydraulic_fracturing"
+      },
+      {
+        "id": "o24",
+        "source": "thermal_cracking_burton",
+        "target": "fcc_unit"
+      },
+      {
+        "id": "o25",
+        "source": "thermal_cracking",
+        "target": "fcc_unit"
+      },
+      {
+        "id": "o26",
+        "source": "zeolite_catalysts",
+        "target": "fcc_unit"
+      },
+      {
+        "id": "o27",
+        "source": "zeolite_catalysts",
+        "target": "hydrocracking"
+      },
+      {
+        "id": "o28",
+        "source": "cfd_reactor_design",
+        "target": "fcc_unit"
+      },
+      {
+        "id": "o29",
+        "source": "cfd_reactor_design",
+        "target": "hydrocracking"
+      },
+      {
+        "id": "o31",
+        "source": "cobt_mo_catalysts",
+        "target": "hydrocracking"
+      },
+      {
+        "id": "o32",
+        "source": "nimo_catalysts",
+        "target": "hydrocracking"
+      },
+      {
+        "id": "o33",
+        "source": "highpressure_vessel_metallurgy",
+        "target": "hydrocracking"
+      },
+      {
+        "id": "o34",
+        "source": "htl_process",
+        "target": "bioslurry_valorisation"
+      },
+      {
+        "id": "o35",
+        "source": "nimo_catalysts",
+        "target": "bioslurry_valorisation"
+      },
+      {
+        "id": "o36",
+        "source": "highpressure_vessel_metallurgy",
+        "target": "bioslurry_valorisation"
+      },
+      {
+        "id": "o37",
+        "source": "amine_scrubbing",
+        "target": "refinery_ccs"
+      },
+      {
+        "id": "o38",
+        "source": "amine_scrubbing",
+        "target": "blue_hydrogen_smr_ccs"
+      },
+      {
+        "id": "o39",
+        "source": "quest_ccs",
+        "target": "refinery_ccs"
+      },
+      {
+        "id": "o40",
+        "source": "solids_sorbent_ccs",
+        "target": "refinery_ccs"
+      },
+      {
+        "id": "o41",
+        "source": "pem_electrolysis",
+        "target": "hydrogen_coproc"
+      },
+      {
+        "id": "o42",
+        "source": "blue_hydrogen_smr_ccs",
+        "target": "hydrogen_coproc"
+      },
+      {
+        "id": "o43",
+        "source": "electrified_reforming",
+        "target": "hydrogen_coproc"
+      },
+      {
+        "id": "o44",
+        "source": "carbon_nanotube_membranes",
+        "target": "hydrogen_coproc"
+      },
+      {
+        "id": "o45",
+        "source": "carbon_nanotube_membranes",
+        "target": "refinery_ccs"
+      }
+    ]
+  }
+}
