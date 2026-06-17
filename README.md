@@ -169,7 +169,7 @@ src/
 
    ```env
    NEXT_PUBLIC_ENVIRONMENT=development
-   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+   GEMINI_API_KEY=your_gemini_api_key_here
    MONGODB_URI=your_tech_tree_db_connection_string
    NEXT_PUBLIC_ADMIN_PASSWORD=your_admin_password_here
    ```
